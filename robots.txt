@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wolfblanc.es/sitemap.xml
+Sitemap: https://wolfblanc.com/sitemap.xml
