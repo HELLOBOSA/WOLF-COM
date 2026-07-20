@@ -830,7 +830,7 @@
       <h3 data-es="Cuéntanos tu proyecto" data-en="Tell us about your project">Tell us about your project</h3>
       <p style="margin-top:0;margin-bottom:32px" data-es='O escríbenos directamente a <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>' data-en='Or write directly to <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>'>O escríbenos directamente a <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
 
-      <form class="intake-form" id="intake-form" action="https://formspree.io/f/meedrejq" method="POST">
+      <form class="intake-form" id="intake-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST">
         <input type="hidden" name="_subject" value="New project, wolfblanc.com">
         <input type="hidden" name="services" id="selected-services" value="">
         <div class="field"><label><span data-es="Nombre" data-en="Name">Nombre</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Jane Doe" required></div>
@@ -973,7 +973,7 @@
       submitBtn.disabled = true;
       submitBtn.querySelector('span').textContent = '...';
       try {
-        const res = await fetch('https://formspree.io/f/meedrejq', {
+        const res = await fetch('https://usebasin.com/f/ce6160f80c8b', {
           method: 'POST', body: new FormData(form), headers: {'Accept':'application/json'}
         });
         if(res.ok){
