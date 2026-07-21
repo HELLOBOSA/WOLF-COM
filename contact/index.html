@@ -197,7 +197,7 @@
     .cal-inner{margin-top:64px;padding-top:56px;border-top:1px solid var(--line)}
     .cal-inner>h3{font-size:1.3rem;font-weight:300;margin-bottom:8px}
     .cal-inner>p{color:var(--text2);margin-bottom:24px}
-    #my-cal-inline{width:100%;min-height:560px;overflow:auto;border:1px solid var(--line)}
+    #my-cal-inline-30min{width:100%;min-height:560px;overflow:auto;border:1px solid var(--line)}
     .cal-fallback{padding:40px;text-align:center;color:var(--text2);font-size:.9rem;line-height:1.8}
     .cal-fallback a{color:var(--accent)}
     .intake-form{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:24px}
@@ -320,8 +320,8 @@
   <div class="cal-inner">
     <h3 data-es="Reserva una llamada" data-en="Book a call">Reserva una llamada</h3>
     <p data-es="Elige un horario que te convenga para una primera conversación con un socio senior." data-en="Pick a time that suits you for a first conversation with a senior partner.">Elige un horario que te convenga para una primera conversación con un socio senior.</p>
-    <!-- Cal.com inline embed. PLACEHOLDER calLink 'wolfblanc/consultation' — replace with the real Wolfblanc booking link. -->
-    <div id="my-cal-inline">
+    <!-- Cal inline embed (app.cal.eu · eolos/30min) -->
+    <div id="my-cal-inline-30min">
       <div class="cal-fallback" data-es='¿El calendario no carga? Escríbenos a <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> o llama al <a href="tel:+34662411064">+34 662 411 064</a>.' data-en='Calendar not loading? Email <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> or call <a href="tel:+34662411064">+34 662 411 064</a>.'>¿El calendario no carga? Escríbenos a <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> o llama al <a href="tel:+34662411064">+34 662 411 064</a>.</div>
     </div>
   </div>
@@ -568,12 +568,16 @@
   })();
 </script>
 <script type="text/javascript">
-(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-try {
-  Cal("init", "consultation", { origin: "https://cal.com" });
-  Cal.ns.consultation("inline", { elementOrSelector: "#my-cal-inline", config: { layout: "month_view" }, calLink: "wolfblanc/consultation" });
-  Cal.ns.consultation("ui", { hideEventTypeDetails: false, layout: "month_view" });
-} catch (e) {}
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.eu/embed/embed.js", "init");
+Cal("init", "30min", {origin:"https://app.cal.eu"});
+Cal.config = Cal.config || {};
+Cal.config.forwardQueryParams = true;
+Cal.ns["30min"]("inline", {
+  elementOrSelector:"#my-cal-inline-30min",
+  config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+  calLink: "eolos/30min",
+});
+Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
 </script>
 </body>
 </html>
