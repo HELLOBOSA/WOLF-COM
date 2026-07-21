@@ -75,16 +75,16 @@
 
   <style>
     :root {
-      --bg:#f5f0eb; --text-primary:#0d0b0a; --text-secondary:#6b6057;
-      --accent:#9a6840; --glass-bg:rgba(13,11,10,0.04);
-      --glass-border:rgba(154,104,64,0.18); --glass-border-hover:rgba(154,104,64,0.4);
-      --line:rgba(154,104,64,0.14); --nav-bg:rgba(245,240,235,0.94);
+      --bg:#f4f1ea; --text-primary:#0d0b0a; --text-secondary:#6a655b;
+      --accent:#94856a; --glass-bg:rgba(13,11,10,0.04);
+      --glass-border:rgba(148,133,106,0.18); --glass-border-hover:rgba(148,133,106,0.4);
+      --line:rgba(148,133,106,0.14); --nav-bg:rgba(245,240,235,0.94);
     }
     html.dark {
-      --bg:#0d0b0a; --text-primary:#f2ede8; --text-secondary:#8a8278;
-      --accent:#c8a882; --glass-bg:rgba(200,168,130,0.04);
-      --glass-border:rgba(200,168,130,0.14); --glass-border-hover:rgba(200,168,130,0.4);
-      --line:rgba(200,168,130,0.14); --nav-bg:rgba(13,11,10,0.94);
+      --bg:#0d0b0a; --text-primary:#f0ede7; --text-secondary:#8f887c;
+      --accent:#c3b087; --glass-bg:rgba(195,176,135,0.04);
+      --glass-border:rgba(195,176,135,0.14); --glass-border-hover:rgba(195,176,135,0.4);
+      --line:rgba(195,176,135,0.14); --nav-bg:rgba(13,11,10,0.94);
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
@@ -210,11 +210,11 @@
       z-index:1200;width:max-content;max-width:calc(100vw - 32px);
       display:flex;align-items:center;justify-content:center;gap:14px;
       padding:8px 10px 8px 16px;border:1px solid var(--glass-border);
-      background:rgba(154,104,64,.18);backdrop-filter:blur(16px);
+      background:rgba(148,133,106,.18);backdrop-filter:blur(16px);
       border-radius:999px;
       color:var(--text-primary);box-shadow:0 18px 45px rgba(13,11,10,.08)
     }
-    html.dark .cookie-banner{background:rgba(200,168,130,.16);box-shadow:0 18px 45px rgba(0,0,0,.28)}
+    html.dark .cookie-banner{background:rgba(195,176,135,.16);box-shadow:0 18px 45px rgba(0,0,0,.28)}
     .cookie-banner[hidden]{display:none}
     .cookie-copy{display:flex;align-items:center;gap:9px;min-width:0}
     .cookie-title,.cookie-btn{font-size:.6rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
