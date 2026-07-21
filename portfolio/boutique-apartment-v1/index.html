@@ -1,19 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="icon" type="image/x-icon" href="../../favicon.ico">
   <link rel="icon" type="image/png" sizes="192x192" href="../../apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKLWDZFNKC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WKLWDZFNKC');
-  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +58,7 @@
         "email": "info@wolfblanc.com",
         "telephone": "+34662411064",
         "knowsLanguage": ["es", "en", "sv", "el"],
-        "hasCredential": ["COAM N.25160", "WELL AP"],
+        "hasCredential": ["COAM N.25160", "SAR/MSA", "TEE-TCG N.168011", "WELL AP"],
         "areaServed": [
           {"@type": "Country", "name": "Spain"},
           {"@type": "Country", "name": "Sweden"},
@@ -199,43 +191,38 @@
     }
     html{overflow-y:scroll}
   </style>
+  <link rel="stylesheet" href="../../assets/site-shell.css">
 </head>
 <body>
 <nav id="nav">
   <div class="nav-bar">
-    <a href="../../" class="nav-logo">WOLFBLANC</a>
+    <a href="../../" class="nav-logo" aria-label="Wolfblanc home">WOLFBLANC</a>
     <div class="nav-right">
       <div class="nav-links">
         <a href="../../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
-        <a href="../../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
         <a href="../../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
-        <a href="../../portfolio/" class="nav-link active" data-es="PORTFOLIO" data-en="PORTFOLIO">PORTFOLIO</a>
+        <a href="../../portfolio/" class="nav-link active" data-es="PROYECTOS" data-en="PROJECTS" aria-current="page">PROJECTS</a>
+        <a href="../../locations/" class="nav-link" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
         <a href="../../news/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
         <a href="../../faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-        <a href="../../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+        <a href="../../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
       </div>
-      <div class="language-switch" aria-label="Select language">
+      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
         <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
         <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
       </div>
-      <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
-        <svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      </button>
-      <button class="burger-btn" id="burger-btn" aria-label="Menu">
-        <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-        <svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-      </button>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme" data-es-aria="Cambiar tema" data-en-aria="Toggle theme"><svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+      <button class="burger-btn" id="burger-btn" type="button" aria-label="Menu" data-es-aria="Menú" data-en-aria="Menu"><svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg><svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
     </div>
   </div>
   <div class="mob-menu" id="mob-menu">
     <a href="../../studio/" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
-    <a href="../../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
     <a href="../../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
-    <a href="../../portfolio/" data-es="PORTFOLIO" data-en="PORTFOLIO">PORTFOLIO</a>
+    <a href="../../portfolio/" data-es="PROYECTOS" data-en="PROJECTS" aria-current="page" style="color:var(--accent)">PROJECTS</a>
+    <a href="../../locations/" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
     <a href="../../news/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="../../faq/" data-es="FAQ" data-en="FAQ">FAQ</a>
-    <a href="../../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="../../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
   </div>
 </nav>
 
@@ -273,11 +260,16 @@
     <p>V1 reflects how strategic interior design can transform temporary accommodation into a lasting emotional experience-driving high occupancy and ROI while feeling uniquely serene and timeless.</p>
     <p>&quot;Designing V1 was about exploring calm through soft tonality, maximizing spatial efficiency, and creating a high-performing boutique asset.&quot;</p>
   </article>
+  <section class="project-gallery" aria-label="Boutique Apartment V1 project gallery">
+    <figure><img src="../../images/Boutique Apartment V1_02.webp" alt="Boutique Apartment V1 — project view 2" loading="lazy" decoding="async"><figcaption>Boutique Apartment V1 · Wolfblanc Architects</figcaption></figure>
+    <figure><img src="../../images/Boutique Apartment V1_03.webp" alt="Boutique Apartment V1 — project view 3" loading="lazy" decoding="async"><figcaption>Boutique Apartment V1 · Wolfblanc Architects</figcaption></figure>
+  </section>
+
   <section class="cta-section">
     <div class="cta-bg">WOLFBLANC</div>
     <div class="cta-inner">
       <span class="cta-ey" data-es="CUÉNTENOS SU PROYECTO" data-en="TELL US ABOUT YOUR PROJECT">TELL US ABOUT YOUR PROJECT</span>
-      <p class="cta-title" data-es="La primera consulta es gratuita. Respondemos en 24 horas." data-en="First consultation is free. We respond within 24 hours.">First consultation is free. We respond within 24 hours.</p>
+      <p class="cta-title" data-es="La primera consulta es gratuita. Respondemos en dos días laborables." data-en="First consultation is free. We reply within two business days.">First consultation is free. We reply within two business days.</p>
       <div class="cta-btns">
         <a href="mailto:info@wolfblanc.com" class="btn-em"><span data-es="Escríbanos" data-en="Email us">Email us</span></a>
         <a href="../../contact/" class="btn-ct"><span data-es="Contacto &rarr;" data-en="Contact &rarr;">Contact &rarr;</span></a>
@@ -289,8 +281,8 @@
 
 <footer>
   <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
-  <span><a href="../../studio/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../../services/" style="color:inherit;text-decoration:none" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../../faq/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">FAQ</a> &middot; <a href="../../legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Legal Notice</a> &middot; <a href="https://eolos.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
-  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
+  <span><a href="../../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../../portfolio/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../../faq/">FAQ</a> &middot; <a href="../../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../../newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="../../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Back to top">
@@ -431,5 +423,6 @@
 })();
 </script>
 
+<script src="../../assets/site-core.js" defer></script>
 </body>
 </html>

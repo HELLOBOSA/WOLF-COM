@@ -1,19 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="icon" type="image/png" sizes="192x192" href="../apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKLWDZFNKC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WKLWDZFNKC');
-  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +15,11 @@
   <meta name="description" content="Wolfblanc is an international architecture and design studio working across Sweden, Spain and Greece. Registered architects (SAR/MSA, COAM, TEE-TCG), WELL AP. Residential, investment, hospitality and commercial projects.">
 
   <link rel="canonical" href="https://wolfblanc.com/studio/">
-  <link rel="alternate" hreflang="es" href="https://wolfblanc.com/studio/">
+  <link rel="alternate" hreflang="en" href="https://wolfblanc.com/studio/">
   <link rel="alternate" hreflang="x-default" href="https://wolfblanc.com/studio/">
 
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale" content="en_GB">
   <meta property="og:title" content="Studio - WOLFBLANC ARCHITECTS">
   <meta property="og:description" content="Wolfblanc is an international architecture and design studio working across Sweden, Spain and Greece. Registered architects (SAR/MSA, COAM, TEE-TCG), WELL AP. Residential, investment, hospitality and commercial projects.">
   <meta property="og:url" content="https://wolfblanc.com/studio/">
@@ -49,9 +41,9 @@
         "@type": "AboutPage",
         "@id": "https://wolfblanc.com/studio/#webpage",
         "url": "https://wolfblanc.com/studio/",
-        "name": "Estudio de arquitectura - Wolfblanc Architects",
-        "inLanguage": "es-ES",
-        "description": "Wolfblanc es un estudio de arquitectura y diseño en Suecia, España y Grecia. Vivienda, inversión, hostelería y arquitectura comercial.",
+        "name": "Wolfblanc Architects — International Architecture Studio",
+        "inLanguage": "en",
+        "description": "Wolfblanc is an international architecture and design studio working across Sweden, Spain and Greece.",
         "isPartOf": {"@type": "WebSite", "name": "Wolfblanc Architects", "url": "https://wolfblanc.com/"},
         "about": {"@id": "https://wolfblanc.com/#business"}
       },
@@ -62,24 +54,24 @@
         "url": "https://wolfblanc.com/",
         "logo": "https://wolfblanc.com/images/210-sq-white-02.webp",
         "image": "https://wolfblanc.com/images/Horizon House 01.webp",
-        "description": "Estudio de arquitectura en Suecia, España y Grecia. Proyectos residenciales, de hostelería e inversión con precisión técnica e identidad mediterránea. COAM N.25160, WELL AP.",
+        "description": "International architecture studio for residential, hospitality and investment projects across Sweden, Spain and Greece. COAM N.25160, SAR/MSA, TEE-TCG and WELL AP.",
         "email": "info@wolfblanc.com",
         "telephone": "+34662411064",
         "knowsLanguage": ["es", "en", "sv", "el"],
-        "hasCredential": ["COAM N.25160", "WELL AP"],
+        "hasCredential": ["COAM N.25160", "SAR/MSA", "TEE-TCG N.168011", "WELL AP"],
         "areaServed": [
           {"@type": "City", "name": "Madrid"},
           {"@type": "City", "name": "Barcelona"},
           {"@type": "City", "name": "Marbella"},
-          {"@type": "Country", "name": "España"}
+          {"@type": "Country", "name": "Spain"}
         ],
         "sameAs": ["https://wolfblanc.com"]
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://wolfblanc.com/"},
-          {"@type": "ListItem", "position": 2, "name": "Estudio de arquitectura", "item": "https://wolfblanc.com/studio/"}
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://wolfblanc.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Architecture studio", "item": "https://wolfblanc.com/studio/"}
         ]
       }
     ]
@@ -223,53 +215,48 @@
   html{overflow-y:scroll}
   @media(max-width:640px){.svc-table,.svc-table tbody,.svc-table tr,.svc-table td{display:block;width:auto}.svc-table thead{position:absolute;left:-9999px}.svc-table tr{padding:16px 0;border-bottom:1px solid var(--line)}.svc-table tr:last-child{border-bottom:0}.svc-table td{padding:0;border-bottom:0}.svc-table td:first-child{width:auto;margin:0 0 6px}}
 </style>
+  <link rel="stylesheet" href="../assets/site-shell.css">
 </head>
 <body>
 <nav id="nav">
   <div class="nav-bar">
-    <a href="../" class="nav-logo">WOLFBLANC</a>
+    <a href="../" class="nav-logo" aria-label="Wolfblanc home">WOLFBLANC</a>
     <div class="nav-right">
       <div class="nav-links">
-        <a href="../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-        <a href="../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-        <a href="../#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+        <a href="../studio/" class="nav-link active" data-es="ESTUDIO" data-en="STUDIO" aria-current="page">STUDIO</a>
+        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+        <a href="../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+        <a href="../locations/" class="nav-link" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
         <a href="../news/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
         <a href="../faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-        <a href="../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+        <a href="../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
       </div>
-      <div class="language-switch" aria-label="Seleccionar idioma">
-        <button class="lang-btn active" type="button" data-lang-switch="es">ES</button>
-        <button class="lang-btn" type="button" data-lang-switch="en">EN</button>
+      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
+        <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
+        <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
       </div>
-      <button class="theme-btn" id="theme-btn" aria-label="Tema">
-        <svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      </button>
-      <button class="burger-btn" id="burger-btn" aria-label="Menú">
-        <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-        <svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-      </button>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme" data-es-aria="Cambiar tema" data-en-aria="Toggle theme"><svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+      <button class="burger-btn" id="burger-btn" type="button" aria-label="Menu" data-es-aria="Menú" data-en-aria="Menu"><svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg><svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
     </div>
   </div>
   <div class="mob-menu" id="mob-menu">
-    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-    <a href="../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-    <a href="../#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO" aria-current="page" style="color:var(--accent)">STUDIO</a>
+    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+    <a href="../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+    <a href="../locations/" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
     <a href="../news/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="../faq/" data-es="FAQ" data-en="FAQ">FAQ</a>
-    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
   </div>
 </nav>
 
 <header class="hero">
   <div class="hero-grid"></div>
   <div class="hero-inner">
-    <a href="../" class="back-link" data-es="← Inicio" data-en="← Home">← Inicio</a>
-    <span class="eyebrow" data-es="ESTUDIO DE ARQUITECTURA · ESPAÑA" data-en="ARCHITECTURE STUDIO · SPAIN">ESTUDIO DE ARQUITECTURA · ESPAÑA</span>
-    <h1 data-es="Estudio de arquitectura" data-en="Architecture studio">Estudio de arquitectura</h1>
-    <p class="lead" data-es="Wolfblanc es un estudio de arquitectura y diseño en Suecia, España y Grecia. Acompañamos a propietarios, compradores de segunda residencia, inversores y negocios con un servicio completo y un método de entrega riguroso." data-en="Wolfblanc is an architecture and design studio in Sweden, Spain and Greece. We support homeowners, second-home buyers, investors and businesses with a full-service approach and a rigorous delivery method.">Wolfblanc es un estudio de arquitectura y diseño en Suecia, España y Grecia. Acompañamos a propietarios, compradores de segunda residencia, inversores y negocios con un servicio completo y un método de entrega riguroso.</p>
+    <a href="../" class="back-link" data-es="← Inicio" data-en="← Home">← Home</a>
+    <span class="eyebrow" data-es="ESTUDIO DE ARQUITECTURA · ESPAÑA" data-en="ARCHITECTURE STUDIO · SPAIN">ARCHITECTURE STUDIO · SPAIN</span>
+    <h1 data-es="Estudio de arquitectura" data-en="Architecture studio">Architecture studio</h1>
+    <p class="lead" data-es="Wolfblanc es un estudio de arquitectura y diseño en Suecia, España y Grecia. Acompañamos a propietarios, compradores de segunda residencia, inversores y negocios con un servicio completo y un método de entrega riguroso." data-en="Wolfblanc is an architecture and design studio in Sweden, Spain and Greece. We support homeowners, second-home buyers, investors and businesses with a full-service approach and a rigorous delivery method.">Wolfblanc is an architecture and design studio in Sweden, Spain and Greece. We support homeowners, second-home buyers, investors and businesses with a full-service approach and a rigorous delivery method.</p>
   </div>
 </header>
 
@@ -277,119 +264,119 @@
   <div class="hero-img-wrap">
     <img src="../images/Horizon House 01.webp" alt="Estudio de arquitectura Wolfblanc, proyecto Horizon House" loading="eager" fetchpriority="high" decoding="async">
   </div>
-  <p class="img-caption" data-es="Wolfblanc Architects · España" data-en="Wolfblanc Architects · Spain">Wolfblanc Architects · España</p>
+  <p class="img-caption" data-es="Wolfblanc Architects · España" data-en="Wolfblanc Architects · Spain">Wolfblanc Architects · Spain</p>
 </div>
 
 <main>
   <article class="wb-body">
-    <p class="opening" data-es="Wolfblanc reúne diseño mediterráneo y una forma de trabajar ordenada, con documentación técnica detallada, coordinación BIM y criterios de bienestar. Trabajamos en arquitectura, paisaje, urbanismo, interiores, hostelería e inversión inmobiliaria, desde el concepto hasta la entrega o como apoyo experto en una fase concreta." data-en="Wolfblanc brings together Mediterranean design and an orderly way of working, with detailed technical documentation, BIM coordination and well-being criteria. We work across architecture, landscape, urban design, interiors, hospitality and real estate investment, from concept to completion or as expert support at a specific stage.">Wolfblanc reúne diseño mediterráneo y una forma de trabajar ordenada, con documentación técnica detallada, coordinación BIM y criterios de bienestar. Trabajamos en arquitectura, paisaje, urbanismo, interiores, hostelería e inversión inmobiliaria, desde el concepto hasta la entrega o como apoyo experto en una fase concreta.</p>
+    <p class="opening" data-es="Wolfblanc reúne diseño mediterráneo y una forma de trabajar ordenada, con documentación técnica detallada, coordinación BIM y criterios de bienestar. Trabajamos en arquitectura, paisaje, urbanismo, interiores, hostelería e inversión inmobiliaria, desde el concepto hasta la entrega o como apoyo experto en una fase concreta." data-en="Wolfblanc brings together Mediterranean design and an orderly way of working, with detailed technical documentation, BIM coordination and well-being criteria. We work across architecture, landscape, urban design, interiors, hospitality and real estate investment, from concept to completion or as expert support at a specific stage.">Wolfblanc brings together Mediterranean design and an orderly way of working, with detailed technical documentation, BIM coordination and well-being criteria. We work across architecture, landscape, urban design, interiors, hospitality and real estate investment, from concept to completion or as expert support at a specific stage.</p>
 
-    <h2 class="section-h" data-es="Qué es Wolfblanc" data-en="What Wolfblanc is">Qué es Wolfblanc</h2>
-    <p data-es="Somos un estudio de arquitectura colegiado, con estudios en Suecia, España y Grecia. Nuestro trabajo va del proyecto residencial a la inversión inmobiliaria, pasando por la hostelería y los espacios comerciales. Cada proyecto se apoya en registro profesional, experiencia contrastada y comunicación clara en varios idiomas." data-en="We are a registered architecture studio, with studios in Sweden, Spain and Greece. Our work ranges from residential projects to real estate investment, including hospitality and commercial spaces. Every project is backed by professional registration, proven experience and clear communication in several languages.">Somos un estudio de arquitectura colegiado, con estudios en Suecia, España y Grecia. Nuestro trabajo va del proyecto residencial a la inversión inmobiliaria, pasando por la hostelería y los espacios comerciales. Cada proyecto se apoya en registro profesional, experiencia contrastada y comunicación clara en varios idiomas.</p>
+    <h2 class="section-h" data-es="Qué es Wolfblanc" data-en="What Wolfblanc is">What Wolfblanc is</h2>
+    <p data-es="Somos un estudio de arquitectura colegiado, con estudios en Suecia, España y Grecia. Nuestro trabajo va del proyecto residencial a la inversión inmobiliaria, pasando por la hostelería y los espacios comerciales. Cada proyecto se apoya en registro profesional, experiencia contrastada y comunicación clara en varios idiomas." data-en="We are a registered architecture studio, with studios in Sweden, Spain and Greece. Our work ranges from residential projects to real estate investment, including hospitality and commercial spaces. Every project is backed by professional registration, proven experience and clear communication in several languages.">We are a registered architecture studio, with studios in Sweden, Spain and Greece. Our work ranges from residential projects to real estate investment, including hospitality and commercial spaces. Every project is backed by professional registration, proven experience and clear communication in several languages.</p>
 
-    <h2 class="section-h" data-es="A quién acompañamos" data-en="Who we work with">A quién acompañamos</h2>
-    <p data-es="Trabajamos con cuatro tipos de cliente, cada uno con necesidades distintas y el mismo nivel de atención." data-en="We work with four types of client, each with different needs and the same level of attention.">Trabajamos con cuatro tipos de cliente, cada uno con necesidades distintas y el mismo nivel de atención.</p>
+    <h2 class="section-h" data-es="A quién acompañamos" data-en="Who we work with">Who we work with</h2>
+    <p data-es="Trabajamos con cuatro tipos de cliente, cada uno con necesidades distintas y el mismo nivel de atención." data-en="We work with four types of client, each with different needs and the same level of attention.">We work with four types of client, each with different needs and the same level of attention.</p>
     <div class="aud-grid">
       <div class="aud-cell">
-        <h3 data-es="Propietarios" data-en="Homeowners">Propietarios</h3>
-        <p data-es="Vivienda, reforma integral e interiorismo con un proceso claro y un único interlocutor de principio a fin." data-en="Housing, full renovation and interior design with a clear process and a single point of contact from start to finish.">Vivienda, reforma integral e interiorismo con un proceso claro y un único interlocutor de principio a fin.</p>
+        <h3 data-es="Propietarios" data-en="Homeowners">Homeowners</h3>
+        <p data-es="Vivienda, reforma integral e interiorismo con un proceso claro y un único interlocutor de principio a fin." data-en="Housing, full renovation and interior design with a clear process and a single point of contact from start to finish.">Housing, full renovation and interior design with a clear process and a single point of contact from start to finish.</p>
       </div>
       <div class="aud-cell">
-        <h3 data-es="Segunda residencia" data-en="Second homes">Segunda residencia</h3>
-        <p data-es="Villas y segundas residencias pensadas en torno al paisaje, los materiales y la durabilidad, también para clientes que gestionan el proyecto desde el extranjero." data-en="Villas and second homes designed around landscape, materials and durability, including for clients managing the project from abroad.">Villas y segundas residencias pensadas en torno al paisaje, los materiales y la durabilidad, también para clientes que gestionan el proyecto desde el extranjero.</p>
+        <h3 data-es="Segunda residencia" data-en="Second homes">Second homes</h3>
+        <p data-es="Villas y segundas residencias pensadas en torno al paisaje, los materiales y la durabilidad, también para clientes que gestionan el proyecto desde el extranjero." data-en="Villas and second homes designed around landscape, materials and durability, including for clients managing the project from abroad.">Villas and second homes designed around landscape, materials and durability, including for clients managing the project from abroad.</p>
       </div>
       <div class="aud-cell">
-        <h3 data-es="Inversores y promotores" data-en="Investors and developers">Inversores y promotores</h3>
-        <p data-es="Arquitectura que mejora el rendimiento del activo, con due diligence técnica, eficiencia de planta y retorno medible." data-en="Architecture that improves asset performance, with technical due diligence, floor plan efficiency and measurable return.">Arquitectura que mejora el rendimiento del activo, con due diligence técnica, eficiencia de planta y retorno medible.</p>
+        <h3 data-es="Inversores y promotores" data-en="Investors and developers">Investors and developers</h3>
+        <p data-es="Arquitectura que mejora el rendimiento del activo, con due diligence técnica, eficiencia de planta y retorno medible." data-en="Architecture that improves asset performance, with technical due diligence, floor plan efficiency and measurable return.">Architecture that improves asset performance, with technical due diligence, floor plan efficiency and measurable return.</p>
       </div>
       <div class="aud-cell">
-        <h3 data-es="Negocios y hostelería" data-en="Business and hospitality">Negocios y hostelería</h3>
-        <p data-es="Restaurantes, hoteles, retail y oficinas donde el espacio comunica identidad, mejora la operación y aumenta el valor." data-en="Restaurants, hotels, retail and offices where the space communicates identity, improves operations and increases value.">Restaurantes, hoteles, retail y oficinas donde el espacio comunica identidad, mejora la operación y aumenta el valor.</p>
+        <h3 data-es="Negocios y hostelería" data-en="Business and hospitality">Business and hospitality</h3>
+        <p data-es="Restaurantes, hoteles, retail y oficinas donde el espacio comunica identidad, mejora la operación y aumenta el valor." data-en="Restaurants, hotels, retail and offices where the space communicates identity, improves operations and increases value.">Restaurants, hotels, retail and offices where the space communicates identity, improves operations and increases value.</p>
       </div>
     </div>
 
-    <h2 class="section-h" data-es="Qué hacemos" data-en="What we do">Qué hacemos</h2>
-    <p data-es="Ofrecemos nueve servicios organizados en tres ámbitos: disciplinas espaciales, diseño de experiencias y consultoría técnica y estratégica. Se pueden contratar de forma integral o por fases." data-en="We offer nine services organised across three areas: spatial disciplines, experience design, and technical and strategic consultancy. They can be engaged as a whole or by stages.">Ofrecemos nueve servicios organizados en tres ámbitos: disciplinas espaciales, diseño de experiencias y consultoría técnica y estratégica. Se pueden contratar de forma integral o por fases.</p>
+    <h2 class="section-h" data-es="Qué hacemos" data-en="What we do">What we do</h2>
+    <p data-es="Ofrecemos nueve servicios organizados en tres ámbitos: disciplinas espaciales, diseño de experiencias y consultoría técnica y estratégica. Se pueden contratar de forma integral o por fases." data-en="We offer nine services organised across three areas: spatial disciplines, experience design, and technical and strategic consultancy. They can be engaged as a whole or by stages.">We offer nine services organised across three areas: spatial disciplines, experience design, and technical and strategic consultancy. They can be engaged as a whole or by stages.</p>
     <table class="svc-table">
       <thead>
         <tr>
-          <th data-es="Servicio" data-en="Service">Servicio</th>
-          <th data-es="Descripción" data-en="Description">Descripción</th>
+          <th data-es="Servicio" data-en="Service">Service</th>
+          <th data-es="Descripción" data-en="Description">Description</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td data-es="Arquitectura" data-en="Architecture">Arquitectura</td>
-          <td data-es="Obra nueva, rehabilitación y transformación de edificios, del análisis inicial a la documentación técnica, la obra y la entrega. La reforma integral y la gestión de proyectos se integran dentro de esta disciplina." data-en="New buildings, rehabilitation and transformation, from early analysis through technical design, construction and handover. Total renovation and project management are integrated within this discipline.">Obra nueva, rehabilitación y transformación de edificios, del análisis inicial a la documentación técnica, la obra y la entrega. La reforma integral y la gestión de proyectos se integran dentro de esta disciplina.</td>
+          <td data-es="Arquitectura" data-en="Architecture">Architecture</td>
+          <td data-es="Obra nueva, rehabilitación y transformación de edificios, del análisis inicial a la documentación técnica, la obra y la entrega. La reforma integral y la gestión de proyectos se integran dentro de esta disciplina." data-en="New buildings, rehabilitation and transformation, from early analysis through technical design, construction and handover. Total renovation and project management are integrated within this discipline.">New buildings, rehabilitation and transformation, from early analysis through technical design, construction and handover. Total renovation and project management are integrated within this discipline.</td>
         </tr>
         <tr>
-          <td data-es="Arquitectura del paisaje" data-en="Landscape architecture">Arquitectura del paisaje</td>
-          <td data-es="Lugares y sistemas vivos que integran usos, vegetación, agua, materiales, clima y construcción." data-en="Places and living systems integrating use, planting, water, materials, climate and construction.">Lugares y sistemas vivos que integran usos, vegetación, agua, materiales, clima y construcción.</td>
+          <td data-es="Arquitectura del paisaje" data-en="Landscape architecture">Landscape architecture</td>
+          <td data-es="Lugares y sistemas vivos que integran usos, vegetación, agua, materiales, clima y construcción." data-en="Places and living systems integrating use, planting, water, materials, climate and construction.">Places and living systems integrating use, planting, water, materials, climate and construction.</td>
         </tr>
         <tr>
-          <td data-es="Urbanismo y masterplanning" data-en="Urban design and masterplanning">Urbanismo y masterplanning</td>
-          <td data-es="Emplazamientos, barrios y entornos públicos con una estrategia espacial clara." data-en="Sites, districts and public environments shaped by a clear spatial strategy.">Emplazamientos, barrios y entornos públicos con una estrategia espacial clara.</td>
+          <td data-es="Urbanismo y masterplanning" data-en="Urban design and masterplanning">Urban design and masterplanning</td>
+          <td data-es="Emplazamientos, barrios y entornos públicos con una estrategia espacial clara." data-en="Sites, districts and public environments shaped by a clear spatial strategy.">Sites, districts and public environments shaped by a clear spatial strategy.</td>
         </tr>
         <tr>
-          <td data-es="Interiores residenciales" data-en="Residential interiors">Interiores residenciales</td>
-          <td data-es="Espacios interiores adaptados al uso diario, con atención a la luz, el material y la atmósfera." data-en="Interior spaces tailored to daily use, with attention to light, material and atmosphere.">Espacios interiores adaptados al uso diario, con atención a la luz, el material y la atmósfera.</td>
+          <td data-es="Interiores residenciales" data-en="Residential interiors">Residential interiors</td>
+          <td data-es="Espacios interiores adaptados al uso diario, con atención a la luz, el material y la atmósfera." data-en="Interior spaces tailored to daily use, with attention to light, material and atmosphere.">Interior spaces tailored to daily use, with attention to light, material and atmosphere.</td>
         </tr>
         <tr>
-          <td data-es="Interiores comerciales y hostelería" data-en="Commercial and hospitality interiors">Interiores comerciales y hostelería</td>
-          <td data-es="Entornos de alto rendimiento para marcas y negocios: hostelería, retail, showrooms y oficinas." data-en="High-performance environments for brands and businesses: hospitality, retail, showrooms and offices.">Entornos de alto rendimiento para marcas y negocios: hostelería, retail, showrooms y oficinas.</td>
+          <td data-es="Interiores comerciales y hostelería" data-en="Commercial and hospitality interiors">Commercial and hospitality interiors</td>
+          <td data-es="Entornos de alto rendimiento para marcas y negocios: hostelería, retail, showrooms y oficinas." data-en="High-performance environments for brands and businesses: hospitality, retail, showrooms and offices.">High-performance environments for brands and businesses: hospitality, retail, showrooms and offices.</td>
         </tr>
         <tr>
-          <td data-es="Visualización arquitectónica" data-en="Architectural visualisation">Visualización arquitectónica</td>
-          <td data-es="Material visual para decidir, tramitar licencias, vender y comunicar con inversores." data-en="Visual material for decisions, permits, sales and investor communication.">Material visual para decidir, tramitar licencias, vender y comunicar con inversores.</td>
+          <td data-es="Visualización arquitectónica" data-en="Architectural visualisation">Architectural visualisation</td>
+          <td data-es="Material visual para decidir, tramitar licencias, vender y comunicar con inversores." data-en="Visual material for decisions, permits, sales and investor communication.">Visual material for decisions, permits, sales and investor communication.</td>
         </tr>
         <tr>
-          <td data-es="Due diligence técnica" data-en="Technical due diligence">Due diligence técnica</td>
-          <td data-es="Análisis previo a la compra para entender una propiedad antes de comprometer capital." data-en="Pre-purchase analysis to understand a property before committing capital.">Análisis previo a la compra para entender una propiedad antes de comprometer capital.</td>
+          <td data-es="Due diligence técnica" data-en="Technical due diligence">Technical due diligence</td>
+          <td data-es="Análisis previo a la compra para entender una propiedad antes de comprometer capital." data-en="Pre-purchase analysis to understand a property before committing capital.">Pre-purchase analysis to understand a property before committing capital.</td>
         </tr>
         <tr>
-          <td data-es="Consultoría BIM" data-en="BIM consultancy">Consultoría BIM</td>
-          <td data-es="Coordinación digital para reducir riesgos y convertir los datos del proyecto en decisiones más precisas." data-en="Digital coordination to reduce risk and turn project data into more precise decisions.">Coordinación digital para reducir riesgos y convertir los datos del proyecto en decisiones más precisas.</td>
+          <td data-es="Consultoría BIM" data-en="BIM consultancy">BIM consultancy</td>
+          <td data-es="Coordinación digital para reducir riesgos y convertir los datos del proyecto en decisiones más precisas." data-en="Digital coordination to reduce risk and turn project data into more precise decisions.">Digital coordination to reduce risk and turn project data into more precise decisions.</td>
         </tr>
         <tr>
-          <td data-es="Consultoría de bienestar" data-en="Well-being consultancy">Consultoría de bienestar</td>
-          <td data-es="Criterios WELL AP para medir y mejorar el aire, la luz, la acústica y el confort." data-en="WELL AP criteria to measure and improve air, light, acoustics and comfort.">Criterios WELL AP para medir y mejorar el aire, la luz, la acústica y el confort.</td>
+          <td data-es="Consultoría de bienestar" data-en="Well-being consultancy">Well-being consultancy</td>
+          <td data-es="Criterios WELL AP para medir y mejorar el aire, la luz, la acústica y el confort." data-en="WELL AP criteria to measure and improve air, light, acoustics and comfort.">WELL AP criteria to measure and improve air, light, acoustics and comfort.</td>
         </tr>
       </tbody>
     </table>
 
     <blockquote>
-      <p data-es="Quienes diseñan el proyecto son quienes lo llevan hasta el final, decisión a decisión." data-en="The people who design the project are the people who see it through, decision by decision.">Quienes diseñan el proyecto son quienes lo llevan hasta el final, decisión a decisión.</p>
+      <p data-es="Quienes diseñan el proyecto son quienes lo llevan hasta el final, decisión a decisión." data-en="The people who design the project are the people who see it through, decision by decision.">The people who design the project are the people who see it through, decision by decision.</p>
     </blockquote>
 
-    <h2 class="section-h" data-es="Cómo trabajamos" data-en="How we work">Cómo trabajamos</h2>
+    <h2 class="section-h" data-es="Cómo trabajamos" data-en="How we work">How we work</h2>
     <ol class="process-list">
-      <li><span><strong data-es="Escuchamos" data-en="We listen">Escuchamos</strong><span data-es="Entendemos el proyecto, las necesidades, el presupuesto y las oportunidades del emplazamiento." data-en="We understand the project, the needs, the budget and the opportunities of the site.">Entendemos el proyecto, las necesidades, el presupuesto y las oportunidades del emplazamiento.</span></span></li>
-      <li><span><strong data-es="Diseñamos" data-en="We design">Diseñamos</strong><span data-es="Desarrollamos y visualizamos el concepto arquitectónico y las decisiones de material y atmósfera." data-en="We develop and visualize the architectural concept and the decisions on material and atmosphere.">Desarrollamos y visualizamos el concepto arquitectónico y las decisiones de material y atmósfera.</span></span></li>
-      <li><span><strong data-es="Planificamos en detalle" data-en="We plan in detail">Planificamos en detalle</strong><span data-es="Preparamos planos, detalles, documentación técnica y la estrategia de licencias." data-en="We prepare drawings, details, technical documentation and the permit strategy.">Preparamos planos, detalles, documentación técnica y la estrategia de licencias.</span></span></li>
-      <li><span><strong data-es="Entregamos" data-en="We deliver">Entregamos</strong><span data-es="Acompañamos la obra con control de plazos y presupuesto hasta la recepción del proyecto." data-en="We accompany the construction with control of timelines and budget through to project handover.">Acompañamos la obra con control de plazos y presupuesto hasta la recepción del proyecto.</span></span></li>
+      <li><span><strong data-es="Escuchamos" data-en="We listen">We listen</strong><span data-es="Entendemos el proyecto, las necesidades, el presupuesto y las oportunidades del emplazamiento." data-en="We understand the project, the needs, the budget and the opportunities of the site.">We understand the project, the needs, the budget and the opportunities of the site.</span></span></li>
+      <li><span><strong data-es="Diseñamos" data-en="We design">We design</strong><span data-es="Desarrollamos y visualizamos el concepto arquitectónico y las decisiones de material y atmósfera." data-en="We develop and visualize the architectural concept and the decisions on material and atmosphere.">We develop and visualize the architectural concept and the decisions on material and atmosphere.</span></span></li>
+      <li><span><strong data-es="Planificamos en detalle" data-en="We plan in detail">We plan in detail</strong><span data-es="Preparamos planos, detalles, documentación técnica y la estrategia de licencias." data-en="We prepare drawings, details, technical documentation and the permit strategy.">We prepare drawings, details, technical documentation and the permit strategy.</span></span></li>
+      <li><span><strong data-es="Entregamos" data-en="We deliver">We deliver</strong><span data-es="Acompañamos la obra con control de plazos y presupuesto hasta la recepción del proyecto." data-en="We accompany the construction with control of timelines and budget through to project handover.">We accompany the construction with control of timelines and budget through to project handover.</span></span></li>
     </ol>
 
-    <h2 class="section-h" data-es="Por qué elegir Wolfblanc" data-en="Why choose Wolfblanc">Por qué elegir Wolfblanc</h2>
-    <p data-es="La confianza se construye con datos verificables. Estas son las credenciales y capacidades que respaldan cada proyecto." data-en="Trust is built on verifiable facts. These are the credentials and capabilities that back every project.">La confianza se construye con datos verificables. Estas son las credenciales y capacidades que respaldan cada proyecto.</p>
+    <h2 class="section-h" data-es="Por qué elegir Wolfblanc" data-en="Why choose Wolfblanc">Why choose Wolfblanc</h2>
+    <p data-es="La confianza se construye con datos verificables. Estas son las credenciales y capacidades que respaldan cada proyecto." data-en="Trust is built on verifiable facts. These are the credentials and capabilities that back every project.">Trust is built on verifiable facts. These are the credentials and capabilities that back every project.</p>
     <ul class="cred-list">
       <li><strong>SAR/MSA &middot; COAM &middot; TEE-TCG</strong><br><span data-es="Colegiados en Suecia, España y Grecia." data-en="Registered in Sweden, Spain and Greece.">Registered in Sweden, Spain and Greece.</span></li>
-      <li><strong data-es="Habilitación nacional" data-en="National scope">Habilitación nacional</strong><br><span data-es="La colegiación permite firmar y dirigir obra internacionalmente." data-en="Professional registration allows us to sign and supervise works anywhere.">La colegiación permite firmar y dirigir obra internacionalmente.</span></li>
-      <li><strong>WELL AP</strong><br><span data-es="Diseño acreditado para la salud y el bienestar." data-en="Accredited design for health and well-being.">Diseño acreditado para la salud y el bienestar.</span></li>
-      <li><strong data-es="Metodología BIM" data-en="BIM methodology">Metodología BIM</strong><br><span data-es="Coordinación digital y control de mediciones y presupuesto." data-en="Digital coordination and control of quantities and budget.">Coordinación digital y control de mediciones y presupuesto.</span></li>
-      <li><strong data-es="20+ años de experiencia" data-en="20+ years of experience">20+ años de experiencia</strong><br><span data-es="Experiencia combinada en proyectos residenciales, comerciales y de inversión." data-en="Combined experience across residential, commercial and investment projects.">Experiencia combinada en proyectos residenciales, comerciales y de inversión.</span></li>
-      <li><strong data-es="Atención multilingüe" data-en="Multilingual service">Atención multilingüe</strong><br><span data-es="Español, inglés, sueco y griego para clientes locales e internacionales." data-en="Spanish, English, Swedish and Greek for local and international clients.">Español, inglés, sueco y griego para clientes locales e internacionales.</span></li>
+      <li><strong data-es="Habilitación nacional" data-en="National scope">National scope</strong><br><span data-es="La colegiación permite firmar y dirigir obra internacionalmente." data-en="Professional registration allows us to sign and supervise works anywhere.">Professional registration allows us to sign and supervise works anywhere.</span></li>
+      <li><strong>WELL AP</strong><br><span data-es="Diseño acreditado para la salud y el bienestar." data-en="Accredited design for health and well-being.">Accredited design for health and well-being.</span></li>
+      <li><strong data-es="Metodología BIM" data-en="BIM methodology">BIM methodology</strong><br><span data-es="Coordinación digital y control de mediciones y presupuesto." data-en="Digital coordination and control of quantities and budget.">Digital coordination and control of quantities and budget.</span></li>
+      <li><strong data-es="20+ años de experiencia" data-en="20+ years of experience">20+ years of experience</strong><br><span data-es="Experiencia combinada en proyectos residenciales, comerciales y de inversión." data-en="Combined experience across residential, commercial and investment projects.">Combined experience across residential, commercial and investment projects.</span></li>
+      <li><strong data-es="Atención multilingüe" data-en="Multilingual service">Multilingual service</strong><br><span data-es="Español, inglés, sueco y griego para clientes locales e internacionales." data-en="Spanish, English, Swedish and Greek for local and international clients.">Spanish, English, Swedish and Greek for local and international clients.</span></li>
     </ul>
 
-    <h2 class="section-h" data-es="Dónde trabajamos" data-en="Where we work">Dónde trabajamos</h2>
-    <p data-es="Desarrollamos proyectos en Suecia, España y Grecia, con presencia habitual en los barrios de Salamanca, Chamberí y Eixample y en la Costa del Sol. También atendemos encargos en Valencia, Sevilla, Bilbao y otras capitales de provincia." data-en="We develop projects in Sweden, Spain and Greece, with a regular presence in the Salamanca, Chamberí and Eixample districts and on the Costa del Sol. We also take on commissions in Valencia, Seville, Bilbao and other provincial capitals.">Desarrollamos proyectos en Suecia, España y Grecia, con presencia habitual en los barrios de Salamanca, Chamberí y Eixample y en la Costa del Sol. También atendemos encargos en Valencia, Sevilla, Bilbao y otras capitales de provincia.</p>
-    <p data-es="Si quiere resolver dudas concretas antes de empezar, puede consultar nuestras preguntas frecuentes." data-en="If you want to resolve specific questions before starting, you can read our frequently asked questions."><a href="../faq/" style="color:var(--accent)" data-es="Ver preguntas frecuentes →" data-en="See frequently asked questions →">Ver preguntas frecuentes →</a></p>
+    <h2 class="section-h" data-es="Dónde trabajamos" data-en="Where we work">Where we work</h2>
+    <p data-es="Desarrollamos proyectos en Suecia, España y Grecia, con presencia habitual en los barrios de Salamanca, Chamberí y Eixample y en la Costa del Sol. También atendemos encargos en Valencia, Sevilla, Bilbao y otras capitales de provincia." data-en="We develop projects in Sweden, Spain and Greece, with a regular presence in the Salamanca, Chamberí and Eixample districts and on the Costa del Sol. We also take on commissions in Valencia, Seville, Bilbao and other provincial capitals.">We develop projects in Sweden, Spain and Greece, with a regular presence in the Salamanca, Chamberí and Eixample districts and on the Costa del Sol. We also take on commissions in Valencia, Seville, Bilbao and other provincial capitals.</p>
+    <p data-es="Si quiere resolver dudas concretas antes de empezar, puede consultar nuestras preguntas frecuentes." data-en="If you want to resolve specific questions before starting, you can read our frequently asked questions."><a href="../faq/" style="color:var(--accent)" data-es="Ver preguntas frecuentes →" data-en="See frequently asked questions →">See frequently asked questions →</a></p>
   </article>
 
   <section class="cta-section">
     <div class="cta-bg">WOLFBLANC</div>
     <div class="cta-inner">
-      <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">¿LISTO PARA EMPEZAR?</span>
-      <p class="cta-title" data-es="Cada buen proyecto empieza con una conversación." data-en="Every good project starts with a conversation.">Cada buen proyecto empieza con una conversación.</p>
+      <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">READY TO START?</span>
+      <p class="cta-title" data-es="Cada buen proyecto empieza con una conversación." data-en="Every good project starts with a conversation.">Every good project starts with a conversation.</p>
       <div class="cta-btns">
         <a href="tel:+34662411064" class="btn-ph">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -397,21 +384,21 @@
         </a>
         <a href="mailto:info@wolfblanc.com" class="btn-em">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-          <span data-es="Escríbanos" data-en="Email us">Escríbanos</span>
+          <span data-es="Escríbanos" data-en="Email us">Email us</span>
         </a>
-        <a href="../#inquiry" class="btn-ct">
-          <span data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Cuéntenos su proyecto →</span>
+        <a href="../contact/#inquiry" class="btn-ct">
+          <span data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Tell us about your project →</span>
         </a>
       </div>
-      <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">Un socio senior lee cada consulta · respuesta en dos días laborables</p>
+      <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">A senior partner reads every enquiry · reply within two business days</p>
     </div>
   </section>
 </main>
 
 <footer>
-  <span data-es="WOLFBLANC® ARCHITECTS · © 2026" data-en="WOLFBLANC® ARCHITECTS · © 2026">WOLFBLANC® ARCHITECTS · © 2026</span>
-  <span><a href="../studio/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="../services/" style="color:inherit;text-decoration:none" data-es="Servicios" data-en="Services">Servicios</a> · <a href="../faq/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="../legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
-  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
+  <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
+  <span><a href="../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../portfolio/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../faq/">FAQ</a> &middot; <a href="../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" aria-label="Volver arriba">
@@ -487,12 +474,12 @@
 </script>
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" data-es-aria="Aviso de cookies" data-en-aria="Cookie notice" hidden>
   <div class="cookie-copy">
-    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">Usamos cookies</span>
-    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">Más info</a>
+    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">We use cookies</span>
+    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">More info</a>
   </div>
   <div class="cookie-actions">
-    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Rechazar</button>
-    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Aceptar</button>
+    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Reject</button>
+    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Accept</button>
   </div>
 </div>
 
@@ -561,5 +548,6 @@
 })();
 </script>
 
+<script src="../assets/site-core.js" defer></script>
 </body>
 </html>

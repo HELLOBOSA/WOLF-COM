@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKLWDZFNKC"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WKLWDZFNKC');</script>
   <title>Locations - WOLFBLANC ARCHITECTS</title>
   <meta name="description" content="Where Wolfblanc works: studios and projects across Spain, Sweden and Greece — Madrid, Barcelona, Marbella, Mallorca, Valencia, Galicia, Stockholm, Athens and Thessaloniki.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://wolfblanc.com/locations/">
+  <link rel="alternate" hreflang="en" href="https://wolfblanc.com/locations/">
+  <link rel="alternate" hreflang="x-default" href="https://wolfblanc.com/locations/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Locations - WOLFBLANC ARCHITECTS">
   <meta property="og:url" content="https://wolfblanc.com/locations/">
@@ -176,53 +175,48 @@
 
   html{overflow-y:scroll}
   </style>
+  <link rel="stylesheet" href="../assets/site-shell.css">
 </head>
 <body>
 
 <nav id="nav">
   <div class="nav-bar">
-    <a href="../" class="nav-logo">WOLFBLANC</a>
+    <a href="../" class="nav-logo" aria-label="Wolfblanc home">WOLFBLANC</a>
     <div class="nav-right">
       <div class="nav-links">
-        <a href="../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-        <a href="../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-        <a href="../#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-        <a href="./" class="nav-link active" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+        <a href="../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+        <a href="../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+        <a href="../locations/" class="nav-link active" data-es="UBICACIONES" data-en="LOCATIONS" aria-current="page">LOCATIONS</a>
+        <a href="../news/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
         <a href="../faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-        <a href="../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+        <a href="../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
       </div>
-      <div class="language-switch" aria-label="Seleccionar idioma">
+      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
         <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
         <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
       </div>
-      <button class="theme-btn" id="theme-btn" aria-label="Tema">
-        <svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      </button>
-      <button class="burger-btn" id="burger-btn" aria-label="Menú">
-        <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-        <svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-      </button>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme" data-es-aria="Cambiar tema" data-en-aria="Toggle theme"><svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+      <button class="burger-btn" id="burger-btn" type="button" aria-label="Menu" data-es-aria="Menú" data-en-aria="Menu"><svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg><svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
     </div>
   </div>
   <div class="mob-menu" id="mob-menu">
-    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-    <a href="../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-    <a href="../#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-    <a href="./" style="color:var(--accent)" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+    <a href="../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+    <a href="../locations/" data-es="UBICACIONES" data-en="LOCATIONS" aria-current="page" style="color:var(--accent)">LOCATIONS</a>
+    <a href="../news/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="../faq/" data-es="FAQ" data-en="FAQ">FAQ</a>
-    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
   </div>
 </nav>
 
 <header>
   <div class="hero-grid"></div>
   <div class="hero-inner">
-    <span class="eyebrow" data-es="ARQUITECTURA INTERNACIONAL" data-en="INTERNATIONAL ARCHITECTURE">ARQUITECTURA INTERNACIONAL</span>
-    <h1 data-es="Dónde trabajamos" data-en="Where we work">Dónde trabajamos</h1>
-    <p class="lead" data-es="Wolfblanc trabaja desde estudios en Suecia, España y Grecia, con clientes internacionales en toda Europa. Seleccione una ciudad para descubrir cómo trabajamos en ese mercado." data-en="Wolfblanc works from studios in Sweden, Spain and Greece, with international clients across Europe. Select a city to learn how we work in that market.">Wolfblanc trabaja desde estudios en Suecia, España y Grecia, con clientes internacionales en toda Europa. Seleccione una ciudad para descubrir cómo trabajamos en ese mercado.</p>
+    <span class="eyebrow" data-es="ARQUITECTURA INTERNACIONAL" data-en="INTERNATIONAL ARCHITECTURE">INTERNATIONAL ARCHITECTURE</span>
+    <h1 data-es="Dónde trabajamos" data-en="Where we work">Where we work</h1>
+    <p class="lead" data-es="Wolfblanc trabaja desde estudios en Suecia, España y Grecia, con clientes internacionales en toda Europa. Seleccione una ciudad para descubrir cómo trabajamos en ese mercado." data-en="Wolfblanc works from studios in Sweden, Spain and Greece, with international clients across Europe. Select a city to learn how we work in that market.">Wolfblanc works from studios in Sweden, Spain and Greece, with international clients across Europe. Select a city to learn how we work in that market.</p>
   </div>
 </header>
 
@@ -230,110 +224,110 @@
   <a href="../locations/madrid/" class="featured">
     <div class="feat-img">
       <img class="wb-img" src="../images/Edificio Salamanca 01.webp" alt="Madrid" loading="eager" fetchpriority="high" decoding="async">
-      <span class="feat-badge" data-es="Mercado principal" data-en="Home market">Mercado principal</span>
+      <span class="feat-badge" data-es="Mercado principal" data-en="Home market">Home market</span>
     </div>
     <div class="feat-body">
       <div class="feat-meta">
-        <span data-es="España · Madrid" data-en="Spain · Madrid">España · Madrid</span>
+        <span data-es="España · Madrid" data-en="Spain · Madrid">Spain · Madrid</span>
         <span class="dot"></span>
         <span class="dim">SEDE / HQ</span>
       </div>
       <h2 class="feat-title" data-es="Madrid" data-en="Madrid">Madrid</h2>
-      <p class="feat-desc" data-es="Nuestra sede y mercado principal: vivienda de lujo, reforma integral e inversión en los barrios prime de la capital." data-en="Our headquarters and home market: luxury residential, full renovation and investment across the capital's prime districts.">Nuestra sede y mercado principal: vivienda de lujo, reforma integral e inversión en los barrios prime de la capital.</p>
-      <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+      <p class="feat-desc" data-es="Nuestra sede y mercado principal: vivienda de lujo, reforma integral e inversión en los barrios prime de la capital." data-en="Our headquarters and home market: luxury residential, full renovation and investment across the capital's prime districts.">Our headquarters and home market: luxury residential, full renovation and investment across the capital's prime districts.</p>
+      <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
     </div>
   </a>
 
   <div class="filter-bar">
     <div class="filter-btns">
-      <button type="button" class="fbtn on" data-filter="Todas" data-es="Todas" data-en="All">Todas</button>
-      <button type="button" class="fbtn" data-filter="Spain" data-es="España" data-en="Spain">España</button>
-      <button type="button" class="fbtn" data-filter="Sweden" data-es="Suecia" data-en="Sweden">Suecia</button>
-      <button type="button" class="fbtn" data-filter="Greece" data-es="Grecia" data-en="Greece">Grecia</button>
+      <button type="button" class="fbtn on" data-filter="Todas" data-es="Todas" data-en="All">All</button>
+      <button type="button" class="fbtn" data-filter="Spain" data-es="España" data-en="Spain">Spain</button>
+      <button type="button" class="fbtn" data-filter="Sweden" data-es="Suecia" data-en="Sweden">Sweden</button>
+      <button type="button" class="fbtn" data-filter="Greece" data-es="Grecia" data-en="Greece">Greece</button>
     </div>
-    <span class="fcount"><span id="art-count">9</span> <span data-es="ubicaciones" data-en="locations">ubicaciones</span></span>
+    <span class="fcount"><span id="art-count">9</span> <span data-es="ubicaciones" data-en="locations">locations</span></span>
   </div>
 
   <div class="grid3">
     <a href="../locations/madrid/" class="wb-card" data-cat="Spain">
       <div class="card-img"><img class="wb-img" src="../images/Edificio Salamanca 01.webp" alt="Madrid" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="España · Madrid" data-en="Spain · Madrid">España · Madrid</span></div>
+        <div class="card-meta"><span data-es="España · Madrid" data-en="Spain · Madrid">Spain · Madrid</span></div>
         <h3 class="card-title" data-es="Madrid" data-en="Madrid">Madrid</h3>
-        <p class="card-desc" data-es="Sede y mercado principal: lujo, reforma e inversión en los barrios prime." data-en="Headquarters and home market: luxury, renovation and investment in prime districts.">Sede y mercado principal: lujo, reforma e inversión en los barrios prime.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <p class="card-desc" data-es="Sede y mercado principal: lujo, reforma e inversión en los barrios prime." data-en="Headquarters and home market: luxury, renovation and investment in prime districts.">Headquarters and home market: luxury, renovation and investment in prime districts.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
     <a href="../locations/barcelona/" class="wb-card" data-cat="Spain">
       <div class="card-img"><img class="wb-img" src="../images/Boutique Apartment V1_01.webp" alt="Barcelona" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="España · Barcelona" data-en="Spain · Barcelona">España · Barcelona</span></div>
+        <div class="card-meta"><span data-es="España · Barcelona" data-en="Spain · Barcelona">Spain · Barcelona</span></div>
         <h3 class="card-title" data-es="Barcelona" data-en="Barcelona">Barcelona</h3>
-        <p class="card-desc" data-es="Rehabilitación y diseño en el Eixample y el casco histórico." data-en="Renovation and design across the Eixample and old town.">Rehabilitación y diseño en el Eixample y el casco histórico.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <p class="card-desc" data-es="Rehabilitación y diseño en el Eixample y el casco histórico." data-en="Renovation and design across the Eixample and old town.">Renovation and design across the Eixample and old town.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
     <a href="../locations/marbella/" class="wb-card" data-cat="Spain">
       <div class="card-img"><img class="wb-img" src="../images/Horizon House 01.webp" alt="Marbella" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="España · Marbella" data-en="Spain · Marbella">España · Marbella</span></div>
+        <div class="card-meta"><span data-es="España · Marbella" data-en="Spain · Marbella">Spain · Marbella</span></div>
         <h3 class="card-title" data-es="Marbella" data-en="Marbella">Marbella</h3>
-        <p class="card-desc" data-es="Villas de lujo y segundas residencias en la Costa del Sol." data-en="Luxury villas and second homes on the Costa del Sol.">Villas de lujo y segundas residencias en la Costa del Sol.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <p class="card-desc" data-es="Villas de lujo y segundas residencias en la Costa del Sol." data-en="Luxury villas and second homes on the Costa del Sol.">Luxury villas and second homes on the Costa del Sol.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
     <a href="../locations/mallorca/" class="wb-card" data-cat="Spain">
       <div class="card-img"><img class="wb-img" src="../images/Selva Hotel 01.webp" alt="Mallorca" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="España · Mallorca" data-en="Spain · Mallorca">España · Mallorca</span></div>
+        <div class="card-meta"><span data-es="España · Mallorca" data-en="Spain · Mallorca">Spain · Mallorca</span></div>
         <h3 class="card-title" data-es="Mallorca" data-en="Mallorca">Mallorca</h3>
-        <p class="card-desc" data-es="Villas, fincas y proyectos de hostelería en las Baleares." data-en="Villas, fincas and hospitality projects in the Balearics.">Villas, fincas y proyectos de hostelería en las Baleares.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <p class="card-desc" data-es="Villas, fincas y proyectos de hostelería en las Baleares." data-en="Villas, fincas and hospitality projects in the Balearics.">Villas, fincas and hospitality projects in the Balearics.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
     <a href="../locations/valencia/" class="wb-card" data-cat="Spain">
       <div class="card-img"><img class="wb-img" src="../images/Boutique Apartment V1_02.webp" alt="Valencia" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="España · Valencia" data-en="Spain · Valencia">España · Valencia</span></div>
+        <div class="card-meta"><span data-es="España · Valencia" data-en="Spain · Valencia">Spain · Valencia</span></div>
         <h3 class="card-title" data-es="Valencia" data-en="Valencia">Valencia</h3>
-        <p class="card-desc" data-es="Vivienda y reforma en la ciudad y la costa mediterránea." data-en="Residential and renovation in the city and Mediterranean coast.">Vivienda y reforma en la ciudad y la costa mediterránea.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <p class="card-desc" data-es="Vivienda y reforma en la ciudad y la costa mediterránea." data-en="Residential and renovation in the city and Mediterranean coast.">Residential and renovation in the city and Mediterranean coast.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
     <a href="../locations/galicia/" class="wb-card" data-cat="Spain">
       <div class="card-img"><img class="wb-img" src="../images/Casa Boadilla 01.webp" alt="Galicia" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="España · Galicia" data-en="Spain · Galicia">España · Galicia</span></div>
+        <div class="card-meta"><span data-es="España · Galicia" data-en="Spain · Galicia">Spain · Galicia</span></div>
         <h3 class="card-title" data-es="Galicia" data-en="Galicia">Galicia</h3>
-        <p class="card-desc" data-es="Villas costeras y arquitectura residencial en el noroeste." data-en="Coastal villas and residential architecture in the northwest.">Villas costeras y arquitectura residencial en el noroeste.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <p class="card-desc" data-es="Villas costeras y arquitectura residencial en el noroeste." data-en="Coastal villas and residential architecture in the northwest.">Coastal villas and residential architecture in the northwest.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
     <a href="../locations/stockholm/" class="wb-card" data-cat="Sweden">
       <div class="card-img"><img class="wb-img" src="../images/Norrsken Office 01.webp" alt="Stockholm" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="Suecia · Estocolmo" data-en="Sweden · Stockholm">Suecia · Estocolmo</span></div>
-        <h3 class="card-title" data-es="Estocolmo" data-en="Stockholm">Estocolmo</h3>
-        <p class="card-desc" data-es="Nuestra oficina nórdica: espacios de trabajo e interiores." data-en="Our Nordic office: workplace design and interiors.">Nuestra oficina nórdica: espacios de trabajo e interiores.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <div class="card-meta"><span data-es="Suecia · Estocolmo" data-en="Sweden · Stockholm">Sweden · Stockholm</span></div>
+        <h3 class="card-title" data-es="Estocolmo" data-en="Stockholm">Stockholm</h3>
+        <p class="card-desc" data-es="Nuestra oficina nórdica: espacios de trabajo e interiores." data-en="Our Nordic office: workplace design and interiors.">Our Nordic office: workplace design and interiors.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
     <a href="../locations/athens/" class="wb-card" data-cat="Greece">
       <div class="card-img"><img class="wb-img" src="../images/Nexus museum 01.webp" alt="Athens" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="Grecia · Atenas" data-en="Greece · Athens">Grecia · Atenas</span></div>
-        <h3 class="card-title" data-es="Atenas" data-en="Athens">Atenas</h3>
-        <p class="card-desc" data-es="Inversión, rehabilitación y proyectos culturales." data-en="Investment, rehabilitation and cultural projects.">Inversión, rehabilitación y proyectos culturales.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <div class="card-meta"><span data-es="Grecia · Atenas" data-en="Greece · Athens">Greece · Athens</span></div>
+        <h3 class="card-title" data-es="Atenas" data-en="Athens">Athens</h3>
+        <p class="card-desc" data-es="Inversión, rehabilitación y proyectos culturales." data-en="Investment, rehabilitation and cultural projects.">Investment, rehabilitation and cultural projects.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
     <a href="../locations/thessaloniki/" class="wb-card" data-cat="Greece">
       <div class="card-img"><img class="wb-img" src="../images/Strategic Urban Regeneration 01.webp" alt="Thessaloniki" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="Grecia · Salónica" data-en="Greece · Thessaloniki">Grecia · Salónica</span></div>
-        <h3 class="card-title" data-es="Salónica" data-en="Thessaloniki">Salónica</h3>
-        <p class="card-desc" data-es="Regeneración urbana e inversión inmobiliaria." data-en="Urban regeneration and real estate investment.">Regeneración urbana e inversión inmobiliaria.</p>
-        <span class="wb-go" data-es="Ver →" data-en="View →">Ver →</span>
+        <div class="card-meta"><span data-es="Grecia · Salónica" data-en="Greece · Thessaloniki">Greece · Thessaloniki</span></div>
+        <h3 class="card-title" data-es="Salónica" data-en="Thessaloniki">Thessaloniki</h3>
+        <p class="card-desc" data-es="Regeneración urbana e inversión inmobiliaria." data-en="Urban regeneration and real estate investment.">Urban regeneration and real estate investment.</p>
+        <span class="wb-go" data-es="Ver →" data-en="View →">View →</span>
       </div>
     </a>
   </div>
@@ -343,8 +337,8 @@
 <section class="cta-section">
   <div class="cta-bg">PROYECTO</div>
   <div class="cta-inner">
-    <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">¿LISTO PARA EMPEZAR?</span>
-    <p class="cta-title" data-es="Cada buen proyecto empieza con una conversación." data-en="Every good project starts with a conversation.">Cada buen proyecto empieza con una conversación.</p>
+    <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">READY TO START?</span>
+    <p class="cta-title" data-es="Cada buen proyecto empieza con una conversación." data-en="Every good project starts with a conversation.">Every good project starts with a conversation.</p>
     <div class="cta-btns">
       <a href="tel:+34662411064" class="btn-ph">
         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -352,20 +346,20 @@
       </a>
       <a href="mailto:info@wolfblanc.com" class="btn-em">
         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        <span data-es="Envíenos un email" data-en="Email us">Envíenos un email</span>
+        <span data-es="Envíenos un email" data-en="Email us">Email us</span>
       </a>
-      <a href="../#inquiry" class="btn-ct">
-        <span data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Cuéntenos su proyecto →</span>
+      <a href="../contact/#inquiry" class="btn-ct">
+        <span data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Tell us about your project →</span>
       </a>
     </div>
-    <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">Un socio senior lee cada consulta · respuesta en dos días laborables</p>
+    <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">A senior partner reads every enquiry · reply within two business days</p>
   </div>
 </section>
 
 <footer>
-  <span data-es="WOLFBLANC® ARCHITECTS · © 2026" data-en="WOLFBLANC® ARCHITECTS · © 2026">WOLFBLANC® ARCHITECTS · © 2026</span>
-  <span><a href="../studio/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="../services/" style="color:inherit;text-decoration:none" data-es="Servicios" data-en="Services">Servicios</a> · <a href="../faq/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="../legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
-  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
+  <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
+  <span><a href="../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../portfolio/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../faq/">FAQ</a> &middot; <a href="../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
@@ -390,7 +384,7 @@
   function applyLang(){
     document.querySelectorAll('[data-es][data-en]').forEach(function(el){
       var t=el.getAttribute('data-'+lang);
-      if(t!==null)el.textContent=t;
+      if(t!==null)el.innerHTML=t;
     });
     document.querySelectorAll('[data-lang-switch]').forEach(function(b){
       b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
@@ -451,12 +445,12 @@
 </script>
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" data-es-aria="Aviso de cookies" data-en-aria="Cookie notice" hidden>
   <div class="cookie-copy">
-    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">Usamos cookies</span>
-    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">Más info</a>
+    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">We use cookies</span>
+    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">More info</a>
   </div>
   <div class="cookie-actions">
-    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Rechazar</button>
-    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Aceptar</button>
+    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Reject</button>
+    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Accept</button>
   </div>
 </div>
 
@@ -526,5 +520,6 @@
 })();
 </script>
 
+<script src="../assets/site-core.js" defer></script>
 </body>
 </html>

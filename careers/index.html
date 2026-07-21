@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKLWDZFNKC"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WKLWDZFNKC');</script>
   <title>Careers - WOLFBLANC ARCHITECTS</title>
   <meta name="description" content="Open roles at Wolfblanc Architects across Spain, Sweden and Greece: architects, project managers, marketing and business development. Nordic rigour, Mediterranean sensibility.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://wolfblanc.com/careers/">
+  <link rel="alternate" hreflang="en" href="https://wolfblanc.com/careers/">
+  <link rel="alternate" hreflang="x-default" href="https://wolfblanc.com/careers/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Careers - WOLFBLANC ARCHITECTS">
   <meta property="og:url" content="https://wolfblanc.com/careers/">
@@ -176,53 +175,48 @@
 
   html{overflow-y:scroll}
   </style>
+  <link rel="stylesheet" href="../assets/site-shell.css">
 </head>
 <body>
 
 <nav id="nav">
   <div class="nav-bar">
-    <a href="../" class="nav-logo">WOLFBLANC</a>
+    <a href="../" class="nav-logo" aria-label="Wolfblanc home">WOLFBLANC</a>
     <div class="nav-right">
       <div class="nav-links">
-        <a href="../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-        <a href="../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-        <a href="../#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-        <a href="./" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+        <a href="../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+        <a href="../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+        <a href="../locations/" class="nav-link" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
+        <a href="../news/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
         <a href="../faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-        <a href="../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+        <a href="../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
       </div>
-      <div class="language-switch" aria-label="Seleccionar idioma">
+      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
         <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
         <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
       </div>
-      <button class="theme-btn" id="theme-btn" aria-label="Tema">
-        <svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      </button>
-      <button class="burger-btn" id="burger-btn" aria-label="Menú">
-        <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-        <svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-      </button>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme" data-es-aria="Cambiar tema" data-en-aria="Toggle theme"><svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+      <button class="burger-btn" id="burger-btn" type="button" aria-label="Menu" data-es-aria="Menú" data-en-aria="Menu"><svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg><svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
     </div>
   </div>
   <div class="mob-menu" id="mob-menu">
-    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-    <a href="../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-    <a href="../#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-    <a href="./" style="color:var(--accent)" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+    <a href="../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+    <a href="../locations/" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
+    <a href="../news/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="../faq/" data-es="FAQ" data-en="FAQ">FAQ</a>
-    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
   </div>
 </nav>
 
 <header>
   <div class="hero-grid"></div>
   <div class="hero-inner">
-    <span class="eyebrow" data-es="CARRERAS · WOLFBLANC" data-en="CAREERS · WOLFBLANC">CARRERAS · WOLFBLANC</span>
-    <h1 data-es="Trabaja con nosotros" data-en="Join Wolfblanc">Trabaja con nosotros</h1>
-    <p class="lead" data-es="Buscamos talento con rigor nórdico y sensibilidad mediterránea para un estudio de arquitectura internacional con proyectos en España, Suecia y Grecia. Descubre nuestras vacantes abiertas." data-en="We look for talent with Nordic rigour and Mediterranean sensibility for an international architecture studio with projects across Spain, Sweden and Greece. Explore our open roles.">Buscamos talento con rigor nórdico y sensibilidad mediterránea para un estudio de arquitectura internacional con proyectos en España, Suecia y Grecia. Descubre nuestras vacantes abiertas.</p>
+    <span class="eyebrow" data-es="CARRERAS · WOLFBLANC" data-en="CAREERS · WOLFBLANC">CAREERS · WOLFBLANC</span>
+    <h1 data-es="Trabaja con nosotros" data-en="Join Wolfblanc">Join Wolfblanc</h1>
+    <p class="lead" data-es="Buscamos talento con rigor nórdico y sensibilidad mediterránea para un estudio de arquitectura internacional con proyectos en España, Suecia y Grecia. Descubre nuestras vacantes abiertas." data-en="We look for talent with Nordic rigour and Mediterranean sensibility for an international architecture studio with projects across Spain, Sweden and Greece. Explore our open roles.">We look for talent with Nordic rigour and Mediterranean sensibility for an international architecture studio with projects across Spain, Sweden and Greece. Explore our open roles.</p>
   </div>
 </header>
 
@@ -230,65 +224,65 @@
   <a href="../arquitecto-residencial-madrid/" class="featured">
     <div class="feat-img">
       <img class="wb-img" src="../images/Casa Boadilla 01.webp" alt="Residential Architect — Madrid" loading="eager" fetchpriority="high" decoding="async">
-      <span class="feat-badge" data-es="Vacante destacada" data-en="Featured role">Vacante destacada</span>
+      <span class="feat-badge" data-es="Vacante destacada" data-en="Featured role">Featured role</span>
     </div>
     <div class="feat-body">
       <div class="feat-meta">
-        <span data-es="Arquitectura · Madrid" data-en="Architecture · Madrid">Arquitectura · Madrid</span>
+        <span data-es="Arquitectura · Madrid" data-en="Architecture · Madrid">Architecture · Madrid</span>
         <span class="dot"></span>
-        <span class="dim" data-es="Jornada completa" data-en="Full-time">Jornada completa</span>
+        <span class="dim" data-es="Jornada completa" data-en="Full-time">Full-time</span>
       </div>
-      <h2 class="feat-title" data-es="Arquitecto Residencial — Madrid" data-en="Residential Architect — Madrid">Arquitecto Residencial — Madrid</h2>
-      <p class="feat-desc" data-es="Proyectos de vivienda y reforma de alto nivel en Madrid, de la fase de diseño a la dirección de obra." data-en="High-end residential and renovation projects in Madrid, from design through construction.">Proyectos de vivienda y reforma de alto nivel en Madrid, de la fase de diseño a la dirección de obra.</p>
-      <span class="wb-go" data-es="Ver vacante →" data-en="View role →">Ver vacante →</span>
+      <h2 class="feat-title" data-es="Arquitecto Residencial — Madrid" data-en="Residential Architect — Madrid">Residential Architect — Madrid</h2>
+      <p class="feat-desc" data-es="Proyectos de vivienda y reforma de alto nivel en Madrid, de la fase de diseño a la dirección de obra." data-en="High-end residential and renovation projects in Madrid, from design through construction.">High-end residential and renovation projects in Madrid, from design through construction.</p>
+      <span class="wb-go" data-es="Ver vacante →" data-en="View role →">View role →</span>
     </div>
   </a>
 
   <div class="filter-bar">
     <div class="filter-btns">
-      <button type="button" class="fbtn on" data-filter="Todas" data-es="Todas" data-en="All">Todas</button>
-      <button type="button" class="fbtn" data-filter="Architecture" data-es="Arquitectura" data-en="Architecture">Arquitectura</button>
-      <button type="button" class="fbtn" data-filter="Construction" data-es="Construcción" data-en="Construction">Construcción</button>
-      <button type="button" class="fbtn" data-filter="BizMkt" data-es="Negocio & marketing" data-en="Business & marketing">Negocio & marketing</button>
+      <button type="button" class="fbtn on" data-filter="Todas" data-es="Todas" data-en="All">All</button>
+      <button type="button" class="fbtn" data-filter="Architecture" data-es="Arquitectura" data-en="Architecture">Architecture</button>
+      <button type="button" class="fbtn" data-filter="Construction" data-es="Construcción" data-en="Construction">Construction</button>
+      <button type="button" class="fbtn" data-filter="BizMkt" data-es="Negocio & marketing" data-en="Business & marketing">Business & marketing</button>
     </div>
-    <span class="fcount"><span id="art-count">6</span> <span data-es="vacantes" data-en="open roles">vacantes</span></span>
+    <span class="fcount"><span id="art-count">6</span> <span data-es="vacantes" data-en="open roles">open roles</span></span>
   </div>
 
   <div class="grid3">
     <a href="../arquitecto-residencial-madrid/" class="wb-card" data-cat="Architecture">
       <div class="card-img"><img class="wb-img" src="../images/Casa Boadilla 01.webp" alt="Residential Architect — Madrid" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="Arquitectura · Madrid" data-en="Architecture · Madrid">Arquitectura · Madrid</span></div>
-        <h3 class="card-title" data-es="Arquitecto Residencial — Madrid" data-en="Residential Architect — Madrid">Arquitecto Residencial — Madrid</h3>
-        <p class="card-desc" data-es="Proyectos de vivienda y reforma de alto nivel en Madrid, de la fase de diseño a la dirección de obra." data-en="High-end residential and renovation projects in Madrid, from design through construction.">Proyectos de vivienda y reforma de alto nivel en Madrid, de la fase de diseño a la dirección de obra.</p>
-        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">Ver vacante →</span>
+        <div class="card-meta"><span data-es="Arquitectura · Madrid" data-en="Architecture · Madrid">Architecture · Madrid</span></div>
+        <h3 class="card-title" data-es="Arquitecto Residencial — Madrid" data-en="Residential Architect — Madrid">Residential Architect — Madrid</h3>
+        <p class="card-desc" data-es="Proyectos de vivienda y reforma de alto nivel en Madrid, de la fase de diseño a la dirección de obra." data-en="High-end residential and renovation projects in Madrid, from design through construction.">High-end residential and renovation projects in Madrid, from design through construction.</p>
+        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">View role →</span>
       </div>
     </a>
     <a href="../arquitecto-comercial-retail-madrid/" class="wb-card" data-cat="Architecture">
       <div class="card-img"><img class="wb-img" src="../images/Bistro Dterra 01.webp" alt="Commercial & Retail Architect — Madrid" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="Arquitectura · Madrid" data-en="Architecture · Madrid">Arquitectura · Madrid</span></div>
-        <h3 class="card-title" data-es="Arquitecto Comercial & Retail — Madrid" data-en="Commercial & Retail Architect — Madrid">Arquitecto Comercial & Retail — Madrid</h3>
-        <p class="card-desc" data-es="Espacios comerciales, retail y hostelería: concepto, licencias y ejecución llave en mano." data-en="Commercial, retail and hospitality spaces: concept, permits and turnkey delivery.">Espacios comerciales, retail y hostelería: concepto, licencias y ejecución llave en mano.</p>
-        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">Ver vacante →</span>
+        <div class="card-meta"><span data-es="Arquitectura · Madrid" data-en="Architecture · Madrid">Architecture · Madrid</span></div>
+        <h3 class="card-title" data-es="Arquitecto Comercial & Retail — Madrid" data-en="Commercial & Retail Architect — Madrid">Commercial & Retail Architect — Madrid</h3>
+        <p class="card-desc" data-es="Espacios comerciales, retail y hostelería: concepto, licencias y ejecución llave en mano." data-en="Commercial, retail and hospitality spaces: concept, permits and turnkey delivery.">Commercial, retail and hospitality spaces: concept, permits and turnkey delivery.</p>
+        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">View role →</span>
       </div>
     </a>
     <a href="../residential-architect-athens/" class="wb-card" data-cat="Architecture">
       <div class="card-img"><img class="wb-img" src="../images/Nexus museum 01.webp" alt="Residential Architect — Athens" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="Arquitectura · Atenas" data-en="Architecture · Athens">Arquitectura · Atenas</span></div>
-        <h3 class="card-title" data-es="Arquitecto Residencial — Atenas" data-en="Residential Architect — Athens">Arquitecto Residencial — Atenas</h3>
-        <p class="card-desc" data-es="Vivienda, rehabilitación e inversión en Atenas para clientes internacionales." data-en="Residential, rehabilitation and investment work in Athens for international clients.">Vivienda, rehabilitación e inversión en Atenas para clientes internacionales.</p>
-        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">Ver vacante →</span>
+        <div class="card-meta"><span data-es="Arquitectura · Atenas" data-en="Architecture · Athens">Architecture · Athens</span></div>
+        <h3 class="card-title" data-es="Arquitecto Residencial — Atenas" data-en="Residential Architect — Athens">Residential Architect — Athens</h3>
+        <p class="card-desc" data-es="Vivienda, rehabilitación e inversión en Atenas para clientes internacionales." data-en="Residential, rehabilitation and investment work in Athens for international clients.">Residential, rehabilitation and investment work in Athens for international clients.</p>
+        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">View role →</span>
       </div>
     </a>
     <a href="../jefe-de-obra-project-manager-madrid/" class="wb-card" data-cat="Construction">
       <div class="card-img"><img class="wb-img" src="../images/Luxury Renovation A75_01.webp" alt="Site Manager / Project Manager — Madrid" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="Construcción · Madrid" data-en="Construction · Madrid">Construcción · Madrid</span></div>
-        <h3 class="card-title" data-es="Jefe de Obra / Project Manager — Madrid" data-en="Site Manager / Project Manager — Madrid">Jefe de Obra / Project Manager — Madrid</h3>
-        <p class="card-desc" data-es="Coordinación de obra, plazos y presupuesto en proyectos residenciales y comerciales." data-en="Site coordination, timelines and budget on residential and commercial projects.">Coordinación de obra, plazos y presupuesto en proyectos residenciales y comerciales.</p>
-        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">Ver vacante →</span>
+        <div class="card-meta"><span data-es="Construcción · Madrid" data-en="Construction · Madrid">Construction · Madrid</span></div>
+        <h3 class="card-title" data-es="Jefe de Obra / Project Manager — Madrid" data-en="Site Manager / Project Manager — Madrid">Site Manager / Project Manager — Madrid</h3>
+        <p class="card-desc" data-es="Coordinación de obra, plazos y presupuesto en proyectos residenciales y comerciales." data-en="Site coordination, timelines and budget on residential and commercial projects.">Site coordination, timelines and budget on residential and commercial projects.</p>
+        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">View role →</span>
       </div>
     </a>
     <a href="../marketing-growth-manager-madrid/" class="wb-card" data-cat="BizMkt">
@@ -296,17 +290,17 @@
       <div class="card-body">
         <div class="card-meta"><span data-es="Marketing · Madrid" data-en="Marketing · Madrid">Marketing · Madrid</span></div>
         <h3 class="card-title" data-es="Marketing & Growth Manager — Madrid" data-en="Marketing & Growth Manager — Madrid">Marketing & Growth Manager — Madrid</h3>
-        <p class="card-desc" data-es="Estrategia de contenido, marca y captación para un estudio internacional en expansión." data-en="Content, brand and acquisition strategy for a growing international studio.">Estrategia de contenido, marca y captación para un estudio internacional en expansión.</p>
-        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">Ver vacante →</span>
+        <p class="card-desc" data-es="Estrategia de contenido, marca y captación para un estudio internacional en expansión." data-en="Content, brand and acquisition strategy for a growing international studio.">Content, brand and acquisition strategy for a growing international studio.</p>
+        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">View role →</span>
       </div>
     </a>
     <a href="../business-development-assistant/" class="wb-card" data-cat="BizMkt">
       <div class="card-img"><img class="wb-img" src="../images/Norrsken Office 01.webp" alt="Business Development Assistant" loading="lazy" decoding="async"></div>
       <div class="card-body">
-        <div class="card-meta"><span data-es="Negocio · Internacional" data-en="Business · International">Negocio · Internacional</span></div>
-        <h3 class="card-title" data-es="Asistente de Desarrollo de Negocio" data-en="Business Development Assistant">Asistente de Desarrollo de Negocio</h3>
-        <p class="card-desc" data-es="Apoyo a la captación de clientes y al desarrollo comercial internacional del estudio." data-en="Supporting client acquisition and the studio's international business development.">Apoyo a la captación de clientes y al desarrollo comercial internacional del estudio.</p>
-        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">Ver vacante →</span>
+        <div class="card-meta"><span data-es="Negocio · Internacional" data-en="Business · International">Business · International</span></div>
+        <h3 class="card-title" data-es="Asistente de Desarrollo de Negocio" data-en="Business Development Assistant">Business Development Assistant</h3>
+        <p class="card-desc" data-es="Apoyo a la captación de clientes y al desarrollo comercial internacional del estudio." data-en="Supporting client acquisition and the studio's international business development.">Supporting client acquisition and the studio's international business development.</p>
+        <span class="wb-go" data-es="Ver vacante →" data-en="View role →">View role →</span>
       </div>
     </a>
   </div>
@@ -315,8 +309,8 @@
 <section class="cta-section">
   <div class="cta-bg">PROYECTO</div>
   <div class="cta-inner">
-    <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">¿LISTO PARA EMPEZAR?</span>
-    <p class="cta-title" data-es="Cada buen proyecto empieza con una conversación." data-en="Every good project starts with a conversation.">Cada buen proyecto empieza con una conversación.</p>
+    <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">READY TO START?</span>
+    <p class="cta-title" data-es="Cada buen proyecto empieza con una conversación." data-en="Every good project starts with a conversation.">Every good project starts with a conversation.</p>
     <div class="cta-btns">
       <a href="tel:+34662411064" class="btn-ph">
         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -324,20 +318,20 @@
       </a>
       <a href="mailto:info@wolfblanc.com" class="btn-em">
         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        <span data-es="Envíenos un email" data-en="Email us">Envíenos un email</span>
+        <span data-es="Envíenos un email" data-en="Email us">Email us</span>
       </a>
-      <a href="../#inquiry" class="btn-ct">
-        <span data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Cuéntenos su proyecto →</span>
+      <a href="../contact/#inquiry" class="btn-ct">
+        <span data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Tell us about your project →</span>
       </a>
     </div>
-    <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">Un socio senior lee cada consulta · respuesta en dos días laborables</p>
+    <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">A senior partner reads every enquiry · reply within two business days</p>
   </div>
 </section>
 
 <footer>
-  <span data-es="WOLFBLANC® ARCHITECTS · © 2026" data-en="WOLFBLANC® ARCHITECTS · © 2026">WOLFBLANC® ARCHITECTS · © 2026</span>
-  <span><a href="../studio/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="../services/" style="color:inherit;text-decoration:none" data-es="Servicios" data-en="Services">Servicios</a> · <a href="../faq/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="../legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
-  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
+  <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
+  <span><a href="../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../portfolio/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../faq/">FAQ</a> &middot; <a href="../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
@@ -362,7 +356,7 @@
   function applyLang(){
     document.querySelectorAll('[data-es][data-en]').forEach(function(el){
       var t=el.getAttribute('data-'+lang);
-      if(t!==null)el.textContent=t;
+      if(t!==null)el.innerHTML=t;
     });
     document.querySelectorAll('[data-lang-switch]').forEach(function(b){
       b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
@@ -423,12 +417,12 @@
 </script>
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" data-es-aria="Aviso de cookies" data-en-aria="Cookie notice" hidden>
   <div class="cookie-copy">
-    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">Usamos cookies</span>
-    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">Más info</a>
+    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">We use cookies</span>
+    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">More info</a>
   </div>
   <div class="cookie-actions">
-    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Rechazar</button>
-    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Aceptar</button>
+    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Reject</button>
+    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Accept</button>
   </div>
 </div>
 
@@ -498,5 +492,6 @@
 })();
 </script>
 
+<script src="../assets/site-core.js" defer></script>
 </body>
 </html>

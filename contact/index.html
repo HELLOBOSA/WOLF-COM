@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKLWDZFNKC"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WKLWDZFNKC');</script>
   <title>Contact - WOLFBLANC ARCHITECTS</title>
   <meta name="description" content="Contact Wolfblanc Architects. One team across Spain, Sweden and Greece. Email, book a call, or tell us about your project. A senior partner replies within two business days.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://wolfblanc.com/contact/">
+  <link rel="alternate" hreflang="en" href="https://wolfblanc.com/contact/">
+  <link rel="alternate" hreflang="x-default" href="https://wolfblanc.com/contact/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact - WOLFBLANC ARCHITECTS">
   <meta property="og:url" content="https://wolfblanc.com/contact/">
@@ -197,15 +196,20 @@
     .cal-inner{margin-top:64px;padding-top:56px;border-top:1px solid var(--line)}
     .cal-inner>h3{font-size:1.3rem;font-weight:300;margin-bottom:8px}
     .cal-inner>p{color:var(--text2);margin-bottom:24px}
-    #my-cal-inline-30min{width:100%;min-height:560px;overflow:auto;border:1px solid var(--line)}
-    .cal-fallback{padding:40px;text-align:center;color:var(--text2);font-size:.9rem;line-height:1.8}
-    .cal-fallback a{color:var(--accent)}
+    #my-cal-inline-30min{width:100%;min-height:620px;overflow:auto;border:1px solid var(--line)}
+    #my-cal-inline-30min[hidden]{display:none}
+    .cal-placeholder{min-height:280px;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 24px}
+    .cal-placeholder p{max-width:52ch;color:var(--text2);margin:0 0 24px}
+    .cal-placeholder .cal-direct{font-size:.68rem;margin:18px 0 0}
+    .cal-placeholder a{color:var(--accent)}
+    .cal-load-btn{border:1px solid var(--accent);background:transparent;color:var(--accent);padding:14px 24px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:background .25s,color .25s}
+    .cal-load-btn:hover{background:var(--accent);color:var(--bg)}
     .intake-form{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:24px}
     .intake-form .field{display:flex;flex-direction:column;gap:8px;padding:20px 20px 20px 0;border-bottom:1px solid var(--line)}
-    .intake-form .field:nth-child(2n){padding-left:20px;padding-right:0;border-left:1px solid var(--line)}
+    .intake-form .field.right{padding-left:20px;padding-right:0;border-left:1px solid var(--line)}
     .intake-form .field.full{grid-column:1/-1;padding-right:0}
-    .intake-form .field.full:nth-child(2n){padding-left:0;border-left:0}
-    @media(max-width:700px){.intake-form{grid-template-columns:1fr}.intake-form .field,.intake-form .field:nth-child(2n){padding:18px 0;border-left:0}}
+    .intake-form .field.full{padding-left:0;border-left:0}
+    @media(max-width:700px){.intake-form{grid-template-columns:1fr}.intake-form .field,.intake-form .field.right{padding:18px 0;border-left:0}}
     .intake-form .field label{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;color:var(--text2);display:flex;justify-content:space-between;align-items:baseline}
     .intake-form .field label .ix{color:var(--accent);opacity:.6}
     .intake-form .field input,.intake-form .field textarea{width:100%;font-family:inherit;font-size:1.1rem;font-weight:300;line-height:1.4;color:var(--text);background:none;border:none;border-bottom:1px solid transparent;padding:6px 0 8px;transition:border-color .2s;resize:vertical}
@@ -226,54 +230,53 @@
     .intake-confirmed{display:none;padding:48px 0}
     .intake-confirmed h3{font-size:1.3rem;font-weight:300;margin-bottom:12px}
     .intake-confirmed p{color:var(--text2);font-size:.85rem}
+    .consent-field{padding-top:22px!important;padding-bottom:22px!important}
+    .consent-label{display:flex!important;justify-content:flex-start!important;align-items:flex-start!important;gap:12px;text-transform:none!important;letter-spacing:.02em!important;font-size:.78rem!important;line-height:1.55;color:var(--text2)!important;cursor:pointer}
+    .consent-label input{width:16px!important;height:16px;margin-top:3px;accent-color:var(--accent);flex:0 0 auto}
+    .consent-label a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
   </style>
+  <link rel="stylesheet" href="../assets/site-shell.css">
 </head>
 <body>
 
 <nav id="nav">
   <div class="nav-bar">
-    <a href="../" class="nav-logo">WOLFBLANC</a>
+    <a href="../" class="nav-logo" aria-label="Wolfblanc home">WOLFBLANC</a>
     <div class="nav-right">
       <div class="nav-links">
-        <a href="../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-        <a href="../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-        <a href="../#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-        <a href="./" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+        <a href="../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+        <a href="../portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+        <a href="../locations/" class="nav-link" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
+        <a href="../news/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
         <a href="../faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-        <a href="../contact/" class="nav-link active" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+        <a href="../contact/" class="nav-link active" data-es="CONTACTO" data-en="CONTACT" aria-current="page">CONTACT</a>
       </div>
-      <div class="language-switch" aria-label="Seleccionar idioma">
+      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
         <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
         <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
       </div>
-      <button class="theme-btn" id="theme-btn" aria-label="Tema">
-        <svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      </button>
-      <button class="burger-btn" id="burger-btn" aria-label="Menú">
-        <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-        <svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-      </button>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme" data-es-aria="Cambiar tema" data-en-aria="Toggle theme"><svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+      <button class="burger-btn" id="burger-btn" type="button" aria-label="Menu" data-es-aria="Menú" data-en-aria="Menu"><svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg><svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
     </div>
   </div>
   <div class="mob-menu" id="mob-menu">
-    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-    <a href="../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-    <a href="../#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-    <a href="./" style="color:var(--accent)" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+    <a href="../portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+    <a href="../locations/" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
+    <a href="../news/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="../faq/" data-es="FAQ" data-en="FAQ">FAQ</a>
-    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT" aria-current="page" style="color:var(--accent)">CONTACT</a>
   </div>
 </nav>
 
 <header>
   <div class="hero-grid"></div>
   <div class="hero-inner">
-    <span class="eyebrow" data-es="CONTACTO · WOLFBLANC" data-en="CONTACT · WOLFBLANC">CONTACTO · WOLFBLANC</span>
-    <h1 data-es="Hablemos de tu proyecto" data-en="Let's talk about your project">Hablemos de tu proyecto</h1>
-    <p class="lead" data-es="Un equipo, tres países. Un socio senior lee cada consulta y responde en dos días laborables. Escríbenos, reserva una llamada o cuéntanos tu proyecto con el formulario." data-en="One team, three countries. A senior partner reads every enquiry and replies within two business days. Email us, book a call, or tell us about your project using the form.">Un equipo, tres países. Un socio senior lee cada consulta y responde en dos días laborables. Escríbenos, reserva una llamada o cuéntanos tu proyecto con el formulario.</p>
+    <span class="eyebrow" data-es="CONTACTO · WOLFBLANC" data-en="CONTACT · WOLFBLANC">CONTACT · WOLFBLANC</span>
+    <h1 data-es="Hablemos de tu proyecto" data-en="Let's talk about your project">Let's talk about your project</h1>
+    <p class="lead" data-es="Un equipo, tres países. Un socio senior lee cada consulta y responde en dos días laborables. Escríbenos, reserva una llamada o cuéntanos tu proyecto con el formulario." data-en="One team, three countries. A senior partner reads every enquiry and replies within two business days. Email us, book a call, or tell us about your project using the form.">One team, three countries. A senior partner reads every enquiry and replies within two business days. Email us, book a call, or tell us about your project using the form.</p>
   </div>
 </header>
 
@@ -318,44 +321,47 @@
   </div>
   <div class="cal-wrap">
   <div class="cal-inner">
-    <h3 data-es="Reserva una llamada" data-en="Book a call">Reserva una llamada</h3>
-    <p data-es="Elige un horario que te convenga para una primera conversación con un socio senior." data-en="Pick a time that suits you for a first conversation with a senior partner.">Elige un horario que te convenga para una primera conversación con un socio senior.</p>
-    <!-- Cal inline embed (app.cal.eu · eolos/30min) -->
-    <div id="my-cal-inline-30min">
-      <div class="cal-fallback"><span data-es="¿El calendario no carga? Escríbenos a" data-en="Calendar not loading? Email">¿El calendario no carga? Escríbenos a</span> <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> <span data-es="o llama al" data-en="or call">o llama al</span> <a href="tel:+34662411064">+34 662 411 064</a>.</div>
+    <h3 data-es="Reserva una llamada" data-en="Book a call">Book a call</h3>
+    <p data-es="Elige un horario que te convenga para una primera conversación con un socio senior." data-en="Pick a time that suits you for a first conversation with a senior partner.">Pick a time that suits you for a first conversation with a senior partner.</p>
+    <div class="cal-placeholder" id="cal-placeholder">
+      <p data-es="El calendario se carga solo cuando lo solicitas, para proteger tu privacidad. La reserva se gestiona mediante Cal.eu." data-en="The calendar loads only when you request it, protecting your privacy. Booking is handled by Cal.eu.">The calendar loads only when you request it, protecting your privacy. Booking is handled by Cal.eu.</p>
+      <button type="button" class="cal-load-btn" id="cal-load" data-es="Abrir calendario" data-en="Open booking calendar">Open booking calendar</button>
+      <p class="cal-direct"><span data-es="¿Prefieres escribir?" data-en="Prefer email?">Prefer email?</span> <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> · <a href="tel:+34662411064">+34 662 411 064</a></p>
     </div>
+    <div id="my-cal-inline-30min" aria-label="Wolfblanc consultation calendar" hidden></div>
   </div>
   </div>
   <div class="contact-wrap" style="padding-bottom:104px">
   <div class="sp" id="inquiry">
-      <h3 data-es="Cuéntanos tu proyecto" data-en="Tell us about your project">Cuéntanos tu proyecto</h3>
-      <p><span data-es="O escríbenos directamente a" data-en="Or write directly to">O escríbenos directamente a</span> <a href="mailto:info@wolfblanc.com" style="color:var(--accent)">info@wolfblanc.com</a></p>
+      <h3 data-es="Cuéntanos tu proyecto" data-en="Tell us about your project">Tell us about your project</h3>
+      <p><span data-es="O escríbenos directamente a" data-en="Or write directly to">Or write directly to</span> <a href="mailto:info@wolfblanc.com" style="color:var(--accent)">info@wolfblanc.com</a></p>
       <form class="intake-form" id="intake-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST">
         <input type="hidden" name="_subject" value="New project, wolfblanc.com">
         <input type="hidden" name="services" id="selected-services" value="">
-        <div class="field"><label><span data-es="Nombre" data-en="Name">Nombre</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Jane Doe" required></div>
-        <div class="field"><label><span data-es="Correo electrónico" data-en="Email">Correo electrónico</span><span class="ix">02</span></label><input type="email" name="email" placeholder="anna@example.com" required></div>
-        <div class="field"><label><span data-es="Teléfono" data-en="Phone">Teléfono</span><span class="ix">03</span></label><input type="tel" name="phone" placeholder="+00 000 000 000"></div>
-        <div class="field"><label><span data-es="Ubicación" data-en="Location">Ubicación</span><span class="ix">04</span></label><input type="text" name="location" placeholder="City, country" required></div>
-        <div class="field full"><label><span data-es="Tipo de proyecto" data-en="Project type">Tipo de proyecto</span><span class="ix">05</span></label><div class="chip-row"><button type="button" class="chip" aria-pressed="false" data-es="Vivienda" data-en="Residential">Vivienda</button><button type="button" class="chip" aria-pressed="false" data-es="Comercial" data-en="Commercial">Comercial</button><button type="button" class="chip" aria-pressed="false" data-es="Hostelería" data-en="Hospitality">Hostelería</button><button type="button" class="chip" aria-pressed="false" data-es="Oficina" data-en="Office">Oficina</button><button type="button" class="chip" aria-pressed="false" data-es="Retail" data-en="Retail">Retail</button><button type="button" class="chip" aria-pressed="false" data-es="Reforma" data-en="Renovation">Reforma</button><button type="button" class="chip" aria-pressed="false" data-es="No lo sé aún" data-en="Not sure yet">No lo sé aún</button></div></div>
-        <div class="field full"><label><span data-es="Describe el proyecto" data-en="Tell us more">Describe el proyecto</span><span class="ix">06</span></label><textarea name="brief" rows="3" placeholder="" required data-es-placeholder="¿De qué trata el proyecto y en qué punto del proceso estáis?" data-en-placeholder="What's the project about and where are you in the process?"></textarea></div>
+        <div class="field"><label><span data-es="Nombre" data-en="Name">Name</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Jane Doe" required></div>
+        <div class="field right"><label><span data-es="Correo electrónico" data-en="Email">Email</span><span class="ix">02</span></label><input type="email" name="email" placeholder="anna@example.com" required></div>
+        <div class="field"><label><span data-es="Teléfono" data-en="Phone">Phone</span><span class="ix">03</span></label><input type="tel" name="phone" placeholder="+00 000 000 000"></div>
+        <div class="field right"><label><span data-es="Ubicación" data-en="Location">Location</span><span class="ix">04</span></label><input type="text" name="location" placeholder="City, country" required></div>
+        <div class="field full"><label><span data-es="Tipo de proyecto" data-en="Project type">Project type</span><span class="ix">05</span></label><div class="chip-row"><button type="button" class="chip" aria-pressed="false" data-es="Vivienda" data-en="Residential">Residential</button><button type="button" class="chip" aria-pressed="false" data-es="Comercial" data-en="Commercial">Commercial</button><button type="button" class="chip" aria-pressed="false" data-es="Hostelería" data-en="Hospitality">Hospitality</button><button type="button" class="chip" aria-pressed="false" data-es="Oficina" data-en="Office">Office</button><button type="button" class="chip" aria-pressed="false" data-es="Retail" data-en="Retail">Retail</button><button type="button" class="chip" aria-pressed="false" data-es="Reforma" data-en="Renovation">Renovation</button><button type="button" class="chip" aria-pressed="false" data-es="No lo sé aún" data-en="Not sure yet">Not sure yet</button></div></div>
+        <div class="field full"><label><span data-es="Describe el proyecto" data-en="Tell us more">Tell us more</span><span class="ix">06</span></label><textarea name="brief" rows="3" placeholder="" required data-es-placeholder="¿De qué trata el proyecto y en qué punto del proceso estáis?" data-en-placeholder="What's the project about and where are you in the process?"></textarea></div>
+        <div class="field full consent-field"><label class="consent-label"><input type="checkbox" name="privacy_consent" value="agreed" required><span><span data-es="He leído y acepto la" data-en="I have read and accept the">I have read and accept the</span> <a href="../legal/#datos" data-es="política de privacidad" data-en="privacy policy">privacy policy</a>. <span data-es="Entiendo que Wolfblanc usará estos datos únicamente para responder a mi consulta." data-en="I understand Wolfblanc will use these details only to respond to my enquiry.">I understand Wolfblanc will use these details only to respond to my enquiry.</span></span></label></div>
         <div class="form-actions">
-          <p class="legal" data-es="Usamos esto únicamente para responder sobre tu proyecto." data-en="We use this only to respond about your project.">Usamos esto únicamente para responder sobre tu proyecto.</p>
-          <button type="submit" class="submit" id="intake-submit"><span data-es="Enviar" data-en="Submit">Enviar</span><span class="arrow">→</span></button>
+          <p class="legal" data-es="Usamos esto únicamente para responder sobre tu proyecto." data-en="We use this only to respond about your project.">We use this only to respond about your project.</p>
+          <button type="submit" class="submit" id="intake-submit"><span data-es="Enviar" data-en="Submit">Submit</span><span class="arrow">→</span></button>
         </div>
       </form>
       <div class="intake-confirmed" id="intake-confirmed" role="status" aria-live="polite">
-        <h3 data-es="Gracias. Te responderemos en dos días laborables." data-en="Thank you. We'll be in touch within two working days.">Gracias. Te responderemos en dos días laborables.</h3>
-        <p data-es="Un socio sénior lee cada consulta." data-en="A senior partner reads every inquiry.">Un socio sénior lee cada consulta.</p>
+        <h3 data-es="Gracias. Te responderemos en dos días laborables." data-en="Thank you. We'll be in touch within two working days.">Thank you. We'll be in touch within two working days.</h3>
+        <p data-es="Un socio sénior lee cada consulta." data-en="A senior partner reads every inquiry.">A senior partner reads every inquiry.</p>
       </div>
     </div>
   </div>
 </main>
 
 <footer>
-  <span data-es="WOLFBLANC® ARCHITECTS · © 2026" data-en="WOLFBLANC® ARCHITECTS · © 2026">WOLFBLANC® ARCHITECTS · © 2026</span>
-  <span><a href="../studio/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="../services/" style="color:inherit;text-decoration:none" data-es="Servicios" data-en="Services">Servicios</a> · <a href="../faq/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="../legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
-  <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
+  <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
+  <span><a href="../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../portfolio/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../faq/">FAQ</a> &middot; <a href="../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
@@ -380,7 +386,7 @@
   function applyLang(){
     document.querySelectorAll('[data-es][data-en]').forEach(function(el){
       var t=el.getAttribute('data-'+lang);
-      if(t!==null)el.textContent=t;
+      if(t!==null)el.innerHTML=t;
     });
     document.querySelectorAll('[data-lang-switch]').forEach(function(b){
       b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
@@ -441,12 +447,12 @@
 </script>
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" data-es-aria="Aviso de cookies" data-en-aria="Cookie notice" hidden>
   <div class="cookie-copy">
-    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">Usamos cookies</span>
-    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">Más info</a>
+    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">We use cookies</span>
+    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">More info</a>
   </div>
   <div class="cookie-actions">
-    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Rechazar</button>
-    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Aceptar</button>
+    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Reject</button>
+    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Accept</button>
   </div>
 </div>
 
@@ -557,27 +563,35 @@
         } else {
           alert('Something went wrong. Please email info@wolfblanc.com directly.');
           submitBtn.disabled = false;
-          submitBtn.querySelector('span').textContent = 'Enviar';
+          submitBtn.querySelector('span').textContent = document.documentElement.lang === 'es' ? 'Enviar' : 'Submit';
         }
       } catch(e){
         alert('Network error. Please email info@wolfblanc.com directly.');
         submitBtn.disabled = false;
-        submitBtn.querySelector('span').textContent = 'Enviar';
+        submitBtn.querySelector('span').textContent = document.documentElement.lang === 'es' ? 'Enviar' : 'Submit';
       }
     });
   })();
 </script>
 <script type="text/javascript">
-(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.eu/embed/embed.js", "init");
-Cal("init", "30min", {origin:"https://app.cal.eu"});
-Cal.config = Cal.config || {};
-Cal.config.forwardQueryParams = true;
-Cal.ns["30min"]("inline", {
-  elementOrSelector:"#my-cal-inline-30min",
-  config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
-  calLink: "eolos/30min",
-});
-Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+(function(){
+  var loadButton=document.getElementById('cal-load');
+  var placeholder=document.getElementById('cal-placeholder');
+  var calendar=document.getElementById('my-cal-inline-30min');
+  if(!loadButton||!calendar)return;
+  loadButton.addEventListener('click',function(){
+    loadButton.disabled=true;
+    placeholder.hidden=true;
+    calendar.hidden=false;
+    (function(C,A,L){var p=function(a,ar){a.q.push(ar);};var d=C.document;C.Cal=C.Cal||function(){var cal=C.Cal;var ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement('script')).src=A;cal.loaded=true;}if(ar[0]===L){var api=function(){p(api,arguments);};var namespace=ar[1];api.q=api.q||[];if(typeof namespace==='string'){cal.ns[namespace]=cal.ns[namespace]||api;p(cal.ns[namespace],ar);p(cal,['initNamespace',namespace]);}else p(cal,ar);return;}p(cal,ar);};})(window,'https://app.cal.eu/embed/embed.js','init');
+    Cal('init','30min',{origin:'https://app.cal.eu'});
+    Cal.config=Cal.config||{};
+    Cal.config.forwardQueryParams=true;
+    Cal.ns['30min']('inline',{elementOrSelector:'#my-cal-inline-30min',config:{layout:'month_view',useSlotsViewOnSmallScreen:'true'},calLink:'eolos/30min'});
+    Cal.ns['30min']('ui',{hideEventTypeDetails:false,layout:'month_view'});
+  },{once:true});
+})();
 </script>
+<script src="../assets/site-core.js" defer></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /
 
+# Staging safeguard. Replace Disallow with Allow only when wolfblanc.com is wired.
 Sitemap: https://wolfblanc.com/sitemap.xml

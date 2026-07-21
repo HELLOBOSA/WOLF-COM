@@ -1,50 +1,66 @@
-# Wolfblanc Architects - International
+# Wolfblanc Architects — International
 
-> Wolfblanc is an international architecture and design studio. We deliver residential projects, property investment, hospitality and commercial architecture with technical precision and a Nordic method applied to each market. Registered architects (SAR/MSA Sweden, COAM Spain). WELL AP certified.
+> Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece. The practice combines local professional authority with Nordic rigour, Mediterranean sensitivity and direct senior involvement.
 
-## Status
+## Staging status
 
-This site is in preparation and is currently not indexed (noindex on all pages). Do not treat its contents as the live public record until launch. The live public site during preparation is the existing wolfblanc.com.
+This static replacement is in preparation. Every HTML page is noindex and robots.txt blocks crawling until the owner explicitly approves launch. The existing WordPress website remains the public record until then.
 
-## Website
+## Canonical website and language
 
-- URL: https://wolfblanc.com
-- Languages: English (default), Spanish
-- Type: Architecture studio, international
+- Canonical origin: https://wolfblanc.com/
+- Default language and URL space: English at root URLs; there is no `/en/` prefix.
+- Spanish is currently available as an on-page interface only where a complete translation exists. A separate indexable `/es/` tree should be introduced only when it is complete enough to maintain as a real publication.
+- Historic `/en/`, `/es/`, `/sv/`, `/de/`, `/nl/` and `/fr/` URLs must be mapped contextually during the final redirect phase.
 
-## Main pages
+## Main sections
 
-- Studio: https://wolfblanc.com/estudio-arquitectura-espana/
-- Services: https://wolfblanc.com/servicios/
-- FAQ: https://wolfblanc.com/preguntas-frecuentes/
-- Journal: https://wolfblanc.com/journal/
-- Legal notice: https://wolfblanc.com/legal/
-
-## Credentials
-
-- SAR/MSA (Sweden), COAM (Spain), TEE-TCG (Greece)
-- WELL AP certified
-- 20+ years of combined international experience
+- Studio: https://wolfblanc.com/studio/
+- Services: https://wolfblanc.com/services/
+- Projects: https://wolfblanc.com/portfolio/
+- Locations: https://wolfblanc.com/locations/
+- Journal: https://wolfblanc.com/news/
+- Careers: https://wolfblanc.com/careers/
+- FAQ: https://wolfblanc.com/faq/
+- Contact and booking: https://wolfblanc.com/contact/
+- Newsletter: https://wolfblanc.com/newsletter/
+- Legal, privacy and cookies: https://wolfblanc.com/legal/
 
 ## Services
 
-1. Pre-acquisition technical due diligence
-2. Architecture and landscape
-3. Project management, new build and total renovation
+1. Architecture
+2. Landscape architecture
+3. Urban design and masterplanning
 4. Residential interiors
-5. Commercial strategy and interiors
-6. Urban design and masterplanning
-7. BIM consultancy
-8. Well-being consultancy
-9. Architectural visualization
+5. Commercial interiors and hospitality
+6. Architectural visualization
+7. Technical due diligence
+8. BIM consultancy
+9. Well-being architecture and WELL AP consulting
+10. Project management
 
-## Languages
+## Locations
 
-We work in English and Spanish.
+Madrid, Barcelona, Valencia, Mallorca, Marbella and Galicia in Spain; Stockholm in Sweden; Athens and Thessaloniki in Greece.
+
+## Content library
+
+- 20 selected built-project and concept case studies, plus six clearly separated audience/service landing pages.
+- 34 curated English journal articles selected from the former WordPress library for durable international relevance.
+- Local WebP media is stored in the repository; published pages do not depend on WordPress uploads.
+
+## Professional credentials
+
+- Spain: COAM N.25160
+- Sweden: SAR/MSA and F-skatt
+- Greece: TEE-TCG N.168011
+- WELL Accredited Professional
 
 ## Contact
 
-- Email: info@wolfblanc.com
-- Global website: https://wolfblanc.com
-
-Note: URL slugs above are inherited from the source build and will be renamed to English (/studio/, /services/, /faq/) before launch.
+- General: info@wolfblanc.com
+- Press: press@wolfblanc.com
+- Spain: +34 662 411 064
+- Sweden: +46 73 656 64 89
+- Athens: +30 210 300 99 19
+- Thessaloniki: +30 231 111 72 80

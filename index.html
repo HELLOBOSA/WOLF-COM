@@ -1,19 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="192x192" href="apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKLWDZFNKC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WKLWDZFNKC');
-  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -446,47 +438,40 @@
 
   html{overflow-y:scroll}
   </style>
+  <link rel="stylesheet" href="assets/site-shell.css">
 </head>
 <body>
 
 
 <nav id="nav">
   <div class="nav-bar">
-  <a href="#top" class="nav-logo" onclick="ss(event,'top')">WOLFBLANC</a>
-  <div class="nav-right">
-    <div class="nav-links">
-      <a href="studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-      <a href="portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-      <a href="services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-      <a href="#proceso" class="nav-link" onclick="ss(event,'proceso')" data-s="proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-      <a href="news/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
-      <a href="faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-      <a href="contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="" class="nav-logo" aria-label="Wolfblanc home">WOLFBLANC</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+        <a href="services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+        <a href="portfolio/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+        <a href="locations/" class="nav-link" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
+        <a href="news/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+        <a href="faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
+        <a href="contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
+      </div>
+      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
+        <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
+        <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
+      </div>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme" data-es-aria="Cambiar tema" data-en-aria="Toggle theme"><svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+      <button class="burger-btn" id="burger-btn" type="button" aria-label="Menu" data-es-aria="Menú" data-en-aria="Menu"><svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg><svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
     </div>
-    <div class="nav-mobile" style="display:none">
-    </div>
-    <div class="language-switch" aria-label="Select language">
-      <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
-      <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
-    </div>
-    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
-      <svg id="im" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      <svg id="is" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-    </button>
-      <button class="burger-btn" id="burger-btn" aria-label="Menú">
-        <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-        <svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-      </button>
-  </div>
   </div>
   <div class="mob-menu" id="mob-menu">
-    <a href="studio/" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-    <a href="portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</a>
-    <a href="services/" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-    <a href="#proceso" onclick="ss(event,'proceso');closeMobMenu()" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+    <a href="studio/" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+    <a href="services/" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+    <a href="portfolio/" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+    <a href="locations/" data-es="UBICACIONES" data-en="LOCATIONS">LOCATIONS</a>
     <a href="news/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="faq/" data-es="FAQ" data-en="FAQ">FAQ</a>
-    <a href="contact/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="contact/" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
   </div>
 </nav>
 
@@ -516,7 +501,7 @@
   <div class="si">
     <div class="studio-grid">
       <div class="studio-text reveal">
-        <span class="eyebrow" data-es="EL ESTUDIO" data-en="THE STUDIO">EL ESTUDIO</span>
+        <span class="eyebrow" data-es="EL ESTUDIO" data-en="THE STUDIO">THE STUDIO</span>
         <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:32px" data-es="Un estudio de arquitectura en Suecia, España y Grecia" data-en="An architecture studio across Sweden, Spain and Greece">An architecture studio across Sweden, Spain and Greece</h2>
         <p data-es="Wolfblanc es un estudio de arquitectura internacional con estudios en Suecia, España y Grecia, especializado en proyectos residenciales, comerciales y urbanos. Combinamos rigor nórdico con adaptabilidad local en cada mercado. Con más de 20 años de experiencia acumulada, hemos colaborado con grandes promotores y clientes privados exigentes en toda Europa." data-en="Wolfblanc is an international architecture studio with studios in Sweden, Spain and Greece, specialising in residential, commercial and urban projects. We combine Nordic rigour with local adaptability in every market. With over 20 years of combined experience, we have worked with leading developers and demanding private clients across Europe.">Wolfblanc is an international architecture studio with studios in Sweden, Spain and Greece, specialising in residential, commercial and urban projects. We combine Nordic rigour with local adaptability in every market. With over 20 years of combined experience, we have worked with leading developers and demanding private clients across Europe.</p>
         <div class="pills" style="margin-top:0">
@@ -534,17 +519,17 @@
 <!-- Selected Work -->
 <section id="proyectos">
   <div class="si">
-    <span class="eyebrow" data-es="PROYECTOS SELECCIONADOS" data-en="SELECTED WORK">PROYECTOS SELECCIONADOS</span>
-    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:40px" data-es="Una visión de cómo trabajamos" data-en="A tightly selected view of how we work">Una visión de cómo trabajamos</h2>
+    <span class="eyebrow" data-es="PROYECTOS SELECCIONADOS" data-en="SELECTED WORK">SELECTED WORK</span>
+    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:40px" data-es="Una visión de cómo trabajamos" data-en="A tightly selected view of how we work">A tightly selected view of how we work</h2>
     <div id="pg-filters" class="pg-filters">
-      <button class="pg-fbtn on" data-es="Todos" data-en="All">Todos</button>
-      <button class="pg-fbtn" data-es="Residencial" data-en="Residential">Residencial</button>
-      <button class="pg-fbtn" data-es="Reforma" data-en="Renovation">Reforma</button>
-      <button class="pg-fbtn" data-es="Inversión" data-en="Investment">Inversión</button>
-      <button class="pg-fbtn" data-es="Urbanismo" data-en="Urban">Urbanismo</button>
-      <button class="pg-fbtn" data-es="Cultura" data-en="Culture">Cultura</button>
-      <button class="pg-fbtn" data-es="Oficina" data-en="Workplace">Oficina</button>
-      <button class="pg-fbtn" data-es="Hostelería" data-en="Hospitality">Hostelería</button>
+      <button class="pg-fbtn on" data-es="Todos" data-en="All">All</button>
+      <button class="pg-fbtn" data-es="Residencial" data-en="Residential">Residential</button>
+      <button class="pg-fbtn" data-es="Reforma" data-en="Renovation">Renovation</button>
+      <button class="pg-fbtn" data-es="Inversión" data-en="Investment">Investment</button>
+      <button class="pg-fbtn" data-es="Urbanismo" data-en="Urban">Urban</button>
+      <button class="pg-fbtn" data-es="Cultura" data-en="Culture">Culture</button>
+      <button class="pg-fbtn" data-es="Oficina" data-en="Workplace">Workplace</button>
+      <button class="pg-fbtn" data-es="Hostelería" data-en="Hospitality">Hospitality</button>
     </div>
     <div id="pg-grid" class="pg-grid">
       <article class="pg-tile reveal">
@@ -705,7 +690,7 @@
       </article>
     </div>
     <div class="pg-more" id="pg-more">
-      <button class="pg-more-btn" id="pg-more-btn" data-es="VER MÁS PROYECTOS" data-en="SHOW MORE PROJECTS">VER MÁS PROYECTOS</button>
+      <button class="pg-more-btn" id="pg-more-btn" data-es="VER MÁS PROYECTOS" data-en="SHOW MORE PROJECTS">SHOW MORE PROJECTS</button>
     </div>
   </div>
 </section>
@@ -714,21 +699,21 @@
 <!-- Services -->
 <section id="servicios">
   <div class="si">
-    <span class="eyebrow" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</span>
-    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Servicios de Arquitectura e Interiorismo" data-en="Architecture & Interior Design Services">Servicios de Arquitectura e Interiorismo</h2>
+    <span class="eyebrow" data-es="SERVICIOS" data-en="SERVICES">SERVICES</span>
+    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Servicios de Arquitectura e Interiorismo" data-en="Architecture & Interior Design Services">Architecture & Interior Design Services</h2>
     <div class="cards-3">
-      <a class="gc reveal" href="services/architecture/"><div class="cl"></div><h3 class="ct" data-es="ARQUITECTURA" data-en="ARCHITECTURE">ARQUITECTURA</h3><p class="cd" data-es="Proyectamos obra nueva, rehabilitación y transformación de edificios con una dirección clara desde el análisis inicial hasta la documentación técnica, la obra y la entrega." data-en="We design new buildings, rehabilitation and transformations with clear direction from early analysis through technical design, construction and handover.">Proyectamos obra nueva, rehabilitación y transformación de edificios con una dirección clara desde el análisis inicial hasta la documentación técnica, la obra y la entrega.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
-      <a class="gc reveal" href="services/landscape-architecture/"><div class="cl"></div><h3 class="ct" data-es="ARQUITECTURA DEL PAISAJE" data-en="LANDSCAPE ARCHITECTURE">ARQUITECTURA DEL PAISAJE</h3><p class="cd" data-es="Diseñamos paisajes como sistemas vivos que integran lugar, usos, vegetación, agua, materiales, clima y construcción desde la estrategia inicial hasta la ejecución." data-en="We design landscapes as living systems integrating place, use, planting, water, materials, climate and construction from early strategy through delivery.">Diseñamos paisajes como sistemas vivos que integran lugar, usos, vegetación, agua, materiales, clima y construcción desde la estrategia inicial hasta la ejecución.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
-      <a class="gc reveal" href="services/urban-design/"><div class="cl"></div><h3 class="ct" data-es="URBANISMO &amp; MASTERPLANNING" data-en="URBAN DESIGN &amp; MASTERPLANNING">URBANISMO &amp; MASTERPLANNING</h3><p class="cd" data-es="Planificamos emplazamientos, barrios y entornos públicos con una estrategia espacial clara, conectando densidad, movimiento, paisaje y valor a largo plazo." data-en="We plan sites, districts and public environments with a clear spatial strategy, connecting density, movement, landscape and long-term value.">Planificamos emplazamientos, barrios y entornos públicos con una estrategia espacial clara, conectando densidad, movimiento, paisaje y valor a largo plazo.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
-      <a class="gc reveal" href="services/residential-interiors/"><div class="cl"></div><h3 class="ct" data-es="INTERIORES RESIDENCIALES" data-en="RESIDENTIAL INTERIORS">INTERIORES RESIDENCIALES</h3><p class="cd" data-es="Diseñamos entornos interiores que funcionan y se sienten bien. Cada espacio se adapta al uso cotidiano, con atención a la luz, los materiales y la atmósfera." data-en="We design interior environments that work and feel right. Each space is tailored to daily use, with attention to light, material, and atmosphere.">Diseñamos entornos interiores que funcionan y se sienten bien. Cada espacio se adapta al uso cotidiano, con atención a la luz, los materiales y la atmósfera.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
-      <a class="gc reveal" href="services/commercial-interiors-hospitality/"><div class="cl"></div><h3 class="ct" data-es="INTERIORES COMERCIALES &amp; HOSTELERÍA" data-en="COMMERCIAL &amp; HOSPITALITY INTERIORS">INTERIORES COMERCIALES &amp; HOSTELERÍA</h3><p class="cd" data-es="Diseñamos entornos de alto rendimiento para marcas e inversores. Desde espacios de trabajo flexibles y hostelería hasta showrooms y conceptos de retail, creamos interiores comerciales donde la marca y la operación se encuentran." data-en="We design high-performance environments for brands and investors. From flexible workspaces and hospitality to showrooms and retail concepts, we create commercial interiors where brand and operation meet.">Diseñamos entornos de alto rendimiento para marcas e inversores. Desde espacios de trabajo flexibles y hostelería hasta showrooms y conceptos de retail, creamos interiores comerciales donde la marca y la operación se encuentran.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
-      <a class="gc reveal" href="services/visualization/"><div class="cl"></div><h3 class="ct" data-es="VISUALIZACIÓN ARQUITECTÓNICA" data-en="ARCHITECTURAL VISUALIZATION">VISUALIZACIÓN ARQUITECTÓNICA</h3><p class="cd" data-es="Transformamos ideas de diseño en material visual claro para decisiones, permisos, ventas y comunicación con inversores. Desde imágenes fijas y estudios conceptuales hasta animaciones y staging, la visualización ayuda a los clientes a comprender el valor antes de iniciar la obra." data-en="We turn design ideas into clear visual material for decisions, permits, sales, and investor communication. From still images and concept studies to animations and staging, visualization helps clients understand value before construction begins.">Transformamos ideas de diseño en material visual claro para decisiones, permisos, ventas y comunicación con inversores. Desde imágenes fijas y estudios conceptuales hasta animaciones y staging, la visualización ayuda a los clientes a comprender el valor antes de iniciar la obra.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
-      <a class="gc reveal" href="services/due-diligence/"><div class="cl"></div><h3 class="ct" data-es="DUE DILIGENCE TÉCNICA PREVIA A LA COMPRA" data-en="PRE-ACQUISITION TECHNICAL DUE DILIGENCE">DUE DILIGENCE TÉCNICA PREVIA A LA COMPRA</h3><p class="cd" data-es="Ayudamos a compradores, inversores y family offices a comprender el potencial, el riesgo urbanístico y las limitaciones técnicas de un inmueble antes de comprometerse." data-en="We help buyers, investors and family offices understand a property's potential, planning risk and technical constraints before committing.">Ayudamos a compradores, inversores y family offices a comprender el potencial, el riesgo urbanístico y las limitaciones técnicas de un inmueble antes de comprometerse.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
-      <a class="gc reveal" href="services/bim/"><div class="cl"></div><h3 class="ct" data-es="CONSULTORÍA BIM" data-en="BIM CONSULTANCY">CONSULTORÍA BIM</h3><p class="cd" data-es="Precisión digital en cada fase. Con amplia experiencia como BIM managers, mejoramos la coordinación, reducimos el riesgo y convertimos los datos del proyecto en decisiones más inteligentes." data-en="Digital precision at every stage. With extensive experience as BIM managers, we improve coordination, reduce risk, and turn design data into smarter decisions.">Precisión digital en cada fase. Con amplia experiencia como BIM managers, mejoramos la coordinación, reducimos el riesgo y convertimos los datos del proyecto en decisiones más inteligentes.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
-      <a class="gc reveal" href="services/wellbeing/"><div class="cl"></div><h3 class="ct" data-es="CONSULTORÍA WELL-BEING" data-en="WELL-BEING CONSULTANCY">CONSULTORÍA WELL-BEING</h3><p class="cd" data-es="Diseñamos para el rendimiento y la salud humana. Como consultores WELL AP, medimos y optimizamos el aire, la luz, la acústica y el confort mediante diseño basado en evidencia." data-en="We design for human performance and health. As WELL AP consultants, we measure and optimize air, light, acoustics, and comfort through evidence-based design.">Diseñamos para el rendimiento y la salud humana. Como consultores WELL AP, medimos y optimizamos el aire, la luz, la acústica y el confort mediante diseño basado en evidencia.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">Ver servicio →</span></a>
+      <a class="gc reveal" href="services/architecture/"><div class="cl"></div><h3 class="ct" data-es="ARQUITECTURA" data-en="ARCHITECTURE">ARCHITECTURE</h3><p class="cd" data-es="Proyectamos obra nueva, rehabilitación y transformación de edificios con una dirección clara desde el análisis inicial hasta la documentación técnica, la obra y la entrega." data-en="We design new buildings, rehabilitation and transformations with clear direction from early analysis through technical design, construction and handover.">We design new buildings, rehabilitation and transformations with clear direction from early analysis through technical design, construction and handover.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
+      <a class="gc reveal" href="services/landscape-architecture/"><div class="cl"></div><h3 class="ct" data-es="ARQUITECTURA DEL PAISAJE" data-en="LANDSCAPE ARCHITECTURE">LANDSCAPE ARCHITECTURE</h3><p class="cd" data-es="Diseñamos paisajes como sistemas vivos que integran lugar, usos, vegetación, agua, materiales, clima y construcción desde la estrategia inicial hasta la ejecución." data-en="We design landscapes as living systems integrating place, use, planting, water, materials, climate and construction from early strategy through delivery.">We design landscapes as living systems integrating place, use, planting, water, materials, climate and construction from early strategy through delivery.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
+      <a class="gc reveal" href="services/urban-design/"><div class="cl"></div><h3 class="ct" data-es="URBANISMO &amp; MASTERPLANNING" data-en="URBAN DESIGN &amp; MASTERPLANNING">URBAN DESIGN &amp; MASTERPLANNING</h3><p class="cd" data-es="Planificamos emplazamientos, barrios y entornos públicos con una estrategia espacial clara, conectando densidad, movimiento, paisaje y valor a largo plazo." data-en="We plan sites, districts and public environments with a clear spatial strategy, connecting density, movement, landscape and long-term value.">We plan sites, districts and public environments with a clear spatial strategy, connecting density, movement, landscape and long-term value.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
+      <a class="gc reveal" href="services/residential-interiors/"><div class="cl"></div><h3 class="ct" data-es="INTERIORES RESIDENCIALES" data-en="RESIDENTIAL INTERIORS">RESIDENTIAL INTERIORS</h3><p class="cd" data-es="Diseñamos entornos interiores que funcionan y se sienten bien. Cada espacio se adapta al uso cotidiano, con atención a la luz, los materiales y la atmósfera." data-en="We design interior environments that work and feel right. Each space is tailored to daily use, with attention to light, material, and atmosphere.">We design interior environments that work and feel right. Each space is tailored to daily use, with attention to light, material, and atmosphere.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
+      <a class="gc reveal" href="services/commercial-interiors-hospitality/"><div class="cl"></div><h3 class="ct" data-es="INTERIORES COMERCIALES &amp; HOSTELERÍA" data-en="COMMERCIAL &amp; HOSPITALITY INTERIORS">COMMERCIAL &amp; HOSPITALITY INTERIORS</h3><p class="cd" data-es="Diseñamos entornos de alto rendimiento para marcas e inversores. Desde espacios de trabajo flexibles y hostelería hasta showrooms y conceptos de retail, creamos interiores comerciales donde la marca y la operación se encuentran." data-en="We design high-performance environments for brands and investors. From flexible workspaces and hospitality to showrooms and retail concepts, we create commercial interiors where brand and operation meet.">We design high-performance environments for brands and investors. From flexible workspaces and hospitality to showrooms and retail concepts, we create commercial interiors where brand and operation meet.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
+      <a class="gc reveal" href="services/visualization/"><div class="cl"></div><h3 class="ct" data-es="VISUALIZACIÓN ARQUITECTÓNICA" data-en="ARCHITECTURAL VISUALIZATION">ARCHITECTURAL VISUALIZATION</h3><p class="cd" data-es="Transformamos ideas de diseño en material visual claro para decisiones, permisos, ventas y comunicación con inversores. Desde imágenes fijas y estudios conceptuales hasta animaciones y staging, la visualización ayuda a los clientes a comprender el valor antes de iniciar la obra." data-en="We turn design ideas into clear visual material for decisions, permits, sales, and investor communication. From still images and concept studies to animations and staging, visualization helps clients understand value before construction begins.">We turn design ideas into clear visual material for decisions, permits, sales, and investor communication. From still images and concept studies to animations and staging, visualization helps clients understand value before construction begins.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
+      <a class="gc reveal" href="services/due-diligence/"><div class="cl"></div><h3 class="ct" data-es="DUE DILIGENCE TÉCNICA PREVIA A LA COMPRA" data-en="PRE-ACQUISITION TECHNICAL DUE DILIGENCE">PRE-ACQUISITION TECHNICAL DUE DILIGENCE</h3><p class="cd" data-es="Ayudamos a compradores, inversores y family offices a comprender el potencial, el riesgo urbanístico y las limitaciones técnicas de un inmueble antes de comprometerse." data-en="We help buyers, investors and family offices understand a property's potential, planning risk and technical constraints before committing.">We help buyers, investors and family offices understand a property's potential, planning risk and technical constraints before committing.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
+      <a class="gc reveal" href="services/bim/"><div class="cl"></div><h3 class="ct" data-es="CONSULTORÍA BIM" data-en="BIM CONSULTANCY">BIM CONSULTANCY</h3><p class="cd" data-es="Precisión digital en cada fase. Con amplia experiencia como BIM managers, mejoramos la coordinación, reducimos el riesgo y convertimos los datos del proyecto en decisiones más inteligentes." data-en="Digital precision at every stage. With extensive experience as BIM managers, we improve coordination, reduce risk, and turn design data into smarter decisions.">Digital precision at every stage. With extensive experience as BIM managers, we improve coordination, reduce risk, and turn design data into smarter decisions.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
+      <a class="gc reveal" href="services/wellbeing/"><div class="cl"></div><h3 class="ct" data-es="CONSULTORÍA WELL-BEING" data-en="WELL-BEING CONSULTANCY">WELL-BEING CONSULTANCY</h3><p class="cd" data-es="Diseñamos para el rendimiento y la salud humana. Como consultores WELL AP, medimos y optimizamos el aire, la luz, la acústica y el confort mediante diseño basado en evidencia." data-en="We design for human performance and health. As WELL AP consultants, we measure and optimize air, light, acoustics, and comfort through evidence-based design.">We design for human performance and health. As WELL AP consultants, we measure and optimize air, light, acoustics, and comfort through evidence-based design.</p><span class="card-link" data-es="Ver servicio →" data-en="View service →">View service →</span></a>
     </div>
     <div style="display:flex;justify-content:center;margin-top:56px">
-      <a class="pg-more-btn" href="services/" data-es="VER TODOS LOS SERVICIOS →" data-en="ALL SERVICES →">VER TODOS LOS SERVICIOS →</a>
+      <a class="pg-more-btn" href="services/" data-es="VER TODOS LOS SERVICIOS →" data-en="ALL SERVICES →">ALL SERVICES →</a>
     </div>
   </div>
 </section>
@@ -736,13 +721,13 @@
 <!-- Credentials -->
 <section>
   <div class="si">
-    <span class="eyebrow" data-es="CREDENCIALES" data-en="CREDENTIALS">CREDENCIALES</span>
-    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Por qué Wolfblanc" data-en="Why Wolfblanc">Por qué Wolfblanc</h2>
+    <span class="eyebrow" data-es="CREDENCIALES" data-en="CREDENTIALS">CREDENTIALS</span>
+    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Por qué Wolfblanc" data-en="Why Wolfblanc">Why Wolfblanc</h2>
     <div class="cards-2 compact-cards">
       <div class="gc reveal"><h3 class="ct" data-es="ARQUITECTOS COLEGIADOS" data-en="REGISTERED ARCHITECTS">REGISTERED ARCHITECTS</h3><p class="cd" data-es="Colegiados para el ejercicio de la arquitectura: SAR/MSA (Suecia), COAM (España) y TEE-TCG (Grecia). WELL AP." data-en="Registered to practise architecture: SAR/MSA (Sweden), COAM (Spain) and TEE-TCG (Greece). WELL AP.">Registered to practise architecture: SAR/MSA (Sweden), COAM (Spain) and TEE-TCG (Greece). WELL AP.</p></div>
-      <div class="gc reveal"><h3 class="ct" data-es="WELL AP CREDENTIAL" data-en="WELL AP CREDENTIAL">WELL AP CREDENTIAL</h3><p class="cd" data-es="Experiencia en diseño para la salud y el bienestar humano." data-en="Expertise in design for human health and well-being.">Experiencia en diseño para la salud y el bienestar humano.</p></div>
-      <div class="gc reveal"><h3 class="ct" data-es="EXPERIENCIA INTERNACIONAL" data-en="INTERNATIONAL EXPERIENCE">EXPERIENCIA INTERNACIONAL</h3><p class="cd" data-es="Más de 20 años de experiencia con una metodología aplicada a cada mercado." data-en="20+ years of experience with a method applied to each market.">20+ years of experience with a method applied to each market.</p></div>
-      <div class="gc reveal"><h3 class="ct" data-es="METODOLOGÍA BIM" data-en="BIM METHODOLOGY">METODOLOGÍA BIM</h3><p class="cd" data-es="Flujo de trabajo digital integrado en cada fase, coordinación, precisión y certeza en la entrega." data-en="Integrated digital workflow in every phase, coordination, precision and delivery certainty.">Flujo de trabajo digital integrado en cada fase, coordinación, precisión y certeza en la entrega.</p></div>
+      <div class="gc reveal"><h3 class="ct" data-es="WELL AP CREDENTIAL" data-en="WELL AP CREDENTIAL">WELL AP CREDENTIAL</h3><p class="cd" data-es="Experiencia en diseño para la salud y el bienestar humano." data-en="Expertise in design for human health and well-being.">Expertise in design for human health and well-being.</p></div>
+      <div class="gc reveal"><h3 class="ct" data-es="EXPERIENCIA INTERNACIONAL" data-en="INTERNATIONAL EXPERIENCE">INTERNATIONAL EXPERIENCE</h3><p class="cd" data-es="Más de 20 años de experiencia con una metodología aplicada a cada mercado." data-en="20+ years of experience with a method applied to each market.">20+ years of experience with a method applied to each market.</p></div>
+      <div class="gc reveal"><h3 class="ct" data-es="METODOLOGÍA BIM" data-en="BIM METHODOLOGY">BIM METHODOLOGY</h3><p class="cd" data-es="Flujo de trabajo digital integrado en cada fase, coordinación, precisión y certeza en la entrega." data-en="Integrated digital workflow in every phase, coordination, precision and delivery certainty.">Integrated digital workflow in every phase, coordination, precision and delivery certainty.</p></div>
     </div>
   </div>
 </section>
@@ -750,13 +735,13 @@
 <!-- Process -->
 <section id="proceso">
   <div class="si">
-    <span class="eyebrow" data-es="PROCESO" data-en="PROCESS">PROCESO</span>
-    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Nuestro proceso" data-en="Our Process">Nuestro proceso</h2>
+    <span class="eyebrow" data-es="PROCESO" data-en="PROCESS">PROCESS</span>
+    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Nuestro proceso" data-en="Our Process">Our Process</h2>
     <div class="proc-grid">
-      <div class="pb reveal"><p class="pl" data-es="01 · ESCUCHAMOS" data-en="01 · LISTEN">01 · ESCUCHAMOS</p><p class="pd" data-es="Comprendemos el proyecto, las necesidades, el presupuesto y las posibilidades." data-en="We understand the project, needs, budget, and possibilities.">Comprendemos el proyecto, las necesidades, el presupuesto y las posibilidades.</p><span class="pn">01</span></div>
-      <div class="pb reveal"><p class="pl" data-es="02 · DISEÑAMOS" data-en="02 · DESIGN">02 · DISEÑAMOS</p><p class="pd" data-es="Desarrollamos y visualizamos el concepto arquitectónico." data-en="We develop and visualize the architectural concept.">Desarrollamos y visualizamos el concepto arquitectónico.</p><span class="pn">02</span></div>
-      <div class="pb reveal"><p class="pl" data-es="03 · PLANIFICAMOS EN DETALLE" data-en="03 · PLAN IN DETAIL">03 · PLANIFICAMOS EN DETALLE</p><p class="pd" data-es="Elaboramos planos, detalles y decisiones constructivas." data-en="We prepare drawings, details, and construction decisions.">Elaboramos planos, detalles y decisiones constructivas.</p><span class="pn">03</span></div>
-      <div class="pb reveal"><p class="pl" data-es="04 · ENTREGAMOS" data-en="04 · DELIVER">04 · ENTREGAMOS</p><p class="pd" data-es="Acompañamos el proyecto hasta su finalización." data-en="We accompany the project through completion.">Acompañamos el proyecto hasta su finalización.</p><span class="pn">04</span></div>
+      <div class="pb reveal"><p class="pl" data-es="01 · ESCUCHAMOS" data-en="01 · LISTEN">01 · LISTEN</p><p class="pd" data-es="Comprendemos el proyecto, las necesidades, el presupuesto y las posibilidades." data-en="We understand the project, needs, budget, and possibilities.">We understand the project, needs, budget, and possibilities.</p><span class="pn">01</span></div>
+      <div class="pb reveal"><p class="pl" data-es="02 · DISEÑAMOS" data-en="02 · DESIGN">02 · DESIGN</p><p class="pd" data-es="Desarrollamos y visualizamos el concepto arquitectónico." data-en="We develop and visualize the architectural concept.">We develop and visualize the architectural concept.</p><span class="pn">02</span></div>
+      <div class="pb reveal"><p class="pl" data-es="03 · PLANIFICAMOS EN DETALLE" data-en="03 · PLAN IN DETAIL">03 · PLAN IN DETAIL</p><p class="pd" data-es="Elaboramos planos, detalles y decisiones constructivas." data-en="We prepare drawings, details, and construction decisions.">We prepare drawings, details, and construction decisions.</p><span class="pn">03</span></div>
+      <div class="pb reveal"><p class="pl" data-es="04 · ENTREGAMOS" data-en="04 · DELIVER">04 · DELIVER</p><p class="pd" data-es="Acompañamos el proyecto hasta su finalización." data-en="We accompany the project through completion.">We accompany the project through completion.</p><span class="pn">04</span></div>
     </div>
   </div>
 </section>
@@ -764,11 +749,11 @@
 <!-- Specialized -->
 <section>
   <div class="si">
-    <span class="eyebrow" data-es="NUESTRA OFERTA" data-en="OUR OFFER">NUESTRA OFERTA</span>
-    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Servicios especializados" data-en="Specialized Services">Servicios especializados</h2>
+    <span class="eyebrow" data-es="NUESTRA OFERTA" data-en="OUR OFFER">OUR OFFER</span>
+    <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Servicios especializados" data-en="Specialized Services">Specialized Services</h2>
     <div class="cards-2 compact-cards">
-      <div class="gc reveal"><h3 class="ct" data-es="PARA INVERSORES" data-en="FOR INVESTORS">PARA INVERSORES</h3><p class="cd" data-es="Arquitectura estratégica para activos inmobiliarios de alto rendimiento. ROI medible sin complejidad innecesaria." data-en="Strategic architecture for high-performing real estate. Measurable ROI without unnecessary noise.">Arquitectura estratégica para activos inmobiliarios de alto rendimiento. ROI medible sin complejidad innecesaria.</p></div>
-      <div class="gc reveal"><h3 class="ct" data-es="PARA PROPIETARIOS" data-en="FOR HOMEOWNERS">PARA PROPIETARIOS</h3><p class="cd" data-es="Diseño residencial y reformas con proceso claro, decisiones acertadas y atención a la vida cotidiana." data-en="Residential design and renovation with a clear process, good decisions and attention to daily life.">Diseño residencial y reformas con proceso claro, decisiones acertadas y atención a la vida cotidiana.</p></div>
+      <div class="gc reveal"><h3 class="ct" data-es="PARA INVERSORES" data-en="FOR INVESTORS">FOR INVESTORS</h3><p class="cd" data-es="Arquitectura estratégica para activos inmobiliarios de alto rendimiento. ROI medible sin complejidad innecesaria." data-en="Strategic architecture for high-performing real estate. Measurable ROI without unnecessary noise.">Strategic architecture for high-performing real estate. Measurable ROI without unnecessary noise.</p></div>
+      <div class="gc reveal"><h3 class="ct" data-es="PARA PROPIETARIOS" data-en="FOR HOMEOWNERS">FOR HOMEOWNERS</h3><p class="cd" data-es="Diseño residencial y reformas con proceso claro, decisiones acertadas y atención a la vida cotidiana." data-en="Residential design and renovation with a clear process, good decisions and attention to daily life.">Residential design and renovation with a clear process, good decisions and attention to daily life.</p></div>
       <div class="gc reveal"><h3 class="ct" data-es="VILLAS Y SEGUNDA RESIDENCIA" data-en="VILLAS AND SECOND HOMES">VILLAS AND SECOND HOMES</h3><p class="cd" data-es="Villas y residencias de lujo diseñadas en torno al paisaje, la luz, los materiales y la durabilidad." data-en="Luxury villas and second homes designed around landscape, light, materials and durability.">Luxury villas and second homes designed around landscape, light, materials and durability.</p></div>
       <div class="gc reveal"><h3 class="ct" data-es="POR QUÉ WOLFBLANC" data-en="WHY WOLFBLANC">WHY WOLFBLANC</h3><p class="cd" data-es="Presencia en varios mercados, experiencia internacional, precisión técnica y comunicación humana." data-en="Presence across several markets, international experience, technical precision and human communication.">Presence across several markets, international experience, technical precision and human communication.</p></div>
     </div>
@@ -777,10 +762,10 @@
 
 <!-- CTA -->
 <div class="cta">
-  <div class="cta-bg" data-es="PROYECTOS" data-en="WORK">PROYECTOS</div>
+  <div class="cta-bg" data-es="PROYECTOS" data-en="WORK">WORK</div>
   <div class="cta-inner reveal">
-    <p data-es="Todo buen proyecto comienza con una conversación." data-en="Every good project starts with a conversation.">Todo buen proyecto comienza con una conversación.</p>
-    <a href="#contacto" onclick="ss(event,'contacto')" class="btn-outline" data-es="HABLEMOS →" data-en="TALK TO US →">HABLEMOS →</a>
+    <p data-es="Todo buen proyecto comienza con una conversación." data-en="Every good project starts with a conversation.">Every good project starts with a conversation.</p>
+    <a href="#contacto" onclick="ss(event,'contacto')" class="btn-outline" data-es="HABLEMOS →" data-en="TALK TO US →">TALK TO US →</a>
   </div>
 </div>
 
@@ -833,30 +818,30 @@
       <form class="intake-form" id="intake-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST">
         <input type="hidden" name="_subject" value="New project, wolfblanc.com">
         <input type="hidden" name="services" id="selected-services" value="">
-        <div class="field"><label><span data-es="Nombre" data-en="Name">Nombre</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Jane Doe" required></div>
-        <div class="field"><label><span data-es="Correo electrónico" data-en="Email">Correo electrónico</span><span class="ix">02</span></label><input type="email" name="email" placeholder="anna@example.com" required></div>
-        <div class="field"><label><span data-es="Teléfono" data-en="Phone">Teléfono</span><span class="ix">03</span></label><input type="tel" name="phone" placeholder="+00 000 000 000"></div>
-        <div class="field"><label><span data-es="Ubicación" data-en="Location">Ubicación</span><span class="ix">04</span></label><input type="text" name="location" placeholder="City, country" required></div>
-        <div class="field full"><label><span data-es="Tipo de proyecto" data-en="Project type">Tipo de proyecto</span><span class="ix">05</span></label><div class="chip-row"><button type="button" class="chip" aria-pressed="false" data-es="Vivienda" data-en="Residential">Vivienda</button><button type="button" class="chip" aria-pressed="false" data-es="Comercial" data-en="Commercial">Comercial</button><button type="button" class="chip" aria-pressed="false" data-es="Hostelería" data-en="Hospitality">Hostelería</button><button type="button" class="chip" aria-pressed="false" data-es="Oficina" data-en="Office">Oficina</button><button type="button" class="chip" aria-pressed="false" data-es="Retail" data-en="Retail">Retail</button><button type="button" class="chip" aria-pressed="false" data-es="Reforma" data-en="Renovation">Reforma</button><button type="button" class="chip" aria-pressed="false" data-es="No lo sé aún" data-en="Not sure yet">No lo sé aún</button></div></div>
-        <div class="field full"><label><span data-es="Describe el proyecto" data-en="Tell us more">Describe el proyecto</span><span class="ix">06</span></label><textarea name="brief" rows="3" placeholder="" required data-es-placeholder="¿De qué trata el proyecto y en qué punto del proceso estáis?" data-en-placeholder="What's the project about and where are you in the process?"></textarea></div>
+        <div class="field"><label><span data-es="Nombre" data-en="Name">Name</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Jane Doe" required></div>
+        <div class="field"><label><span data-es="Correo electrónico" data-en="Email">Email</span><span class="ix">02</span></label><input type="email" name="email" placeholder="anna@example.com" required></div>
+        <div class="field"><label><span data-es="Teléfono" data-en="Phone">Phone</span><span class="ix">03</span></label><input type="tel" name="phone" placeholder="+00 000 000 000"></div>
+        <div class="field"><label><span data-es="Ubicación" data-en="Location">Location</span><span class="ix">04</span></label><input type="text" name="location" placeholder="City, country" required></div>
+        <div class="field full"><label><span data-es="Tipo de proyecto" data-en="Project type">Project type</span><span class="ix">05</span></label><div class="chip-row"><button type="button" class="chip" aria-pressed="false" data-es="Vivienda" data-en="Residential">Residential</button><button type="button" class="chip" aria-pressed="false" data-es="Comercial" data-en="Commercial">Commercial</button><button type="button" class="chip" aria-pressed="false" data-es="Hostelería" data-en="Hospitality">Hospitality</button><button type="button" class="chip" aria-pressed="false" data-es="Oficina" data-en="Office">Office</button><button type="button" class="chip" aria-pressed="false" data-es="Retail" data-en="Retail">Retail</button><button type="button" class="chip" aria-pressed="false" data-es="Reforma" data-en="Renovation">Renovation</button><button type="button" class="chip" aria-pressed="false" data-es="No lo sé aún" data-en="Not sure yet">Not sure yet</button></div></div>
+        <div class="field full"><label><span data-es="Describe el proyecto" data-en="Tell us more">Tell us more</span><span class="ix">06</span></label><textarea name="brief" rows="3" placeholder="" required data-es-placeholder="¿De qué trata el proyecto y en qué punto del proceso estáis?" data-en-placeholder="What's the project about and where are you in the process?"></textarea></div>
         <div class="form-actions">
-          <p class="legal" data-es="Usamos esto únicamente para responder sobre tu proyecto." data-en="We use this only to respond about your project.">Usamos esto únicamente para responder sobre tu proyecto.</p>
-          <button type="submit" class="submit" id="intake-submit"><span data-es="Enviar" data-en="Submit">Enviar</span><span class="arrow">→</span></button>
+          <p class="legal" data-es="Usamos esto únicamente para responder sobre tu proyecto." data-en="We use this only to respond about your project.">We use this only to respond about your project.</p>
+          <button type="submit" class="submit" id="intake-submit"><span data-es="Enviar" data-en="Submit">Submit</span><span class="arrow">→</span></button>
         </div>
       </form>
 
       <div class="intake-confirmed" id="intake-confirmed" role="status" aria-live="polite">
-        <h3 data-es="Gracias. Te responderemos en dos días laborables." data-en="Thank you. We'll be in touch within two working days.">Gracias. Te responderemos en dos días laborables.</h3>
-        <p data-es="Un socio sénior lee cada consulta." data-en="A senior partner reads every inquiry.">Un socio sénior lee cada consulta.</p>
+        <h3 data-es="Gracias. Te responderemos en dos días laborables." data-en="Thank you. We'll be in touch within two working days.">Thank you. We'll be in touch within two working days.</h3>
+        <p data-es="Un socio sénior lee cada consulta." data-en="A senior partner reads every inquiry.">A senior partner reads every inquiry.</p>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <span data-es="WOLFBLANC® ARCHITECTS · © 2026" data-en="WOLFBLANC® ARCHITECTS · © 2026">WOLFBLANC® ARCHITECTS · © 2026</span>
-  <span><a href="studio/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="services/" style="color:inherit;text-decoration:none" data-es="Servicios" data-en="Services">Servicios</a> · <a href="faq/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
-  <span><a href="mailto:info@wolfblanc.com" class="fl">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" class="fl">wolfblanc.com</a></span>
+  <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
+  <span><a href="studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="portfolio/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="faq/">FAQ</a> &middot; <a href="careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
 </footer>
 
 <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
@@ -1160,12 +1145,12 @@
 </script>
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" data-es-aria="Aviso de cookies" data-en-aria="Cookie notice" hidden>
   <div class="cookie-copy">
-    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">Usamos cookies</span>
-    <a class="cookie-link" href="legal/#cookies" data-es="Más info" data-en="More info">Más info</a>
+    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">We use cookies</span>
+    <a class="cookie-link" href="legal/#cookies" data-es="Más info" data-en="More info">More info</a>
   </div>
   <div class="cookie-actions">
-    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Rechazar</button>
-    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Aceptar</button>
+    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Reject</button>
+    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Accept</button>
   </div>
 </div>
 
@@ -1235,5 +1220,6 @@
 })();
 </script>
 
+<script src="assets/site-core.js" defer></script>
 </body>
 </html>
