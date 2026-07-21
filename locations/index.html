@@ -147,6 +147,14 @@
     .process-list li::before{content:counter(proc,'decimal-leading-zero');font-size:.62rem;letter-spacing:.16em;color:var(--accent);min-width:28px;padding-top:3px}
     .process-list li span{font-size:.95rem;line-height:1.65;color:var(--text2)}
     .process-list li strong{display:block;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text);margin-bottom:4px;font-weight:400}
+    .city-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:28px 0 8px}
+    .city-card{background:var(--bg);padding:22px 20px;display:flex;flex-direction:column;gap:6px;transition:background .2s}
+    .city-card:hover{background:var(--accent);color:var(--bg)}
+    .city-card:hover .city-name,.city-card:hover .city-country,.city-card:hover .city-arrow{color:var(--bg)}
+    .city-name{font-size:.9rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--text);line-height:1.2}
+    .city-country{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text2);margin-top:2px}
+    .city-arrow{font-size:.62rem;letter-spacing:.12em;color:var(--accent);margin-top:auto;padding-top:12px}
+    @media(max-width:640px){.city-grid{grid-template-columns:1fr 1fr}}
     .cred-list{list-style:none;margin:24px 0 8px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
     .cred-list li{background:var(--bg);padding:16px 18px;font-size:.86rem;letter-spacing:.02em;color:var(--text2);line-height:1.5}
     .cred-list li strong{color:var(--text);font-weight:400}
@@ -236,7 +244,7 @@
         <a href="../#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
         <a href="../news/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
         <a href="../faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-        <a href="../#contacto" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+        <a href="../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
       </div>
       <div class="language-switch" aria-label="Seleccionar idioma">
         <button class="lang-btn active" type="button" data-lang-switch="es">ES</button>
@@ -259,17 +267,17 @@
     <a href="../#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
     <a href="../news/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="../faq/" data-es="FAQ" data-en="FAQ">FAQ</a>
-    <a href="../#contacto" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
   </div>
 </nav>
 
 <header class="hero">
   <div class="hero-grid"></div>
   <div class="hero-inner">
-    <a href="../" class="back-link" data-es="← Inicio" data-en="← Home">← Inicio</a>
-    <span class="eyebrow" data-es="ESTUDIO DE ARQUITECTURA · ESPAÑA" data-en="ARCHITECTURE STUDIO · SPAIN">ESTUDIO DE ARQUITECTURA · ESPAÑA</span>
-    <h1 data-es="Estudio de arquitectura" data-en="Architecture studio">Estudio de arquitectura</h1>
-    <p class="lead" data-es="Wolfblanc es un estudio de arquitectura y diseño en Madrid, Barcelona y Marbella. Acompañamos a propietarios, compradores de segunda residencia, inversores y negocios con un servicio completo y un método de entrega riguroso." data-en="Wolfblanc is an architecture and design studio in Madrid, Barcelona and Marbella. We support homeowners, second-home buyers, investors and businesses with a full-service approach and a rigorous delivery method.">Wolfblanc es un estudio de arquitectura y diseño en Madrid, Barcelona y Marbella. Acompañamos a propietarios, compradores de segunda residencia, inversores y negocios con un servicio completo y un método de entrega riguroso.</p>
+    <a href="../" class="back-link" data-es="← Inicio" data-en="← Home">← Home</a>
+    <span class="eyebrow" data-es="ARQUITECTURA INTERNACIONAL" data-en="INTERNATIONAL ARCHITECTURE">INTERNATIONAL ARCHITECTURE</span>
+    <h1 data-es="Dónde trabajamos" data-en="Where we work">Where we work</h1>
+    <p class="lead" data-es="Wolfblanc trabaja desde estudios en Suecia, España y Grecia, con clientes internacionales en toda Europa. Seleccione una ciudad para descubrir cómo trabajamos en ese mercado." data-en="Wolfblanc works from studios in Sweden, Spain and Greece, with international clients across Europe. Select a city to learn how we work in that market.">Wolfblanc works from studios in Sweden, Spain and Greece, with international clients across Europe. Select a city to learn how we work in that market.</p>
   </div>
 </header>
 
@@ -282,14 +290,62 @@
 
 <main>
   <article class="wb-body">
-    <p class="opening" data-es="Trabajamos como una sola práctica desde estudios en Suecia, España y Grecia, con clientes en toda Europa." data-en="We work as one practice from studios in Sweden, Spain and Greece, with clients across Europe.">We work as one practice from studios in Sweden, Spain and Greece, with clients across Europe.</p>
-    <h2 class="section-h" data-es="Suecia" data-en="Sweden">Sweden</h2>
-    <p data-es="Estocolmo. Kungsgatan 9, 11143." data-en="Stockholm. Kungsgatan 9, 11143.">Stockholm. Kungsgatan 9, 11143. · <a href="tel:+46736566489" style="color:var(--accent)">+46 73 656 64 89</a></p>
-    <h2 class="section-h" data-es="España" data-en="Spain">Spain</h2>
-    <p data-es="Madrid, Barcelona y Marbella." data-en="Madrid, Barcelona and Marbella.">Madrid (Calle Hermosilla 48), Barcelona (Carrer de Pallars 193), Marbella (Oasis Business Centre, Ctra. de Cádiz km 176). · <a href="tel:+34662411064" style="color:var(--accent)">+34 662 411 064</a></p>
-    <h2 class="section-h" data-es="Grecia" data-en="Greece">Greece</h2>
-    <p data-es="Atenas y Salónica." data-en="Athens and Thessaloniki.">Athens (Ermou 56, 10563), Thessaloniki (Karolou Ntil 31-33, 546 23).</p>
+
+    <h2 class="section-h" data-es="Nuestras ciudades" data-en="Our cities">Our cities</h2>
+    <div class="city-grid">
+      <a href="../locations/madrid/" class="city-card">
+        <span class="city-name">Madrid</span>
+        <span class="city-country">Spain</span>
+        <span class="city-arrow">Home market →</span>
+      </a>
+      <a href="../locations/barcelona/" class="city-card">
+        <span class="city-name">Barcelona</span>
+        <span class="city-country">Spain</span>
+        <span class="city-arrow">Projects →</span>
+      </a>
+      <a href="../locations/marbella/" class="city-card">
+        <span class="city-name">Marbella</span>
+        <span class="city-country">Spain</span>
+        <span class="city-arrow">Luxury villas →</span>
+      </a>
+      <a href="../locations/mallorca/" class="city-card">
+        <span class="city-name">Mallorca</span>
+        <span class="city-country">Spain</span>
+        <span class="city-arrow">Villas &amp; fincas →</span>
+      </a>
+      <a href="../locations/valencia/" class="city-card">
+        <span class="city-name">Valencia</span>
+        <span class="city-country">Spain</span>
+        <span class="city-arrow">Residential →</span>
+      </a>
+      <a href="../locations/galicia/" class="city-card">
+        <span class="city-name">Galicia</span>
+        <span class="city-country">Spain</span>
+        <span class="city-arrow">Coastal villas →</span>
+      </a>
+      <a href="../locations/stockholm/" class="city-card">
+        <span class="city-name">Stockholm</span>
+        <span class="city-country">Sweden</span>
+        <span class="city-arrow">Nordic office →</span>
+      </a>
+      <a href="../locations/athens/" class="city-card">
+        <span class="city-name">Athens</span>
+        <span class="city-country">Greece</span>
+        <span class="city-arrow">Investment →</span>
+      </a>
+      <a href="../locations/thessaloniki/" class="city-card">
+        <span class="city-name">Thessaloniki</span>
+        <span class="city-country">Greece</span>
+        <span class="city-arrow">Investment →</span>
+      </a>
+    </div>
+
+    <h2 class="section-h" data-es="Estudios" data-en="Studios">Studios</h2>
+    <p data-es="Suecia: Estocolmo, Kungsgatan 9, 11143. · +46 73 656 64 89" data-en="Sweden: Stockholm, Kungsgatan 9, 11143. · +46 73 656 64 89">Sweden: Stockholm, Kungsgatan 9, 11143. · <a href="tel:+46736566489" style="color:var(--accent)">+46 73 656 64 89</a></p>
+    <p data-es="España: Madrid (Calle Hermosilla 48), Barcelona (Carrer de Pallars 193), Marbella (Oasis Business Centre). · +34 662 411 064" data-en="Spain: Madrid (Calle Hermosilla 48), Barcelona (Carrer de Pallars 193), Marbella (Oasis Business Centre). · +34 662 411 064">Spain: Madrid (Calle Hermosilla 48), Barcelona (Carrer de Pallars 193), Marbella (Oasis Business Centre). · <a href="tel:+34662411064" style="color:var(--accent)">+34 662 411 064</a></p>
+    <p data-es="Grecia: Atenas (Ermou 56, 10563), Salónica (Karolou Ntil 31-33, 546 23)." data-en="Greece: Athens (Ermou 56, 10563), Thessaloniki (Karolou Ntil 31-33, 546 23).">Greece: Athens (Ermou 56, 10563), Thessaloniki (Karolou Ntil 31-33, 546 23).</p>
     <p><a href="../contact/" style="color:var(--accent)" data-es="Ver todos los contactos →" data-en="See all contact details →">See all contact details →</a></p>
+
   </article>
   <section class="cta-section">
     <div class="cta-bg">WOLFBLANC</div>
