@@ -325,7 +325,7 @@
   <div class="sp" id="inquiry">
       <h3 data-es="Cuéntanos tu proyecto" data-en="Tell us about your project">Tell us about your project</h3>
       <p><span data-es="O escríbenos directamente a" data-en="Or write directly to">Or write directly to</span> <a href="mailto:info@wolfblanc.com" style="color:var(--accent)">info@wolfblanc.com</a></p>
-      <form class="intake-form" id="intake-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST">
+      <form class="intake-form" id="intake-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST" data-basin-form data-success-target="#intake-confirmed" data-ga-event="generate_lead" data-ga-category="contact" data-ga-label="contact_page_project_enquiry">
         <input type="hidden" name="_subject" value="New project, wolfblanc.com">
         <input type="hidden" name="services" id="selected-services" value="">
         <div class="field"><label><span data-es="Nombre" data-en="Name">Name</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Jane Doe" required></div>
@@ -337,7 +337,7 @@
         <div class="field full consent-field"><label class="consent-label"><input type="checkbox" name="privacy_consent" value="agreed" required><span><span data-es="He leído y acepto la" data-en="I have read and accept the">I have read and accept the</span> <a href="../legal/#datos" data-es="política de privacidad" data-en="privacy policy">privacy policy</a>. <span data-es="Entiendo que Wolfblanc usará estos datos únicamente para responder a mi consulta." data-en="I understand Wolfblanc will use these details only to respond to my enquiry.">I understand Wolfblanc will use these details only to respond to my enquiry.</span></span></label></div>
         <div class="form-actions">
           <p class="legal" data-es="Usamos esto únicamente para responder sobre tu proyecto." data-en="We use this only to respond about your project.">We use this only to respond about your project.</p>
-          <button type="submit" class="submit" id="intake-submit"><span data-es="Enviar" data-en="Submit">Submit</span><span class="arrow">→</span></button>
+          <button type="submit" class="submit" id="intake-submit"><span data-submit-label data-es="Enviar" data-en="Submit">Submit</span><span class="arrow">→</span></button>
         </div>
       </form>
       <div class="intake-confirmed" id="intake-confirmed" role="status" aria-live="polite">
@@ -515,8 +515,6 @@
 <script>
   (function(){
     const form = document.getElementById('intake-form');
-    const submitBtn = document.getElementById('intake-submit');
-    const confirmed = document.getElementById('intake-confirmed');
     const servicesField = document.getElementById('selected-services');
     if(!form) return;
     form.querySelectorAll('.chip').forEach(chip => {
@@ -537,30 +535,6 @@
       });
       obs.observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
     }
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      if(!form.checkValidity()){ form.reportValidity(); return; }
-      submitBtn.disabled = true;
-      submitBtn.querySelector('span').textContent = '...';
-      try {
-        const res = await fetch('https://usebasin.com/f/ce6160f80c8b', {
-          method: 'POST', body: new FormData(form), headers: {'Accept':'application/json'}
-        });
-        if(res.ok){
-          form.style.display = 'none';
-          confirmed.style.display = 'block';
-          if(typeof gtag==='function')gtag('event','generate_lead',{event_category:'contact',event_label:'project_enquiry'});
-        } else {
-          alert('Something went wrong. Please email info@wolfblanc.com directly.');
-          submitBtn.disabled = false;
-          submitBtn.querySelector('span').textContent = document.documentElement.lang === 'es' ? 'Enviar' : 'Submit';
-        }
-      } catch(e){
-        alert('Network error. Please email info@wolfblanc.com directly.');
-        submitBtn.disabled = false;
-        submitBtn.querySelector('span').textContent = document.documentElement.lang === 'es' ? 'Enviar' : 'Submit';
-      }
-    });
   })();
 </script>
 <script type="text/javascript">

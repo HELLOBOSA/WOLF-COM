@@ -263,7 +263,7 @@
       </ul>
       <p class="newsletter-note"><a class="archive-link" href="../news/" data-es="Explorar el Journal →" data-en="Explore the Journal →">Explore the Journal →</a></p>
     </div>
-    <form class="newsletter-form" id="newsletter-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST">
+    <form class="newsletter-form" id="newsletter-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST" data-basin-form data-success-target="#newsletter-confirmed" data-error-target="#newsletter-error" data-ga-event="sign_up" data-ga-category="newsletter" data-ga-label="newsletter_subscription">
       <input type="hidden" name="_subject" value="Newsletter subscription, wolfblanc.com">
       <input type="hidden" name="source" value="wolfblanc.com/newsletter">
       <input type="hidden" name="form_type" value="newsletter_subscription">
@@ -274,7 +274,7 @@
       <label for="newsletter-email" data-es="Correo electrónico" data-en="Email">Email</label>
       <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
       <label class="newsletter-consent"><input type="checkbox" name="privacy_consent" value="agreed" required><span><span data-es="Acepto recibir el newsletter y he leído la" data-en="I agree to receive the newsletter and have read the">I agree to receive the newsletter and have read the</span> <a href="../legal/#datos" data-es="política de privacidad" data-en="privacy policy">privacy policy</a>. <span data-es="Puedo darme de baja en cualquier momento." data-en="I can unsubscribe at any time.">I can unsubscribe at any time.</span></span></label>
-      <button class="newsletter-submit" type="submit" data-es="Suscribirme →" data-en="Subscribe →">Subscribe →</button>
+      <button class="newsletter-submit" type="submit" data-submit-label data-es="Suscribirme →" data-en="Subscribe →">Subscribe →</button>
       <p class="newsletter-note" data-es="Solo enviamos cuando tenemos algo que merece la pena leer." data-en="We only send when there is something worth reading.">We only send when there is something worth reading.</p>
       <p class="newsletter-error" id="newsletter-error" role="alert" data-es="No se ha podido completar la suscripción. Inténtalo de nuevo o escríbenos a info@wolfblanc.com." data-en="The subscription could not be completed. Please try again or email info@wolfblanc.com." hidden>The subscription could not be completed. Please try again or email info@wolfblanc.com.</p>
     </form>
@@ -366,37 +366,6 @@
   window.addEventListener('scroll',function(){
     var n=document.getElementById('nav');if(n)n.classList.toggle('scrolled',window.scrollY>20);
   },{passive:true});
-})();
-</script>
-<script>
-(function(){
-  var form=document.getElementById('newsletter-form');
-  var submitButton=form&&form.querySelector('.newsletter-submit');
-  var error=document.getElementById('newsletter-error');
-  var confirmed=document.getElementById('newsletter-confirmed');
-  var submittedAt=document.getElementById('newsletter-submitted-at');
-  if(!form||!submitButton||!error||!confirmed)return;
-
-  form.addEventListener('submit',async function(event){
-    event.preventDefault();
-    if(!form.checkValidity()){form.reportValidity();return;}
-    error.hidden=true;
-    submitButton.disabled=true;
-    submitButton.textContent='…';
-    if(submittedAt)submittedAt.value=new Date().toISOString();
-    try{
-      var response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
-      if(!response.ok)throw new Error('Basin rejected the newsletter subscription');
-      form.hidden=true;
-      confirmed.hidden=false;
-      if(typeof gtag==='function')gtag('event','sign_up',{method:'newsletter'});
-    }catch(submissionError){
-      error.hidden=false;
-      submitButton.disabled=false;
-      var lang=document.documentElement.lang==='es'?'es':'en';
-      submitButton.textContent=submitButton.getAttribute('data-'+lang);
-    }
-  });
 })();
 </script>
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" data-es-aria="Aviso de cookies" data-en-aria="Cookie notice" hidden>

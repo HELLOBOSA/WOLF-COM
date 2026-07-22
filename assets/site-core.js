@@ -52,6 +52,65 @@
     document.documentElement.lang=document.documentElement.lang||'en';
   }
 
+  function configureBasinForms(){
+    document.querySelectorAll('form[data-basin-form]').forEach(function(form){
+      if(form.getAttribute('data-basin-ready')==='true')return;
+      form.setAttribute('data-basin-ready','true');
+      var submitButton=form.querySelector('[type="submit"]');
+      var submitLabel=submitButton&&(submitButton.querySelector('[data-submit-label]')||submitButton);
+      var successSelector=form.getAttribute('data-success-target');
+      var errorSelector=form.getAttribute('data-error-target');
+      var success=successSelector?document.querySelector(successSelector):null;
+      var error=errorSelector?document.querySelector(errorSelector):null;
+
+      function currentLanguage(){return (document.documentElement.lang||'en').slice(0,2)==='es'?'es':'en';}
+      function restoreButton(){
+        if(!submitButton)return;
+        submitButton.disabled=false;
+        submitButton.removeAttribute('aria-busy');
+        var translated=submitLabel&&submitLabel.getAttribute('data-'+currentLanguage());
+        if(submitLabel&&translated!==null)submitLabel.innerHTML=translated;
+      }
+
+      form.addEventListener('submit',function(event){
+        event.preventDefault();
+        if(!form.checkValidity()){form.reportValidity();return;}
+        if(error)error.hidden=true;
+        if(submitButton){submitButton.disabled=true;submitButton.setAttribute('aria-busy','true');}
+        if(submitLabel)submitLabel.textContent='…';
+        var submittedAt=form.querySelector('[name="submitted_at"]');
+        if(submittedAt)submittedAt.value=new Date().toISOString();
+
+        fetch(form.action,{
+          method:(form.method||'POST').toUpperCase(),
+          body:new FormData(form),
+          headers:{Accept:'application/json'}
+        }).then(function(response){
+          if(!response.ok)throw new Error('Form submission rejected');
+          form.hidden=true;
+          form.style.display='none';
+          if(success){success.hidden=false;success.style.display='block';}
+          var eventName=form.getAttribute('data-ga-event');
+          if(eventName&&typeof window.gtag==='function'){
+            window.gtag('event',eventName,{
+              event_category:form.getAttribute('data-ga-category')||'form',
+              event_label:form.getAttribute('data-ga-label')||form.id||'basin_form'
+            });
+          }
+        }).catch(function(){
+          if(error)error.hidden=false;
+          else window.alert(currentLanguage()==='es'?'No se ha podido enviar. Escríbenos a info@wolfblanc.com.':'The form could not be sent. Please email info@wolfblanc.com.');
+          restoreButton();
+        });
+      });
+    });
+  }
+
+  function configureSite(){
+    configureLanguageSwitch();
+    configureBasinForms();
+  }
+
   document.addEventListener('click',function(event){
     var button=event.target.closest&&event.target.closest('[data-cookie-choice]');
     if(!button)return;
@@ -61,6 +120,6 @@
   },true);
 
   if(readConsent()==='accept')loadAnalytics();
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',configureLanguageSwitch);
-  else configureLanguageSwitch();
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',configureSite);
+  else configureSite();
 })();

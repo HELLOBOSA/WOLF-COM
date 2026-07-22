@@ -110,8 +110,8 @@ function normalizeEnglishMetadata(html){
     .replace(/"name": "Inicio"/g,'"name": "Home"')
     .replace(/"name": "Estudio de arquitectura - Wolfblanc Architects"/g,'"name": "Wolfblanc Architects — International Architecture Studio"')
     .replace(/"name": "Estudio de arquitectura"/g,'"name": "Architecture studio"')
-    .replace(/"description": "Wolfblanc es un estudio de arquitectura y diseño en Suecia, España y Grecia\. Vivienda, inversión, hostelería y arquitectura comercial\."/g,'"description": "Wolfblanc is an international architecture and design studio working across Sweden, Spain and Greece."')
-    .replace(/"description": "Estudio de arquitectura en Suecia, España y Grecia\. Proyectos residenciales, de hostelería e inversión con precisión técnica e identidad mediterránea\. COAM N\.25160, WELL AP\."/g,'"description": "International architecture studio for residential, hospitality and investment projects across Sweden, Spain and Greece. COAM N.25160, SAR/MSA, TEE-TCG and WELL AP."')
+    .replace(/"description": "Wolfblanc es un estudio de arquitectura y diseño en Suecia, España y Grecia\. Vivienda, inversión, hostelería y arquitectura comercial\."/g,'"description": "Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece."')
+    .replace(/"description": "Estudio de arquitectura en Suecia, España y Grecia\. Proyectos residenciales, de hostelería e inversión con precisión técnica e identidad mediterránea\. COAM N\.25160, WELL AP\."/g,'"description": "International architecture studio for residential, hospitality and investment projects across Spain, Sweden and Greece. COAM N.25160, SAR/MSA, TEE-TCG and WELL AP."')
     .replace(/"name": "España"/g,'"name": "Spain"')
     .replace(/"hasCredential": \["COAM N\.25160", "WELL AP"\]/g,'"hasCredential": ["COAM N.25160", "SAR/MSA", "TEE-TCG N.168011", "WELL AP"]');
 }
