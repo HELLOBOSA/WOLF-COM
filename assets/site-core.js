@@ -39,6 +39,16 @@
   function configureLanguageSwitch(){
     var languageSwitch=document.querySelector('.language-switch');
     if(!languageSwitch)return;
+    if(languageSwitch.hasAttribute('data-force-language-switch')){
+      languageSwitch.hidden=false;
+      var spanishUrl=languageSwitch.getAttribute('data-es-url');
+      languageSwitch.querySelectorAll('[data-lang-switch]').forEach(function(button){
+        button.addEventListener('click',function(){
+          if(button.getAttribute('data-lang-switch')==='es'&&spanishUrl)window.location.href=spanishUrl;
+        });
+      });
+      return;
+    }
     var translated=document.querySelectorAll('header [data-es][data-en], main [data-es][data-en]').length;
     if(translated<3){
       languageSwitch.hidden=true;

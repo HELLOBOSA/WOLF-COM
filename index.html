@@ -279,10 +279,12 @@
     /* Contact */
     .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:64px;max-width:1100px}
     @media(max-width:640px){.contact-grid{grid-template-columns:1fr;gap:40px}}
-    .contact-col h3{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:4px;color:var(--accent)}
-    .office-label{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:16px}
-    .contact-col address{color:var(--text-secondary);line-height:1.8;margin-bottom:8px}
-    .contact-col .ph{color:var(--text-secondary)}
+    .contact-col h3{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:20px;color:var(--accent)}
+    .office-block{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}
+    .office-block:first-of-type{margin-top:0}
+    .office-label{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-primary);margin-bottom:4px}
+    .contact-col address{color:var(--text-secondary);line-height:1.65;margin:0;font-style:normal}
+    .contact-col .ph{color:var(--text-secondary);margin-top:6px}
     .contact-col .ph a:hover{color:var(--accent)}
     .emails{display:flex;flex-direction:column;gap:16px;margin-top:16px}
     .em{font-size:1rem;transition:color .3s}
@@ -752,10 +754,10 @@
     <span class="eyebrow" data-es="NUESTRA OFERTA" data-en="OUR OFFER">OUR OFFER</span>
     <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Servicios especializados" data-en="Specialized Services">Specialized Services</h2>
     <div class="cards-2 compact-cards">
-      <div class="gc reveal"><h3 class="ct" data-es="PARA INVERSORES" data-en="FOR INVESTORS">FOR INVESTORS</h3><p class="cd" data-es="Arquitectura estratégica para activos inmobiliarios de alto rendimiento. ROI medible sin complejidad innecesaria." data-en="Strategic architecture for high-performing real estate. Measurable ROI without unnecessary noise.">Strategic architecture for high-performing real estate. Measurable ROI without unnecessary noise.</p></div>
-      <div class="gc reveal"><h3 class="ct" data-es="PARA PROPIETARIOS" data-en="FOR HOMEOWNERS">FOR HOMEOWNERS</h3><p class="cd" data-es="Diseño residencial y reformas con proceso claro, decisiones acertadas y atención a la vida cotidiana." data-en="Residential design and renovation with a clear process, good decisions and attention to daily life.">Residential design and renovation with a clear process, good decisions and attention to daily life.</p></div>
-      <div class="gc reveal"><h3 class="ct" data-es="VILLAS Y SEGUNDA RESIDENCIA" data-en="VILLAS AND SECOND HOMES">VILLAS AND SECOND HOMES</h3><p class="cd" data-es="Villas y residencias de lujo diseñadas en torno al paisaje, la luz, los materiales y la durabilidad." data-en="Luxury villas and second homes designed around landscape, light, materials and durability.">Luxury villas and second homes designed around landscape, light, materials and durability.</p></div>
-      <div class="gc reveal"><h3 class="ct" data-es="POR QUÉ WOLFBLANC" data-en="WHY WOLFBLANC">WHY WOLFBLANC</h3><p class="cd" data-es="Presencia en varios mercados, experiencia internacional, precisión técnica y comunicación humana." data-en="Presence across several markets, international experience, technical precision and human communication.">Presence across several markets, international experience, technical precision and human communication.</p></div>
+      <a class="gc reveal" href="portfolio/for-investors/"><h3 class="ct" data-es="PARA INVERSORES" data-en="FOR INVESTORS">FOR INVESTORS</h3><p class="cd" data-es="Arquitectura estratégica para activos inmobiliarios de alto rendimiento. ROI medible sin complejidad innecesaria." data-en="Strategic architecture for high-performing real estate. Measurable ROI without unnecessary noise.">Strategic architecture for high-performing real estate. Measurable ROI without unnecessary noise.</p><span class="card-link" data-es="Ver servicio →" data-en="See service →">See service →</span></a>
+      <a class="gc reveal" href="portfolio/for-homeowners/"><h3 class="ct" data-es="PARA PROPIETARIOS" data-en="FOR HOMEOWNERS">FOR HOMEOWNERS</h3><p class="cd" data-es="Diseño residencial y reformas con proceso claro, decisiones acertadas y atención a la vida cotidiana." data-en="Residential design and renovation with a clear process, good decisions and attention to daily life.">Residential design and renovation with a clear process, good decisions and attention to daily life.</p><span class="card-link" data-es="Ver servicio →" data-en="See service →">See service →</span></a>
+      <a class="gc reveal" href="portfolio/second-homes-spain/"><h3 class="ct" data-es="VILLAS Y SEGUNDA RESIDENCIA" data-en="VILLAS AND SECOND HOMES">VILLAS AND SECOND HOMES</h3><p class="cd" data-es="Villas y residencias de lujo diseñadas en torno al paisaje, la luz, los materiales y la durabilidad." data-en="Luxury villas and second homes designed around landscape, light, materials and durability.">Luxury villas and second homes designed around landscape, light, materials and durability.</p><span class="card-link" data-es="Ver servicio →" data-en="See service →">See service →</span></a>
+      <a class="gc reveal" href="portfolio/why-wolfblanc/"><h3 class="ct" data-es="POR QUÉ WOLFBLANC" data-en="WHY WOLFBLANC">WHY WOLFBLANC</h3><p class="cd" data-es="Presencia en varios mercados, experiencia internacional, precisión técnica y comunicación humana." data-en="Presence across several markets, international experience, technical precision and human communication.">Presence across several markets, international experience, technical precision and human communication.</p><span class="card-link" data-es="Ver más →" data-en="Discover why →">Discover why →</span></a>
     </div>
   </div>
 </section>
@@ -777,37 +779,25 @@
     <div class="contact-grid reveal">
       <div class="contact-col">
         <h3 data-es="GENERAL" data-en="GENERAL">GENERAL</h3>
-        <span class="office-label" data-es="Consultas" data-en="Enquiries">Enquiries</span>
-        <div class="emails"><a href="mailto:info@wolfblanc.com" class="em">info@wolfblanc.com</a></div>
-        <span class="office-label" data-es="Prensa y medios" data-en="Press &amp; media">Press &amp; media</span>
-        <div class="emails"><a href="mailto:press@wolfblanc.com" class="em">press@wolfblanc.com</a></div>
-        <span class="office-label" data-es="Empleo" data-en="Careers">Careers</span>
-        <p class="ph"><a href="mailto:careers@wolfblanc.com" data-es="Únete a Wolfblanc" data-en="Join Wolfblanc">Join Wolfblanc</a></p>
+        <div class="office-block"><span class="office-label" data-es="Consultas" data-en="Enquiries">Enquiries</span><div class="emails"><a href="mailto:info@wolfblanc.com" class="em">info@wolfblanc.com</a></div></div>
+        <div class="office-block"><span class="office-label" data-es="Prensa y medios" data-en="Press &amp; media">Press &amp; media</span><div class="emails"><a href="mailto:press@wolfblanc.com" class="em">press@wolfblanc.com</a></div></div>
+        <div class="office-block"><span class="office-label" data-es="Empleo" data-en="Careers">Careers</span><p class="ph"><a href="mailto:careers@wolfblanc.com" data-es="Únete a Wolfblanc" data-en="Join Wolfblanc">Join Wolfblanc</a></p></div>
       </div>
       <div class="contact-col">
         <h3 data-es="ESPAÑA" data-en="SPAIN">SPAIN</h3>
-        <span class="office-label" data-es="Madrid (sede)" data-en="Madrid HQ">Madrid HQ</span>
-        <address>Calle Hermosilla 48, 28001</address>
-        <span class="office-label" data-es="Barcelona" data-en="Barcelona">Barcelona</span>
-        <address>Carrer de Pallars 193, 08005</address>
-        <span class="office-label" data-es="Marbella" data-en="Marbella">Marbella</span>
-        <address>Oasis Business Centre, Carretera de Cádiz km 176, 29602, Málaga</address>
-        <p class="ph">Tel. <a href="tel:+34662411064">+34 662 411 064</a></p>
+        <div class="office-block"><span class="office-label" data-es="Madrid (sede)" data-en="Madrid HQ">Madrid HQ</span><address>Calle Hermosilla 48, 28001</address></div>
+        <div class="office-block"><span class="office-label" data-es="Barcelona" data-en="Barcelona">Barcelona</span><address>Carrer de Pallars 193, 08005</address></div>
+        <div class="office-block"><span class="office-label" data-es="Marbella" data-en="Marbella">Marbella</span><address>Oasis Business Centre, Carretera de Cádiz km 176, 29602, Málaga</address></div>
+        <div class="office-block"><span class="office-label" data-es="Línea de España" data-en="Spain office line">Spain office line</span><p class="ph">Tel. <a href="tel:+34662411064">+34 662 411 064</a></p></div>
       </div>
       <div class="contact-col">
         <h3 data-es="SUECIA" data-en="SWEDEN">SWEDEN</h3>
-        <span class="office-label" data-es="Estocolmo" data-en="Stockholm">Stockholm</span>
-        <address>Kungsgatan 9, 11143</address>
-        <p class="ph">Tel. <a href="tel:+46736566489">+46 73 656 64 89</a></p>
+        <div class="office-block"><span class="office-label" data-es="Estocolmo" data-en="Stockholm">Stockholm</span><address>Kungsgatan 9, 11143</address><p class="ph">Tel. <a href="tel:+46736566489">+46 73 656 64 89</a></p></div>
       </div>
       <div class="contact-col">
         <h3 data-es="GRECIA" data-en="GREECE">GREECE</h3>
-        <span class="office-label" data-es="Atenas" data-en="Athens">Athens</span>
-        <address>Ermou 56, 10563</address>
-        <p class="ph">Tel. <a href="tel:+302103009919">+30 210 300 99 19</a></p>
-        <span class="office-label" data-es="Salónica" data-en="Thessaloniki">Thessaloniki</span>
-        <address>Karolou Ntil 31-33, 546 23</address>
-        <p class="ph">Tel. <a href="tel:+302311117280">+30 231 111 72 80</a></p>
+        <div class="office-block"><span class="office-label" data-es="Atenas" data-en="Athens">Athens</span><address>Ermou 56, 10563</address><p class="ph">Tel. <a href="tel:+302103009919">+30 210 300 99 19</a></p></div>
+        <div class="office-block"><span class="office-label" data-es="Salónica" data-en="Thessaloniki">Thessaloniki</span><address>Karolou Ntil 31-33, 546 23</address><p class="ph">Tel. <a href="tel:+302311117280">+30 231 111 72 80</a></p></div>
       </div>
     </div>
 

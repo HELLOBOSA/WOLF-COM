@@ -56,7 +56,7 @@ function navMarkup(prefix,active){
       <div class="nav-links">
 ${desktop}
       </div>
-      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language">
+      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language"${active==='news'?' data-force-language-switch data-es-url="https://wolfblanc.es/journal/"':''}>
         <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
         <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
       </div>
