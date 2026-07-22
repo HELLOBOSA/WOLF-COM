@@ -74,6 +74,16 @@ function imageUrl(post){
 function cleanInline(value){
   return value.replace(/<a\b[^>]*>/gi,'').replace(/<\/a>/gi,'').replace(/<(?!\/?(?:strong|em|br)\b)[^>]+>/gi,'').trim();
 }
+function normalizeContactInvitation(value){
+  return value
+    .replace(/using the form below/gi,'using the contact options below')
+    .replace(/use the form below/gi,'use the contact options below')
+    .replace(/through the form below/gi,'through the contact options below')
+    .replace(/ and we will respond within 48 hours/gi,', and a senior partner will reply within two business days')
+    .replace(/\. We respond within 48 hours/gi,'. A senior partner will reply within two business days')
+    .replace(/we will respond within 48 hours/gi,'a senior partner will reply within two business days')
+    .replace(/we respond within 48 hours/gi,'a senior partner will reply within two business days');
+}
 function cleanBody(post){
   let raw=post.content.rendered||'';
   const formIndex=raw.search(/<form\b/i);if(formIndex>=0)raw=raw.slice(0,formIndex);
@@ -92,7 +102,7 @@ function cleanBody(post){
     }else if(tag==='blockquote')blocks.push(`<blockquote>${strip(inside)}</blockquote>`);
     else if(tag==='table')blocks.push(`<table>${inside.replace(/<([a-z0-9]+)\b[^>]*>/gi,'<$1>')}</table>`);
   }
-  return blocks.join('\n');
+  return normalizeContactInvitation(blocks.join('\n'));
 }
 function displayDate(date){return new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(date+'Z'));}
 

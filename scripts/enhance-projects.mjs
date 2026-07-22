@@ -27,7 +27,7 @@ for(const [slug,images] of Object.entries(projects)){
   html=html.replace(/\s*<section class="project-gallery[\s\S]*?<\/section>\s*/i,'\n');
   const title=(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]||slug).replace(/<[^>]+>/g,'').trim();
   const figures=images.map((image,index)=>`    <figure><img src="../../images/${image}" alt="${title} — project view ${index+2}" loading="lazy" decoding="async"><figcaption>${title} · Wolfblanc Architects</figcaption></figure>`).join('\n');
-  const gallery=`\n  <section class="project-gallery${images.length===1?' single':''}" aria-label="${title} project gallery">\n${figures}\n  </section>\n`;
+  const gallery=`\n  <section class="project-gallery" aria-label="${title} project gallery">\n${figures}\n  </section>\n`;
   html=html.replace(/(\s*<section class="cta-section">)/i,gallery+'$1');
   html=html.replace(/Wolfblanc Architects's\s+philosophy/g,'Wolfblanc Architects’ philosophy');
   fs.writeFileSync(file,html);

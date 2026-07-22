@@ -33,13 +33,16 @@ function card(item){
 for(const project of projects){
   const file=path.join(root,'portfolio',project.slug,'index.html');
   let html=fs.readFileSync(file,'utf8');
+  html=html.replace(/<body(?: class="([^"]*)")?>/,(_,classes='')=>`<body class="${[...new Set(classes.split(/\s+/).filter(Boolean).concat('project-page'))].join(' ')}">`);
   html=html.replace(/\s*<section class="project-related"[\s\S]*?<\/section>/,'');
   const section=`\n  <section class="project-related" aria-labelledby="related-projects-title">
-    <div class="project-related-head"><span class="project-related-ey" id="related-projects-title" data-es="PROYECTOS SIMILARES" data-en="SEE SIMILAR">SEE SIMILAR</span><a class="project-related-all" href="../" data-es="Todos los proyectos →" data-en="All projects →">All projects →</a></div>
-    <div class="project-related-grid">${relatedFor(project).map(card).join('')}</div>
+    <div class="project-related-inner">
+      <div class="project-related-head"><span class="project-related-ey" id="related-projects-title" data-es="MÁS PROYECTOS" data-en="MORE PROJECTS">MORE PROJECTS</span><a class="project-related-all" href="../" data-es="Todos los proyectos →" data-en="All projects →">All projects →</a></div>
+      <div class="project-related-grid">${relatedFor(project).map(card).join('')}</div>
+    </div>
   </section>\n`;
   if(!html.includes('<section class="cta-section">'))throw new Error(`CTA not found: ${project.slug}`);
-  html=html.replace(/\s*<section class="cta-section">/,`${section}  <section class="cta-section">`);
+  html=html.replace(/\s*<\/main>/,`${section}</main>`);
   fs.writeFileSync(file,html);
 }
 
