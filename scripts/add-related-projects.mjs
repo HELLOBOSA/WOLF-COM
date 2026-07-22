@@ -3,13 +3,11 @@ import path from 'node:path';
 
 const root=path.resolve(import.meta.dirname,'..');
 const hub=fs.readFileSync(path.join(root,'portfolio','index.html'),'utf8');
-const projects=[{
-  slug:'horizon',category:'Residential',title:'Horizon House',image:'Horizon House 01.webp'
-}];
+const projects=[];
 
 for(const match of hub.matchAll(/<a href="\.\.\/portfolio\/([^/]+)\/" class="wb-card" data-cat="([^"]+)">([\s\S]*?)<\/a>/g)){
   const [,slug,rawCategory,card]=match;
-  const image=card.match(/<img[^>]+src="\.\.\/images\/([^"]+)"/)?.[1];
+  const image=card.match(/<img[^>]+src="\.\.\/(images\/[^"]+)"/)?.[1];
   const title=card.match(/<h3 class="card-title"[^>]*data-en="([^"]+)"/)?.[1]||card.match(/<h3 class="card-title"[^>]*>([^<]+)</)?.[1];
   const category={Residencial:'Residential',Hosteleria:'Hospitality',Comercial:'Commercial',Urbano:'Urban & public'}[rawCategory]||rawCategory;
   if(image&&title&&!projects.some(project=>project.slug===slug))projects.push({slug,category,title,image});
@@ -27,7 +25,7 @@ function relatedFor(project){
 }
 
 function card(item){
-  return `<a class="project-related-card" href="../${item.slug}/"><div class="project-related-img"><img src="../../images/${item.image}" alt="${item.title} — Wolfblanc Architects" loading="lazy" decoding="async"></div><div class="project-related-body"><p class="project-related-cat">${item.category}</p><p class="project-related-title">${item.title}</p></div></a>`;
+  return `<a class="project-related-card" href="../${item.slug}/"><div class="project-related-img"><img src="../../${item.image}" alt="${item.title} — Wolfblanc Architects" loading="lazy" decoding="async"></div><div class="project-related-body"><p class="project-related-cat">${item.category}</p><p class="project-related-title">${item.title}</p></div></a>`;
 }
 
 for(const project of projects){
