@@ -39,8 +39,8 @@
   function configureLanguageSwitch(){
     var languageSwitch=document.querySelector('.language-switch');
     if(!languageSwitch)return;
+    languageSwitch.hidden=false;
     if(languageSwitch.hasAttribute('data-force-language-switch')){
-      languageSwitch.hidden=false;
       var spanishUrl=languageSwitch.getAttribute('data-es-url');
       languageSwitch.querySelectorAll('[data-lang-switch]').forEach(function(button){
         button.addEventListener('click',function(){
@@ -49,11 +49,7 @@
       });
       return;
     }
-    var translated=document.querySelectorAll('header [data-es][data-en], main [data-es][data-en]').length;
-    if(translated<3){
-      languageSwitch.hidden=true;
-      document.documentElement.lang=document.documentElement.lang||'en';
-    }
+    document.documentElement.lang=document.documentElement.lang||'en';
   }
 
   document.addEventListener('click',function(event){
