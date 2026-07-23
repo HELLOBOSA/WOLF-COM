@@ -9,8 +9,10 @@ for(const match of hub.matchAll(/<a href="\.\.\/portfolio\/([^/]+)\/" class="wb-
   const [,slug,rawCategory,card]=match;
   const image=card.match(/<img[^>]+src="\.\.\/(images\/[^"]+)"/)?.[1];
   const title=card.match(/<h3 class="card-title"[^>]*data-en="([^"]+)"/)?.[1]||card.match(/<h3 class="card-title"[^>]*>([^<]+)</)?.[1];
+  const titleEs=card.match(/<h3 class="card-title"[^>]*data-es="([^"]+)"/)?.[1]||title;
   const category={Residencial:'Residential',Hosteleria:'Hospitality',Comercial:'Commercial',Urbano:'Urban & public'}[rawCategory]||rawCategory;
-  if(image&&title&&!projects.some(project=>project.slug===slug))projects.push({slug,category,title,image});
+  const categoryEs={Residential:'Residencial',Hospitality:'Hostelería',Commercial:'Comercial','Urban & public':'Urbano y público'}[category]||category;
+  if(image&&title&&!projects.some(project=>project.slug===slug))projects.push({slug,category,categoryEs,title,titleEs,image});
 }
 
 if(projects.length!==20)throw new Error(`Expected 20 projects, found ${projects.length}`);
@@ -25,7 +27,7 @@ function relatedFor(project){
 }
 
 function card(item){
-  return `<a class="project-related-card" href="../${item.slug}/"><div class="project-related-img"><img src="../../${item.image}" alt="${item.title} — Wolfblanc Architects" loading="lazy" decoding="async"></div><div class="project-related-body"><p class="project-related-cat">${item.category}</p><p class="project-related-title">${item.title}</p></div></a>`;
+  return `<a class="project-related-card" href="../${item.slug}/"><div class="project-related-img"><img src="../../${item.image}" alt="${item.title} — Wolfblanc Architects" loading="lazy" decoding="async"></div><div class="project-related-body"><p class="project-related-cat" data-en="${item.category}" data-es="${item.categoryEs}">${item.category}</p><p class="project-related-title" data-en="${item.title}" data-es="${item.titleEs}">${item.title}</p></div></a>`;
 }
 
 for(const project of projects){
