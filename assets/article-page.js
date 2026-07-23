@@ -12,6 +12,27 @@
   }
   setTheme(localStorage.getItem('wb-theme')==='dark');
   if(themeButton)themeButton.addEventListener('click',function(){setTheme(!root.classList.contains('wb-dark'));});
+  var lang=localStorage.getItem('wb-es-lang')||'en';
+  function applyLang(){
+    document.querySelectorAll('[data-es],[data-en]').forEach(function(el){
+      var val=el.getAttribute('data-'+lang);
+      if(val!==null)el.innerHTML=val;
+    });
+    document.querySelectorAll('[data-lang-switch]').forEach(function(b){
+      b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
+    });
+    root.setAttribute('lang',lang);
+    localStorage.setItem('wb-es-lang',lang);
+  }
+  applyLang();
+  document.querySelectorAll('[data-lang-switch]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var chosen=b.getAttribute('data-lang-switch');
+      lang=chosen;
+      localStorage.setItem('wb-es-lang',chosen);
+      applyLang();
+    });
+  });
   var burger=document.getElementById('burger-btn');
   var menu=document.getElementById('mob-menu');
   if(burger&&menu)burger.addEventListener('click',function(){menu.style.display=menu.style.display==='block'?'none':'block';});

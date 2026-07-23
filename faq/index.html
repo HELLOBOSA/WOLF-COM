@@ -580,7 +580,7 @@
     localStorage.setItem(LS_LANG,lang);
   }
   var initLang=localStorage.getItem(LS_LANG)||'en';
-  if(initLang==='en')applyLang('en');
+  applyLang(initLang);
   lbs.forEach(function(b){b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang-switch'));});});
 
   if(burger&&mob){
