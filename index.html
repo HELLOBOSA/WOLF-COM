@@ -182,6 +182,12 @@
       background:transparent;transition:all .3s;cursor:pointer
     }
     .btn-outline:hover{background:var(--accent);color:var(--bg)}
+    .btn-dark{
+      display:inline-block;border:1px solid var(--text-primary);background:var(--text-primary);color:var(--bg);
+      padding:12px 24px;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+      transition:opacity .3s;cursor:pointer
+    }
+    .btn-dark:hover{opacity:.85}
 
     section{border-top:1px solid var(--line)}
     .si{max-width:1100px;margin:0 auto;padding:80px 24px}
@@ -249,7 +255,10 @@
       color:var(--accent);opacity:.02;text-transform:uppercase
     }
     .cta-inner{position:relative;z-index:1}
+    .cta-ey{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:24px}
     .cta-inner p{font-size:clamp(1rem,2.5vw,1.6rem);font-weight:300;margin-bottom:40px}
+    .cta-btns{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+    .cta-note{font-size:.62rem!important;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);margin:36px 0 0!important}
 
     /* Project Grid */
     .pg-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
@@ -764,10 +773,15 @@
 
 <!-- CTA -->
 <div class="cta">
-  <div class="cta-bg" data-es="PROYECTOS" data-en="WORK">WORK</div>
+  <div class="cta-bg" data-es="WOLFBLANC" data-en="WOLFBLANC">WOLFBLANC</div>
   <div class="cta-inner reveal">
+    <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">READY TO START?</span>
     <p data-es="Todo buen proyecto comienza con una conversación." data-en="Every good project starts with a conversation.">Every good project starts with a conversation.</p>
-    <a href="#contacto" onclick="ss(event,'contacto')" class="btn-outline" data-es="HABLEMOS →" data-en="TALK TO US →">TALK TO US →</a>
+    <div class="cta-btns">
+      <a href="mailto:info@wolfblanc.com" class="btn-dark" data-es="Escríbanos" data-en="Email us">Email us</a>
+      <a href="#inquiry" onclick="ss(event,'inquiry')" class="btn-outline" data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Tell us about your project →</a>
+    </div>
+    <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">A senior partner reads every enquiry · reply within two business days</p>
   </div>
 </div>
 
