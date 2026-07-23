@@ -130,9 +130,6 @@
   document.addEventListener('click',function(event){
     var button=event.target.closest&&event.target.closest('[data-cookie-choice]');
     if(!button)return;
-    var choice=button.getAttribute('data-cookie-choice');
-    if(choice==='accept')loadAnalytics();
-    if(choice==='reject')clearAnalyticsCookies();
   },true);
 
   document.addEventListener('submit',function(event){
@@ -140,7 +137,7 @@
     if(form)submitBasinForm(form,event);
   },true);
 
-  if(readConsent()==='accept')loadAnalytics();
+  loadAnalytics();
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',configureSite);
   else configureSite();
 })();
