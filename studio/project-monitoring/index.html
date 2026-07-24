@@ -147,16 +147,19 @@
     @media(max-width:768px){#btt{right:24px}}
     @media(max-width:640px){.lead{font-size:1.02rem}.wb-body{font-size:1.02rem;line-height:1.86}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-    .related{border-top:1px solid var(--line);padding:3rem 0}
-    .related-inner{max-width:900px;margin:0 auto;padding:0 1.5rem}
-    .rel-ey{font-size:.5rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-secondary);display:block;margin-bottom:1.5rem}
-    .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-    .rel-card{display:block;text-decoration:none;color:inherit;border:1px solid var(--glass-border);transition:border-color .3s}
-    .rel-card:hover{border-color:var(--glass-border-hover)}
-    .rel-body{padding:1rem}
-    .rel-cat{font-size:.45rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:.3rem}
-    .rel-title{font-size:.75rem;line-height:1.5;font-weight:300}
-    @media(max-width:700px){.rel-grid{grid-template-columns:1fr}}
+    .related{border-top:1px solid var(--line)}
+    .related-inner{max-width:1100px;margin:0 auto;padding:72px 32px}
+    .rel-ey{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:36px}
+    .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .rel-card{background:var(--bg)}
+    .rel-img-wrap{aspect-ratio:4/3;overflow:hidden}
+    .rel-img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+    .rel-card:hover .rel-img{transform:scale(1.035)}
+    .rel-body{padding:22px 22px 26px}
+    .rel-cat{font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .rel-title{font-size:.94rem;font-weight:300;text-transform:uppercase;letter-spacing:.05em;line-height:1.35}
+    @media(max-width:860px){.rel-grid{grid-template-columns:1fr}}
+    @media(min-width:561px) and (max-width:860px){.rel-grid{grid-template-columns:1fr 1fr}}
     .cookie-banner{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1200;width:max-content;max-width:calc(100vw - 32px);display:flex;align-items:center;justify-content:center;gap:14px;padding:8px 10px 8px 16px;border:1px solid rgba(148,133,106,.18);background:rgba(148,133,106,.18);backdrop-filter:blur(16px);border-radius:999px;color:#0d0b0a;box-shadow:0 18px 45px rgba(13,11,10,.08)}
     html.wb-dark .cookie-banner{background:rgba(195,176,135,.16);box-shadow:0 18px 45px rgba(0,0,0,.28)}
     .cookie-banner[hidden]{display:none}
@@ -242,12 +245,25 @@
       <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">A senior partner reads every enquiry · reply within two business days</p>
     </div>
   </section>
-  <section class="related"><div class="related-inner"><span class="rel-ey" data-en="MORE FROM THE STUDIO" data-es="MAS DEL ESTUDIO">MORE FROM THE STUDIO</span><div class="rel-grid"><a href="../" class="rel-card"><div class="rel-body"><p class="rel-cat" data-en="Architecture Studio" data-es="Estudio de Arquitectura">Architecture Studio</p><p class="rel-title" data-en="International architecture and design practice. Nordic method with Mediterranean craft across Spain, Sweden and Greece." data-es="Practica internacional de arquitectura y diseno. Metodo nordico con artesania mediterranea en Espana, Suecia y Grecia.">International architecture and design practice. Nordic method with Mediterranean craft across Spain, Sweden and Greece.</p></div></a><a href="../why-wolfblanc/" class="rel-card"><div class="rel-body"><p class="rel-cat" data-en="Why Wolfblanc" data-es="Por Que Wolfblanc">Why Wolfblanc</p><p class="rel-title" data-en="Nordic precision meets Mediterranean sensibility. One architect from brief to handover." data-es="Precision nordica con sensibilidad mediterranea. Un arquitecto desde el encargo hasta la entrega.">Nordic precision meets Mediterranean sensibility. One architect from brief to handover.</p></div></a><a href="../culture/" class="rel-card"><div class="rel-body"><p class="rel-cat" data-en="Culture and Values" data-es="Cultura y Valores">Culture and Values</p><p class="rel-title" data-en="How we work, what we stand for, and why it matters for your project." data-es="Como trabajamos, que defendemos y por que importa para tu proyecto.">How we work, what we stand for, and why it matters for your project.</p></div></a></div></div></section>
+  <section class="related"><div class="related-inner"><span class="rel-ey" data-en="MORE FROM THE STUDIO" data-es="MAS DEL ESTUDIO">MORE FROM THE STUDIO</span><div class="rel-grid">
+    <a href="../" class="rel-card">
+      <div class="rel-img-wrap"><img class="rel-img" src="../../images/Horizon House 01.webp" alt="Architecture Studio — International architecture and design practice" loading="lazy" decoding="async"></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Architecture Studio" data-es="Estudio de Arquitectura">Architecture Studio</p><p class="rel-title" data-en="International architecture and design practice. Nordic method with Mediterranean craft across Spain, Sweden and Greece." data-es="Practica internacional de arquitectura y diseno. Metodo nordico con artesania mediterranea en Espana, Suecia y Grecia.">International architecture and design practice. Nordic method with Mediterranean craft across Spain, Sweden and Greece.</p></div>
+    </a>
+    <a href="../why-wolfblanc/" class="rel-card">
+      <div class="rel-img-wrap"><img class="rel-img" src="../../images/Casa Boadilla 01.webp" alt="Why Wolfblanc — Nordic precision meets Mediterranean sensibility" loading="lazy" decoding="async"></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Why Wolfblanc" data-es="Por Que Wolfblanc">Why Wolfblanc</p><p class="rel-title" data-en="Nordic precision meets Mediterranean sensibility. One architect from brief to handover." data-es="Precision nordica con sensibilidad mediterranea. Un arquitecto desde el encargo hasta la entrega.">Nordic precision meets Mediterranean sensibility. One architect from brief to handover.</p></div>
+    </a>
+    <a href="../culture/" class="rel-card">
+      <div class="rel-img-wrap"><img class="rel-img" src="../../images/wolfblanc-team.webp" alt="Culture and Values — How we work and what we stand for" loading="lazy" decoding="async"></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Culture and Values" data-es="Cultura y Valores">Culture and Values</p><p class="rel-title" data-en="How we work, what we stand for, and why it matters for your project." data-es="Como trabajamos, que defendemos y por que importa para tu proyecto.">How we work, what we stand for, and why it matters for your project.</p></div>
+    </a>
+  </div></div></section>
 </main>
 
 <footer>
   <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
-  <span><a href="../../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../../projects/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../../faq/">FAQ</a> &middot; <a href="../../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../../newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="../../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
+  <span><a href="../../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../../projects/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../../faq/">FAQ</a> &middot; <a href="../../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
   <span><a href="https://wolfblanc.es" target="_blank" rel="noopener" data-es="Wolfblanc España" data-en="Wolfblanc Spain">Wolfblanc Spain</a> &middot; <a href="https://wolfblanc.se" target="_blank" rel="noopener" data-es="Wolfblanc Suecia" data-en="Wolfblanc Sweden">Wolfblanc Sweden</a> &middot; <a href="https://wolfblanc.gr" target="_blank" rel="noopener" data-es="Wolfblanc Grecia" data-en="Wolfblanc Greece">Wolfblanc Greece</a></span>
   <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
 </footer>
