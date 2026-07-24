@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <title>Journal: Architecture Across Spain, Sweden & Greece - WOLFBLANC</title>
+  <meta name="description" content="Wolfblanc Journal: curated architecture, property, design, BIM, climate and hospitality insight across Spain, Sweden and Greece.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Wolfblanc Journal: Architecture Across Three Markets">
+  <meta property="og:description" content="Architecture, property, design and investment insight from Spain, Sweden and Greece.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wolfblanc.com/journal/">
+  <meta property="og:site_name" content="Wolfblanc Architects">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="https://wolfblanc.com/images/Market Regeneration 01.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Journal · Architecture and Design in Spain - WOLFBLANC ARCHITECTS">
+  <meta name="twitter:description" content="Articles on architecture, interior design, permits and real estate in Spain by Wolfblanc Architects.">
+  <meta name="twitter:image" content="https://wolfblanc.com/images/Market Regeneration 01.webp">
+  <link rel="canonical" href="https://wolfblanc.com/journal/">
+  <link rel="alternate" hreflang="en" href="https://wolfblanc.com/journal/">
+  <link rel="alternate" hreflang="x-default" href="https://wolfblanc.com/journal/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://wolfblanc.com/journal/#blog",
+    "url": "https://wolfblanc.com/journal/",
+    "name": "Wolfblanc Journal",
+    "description": "Artículos sobre arquitectura, diseño de interiores, urbanismo e inversión inmobiliaria en España.",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Wolfblanc Architects",
+      "url": "https://wolfblanc.com/",
+      "logo": {"@type": "ImageObject", "url": "https://wolfblanc.com/images/210-sq-white-02.webp"}
+    }
+  }
+  </script>
+  <style>
+    @keyframes wbDrift{from{background-position:0 0}to{background-position:80px 80px}}
+    :root{--bg:#f4f1ea;--text:#0d0b0a;--text2:#6a655b;--accent:#94856a;--line:rgba(148,133,106,.14);--nav:rgba(245,240,235,.94)}
+    .wb-dark{--bg:#0d0b0a;--text:#f0ede7;--text2:#8f887c;--accent:#c3b087;--line:rgba(195,176,135,.14);--nav:rgba(13,11,10,.94)}
+
+    nav{position:fixed;top:0;left:0;width:100%;z-index:1000;transition:background .4s,border-color .4s}
+    .nav-bar{display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 2rem}
+    nav.scrolled{background:var(--nav);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav-logo{font-size:.8rem;letter-spacing:.2em;font-weight:300;color:var(--text);white-space:nowrap}
+    .nav-logo:hover{color:var(--accent)}
+    .nav-right{display:flex;align-items:center;gap:20px}
+    .nav-links{display:flex;align-items:center;gap:22px}
+    .nav-link{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;font-weight:300;color:var(--text2)}
+    .nav-link:hover,.nav-link.active{color:var(--text)}
+    .burger-btn{display:none;background:none;border:none;cursor:pointer;color:var(--text);align-items:center;justify-content:center;padding:8px;width:40px;height:40px}
+    .burger-btn:hover{color:var(--accent)}
+    .mob-menu{display:none;border-top:1px solid var(--line);background:var(--nav);backdrop-filter:blur(12px)}
+    .mob-menu a{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);padding:16px 1.1rem;border-bottom:1px solid var(--line);text-decoration:none;transition:color .3s}
+    .mob-menu a:last-child{border-bottom:0}
+    .mob-menu a:hover{color:var(--accent)}
+    .language-switch{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);padding:3px}
+    .lang-btn{background:transparent;border:0;color:var(--text2);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;padding:4px 6px;cursor:pointer;transition:color .3s}
+    .lang-btn:hover,.lang-btn.active{color:var(--accent)}
+    .theme-btn{background:none;border:none;cursor:pointer;color:var(--text2);display:flex;align-items:center;padding:8px;transition:color .3s}
+    .theme-btn:hover{color:var(--text)}
+    @media(max-width:860px){.nav-bar{padding:0 1.25rem}.nav-links{display:none}.burger-btn{display:flex}.nav-link{font-size:.54rem;letter-spacing:.1em}}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.02em;line-height:1.8;min-height:100vh;transition:background .4s,color .4s}
+    a{text-decoration:none;color:inherit;transition:color .3s}
+    button{font-family:inherit;cursor:pointer}
+    nav{position:fixed;top:0;left:0;width:100%;z-index:1000;border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
+    nav.scrolled{background:var(--nav);backdrop-filter:blur(12px);border-bottom-color:var(--line)}
+    .mob-menu a{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);padding:16px 1.25rem;border-bottom:1px solid var(--line);transition:color .3s}
+    .mob-menu a:last-child{border-bottom:0}
+    .mob-menu a:hover{color:var(--accent)}
+    header{position:relative;overflow:hidden;border-bottom:1px solid var(--line);min-height:68vh;display:flex;align-items:center}
+    .hero-grid{--line:rgba(148,133,106,.22);position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;pointer-events:none;will-change:background-position}
+    .hero-inner{position:relative;max-width:1100px;width:100%;margin:0 auto;padding:100px 48px 80px}
+    .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:20px}
+    h1{font-size:clamp(1.8rem,4.5vw,3.4rem);font-weight:200;text-transform:uppercase;letter-spacing:.08em;line-height:1.15;margin:0 0 28px;max-width:18ch}
+    .lead{font-size:1.05rem;line-height:1.7;color:var(--text2);max-width:54ch}
+    main{max-width:1100px;margin:0 auto;padding:80px 48px 0}
+    .featured{display:grid;grid-template-columns:1.15fr 1fr;border:1px solid var(--line);margin-bottom:64px}
+    .featured:hover .wb-img{transform:scale(1.045);filter:saturate(1) contrast(1.04)}
+    .featured:hover .wb-go{color:var(--accent)}
+    .feat-img{position:relative;min-height:420px;overflow:hidden}
+    .feat-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:saturate(.95) contrast(1.02)}
+    .wb-img{transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .8s ease}
+    .feat-badge{position:absolute;top:20px;left:20px;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:#f4f5f7;background:rgba(13,11,10,.55);backdrop-filter:blur(10px);padding:7px 12px}
+    .feat-body{padding:48px;display:flex;flex-direction:column;justify-content:center;background:var(--bg)}
+    .feat-meta{display:flex;gap:10px;align-items:center;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+    .feat-meta .dot{width:3px;height:3px;border-radius:50%;background:var(--accent);opacity:.5}
+    .feat-meta .dim{color:var(--text2)}
+    .feat-title{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:300;text-transform:uppercase;letter-spacing:.06em;line-height:1.3;color:var(--text);margin:0 0 18px}
+    .feat-desc{font-size:1rem;line-height:1.75;letter-spacing:.005em;color:var(--text2);margin:0 0 28px}
+    .wb-go{font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);transition:color .3s}
+    .filter-bar{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;border-top:1px solid var(--line);padding-top:32px;margin-bottom:36px}
+    .filter-btns{display:flex;flex-wrap:wrap;gap:8px}
+    .fbtn{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;padding:9px 16px;border-radius:999px;background:transparent;color:var(--text2);border:1px solid var(--line);transition:all .25s;cursor:pointer}
+    .fbtn.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .fcount{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);white-space:nowrap}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .wb-card{display:flex;flex-direction:column;background:var(--bg)}
+    .wb-card:hover .wb-img{transform:scale(1.045);filter:saturate(1) contrast(1.04)}
+    .wb-card:hover .wb-go{color:var(--accent)}
+    .card-img{position:relative;aspect-ratio:4/3;overflow:hidden}
+    .card-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02)}
+    .card-body{padding:24px 24px 28px}
+    .card-meta{display:flex;gap:9px;align-items:center;font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+    .card-meta .dim{color:var(--text2)}
+    .card-title{font-size:.98rem;font-weight:300;text-transform:uppercase;letter-spacing:.05em;line-height:1.35;color:var(--text);margin:0 0 12px}
+    .card-desc{font-size:1rem;line-height:1.72;letter-spacing:.005em;color:var(--text2);margin:0 0 18px}
+    .wb-card[hidden]{display:none!important}
+    .lm-wrap{display:flex;justify-content:center;padding:56px 0 0}
+    .lm-btn{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);background:transparent;border:1px solid var(--line);padding:14px 28px;cursor:pointer;transition:color .3s,border-color .3s}
+    .lm-btn:hover{color:var(--accent);border-color:var(--accent)}
+    .cta-section{position:relative;border-top:1px solid var(--line);margin-top:96px;overflow:hidden}
+    .cta-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;user-select:none;font-size:15vw;font-weight:100;color:var(--accent);opacity:.03;text-transform:uppercase}
+    .cta-inner{position:relative;max-width:1100px;margin:0 auto;padding:120px 48px;text-align:center}
+    .cta-ey{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:24px}
+    .cta-title{font-size:clamp(1.3rem,3vw,2.1rem);font-weight:200;line-height:1.3;letter-spacing:.04em;text-transform:uppercase;color:var(--text);max-width:22ch;margin:0 auto 48px}
+    .cta-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center}
+    .btn-em{display:inline-flex;align-items:center;gap:10px;background:var(--text);color:var(--bg);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:opacity .3s}
+    .btn-em:hover{opacity:.85}
+    .btn-ct{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--accent);color:var(--accent);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:all .3s}
+    .btn-ct:hover{background:var(--accent);color:var(--bg)}
+    .btn-ph{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--accent);color:var(--accent);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:all .3s}
+    .btn-ph:hover{background:var(--accent);color:var(--bg)}
+    .cta-note{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);margin-top:36px}
+    #btt{position:fixed;bottom:32px;right:32px;width:40px;height:40px;border:1px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;z-index:1000;background:transparent;cursor:pointer;opacity:0;visibility:hidden;transition:all .3s}
+    #btt.visible{opacity:1;visibility:visible}
+    #btt:hover{background:var(--accent);color:var(--bg)}@media(max-width:768px){#btt{right:24px}}
+    @media(max-width:860px){
+      .burger{display:flex}
+      .hero-inner,main,.cta-inner{padding-left:24px;padding-right:24px}
+      .hero-inner{padding-top:88px;padding-bottom:64px}
+      .featured{grid-template-columns:1fr}
+      .feat-img{min-height:240px}
+      .feat-body{padding:32px 24px}
+      .grid3{grid-template-columns:1fr}
+      .cta-inner{padding-top:80px;padding-bottom:80px}
+      footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
+    }
+    @media(max-width:768px){}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    @media(min-width:561px) and (max-width:860px){.grid3{grid-template-columns:1fr 1fr}}
+    footer{border-top:1px solid var(--line);padding:2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text2)}
+    .cookie-banner{
+      position:fixed;left:50%;bottom:24px;transform:translateX(-50%);
+      z-index:1200;width:max-content;max-width:calc(100vw - 32px);
+      display:flex;align-items:center;justify-content:center;gap:14px;
+      padding:8px 10px 8px 16px;border:1px solid var(--glass-border,rgba(148,133,106,.18));
+      background:rgba(148,133,106,.18);backdrop-filter:blur(16px);
+      border-radius:999px;color:var(--text-primary,#0d0b0a);box-shadow:0 18px 45px rgba(13,11,10,.08)
+    }
+    html.dark .cookie-banner,html.wb-dark .cookie-banner{background:rgba(195,176,135,.16);box-shadow:0 18px 45px rgba(0,0,0,.28)}
+    .cookie-banner[hidden]{display:none}
+    .cookie-copy{display:flex;align-items:center;gap:9px;min-width:0}
+    .cookie-title,.cookie-btn{font-size:.6rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+    .cookie-link{font-size:.5rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary,#6a655b);text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+    .cookie-link:hover{color:var(--accent,#94856a)}
+    .cookie-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+    .cookie-btn{
+      border:0;background:transparent;color:var(--text-secondary,#6a655b);
+      padding:6px 9px;border-radius:999px;font-family:inherit;font-weight:300;line-height:1;cursor:pointer;
+      appearance:none;-webkit-appearance:none;transition:color .25s,background .25s
+    }
+    .cookie-btn:hover,.cookie-btn.accept:hover{color:var(--accent,#94856a)}
+    .cookie-btn.accept{background:var(--accent,#94856a);color:var(--bg,#f4f1ea)}
+    .cookie-btn.accept:hover{background:var(--text-primary,#0d0b0a);color:var(--bg,#f4f1ea)}
+    @media(max-width:820px){.cookie-banner{gap:10px}}
+    @media(max-width:520px){
+      .cookie-banner{bottom:16px;max-width:calc(100vw - 20px);padding:8px 9px 8px 12px;gap:7px}
+      .cookie-copy{gap:7px}
+      .cookie-title,.cookie-btn{font-size:.5rem;letter-spacing:.12em}
+      .cookie-link{font-size:.46rem;letter-spacing:.12em}
+      .cookie-actions{gap:6px}
+      .cookie-btn{padding:6px 7px}
+      .cookie-btn.accept{padding:6px 9px}
+    }
+    @media(max-width:380px){
+      .cookie-banner{flex-wrap:wrap;border-radius:18px;padding:9px 10px;row-gap:8px}
+      .cookie-copy,.cookie-actions{justify-content:center}
+    }
+    footer>span{flex:1 1 0}
+    footer>span:nth-child(2){text-align:center}
+    footer>span:nth-child(3){text-align:center}
+    footer>span:nth-child(4){text-align:right}
+    @media(max-width:860px){
+      footer>span{flex:0 0 100%;text-align:center}
+      footer>span:nth-child(3){text-align:center}
+    }
+
+  html{overflow-y:scroll}
+  </style>
+  <link rel="stylesheet" href="../assets/site-shell.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-bar">
+    <a href="../" class="nav-logo" aria-label="Wolfblanc home">WOLFBLANC</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="../studio/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+        <a href="../services/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+        <a href="../projects/" class="nav-link" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+        <a href="../journal/" class="nav-link active" data-es="JOURNAL" data-en="JOURNAL" aria-current="page">JOURNAL</a>
+        <a href="../faq/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
+        <a href="../contact/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
+      </div>
+      <div class="language-switch" aria-label="Select language" data-es-aria="Seleccionar idioma" data-en-aria="Select language" data-force-language-switch data-es-url="https://wolfblanc.es/journal/">
+        <button class="lang-btn active" type="button" data-lang-switch="en">EN</button>
+        <button class="lang-btn" type="button" data-lang-switch="es">ES</button>
+      </div>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme" data-es-aria="Cambiar tema" data-en-aria="Toggle theme"><svg id="wb-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="wb-sun" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+      <button class="burger-btn" id="burger-btn" type="button" aria-label="Menu" data-es-aria="Menú" data-en-aria="Menu"><svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg><svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
+    </div>
+  </div>
+  <div class="mob-menu" id="mob-menu">
+    <a href="../studio/" data-es="ESTUDIO" data-en="STUDIO">STUDIO</a>
+    <a href="../services/" data-es="SERVICIOS" data-en="SERVICES">SERVICES</a>
+    <a href="../projects/" data-es="PROYECTOS" data-en="PROJECTS">PROJECTS</a>
+    <a href="../journal/" data-es="JOURNAL" data-en="JOURNAL" aria-current="page" style="color:var(--accent)">JOURNAL</a>
+    <a href="../faq/" data-es="FAQ" data-en="FAQ">FAQ</a>
+    <a href="../contact/" data-es="CONTACTO" data-en="CONTACT">CONTACT</a>
+  </div>
+</nav>
+
+<header>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <span class="eyebrow" data-es="JOURNAL · WOLFBLANC" data-en="JOURNAL · WOLFBLANC">JOURNAL · WOLFBLANC</span>
+    <h1>Architecture across three markets</h1>
+    <p class="lead">Field notes on architecture, property, design, BIM, hospitality and climate from a practice working across Spain, Sweden and Greece.</p>
+  </div>
+</header>
+
+<main>
+  <a href="./architecture-spain-sweden-greece-wolfblanc-practice/" class="featured">
+    <div class="feat-img"><img class="wb-img" src="../images/journal/architecture-spain-sweden-greece-wolfblanc-practice.webp" alt="How Wolfblanc Works Across Spain, Sweden, and Greece: One Practice, Three Countries" loading="eager" fetchpriority="high" decoding="async"><span class="feat-badge">Featured</span></div>
+    <div class="feat-body"><div class="feat-meta"><span>Studio</span><span class="dot"></span><span class="dim">28 APR 2026</span></div><h2 class="feat-title">How Wolfblanc Works Across Spain, Sweden, and Greece: One Practice, Three Countries</h2><p class="feat-desc">Wolfblanc operates with architecture licenses, completed projects, and local teams in Spain, Sweden, and Greece. How a genuinely cross-border practice works in practice — and what it means for international clients.</p><span class="wb-go">Read article →</span></div>
+  </a>
+  <div class="filter-bar"><div class="filter-btns"><button type="button" class="fbtn on" data-filter="All">All</button>
+      <button type="button" class="fbtn" data-filter="Technology &amp; Climate">Technology & Climate</button>
+      <button type="button" class="fbtn" data-filter="Places">Places</button>
+      <button type="button" class="fbtn" data-filter="Property &amp; Investment">Property & Investment</button>
+      <button type="button" class="fbtn" data-filter="Hospitality &amp; Commercial">Hospitality & Commercial</button>
+      <button type="button" class="fbtn" data-filter="Studio">Studio</button>
+      <button type="button" class="fbtn" data-filter="Design &amp; Wellbeing">Design & Wellbeing</button></div><span class="fcount"><span id="art-count">34</span> articles</span></div>
+  <div class="grid3">    <a href="./architecture-bim-information-system/" class="wb-card" data-cat="Technology &amp; Climate">
+      <div class="card-img"><img class="wb-img" src="../images/journal/architecture-bim-information-system.webp" alt="Architecture and BIM as an Information System" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Technology & Climate</span><span class="dim">· 03 JUL 2026</span></div><h3 class="card-title">Architecture and BIM as an Information System</h3><p class="card-desc">How architecture, BIM, and information management help complex residential, hospitality, commercial, and development projects stay coordinated across Spain, Sweden, and Greece.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./stockholm-brf-renovation-board-approvals-permits-and-what-foreign-owners-get-wrong/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/stockholm-brf-renovation-board-approvals-permits-and-what-foreign-owners-get-wrong.webp" alt="Stockholm BRF Renovation: Board Approvals, Permits and What Foreign Owners Get Wrong" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 28 MAY 2026</span></div><h3 class="card-title">Stockholm BRF Renovation: Board Approvals, Permits and What Foreign Owners Get Wrong</h3><p class="card-desc">How BRF board approvals, building permits and renovation rules work in Stockholm. A practical guide for international apartment owners and investors.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./architecture-in-mallorca-renovations-villas-and-what-foreign-buyers-should-know/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/architecture-in-mallorca-renovations-villas-and-what-foreign-buyers-should-know.webp" alt="Architecture in Mallorca: Renovations, Villas and What Foreign Buyers Should Know" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 02 JUN 2026</span></div><h3 class="card-title">Architecture in Mallorca: Renovations, Villas and What Foreign Buyers Should Know</h3><p class="card-desc">A practical guide to architecture and renovation in Mallorca for foreign buyers: villas, fincas, permits, protected land, costs and due diligence.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./renovating-an-apartment-in-barcelona-permits-costs-and-common-mistakes/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/renovating-an-apartment-in-barcelona-permits-costs-and-common-mistakes.webp" alt="Renovating an Apartment in Barcelona: Permits, Costs and Common Mistakes" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 02 JUN 2026</span></div><h3 class="card-title">Renovating an Apartment in Barcelona: Permits, Costs and Common Mistakes</h3><p class="card-desc">What foreign owners should know before renovating an apartment in Barcelona: permits, costs, building constraints, community rules and common renovation mistakes.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./buying-and-renovating-property-in-valencia-as-a-foreigner/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/buying-and-renovating-property-in-valencia-as-a-foreigner.webp" alt="Buying and Renovating Property in Valencia as a Foreigner" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 02 JUN 2026</span></div><h3 class="card-title">Buying and Renovating Property in Valencia as a Foreigner</h3><p class="card-desc">A practical guide for foreign buyers in Valencia: neighborhoods, renovation risks, permits, costs, architects, contractor coordination and what to check before buying.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./architecture-in-thessaloniki-neighborhoods-building-stock-and-renovation-opportunities-for-buyers/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/architecture-in-thessaloniki-neighborhoods-building-stock-and-renovation-opportunities-for-buyers.webp" alt="Architecture in Thessaloniki: Neighborhoods, Building Stock and Renovation Opportunities for Buyers" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 02 JUN 2026</span></div><h3 class="card-title">Architecture in Thessaloniki: Neighborhoods, Building Stock and Renovation Opportunities for Buyers</h3><p class="card-desc">A practical guide to Thessaloniki architecture and renovation: best neighborhoods, building types, permit process, costs and what foreign buyers should know.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./architecture-in-marbella-villas-renovations-and-what-international-buyers-should-know/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/architecture-in-marbella-villas-renovations-and-what-international-buyers-should-know.webp" alt="Architecture in Marbella: Villas, Renovations and What International Buyers Should Know" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 02 JUN 2026</span></div><h3 class="card-title">Architecture in Marbella: Villas, Renovations and What International Buyers Should Know</h3><p class="card-desc">A practical guide to architecture in Marbella for international buyers: villas, renovations, permits, costs, due diligence and common project risks.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./luxury-villa-project-management-in-marbella-how-foreign-investors-control-cost-licenses-and-contractors/" class="wb-card" data-cat="Property &amp; Investment">
+      <div class="card-img"><img class="wb-img" src="../images/journal/luxury-villa-project-management-in-marbella-how-foreign-investors-control-cost-licenses-and-contractors.webp" alt="Luxury Villa Project Management in Marbella: How Foreign Investors Control Cost, Licenses and Contractors" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Property & Investment</span><span class="dim">· 07 MAY 2026</span></div><h3 class="card-title">Luxury Villa Project Management in Marbella: How Foreign Investors Control Cost, Licenses and Contractors</h3><p class="card-desc">Building or renovating a luxury villa in Marbella is not only a design problem. For foreign investors, the real risk is controlling licenses, contractors, procurement, cost changes and site decisions from another country.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./boutique-hotel-renovation-in-spain-why-ffe-licensing-and-opening-readiness-must-be-managed-together/" class="wb-card" data-cat="Hospitality &amp; Commercial">
+      <div class="card-img"><img class="wb-img" src="../images/journal/boutique-hotel-renovation-in-spain-why-ffe-licensing-and-opening-readiness-must-be-managed-together.webp" alt="Boutique Hotel Renovation in Spain: Why FF&amp;E, Licensing and Opening Readiness Must Be Managed Together" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Hospitality & Commercial</span><span class="dim">· 06 MAY 2026</span></div><h3 class="card-title">Boutique Hotel Renovation in Spain: Why FF&E, Licensing and Opening Readiness Must Be Managed Together</h3><p class="card-desc">A boutique hotel renovation in Spain does not fail only because the design is weak. It fails when licensing, procurement, FF&E, contractors, staff readiness and the booking launch are managed as separate projects.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./commercial-hospitality-architecture-madrid/" class="wb-card" data-cat="Hospitality &amp; Commercial">
+      <div class="card-img"><img class="wb-img" src="../images/journal/commercial-hospitality-architecture-madrid.webp" alt="Commercial and Hospitality Architecture in Madrid: What Makes a Space Actually Perform" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Hospitality & Commercial</span><span class="dim">· 23 FEB 2026</span></div><h3 class="card-title">Commercial and Hospitality Architecture in Madrid: What Makes a Space Actually Perform</h3><p class="card-desc">Commercial and hospitality spaces succeed or fail on operational performance, not just aesthetics. How architecture drives customer flow, staff efficiency, and brand experience in Madrid restaurants, hotels, and retail spaces.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./what-nobody-tells-you-before-hiring-architecture-studio/" class="wb-card" data-cat="Studio">
+      <div class="card-img"><img class="wb-img" src="../images/journal/what-nobody-tells-you-before-hiring-architecture-studio.webp" alt="What Nobody Tells You Before Hiring an Architecture Studio" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Studio</span><span class="dim">· 30 APR 2026</span></div><h3 class="card-title">What Nobody Tells You Before Hiring an Architecture Studio</h3><p class="card-desc">The fear most people carry into the process of hiring an architect is rarely about money or timelines. It is about attention. Whether the person who understood your project in the first meeting will still be paying attention to it in month four. That fear is worth examining honestly.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./story-behind-wolfblanc-instinct-precision/" class="wb-card" data-cat="Studio">
+      <div class="card-img"><img class="wb-img" src="../images/wolfblanc-team.webp" alt="The Story Behind Wolfblanc: Where Instinct Meets Precision" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Studio</span><span class="dim">· 29 APR 2026</span></div><h3 class="card-title">The Story Behind Wolfblanc: Where Instinct Meets Precision</h3><p class="card-desc">The story behind the Wolfblanc name, the thinking behind the practice, and why an architecture studio founded on the tension between instinct and precision continues to define what we build and how we work.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./architecture-spain-sweden-greece-wolfblanc-practice/" class="wb-card" data-cat="Studio">
+      <div class="card-img"><img class="wb-img" src="../images/journal/architecture-spain-sweden-greece-wolfblanc-practice.webp" alt="How Wolfblanc Works Across Spain, Sweden, and Greece: One Practice, Three Countries" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Studio</span><span class="dim">· 28 APR 2026</span></div><h3 class="card-title">How Wolfblanc Works Across Spain, Sweden, and Greece: One Practice, Three Countries</h3><p class="card-desc">Wolfblanc operates with architecture licenses, completed projects, and local teams in Spain, Sweden, and Greece. How a genuinely cross-border practice works in practice — and what it means for international clients.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./wolfblancs-approach-to-sustainability/" class="wb-card" data-cat="Studio">
+      <div class="card-img"><img class="wb-img" src="../images/journal/wolfblancs-approach-to-sustainability.webp" alt="Designing with Purpose: Wolfblanc's Approach to Sustainability" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Studio</span><span class="dim">· 08 FEB 2026</span></div><h3 class="card-title">Designing with Purpose: Wolfblanc's Approach to Sustainability</h3><p class="card-desc">Sustainability at Wolfblanc is not a certification exercise — it is a design methodology applied to every project. How the studio approaches energy performance, material choices, and long-term building resilience across Spain, Sweden, and Greece.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./well-ap-certification/" class="wb-card" data-cat="Studio">
+      <div class="card-img"><img class="wb-img" src="../images/journal/well-ap-certification.webp" alt="Wolfblanc Earns WELL AP Certification" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Studio</span><span class="dim">· 03 SEPT 2025</span></div><h3 class="card-title">Wolfblanc Earns WELL AP Certification</h3><p class="card-desc">Wolfblanc founding partner Dolores has earned the WELL Accredited Professional credential — a specialist qualification in designing buildings for human health, wellbeing, and performance under the WELL Building Standard.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./madrid-renovation-guide-costs-permits-timeline/" class="wb-card" data-cat="Property &amp; Investment">
+      <div class="card-img"><img class="wb-img" src="../images/journal/madrid-renovation-guide-costs-permits-timeline.webp" alt="Madrid Renovation Guide 2026: Costs, Permits &amp; Timeline" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Property & Investment</span><span class="dim">· 27 APR 2026</span></div><h3 class="card-title">Madrid Renovation Guide 2026: Costs, Permits & Timeline</h3><p class="card-desc">A complete 2026 guide to renovating in Madrid — realistic costs per square metre, permit types and timescales, contractor selection, and how to run a project in Spain’s capital without the most common mistakes.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./buying-property-madrid-foreigner-renovation-guide/" class="wb-card" data-cat="Property &amp; Investment">
+      <div class="card-img"><img class="wb-img" src="../images/journal/buying-property-madrid-foreigner-renovation-guide.webp" alt="Buying Property in Madrid as a Foreigner: What Your Architect Wants You to Know Before You Sign" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Property & Investment</span><span class="dim">· 19 FEB 2026</span></div><h3 class="card-title">Buying Property in Madrid as a Foreigner: What Your Architect Wants You to Know Before You Sign</h3><p class="card-desc">Before you sign on a Madrid property, your architect wants you to know what renovation actually costs, what requires permits, and what the building will and won’t allow. A guide for foreign buyers in Madrid.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./hiring-architect-spain-greece-foreign-buyer/" class="wb-card" data-cat="Property &amp; Investment">
+      <div class="card-img"><img class="wb-img" src="../images/journal/hiring-architect-spain-greece-foreign-buyer.webp" alt="Hiring an Architect in Spain or Greece When You Don't Live There" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Property & Investment</span><span class="dim">· 26 APR 2026</span></div><h3 class="card-title">Hiring an Architect in Spain or Greece When You Don't Live There</h3><p class="card-desc">Managing a renovation or build in Spain or Greece from another country is a different problem from doing it locally. The risks are specific, the regulatory systems are unfamiliar, and the consequences of hiring the wrong studio are harder to catch and more expensive to fix. Here is what you need to know before you start.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./second-home-spain-architecture-renovation-guide/" class="wb-card" data-cat="Property &amp; Investment">
+      <div class="card-img"><img class="wb-img" src="../images/journal/second-home-spain-architecture-renovation-guide.webp" alt="Buying and Renovating a Second Home in Spain: What International Buyers Need to Know" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Property & Investment</span><span class="dim">· 22 FEB 2026</span></div><h3 class="card-title">Buying and Renovating a Second Home in Spain: What International Buyers Need to Know</h3><p class="card-desc">Buying a second home in Spain involves more than property law and tax — the renovation reality catches most international buyers off guard. A practical guide to the process, costs, and decisions that determine the outcome.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./wellbeing-by-design-architecture-health-mood/" class="wb-card" data-cat="Design &amp; Wellbeing">
+      <div class="card-img"><img class="wb-img" src="../images/journal/wellbeing-by-design-architecture-health-mood.webp" alt="Wellbeing by Design: How Architecture Affects Your Health, Mood, and Daily Life" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Design & Wellbeing</span><span class="dim">· 24 APR 2026</span></div><h3 class="card-title">Wellbeing by Design: How Architecture Affects Your Health, Mood, and Daily Life</h3><p class="card-desc">Architecture directly affects your health, sleep, mood, and daily energy levels. How specific design decisions — light, acoustics, air quality, spatial proportion — create measurable wellbeing outcomes in residential spaces.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./renovation-mistakes-cost-most-to-fix/" class="wb-card" data-cat="Technology &amp; Climate">
+      <div class="card-img"><img class="wb-img" src="../images/journal/renovation-mistakes-cost-most-to-fix.webp" alt="Renovation Mistakes That Cost More to Fix Than the Original Work: What to Avoid in Any Country" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Technology & Climate</span><span class="dim">· 23 APR 2026</span></div><h3 class="card-title">Renovation Mistakes That Cost More to Fix Than the Original Work: What to Avoid in Any Country</h3><p class="card-desc">The renovation mistakes that cost the most to fix are rarely exotic — they’re the same patterns repeated across projects in Spain, Sweden, and Greece. What they are, why they happen, and how to avoid them.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./swedish-design-thinking-southern-european-homes/" class="wb-card" data-cat="Design &amp; Wellbeing">
+      <div class="card-img"><img class="wb-img" src="../images/journal/swedish-design-thinking-southern-european-homes.webp" alt="Scandinavian Design Principles Applied to Homes in Spain and Greece: Why Nordic Methodology Travels Well" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Design & Wellbeing</span><span class="dim">· 22 APR 2026</span></div><h3 class="card-title">Scandinavian Design Principles Applied to Homes in Spain and Greece: Why Nordic Methodology Travels Well</h3><p class="card-desc">Scandinavian design is more than a visual style — it’s a methodology. Why Nordic principles around light, function, material honesty, and spatial restraint translate so well to homes in Spain and Greece.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./home-design-summer-year-round-living-spain-greece-sweden/" class="wb-card" data-cat="Design &amp; Wellbeing">
+      <div class="card-img"><img class="wb-img" src="../images/journal/home-design-summer-year-round-living-spain-greece-sweden.webp" alt="Designing a Home for Both Summer and Year-Round Living: Lessons from Spain, Sweden, and Greece" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Design & Wellbeing</span><span class="dim">· 20 MAR 2026</span></div><h3 class="card-title">Designing a Home for Both Summer and Year-Round Living: Lessons from Spain, Sweden, and Greece</h3><p class="card-desc">Designing a home that performs well in both summer and winter requires different decisions in Spain, Sweden, and Greece. What architecture can do to make year-round living genuinely comfortable across all three climates.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./climate-responsive-architecture-spain-greece-sweden/" class="wb-card" data-cat="Technology &amp; Climate">
+      <div class="card-img"><img class="wb-img" src="../images/journal/climate-responsive-architecture-spain-greece-sweden.webp" alt="Climate-Responsive Architecture: What Spain, Sweden, and Greece Have to Teach Each Other" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Technology & Climate</span><span class="dim">· 19 MAR 2026</span></div><h3 class="card-title">Climate-Responsive Architecture: What Spain, Sweden, and Greece Have to Teach Each Other</h3><p class="card-desc">Spain, Sweden, and Greece have each developed centuries of climate-responsive building knowledge. What each tradition does well and what southern European architecture can learn from Nordic standards — and vice versa.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./energy-efficient-homes-sweden-nordic-standard/" class="wb-card" data-cat="Technology &amp; Climate">
+      <div class="card-img"><img class="wb-img" src="../images/journal/energy-efficient-homes-sweden-nordic-standard.webp" alt="Energy-Efficient Homes in Sweden: What the Nordic Building Standard Looks Like and What It Means for Southern Europe" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Technology & Climate</span><span class="dim">· 18 MAR 2026</span></div><h3 class="card-title">Energy-Efficient Homes in Sweden: What the Nordic Building Standard Looks Like and What It Means for Southern Europe</h3><p class="card-desc">Sweden's building standards are among the most rigorous in the world for energy performance and indoor climate. What the Nordic benchmark looks like and what it means for renovation projects in southern Europe.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./buying-home-sweden-foreigner-architecture-renovation/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/buying-home-sweden-foreigner-architecture-renovation.webp" alt="Buying Property in Sweden as a Foreigner: What the Market, Building Culture, and Renovation Process Look Like" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 16 MAR 2026</span></div><h3 class="card-title">Buying Property in Sweden as a Foreigner: What the Market, Building Culture, and Renovation Process Look Like</h3><p class="card-desc">Buying property in Sweden as a foreigner involves bostadsrätt rules, renovation approval processes, and a building culture unlike most of Europe. A practical guide for international buyers considering the Swedish market.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./greek-island-architecture-renovation-guide/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/greek-island-architecture-renovation-guide.webp" alt="Greek Island Property Renovation: What to Know Before You Start on Mykonos, Paros, Santorini or Beyond" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 15 MAR 2026</span></div><h3 class="card-title">Greek Island Property Renovation: What to Know Before You Start on Mykonos, Paros, Santorini or Beyond</h3><p class="card-desc">Renovating on Mykonos, Santorini, Paros, or another Greek island is one of Europe’s most complex residential projects. Supply chains, heritage rules, island logistics, and permit realities — what to know before you start.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./architecture-athens-neighborhoods-renovation-guide/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/architecture-athens-neighborhoods-renovation-guide.webp" alt="Architecture in Athens: Neighborhoods, Building Stock, and Renovation Opportunities for Buyers" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 28 FEB 2026</span></div><h3 class="card-title">Architecture in Athens: Neighborhoods, Building Stock, and Renovation Opportunities for Buyers</h3><p class="card-desc">Athens is a chaotic city from a planning perspective but contains remarkable renovation opportunities for buyers who look past the surface. A neighborhood-by-neighborhood guide to Athens architecture and residential renovation potential.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./renovating-property-greece-foreign-buyer-guide/" class="wb-card" data-cat="Places">
+      <div class="card-img"><img class="wb-img" src="../images/journal/renovating-property-greece-foreign-buyer-guide.webp" alt="Renovating Property in Greece as a Foreign Buyer: Permits, Costs, and What Nobody Tells You" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Places</span><span class="dim">· 27 FEB 2026</span></div><h3 class="card-title">Renovating Property in Greece as a Foreign Buyer: Permits, Costs, and What Nobody Tells You</h3><p class="card-desc">Renovating property in Greece as a foreign buyer involves permit systems, cost structures, and practical realities that most guides don’t cover honestly. What you need to know before committing to a Greek renovation project.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./architecture-light-design-brighter-home/" class="wb-card" data-cat="Design &amp; Wellbeing">
+      <div class="card-img"><img class="wb-img" src="../images/journal/architecture-light-design-brighter-home.webp" alt="Architecture and Light: How to Design Any Home to Feel Brighter, More Open, and More Alive" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Design & Wellbeing</span><span class="dim">· 16 FEB 2026</span></div><h3 class="card-title">Architecture and Light: How to Design Any Home to Feel Brighter, More Open, and More Alive</h3><p class="card-desc">Light is the most designable quality in any home — and the one most often left to chance. How orientation, openings, surfaces, and artificial lighting combine to make any space feel brighter, larger, and more alive.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./add-terrace-extension-garden-room-europe-permits/" class="wb-card" data-cat="Technology &amp; Climate">
+      <div class="card-img"><img class="wb-img" src="../images/journal/add-terrace-extension-garden-room-europe-permits.webp" alt="How to Add a Terrace, Extension, or Garden Room to Your Home: Permits, Costs, and What Actually Works" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Technology & Climate</span><span class="dim">· 15 FEB 2026</span></div><h3 class="card-title">How to Add a Terrace, Extension, or Garden Room to Your Home: Permits, Costs, and What Actually Works</h3><p class="card-desc">Adding a terrace, extension, or garden room to a home in Spain, Sweden, or Greece involves specific permits, structural constraints, and design decisions. What works, what doesn’t, and what it realistically costs.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./building-pool-spain-greece-sweden-architecture/" class="wb-card" data-cat="Technology &amp; Climate">
+      <div class="card-img"><img class="wb-img" src="../images/journal/building-pool-spain-greece-sweden-architecture.webp" alt="Building a Pool in Spain, Sweden, or Greece: Permits, Costs, and Design Considerations" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Technology & Climate</span><span class="dim">· 14 FEB 2026</span></div><h3 class="card-title">Building a Pool in Spain, Sweden, or Greece: Permits, Costs, and Design Considerations</h3><p class="card-desc">Building a pool in Spain, Sweden, or Greece involves permits, ground conditions, climate-specific design decisions, and costs that vary widely. A practical guide to what pool projects actually involve across all three countries.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./design-home-ages-well-accessibility-architecture/" class="wb-card" data-cat="Design &amp; Wellbeing">
+      <div class="card-img"><img class="wb-img" src="../images/journal/design-home-ages-well-accessibility-architecture.webp" alt="How to Design a Home That Ages Well: Architecture for Long-Term Comfort and Accessibility" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Design & Wellbeing</span><span class="dim">· 12 FEB 2026</span></div><h3 class="card-title">How to Design a Home That Ages Well: Architecture for Long-Term Comfort and Accessibility</h3><p class="card-desc">A home designed only for who you are today will need expensive adaptation as your life changes. How to design for long-term comfort, accessibility, and adaptability without sacrificing the quality of the space now.</p><span class="wb-go">Read article →</span></div>
+    </a>
+    <a href="./multi-generational-home-design-architecture/" class="wb-card" data-cat="Design &amp; Wellbeing">
+      <div class="card-img"><img class="wb-img" src="../images/journal/multi-generational-home-design-architecture.webp" alt="Multi-Generational Home Design: How to Make It Work for Families Across Two or Three Generations" loading="lazy" decoding="async"></div>
+      <div class="card-body"><div class="card-meta"><span>Design & Wellbeing</span><span class="dim">· 11 FEB 2026</span></div><h3 class="card-title">Multi-Generational Home Design: How to Make It Work for Families Across Two or Three Generations</h3><p class="card-desc">Multi-generational living is returning across Spain, Sweden, and Greece. How to design a home that genuinely works for two or three generations — shared spaces, private areas, acoustic separation, and independent access.</p><span class="wb-go">Read article →</span></div>
+    </a></div>
+  <div class="lm-wrap"><button type="button" class="lm-btn">Load more</button></div>
+</main>
+
+<section class="cta-section">
+    <div class="cta-bg">JOURNAL</div>
+    <div class="cta-inner">
+      <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">READY TO START?</span>
+      <p class="cta-title" data-es="Cada buen proyecto empieza con una conversación." data-en="Every good project starts with a conversation.">Every good project starts with a conversation.</p>
+      <div class="cta-btns">
+        <a href="mailto:info@wolfblanc.com" class="btn-em"><span data-es="Escríbanos" data-en="Email us">Email us</span></a>
+        <a href="../contact/#inquiry" class="btn-ct"><span data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Tell us about your project →</span></a>
+      </div>
+      <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">A senior partner reads every enquiry · reply within two business days</p>
+    </div>
+  </section>
+
+<footer>
+  <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
+  <span><a href="../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../projects/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../faq/">FAQ</a> &middot; <a href="../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
+  <span><a href="https://wolfblanc.es" target="_blank" rel="noopener" data-es="Wolfblanc España" data-en="Wolfblanc Spain">Wolfblanc Spain</a> &middot; <a href="https://wolfblanc.se" target="_blank" rel="noopener" data-es="Wolfblanc Suecia" data-en="Wolfblanc Sweden">Wolfblanc Sweden</a> &middot; <a href="https://wolfblanc.gr" target="_blank" rel="noopener" data-es="Wolfblanc Grecia" data-en="Wolfblanc Greece">Wolfblanc Greece</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
+</footer>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+
+<script>
+(function(){
+  var LS_THEME='wb-theme',LS_LANG='wb-es-lang';
+  var root=document.documentElement;
+  var dark=localStorage.getItem(LS_THEME)==='dark';
+  function applyTheme(){
+    root.classList.toggle('wb-dark',dark);
+    var sun=document.getElementById('wb-sun'),moon=document.getElementById('wb-moon');
+    if(sun)sun.style.display=dark?'':'none';
+    if(moon)moon.style.display=dark?'none':'';
+    localStorage.setItem(LS_THEME,dark?'dark':'light');
+  }
+  applyTheme();
+  var tb=document.getElementById('theme-btn');
+  if(tb)tb.addEventListener('click',function(){dark=!dark;applyTheme();});
+
+  var lang=localStorage.getItem(LS_LANG)||'en';
+  function applyLang(){
+    document.querySelectorAll('[data-es],[data-en]').forEach(function(el){
+      var val=lang==='en'?el.getAttribute('data-en'):el.getAttribute('data-es');
+      if(val!==null)el.innerHTML=val;
+    });
+    document.querySelectorAll('[data-lang-switch]').forEach(function(b){
+      b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
+    });
+    root.setAttribute('lang',lang==='en'?'en':'es');
+    localStorage.setItem(LS_LANG,lang);
+  }
+  applyLang();
+  document.querySelectorAll('[data-lang-switch]').forEach(function(b){
+    b.addEventListener('click',function(){lang=b.getAttribute('data-lang-switch');applyLang();});
+  });
+
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){
+    if(nav)nav.classList.toggle('scrolled',window.scrollY>20);
+  },{passive:true});
+
+  var burger=document.getElementById('burger-btn'),mobMenu=document.getElementById('mob-menu');
+  var bOpen=document.getElementById('burger-open'),bClose=document.getElementById('burger-close-icon');
+  var menuOpen=false;
+  function setMenu(open){
+    menuOpen=open;
+    if(mobMenu)mobMenu.style.display=open?'block':'none';
+    if(bOpen)bOpen.style.display=open?'none':'';
+    if(bClose)bClose.style.display=open?'':'none';
+  }
+  if(burger)burger.addEventListener('click',function(){setMenu(!menuOpen);});
+  if(mobMenu)mobMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+
+  var cards=Array.from(document.querySelectorAll('[data-cat]'));
+  var countEl=document.getElementById('art-count');
+  var loadMore=document.querySelector('.lm-btn');
+  var activeFilter='All';
+  var visibleLimit=9;
+
+  function renderArticles(){
+    var eligible=cards.filter(function(card){return activeFilter==='All'||card.getAttribute('data-cat')===activeFilter;});
+    cards.forEach(function(card){card.hidden=true;});
+    eligible.slice(0,visibleLimit).forEach(function(card){card.hidden=false;});
+    if(countEl)countEl.textContent=String(eligible.length).padStart(2,'0');
+    if(loadMore)loadMore.parentElement.style.display=visibleLimit<eligible.length?'flex':'none';
+  }
+
+  document.querySelectorAll('[data-filter]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      activeFilter=btn.getAttribute('data-filter');
+      visibleLimit=9;
+      document.querySelectorAll('[data-filter]').forEach(function(b){b.classList.toggle('on',b===btn);});
+      renderArticles();
+    });
+  });
+  if(loadMore)loadMore.addEventListener('click',function(){visibleLimit+=9;renderArticles();});
+  renderArticles();
+})();
+</script>
+<script>
+(function(){var b=document.getElementById('btt'),f=document.querySelector('footer');window.addEventListener('scroll',function(){b.classList.toggle('visible',window.scrollY>300);var r=f.getBoundingClientRect();b.style.bottom=r.top<window.innerHeight?(window.innerHeight-r.top+16)+'px':'';},{passive:true});})();
+</script>
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" data-es-aria="Aviso de cookies" data-en-aria="Cookie notice" hidden>
+  <div class="cookie-copy">
+    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">We use cookies</span>
+    <a class="cookie-link" href="../legal/#cookies" data-es="Más info" data-en="More info">More info</a>
+  </div>
+  <div class="cookie-actions">
+    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Reject</button>
+    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Accept</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var banner=document.getElementById('cookie-banner');
+  if(!banner)return;
+  var storageKey='wb-cookie-choice';
+  var consentDays=180;
+  function expiryTime(){return Date.now()+consentDays*24*60*60*1000;}
+  function readChoice(){
+    var raw=localStorage.getItem(storageKey);
+    if(!raw)return null;
+    try{
+      var saved=JSON.parse(raw);
+      if(saved&&saved.expires&&saved.expires>Date.now())return saved.choice||'saved';
+      localStorage.removeItem(storageKey);
+      return null;
+    }catch(e){
+      localStorage.setItem(storageKey,JSON.stringify({choice:raw,expires:expiryTime()}));
+      return raw;
+    }
+  }
+  function currentLang(){return localStorage.getItem('wb-es-lang')||localStorage.getItem('wb-lang')||document.documentElement.lang||'en';}
+  function setCookieLang(lang){
+    lang=(lang||'es').slice(0,2)==='en'?'en':'es';
+    banner.querySelectorAll('[data-es][data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+    banner.querySelectorAll('[data-es-aria][data-en-aria]').forEach(function(el){el.setAttribute('aria-label',el.getAttribute('data-'+lang+'-aria'));});
+  }
+  function closeBanner(choice){
+    localStorage.setItem(storageKey,JSON.stringify({choice:choice,expires:expiryTime()}));
+    banner.hidden=true;
+    document.body.classList.remove('cookie-banner-visible');
+  }
+  setCookieLang(currentLang());
+  if(!readChoice()){banner.hidden=false;document.body.classList.add('cookie-banner-visible');}
+  banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){btn.addEventListener('click',function(){closeBanner(btn.getAttribute('data-cookie-choice'));});});
+  document.querySelectorAll('[data-lang-switch]').forEach(function(btn){btn.addEventListener('click',function(){setCookieLang(btn.getAttribute('data-lang-switch'));});});
+})();
+</script>
+
+
+<script>
+(function(){
+  var btt=document.getElementById('btt');
+  var banner=document.getElementById('cookie-banner');
+  var footer=document.querySelector('footer');
+  if(!btt||!banner)return;
+  function bannerVisible(){return !banner.hidden&&window.getComputedStyle(banner).display!=='none';}
+  function baseBottom(){return bannerVisible()?banner.offsetHeight+40:32;}
+  function adjustCookieSafeBackToTop(){
+    var base=baseBottom();
+    if(footer){
+      var rect=footer.getBoundingClientRect();
+      if(rect.top<window.innerHeight){
+        btt.style.bottom=Math.max(base,window.innerHeight-rect.top+16)+'px';
+        return;
+      }
+    }
+    btt.style.bottom=bannerVisible()?base+'px':'';
+  }
+  window.addEventListener('scroll',adjustCookieSafeBackToTop,{passive:true});
+  window.addEventListener('resize',adjustCookieSafeBackToTop,{passive:true});
+  new MutationObserver(adjustCookieSafeBackToTop).observe(banner,{attributes:true,attributeFilter:['hidden','style','class']});
+  banner.addEventListener('click',function(){setTimeout(adjustCookieSafeBackToTop,0);});
+  adjustCookieSafeBackToTop();
+})();
+</script>
+
+<script src="../assets/site-core.js" defer></script>
+</body>
+</html>
