@@ -74,7 +74,7 @@ function footerMarkup(prefix){
   return `<footer>
   <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
   <span><a href="${prefix}studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="${prefix}services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="${prefix}portfolio/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="${prefix}locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="${prefix}faq/">FAQ</a> &middot; <a href="${prefix}careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="${prefix}newsletter/" data-es="Newsletter" data-en="Newsletter">Newsletter</a> &middot; <a href="${prefix}legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
-  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a> &middot; <span data-es="Web por" data-en="Web by">Web by</span> <a href="https://eoloslab.com" target="_blank" rel="noopener">Eolos</a></span>
 </footer>`;
 }
 

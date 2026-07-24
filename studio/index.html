@@ -227,6 +227,19 @@
     }
   html{overflow-y:scroll}
   @media(max-width:640px){.svc-table,.svc-table tbody,.svc-table tr,.svc-table td{display:block;width:auto}.svc-table thead{position:absolute;left:-9999px}.svc-table tr{padding:16px 0;border-bottom:1px solid var(--line)}.svc-table tr:last-child{border-bottom:0}.svc-table td{padding:0;border-bottom:0}.svc-table td:first-child{width:auto;margin:0 0 6px}}
+    .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:28px 0 8px}
+    .stat-cell{background:var(--bg);padding:28px 22px;text-align:center}
+    .stat-num{font-size:1.6rem;font-weight:200;letter-spacing:.04em;color:var(--text);margin-bottom:4px}
+    .stat-label{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text2)}
+    .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:28px 0 8px}
+    .test-cell{background:var(--bg);padding:24px 22px}
+    .test-title{font-size:.78rem;font-weight:400;letter-spacing:.04em;color:var(--text);margin:0 0 10px}
+    .test-quote{font-size:.88rem;line-height:1.65;color:var(--text2);margin:0 0 14px}
+    .test-attr{font-size:.62rem;letter-spacing:.1em;color:var(--text2);margin:0}
+    .test-attr strong{color:var(--text);font-weight:400}
+    @media(max-width:860px){.stat-grid{grid-template-columns:1fr 1fr}.test-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.stat-grid{grid-template-columns:1fr}}
+    @media(max-width:640px){.test-grid{grid-template-columns:1fr}}
 </style>
   <link rel="stylesheet" href="../assets/site-shell.css">
 </head>
@@ -381,6 +394,83 @@
     <h2 class="section-h" data-es="Dónde trabajamos" data-en="Where we work">Where we work</h2>
     <p data-es="Desarrollamos proyectos en España, Suecia y Grecia. Nuestras oficinas estan en Madrid, Estocolmo y Atenas, y trabajamos con clientes en todo el sur de Europa y Escandinavia." data-en="We develop projects in Spain, Sweden and Greece. Our offices are in Madrid, Stockholm and Athens, and we work with clients across southern Europe and Scandinavia.">We develop projects in Spain, Sweden and Greece. Our offices are in Madrid, Stockholm and Athens, and we work with clients across southern Europe and Scandinavia.</p>
     <p data-es="Si quiere resolver dudas concretas antes de empezar, puede consultar nuestras preguntas frecuentes." data-en="If you want to resolve specific questions before starting, you can read our frequently asked questions."><a href="../faq/" style="color:var(--accent)" data-es="Ver preguntas frecuentes →" data-en="See frequently asked questions →">See frequently asked questions →</a></p>
+
+    <h2 class="section-h" data-es="Nuestra experiencia en numeros" data-en="Our experience in numbers">Our experience in numbers</h2>
+    <div class="stat-grid">
+      <div class="stat-cell">
+        <p class="stat-num">3,500+</p>
+        <p class="stat-label" data-es="Viviendas entregadas" data-en="Residential units delivered">Residential units delivered</p>
+      </div>
+      <div class="stat-cell">
+        <p class="stat-num">25+</p>
+        <p class="stat-label" data-es="Proyectos principales" data-en="Major projects completed">Major projects completed</p>
+      </div>
+      <div class="stat-cell">
+        <p class="stat-num">20+</p>
+        <p class="stat-label" data-es="Anos de experiencia combinada" data-en="Years combined experience">Years combined experience</p>
+      </div>
+      <div class="stat-cell">
+        <p class="stat-num">8</p>
+        <p class="stat-label" data-es="Promotoras principales" data-en="Major developers">Major developers</p>
+      </div>
+      <div class="stat-cell">
+        <p class="stat-num">10+</p>
+        <p class="stat-label" data-es="Proyectos comerciales y de uso mixto" data-en="Commercial &amp; mixed-use projects">Commercial &amp; mixed-use projects</p>
+      </div>
+      <div class="stat-cell">
+        <p class="stat-num">3</p>
+        <p class="stat-label" data-es="Paises: ES &middot; SE &middot; GR" data-en="Countries: ES &middot; SE &middot; GR">Countries: ES &middot; SE &middot; GR</p>
+      </div>
+    </div>
+
+    <h2 class="section-h" data-es="Testimonios" data-en="Testimonials">Testimonials</h2>
+    <div class="test-grid">
+      <div class="test-cell">
+        <p class="test-title" data-es="Una casa que por fin funciona" data-en="A home that finally works">A home that finally works</p>
+        <p class="test-quote" data-es="Wolfblanc vio posibilidades en el piso que nosotros no habiamos visto. La nueva distribucion es mas luminosa, mas facil de vivir y parece mucho mas amplia sin anadir metros cuadrados." data-en="Wolfblanc saw possibilities in the apartment that we had missed. The new layout is brighter, easier to live in and feels much more spacious without adding any square metres.">Wolfblanc saw possibilities in the apartment that we had missed. The new layout is brighter, easier to live in and feels much more spacious without adding any square metres.</p>
+        <p class="test-attr"><strong>Laura Martinez</strong> &middot; Madrid</p>
+      </div>
+      <div class="test-cell">
+        <p class="test-title" data-es="Un cafe con identidad propia" data-en="A cafe with its own identity">A cafe with its own identity</p>
+        <p class="test-quote" data-es="Wolfblanc entendio el negocio antes de disenar el espacio. El interior, la experiencia del cliente y la presencia digital ahora parecen parte de la misma idea, y Granolita tiene caracter propio." data-en="Wolfblanc understood the business before designing the space. The interior, customer experience and digital presence now feel like parts of the same idea, and Granolita has a character of its own.">Wolfblanc understood the business before designing the space. The interior, customer experience and digital presence now feel like parts of the same idea, and Granolita has a character of its own.</p>
+        <p class="test-attr"><strong>Granolita Group</strong> &middot; Palma de Mallorca</p>
+      </div>
+      <div class="test-cell">
+        <p class="test-title" data-es="Facil de gestionar desde Suecia" data-en="Easy to manage from Sweden">Easy to manage from Sweden</p>
+        <p class="test-quote" data-es="Estabamos en Suecia durante la mayor parte del proyecto, pero nunca nos sentimos alejados. Las decisiones se explicaron con claridad, y la casa terminada es personal y adecuada para Valencia." data-en="We were in Sweden for most of the project, but we never felt removed from it. Decisions were explained clearly, and the finished home feels personal to us and right for Valencia.">We were in Sweden for most of the project, but we never felt removed from it. Decisions were explained clearly, and the finished home feels personal to us and right for Valencia.</p>
+        <p class="test-attr"><strong>Jonas Andersson &amp; Emilia Nilsson</strong> &middot; Stockholm / Valencia</p>
+      </div>
+      <div class="test-cell">
+        <p class="test-title" data-es="Un hotel con una identidad clara" data-en="A hotel with one clear identity">A hotel with one clear identity</p>
+        <p class="test-quote" data-es="Unieron los edificios existentes, los interiores y el paisaje sin perder lo que hacia especial el lugar. El resultado es coherente, y las necesidades practicas de operar un hotel se tuvieron en cuenta en todo momento." data-en="They brought the existing buildings, interiors and landscape together without losing what made the place special. The result feels coherent, while the practical needs of running a hotel were considered throughout.">They brought the existing buildings, interiors and landscape together without losing what made the place special. The result feels coherent, while the practical needs of running a hotel were considered throughout.</p>
+        <p class="test-attr" data-es="Grupo hotelero privado &middot; Sierra de Grazalema" data-en="Private hospitality group &middot; Sierra de Grazalema"><strong data-es="Grupo hotelero privado" data-en="Private hospitality group">Private hospitality group</strong> &middot; Sierra de Grazalema</p>
+      </div>
+      <div class="test-cell">
+        <p class="test-title" data-es="Las preguntas correctas antes de comprar" data-en="The right questions before buying">The right questions before buying</p>
+        <p class="test-quote" data-es="Su revision identifico problemas urbanisticos y tecnicos que no habiamos considerado y nos dio una imagen realista de lo que se podia construir antes de comprometernos. Cambio nuestra forma de abordar la compra." data-en="Their review identified planning and technical issues we had not considered and gave us a realistic picture of what could be built before we committed. It changed how we approached the purchase.">Their review identified planning and technical issues we had not considered and gave us a realistic picture of what could be built before we committed. It changed how we approached the purchase.</p>
+        <p class="test-attr"><strong data-es="Cliente privado" data-en="Private client">Private client</strong> &middot; <span data-es="Espana &middot; Inversor" data-en="Spain &middot; Investor">Spain &middot; Investor</span></p>
+      </div>
+      <div class="test-cell">
+        <p class="test-title" data-es="Un lugar de trabajo que la gente puede usar de verdad" data-en="A workplace people can actually use">A workplace people can actually use</p>
+        <p class="test-quote" data-es="Tradujeron la forma de trabajar de nuestros equipos en un espacio con un equilibrio claro entre concentracion y colaboracion. Se siente conectado con Norrsken, pero tambien funciona un dia cualquiera de mucho trabajo." data-en="They translated how our teams work into a space with a clear balance between concentration and collaboration. It feels connected to Norrsken, but it also works on an ordinary busy day.">They translated how our teams work into a space with a clear balance between concentration and collaboration. It feels connected to Norrsken, but it also works on an ordinary busy day.</p>
+        <p class="test-attr"><strong>Norrsken</strong> &middot; Stockholm</p>
+      </div>
+      <div class="test-cell">
+        <p class="test-title" data-es="La misma idea del concepto a la construccion" data-en="The same idea from concept to construction">The same idea from concept to construction</p>
+        <p class="test-quote" data-es="Entendieron como queriamos vivir y adaptaron la casa al terreno en lugar de aplicar una solucion estandar. La idea original se mantuvo clara cuando el proyecto paso al diseno tecnico y la construccion." data-en="They understood how we wanted to live and shaped the house around the site rather than applying a standard solution. The original idea remained clear as the project moved into technical design and construction.">They understood how we wanted to live and shaped the house around the site rather than applying a standard solution. The original idea remained clear as the project moved into technical design and construction.</p>
+        <p class="test-attr"><strong data-es="Cliente privado" data-en="Private client">Private client</strong> &middot; <span data-es="Grecia" data-en="Greece">Greece</span></p>
+      </div>
+      <div class="test-cell">
+        <p class="test-title" data-es="Una estrategia de desarrollo mas fuerte" data-en="A stronger development strategy">A stronger development strategy</p>
+        <p class="test-quote" data-es="Cuestionaron nuestras suposiciones iniciales y dieron al desarrollo una estructura e identidad mas claras. Eso hizo que el proyecto fuera mas facil de evaluar y nos dio mayor confianza para seguir adelante." data-en="They challenged our initial assumptions and gave the development a clearer structure and identity. That made the project easier to evaluate and gave us greater confidence in taking it forward.">They challenged our initial assumptions and gave the development a clearer structure and identity. That made the project easier to evaluate and gave us greater confidence in taking it forward.</p>
+        <p class="test-attr"><strong data-es="Grupo promotor privado" data-en="Private development group">Private development group</strong> &middot; <span data-es="Atenas" data-en="Athens">Athens</span></p>
+      </div>
+      <div class="test-cell">
+        <p class="test-title" data-es="Fiable cuando el proyecto se volvio tecnico" data-en="Reliable when the project became technical">Reliable when the project became technical</p>
+        <p class="test-quote" data-es="Wolfblanc aporto claridad a un proyecto con muchas piezas en movimiento. Sus planos eran fiables, y las cuestiones tecnicas se resolvieron antes de que causaran problemas al resto del equipo." data-en="Wolfblanc brought clarity to a project with many moving parts. Their drawings were dependable, and technical questions were dealt with before they caused problems for the wider team.">Wolfblanc brought clarity to a project with many moving parts. Their drawings were dependable, and technical questions were dealt with before they caused problems for the wider team.</p>
+        <p class="test-attr"><strong>Carlos Perez</strong> &middot; Madrid</p>
+      </div>
+    </div>
   </article>
 
   <section class="cta-section">
@@ -415,7 +505,7 @@
   <span data-es="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026" data-en="WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026">WOLFBLANC&reg; ARCHITECTS &middot; &copy; 2026</span>
   <span><a href="../studio/" data-es="Estudio" data-en="Studio">Studio</a> &middot; <a href="../services/" data-es="Servicios" data-en="Services">Services</a> &middot; <a href="../projects/" data-es="Proyectos" data-en="Projects">Projects</a> &middot; <a href="../locations/" data-es="Ubicaciones" data-en="Locations">Locations</a> &middot; <a href="../faq/">FAQ</a> &middot; <a href="../careers/" data-es="Empleo" data-en="Careers">Careers</a> &middot; <a href="../legal/" data-es="Aviso legal" data-en="Legal">Legal</a></span>
   <span><a href="https://wolfblanc.es" target="_blank" rel="noopener" data-es="Wolfblanc España" data-en="Wolfblanc Spain">Wolfblanc Spain</a> &middot; <a href="https://wolfblanc.se" target="_blank" rel="noopener" data-es="Wolfblanc Suecia" data-en="Wolfblanc Sweden">Wolfblanc Sweden</a> &middot; <a href="https://wolfblanc.gr" target="_blank" rel="noopener" data-es="Wolfblanc Grecia" data-en="Wolfblanc Greece">Wolfblanc Greece</a></span>
-  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> &middot; <a href="https://wolfblanc.com">wolfblanc.com</a> &middot; <span data-es="Web por" data-en="Web by">Web by</span> <a href="https://eoloslab.com" target="_blank" rel="noopener">Eolos</a></span>
 </footer>
 
 <button id="btt" aria-label="Volver arriba">
