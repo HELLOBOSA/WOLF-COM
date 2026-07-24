@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Client Portal - WOLFBLANC ARCHITECTS</title>
+  <style>
+    :root {
+      --bg:#f4f1ea; --text-primary:#100e0b; --text-secondary:#6a655b;
+      --accent:#94856a; --glass-bg:rgba(16,14,11,0.04);
+      --glass-border:rgba(148,133,106,0.20); --line:rgba(16,14,11,0.12);
+    }
+    html.dark {
+      --bg:#0c0b0a; --text-primary:#f0ede7; --text-secondary:#8f887c;
+      --accent:#c3b087; --glass-bg:rgba(195,176,135,0.05);
+      --glass-border:rgba(195,176,135,0.14); --line:rgba(240,237,231,0.14);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:var(--bg);color:var(--text-primary);
+      font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-weight:300;line-height:1.85;letter-spacing:0.02em;
+      display:flex;align-items:center;justify-content:center;
+      min-height:100vh;transition:background .4s,color .4s
+    }
+    .wrap{text-align:center;max-width:400px;width:90%;padding:3rem 2rem}
+    .logo{font-size:.65rem;letter-spacing:.22em;font-weight:300;margin-bottom:.4rem}
+    .logo a{color:var(--text-primary)}
+    .logo a:hover{color:var(--accent)}
+    h1{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;font-weight:300;color:var(--text-secondary);margin-bottom:2rem}
+    p{font-size:.8rem;color:var(--text-secondary);margin-bottom:2rem;line-height:1.7}
+    .cta{
+      display:inline-block;padding:12px 32px;font-family:inherit;font-size:.6rem;
+      letter-spacing:.16em;text-transform:uppercase;font-weight:300;
+      border:1px solid var(--glass-border);color:var(--text-primary);
+      transition:border-color .3s,color .3s
+    }
+    .cta:hover{border-color:var(--accent);color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo"><a href="/">WOLFBLANC</a></div>
+    <h1>Client Portal</h1>
+    <p>This area is reserved for active project clients. If you have received a project link and password from your team, please use that direct link to access your project dashboard.</p>
+    <a class="cta" href="/">Back to Wolfblanc</a>
+  </div>
+  <script>
+    var isDark = window.matchMedia('(prefers-color-scheme:dark)').matches;
+    if (localStorage.getItem('wb-dark') !== null) isDark = localStorage.getItem('wb-dark') === 'true';
+    if (isDark) document.documentElement.classList.add('dark');
+  </script>
+</body>
+</html>
