@@ -229,6 +229,19 @@
   @media(max-width:860px){.bio-grid{grid-template-columns:1fr;gap:56px;padding:0 24px}.teams-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:640px){.teams-grid{grid-template-columns:1fr}}
   @media(max-width:640px){.svc-table,.svc-table tbody,.svc-table tr,.svc-table td{display:block;width:auto}.svc-table thead{position:absolute;left:-9999px}.svc-table tr{padding:16px 0;border-bottom:1px solid var(--line)}.svc-table tr:last-child{border-bottom:0}.svc-table td{padding:0;border-bottom:0}.svc-table td:first-child{width:auto;margin:0 0 6px}}
+    .related{border-top:1px solid var(--line)}
+    .related-inner{max-width:1100px;margin:0 auto;padding:72px 32px}
+    .rel-ey{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:36px}
+    .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .rel-card{background:var(--bg)}
+    .rel-img-wrap{aspect-ratio:4/3;overflow:hidden}
+    .rel-img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+    .rel-card:hover .rel-img{transform:scale(1.035)}
+    .rel-body{padding:22px 22px 26px}
+    .rel-cat{font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .rel-title{font-size:.94rem;font-weight:300;text-transform:uppercase;letter-spacing:.05em;line-height:1.35}
+    @media(max-width:860px){.rel-grid{grid-template-columns:1fr}}
+    @media(min-width:561px) and (max-width:860px){.rel-grid{grid-template-columns:1fr 1fr}}
 </style>
   <link rel="stylesheet" href="../../assets/site-shell.css">
 </head>
@@ -348,6 +361,20 @@
       <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">A senior partner reads every enquiry · reply within two business days</p>
     </div>
   </section>
+  <section class="related"><div class="related-inner"><span class="rel-ey" data-en="MORE FROM THE STUDIO" data-es="MAS DEL ESTUDIO">MORE FROM THE STUDIO</span><div class="rel-grid">
+    <a href="../culture/" class="rel-card">
+      <div class="rel-img-wrap"><img class="rel-img" src="../../images/wolfblanc-team.webp" alt="Culture and Values — How we work and what we stand for" loading="lazy" decoding="async"></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Culture and Values" data-es="Cultura y Valores">Culture and Values</p><p class="rel-title" data-en="How we work, what we stand for, and why it matters for your project." data-es="Como trabajamos, que defendemos y por que importa para tu proyecto.">How we work, what we stand for, and why it matters for your project.</p></div>
+    </a>
+    <a href="../why-wolfblanc/" class="rel-card">
+      <div class="rel-img-wrap"><img class="rel-img" src="../../images/Casa Boadilla 01.webp" alt="Why Wolfblanc — Nordic precision meets Mediterranean sensibility" loading="lazy" decoding="async"></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Why Wolfblanc" data-es="Por Que Wolfblanc">Why Wolfblanc</p><p class="rel-title" data-en="Nordic precision meets Mediterranean sensibility. One architect from brief to handover." data-es="Precision nordica con sensibilidad mediterranea. Un arquitecto desde el encargo hasta la entrega.">Nordic precision meets Mediterranean sensibility. One architect from brief to handover.</p></div>
+    </a>
+    <a href="../project-monitoring/" class="rel-card">
+      <div class="rel-img-wrap"><img class="rel-img" src="../../images/Norrsken Office 01.webp" alt="Project Monitoring — Remote client reporting and transparency" loading="lazy" decoding="async"></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Project Monitoring" data-es="Seguimiento de Proyecto">Project Monitoring</p><p class="rel-title" data-en="Remote client reporting. Visual status updates, milestones, and project transparency." data-es="Informes remotos para el cliente. Actualizaciones visuales de estado, hitos y transparencia del proyecto.">Remote client reporting. Visual status updates, milestones, and project transparency.</p></div>
+    </a>
+  </div></div></section>
 </main>
 
 <footer>
