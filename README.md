@@ -31,7 +31,7 @@ Planning and rules live in the `hellobosa/dna` repo. Read `dna/README.md` and
 /services/               14 service pages
 /projects/               20 case studies plus hub and filter pages
 /locations/              9 city pages plus hub, each with market data
-/journal/                34 articles plus hub
+/journal/                33 articles plus hub
 /clients/                client portal, /clients/demo/ is password gated
 /careers/ /contact/ /faq/ /legal/
 /images/                 all imagery, flat directory
@@ -102,34 +102,51 @@ affects everything, so check breadth first.
 
 ## State as of 2026-07-25
 
-Done: all page templates, 20 case studies, 9 location pages with market data, 34 journal
-articles, OG and Twitter meta on all 96 curated content pages, studio cross-linking,
-client portal demo, redirect stubs.
-
-Also complete as of this date:
+Done: all page templates, 20 case studies, 9 location pages with market data, OG and
+Twitter meta on all curated content pages, studio cross-linking, client portal demo,
+redirect stubs.
 
 - **No em dashes.** 687 removed sitewide. Keep it that way; check before every commit.
-- **Spanish coverage** on every page except journal article bodies. Studio, services,
-  locations, clients and the homepage are fully bilingual. The 14 remaining unmatched
-  blocks are phone numbers, numerals and proper names.
-- **Spanish accents** corrected in 72 attribute values. If you add Spanish, write the
-  accents: `Años` not `Anos`, `Países` not `Paises`, `-ción` not `-cion`.
-- **Studio imagery.** Each studio page interleaves project images via `.sec-img`,
-  linked to the project with a bilingual caption.
+- **Spanish coverage** is complete on every page except journal article bodies. That
+  includes all page heroes, which were missed until the scanner bug below was found.
+- **Spanish accents** matter: `Años` not `Anos`, `Países` not `Paises`, `-ción` not
+  `-cion`. 72 values were corrected.
+- **Studio imagery.** Each studio page interleaves project images via `.sec-img`.
 - **Studio hub credibility.** Names the Nordic developers, carries the full
   registration numbers, states they are publicly verifiable.
+- **Journal curation decided.** Keep 33, add 10, drop 19. See
+  `dna/websites/projects/WOLF-COM-journal-curation.md`.
+
+### Verify translations in a browser, not with a regex
+
+A static scan of `data-es` attributes gave false confidence for several rounds. The
+regex `<(h1|h2|h3|h4|p|li)` has no word boundary, so `<link>` parsed as `li` and
+swallowed the whole hero; because the swallowed span contained one `data-es`, it
+counted as translated. Heroes shipped in English while sweeps reported clean.
+
+The reliable check is to render it:
+
+```bash
+python3 -m http.server 8765          # serve the repo
+# then in Playwright: load page, click [data-lang-switch="es"],
+# diff document.body text before and after. Anything identical is untranslated.
+```
+
+`scripts/article-i18n.py` has the corrected pattern and is the tool for article work:
+`extract <slug>` dumps untranslated blocks as TSV, `apply <slug> <tsv>` writes the
+Spanish back, `status` reports progress.
 
 Open, highest value first:
 
-1. **Journal article bodies are English-only** (1,130 blocks across 34 articles). This
-   is a content decision, not a bug: leave English, translate all, or translate a
-   Spain-focused subset. Do not machine-translate without the owner deciding, it would
-   breach `dna/studio/voice.md`.
-2. **Article curation.** Owner picks which articles stay. Deferred.
-3. **Client and guest area** beyond the demo. WordPress has a `client` CPT (one live
-   entry) and a `guest` CPT. Deferred.
-4. **Cookie banner is decorative.** GA4 fires regardless of consent. Decide before
-   launch whether that is acceptable.
+1. **Article bodies.** 4 of 33 translated. Outstanding: about 1,047 blocks and
+   31,700 words. Work in batches of four, push after each.
+2. **Migrate the 10 additions.** Blocked on images only: the sandbox proxy blocks
+   wolfblanc.com so WordPress headers cannot be downloaded. Either use an existing
+   local project photo per article and swap later, or have the owner upload the ten.
+3. **Client and guest area** beyond the demo. Deferred by owner.
+4. **Cookie banner is decorative.** GA4 fires regardless of consent. Owner has
+   decided to leave it as is for now.
 
-Full audit and reasoning: `dna/websites/projects/WOLF-COM-studio-audit.md`.
+Full audit: `dna/websites/projects/WOLF-COM-studio-audit.md`.
+Curation list: `dna/websites/projects/WOLF-COM-journal-curation.md`.
 Pre-launch checklist: `dna/websites/projects/WOLF-COM-build-plan.md`.
