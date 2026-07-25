@@ -17,7 +17,10 @@ Run from the repo root.
 import re, sys, os, glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BLOCK = re.compile(r'<(h1|h2|h3|h4|p|li)([^>]*)>(.*?)</\1>', re.S)
+# The tag name must be followed by whitespace, / or > so that <link> is not
+# parsed as <li> and <path> is not parsed as <p>. Without the lookahead a
+# single <link> swallows the whole hero and hides untranslated blocks.
+BLOCK = re.compile(r'<(h1|h2|h3|h4|p|li|span)(?=[\s/>])([^>]*)>(.*?)</\1\s*>', re.S)
 
 
 def page(slug):
@@ -32,7 +35,7 @@ def body_span(html):
 
 def skip(html, pos):
     for tag in ('script', 'style', 'nav', 'footer'):
-        for m in re.finditer(rf'<{tag}[^>]*>.*?</{tag}>', html, re.S):
+        for m in re.finditer(rf'<{tag}(?=[\s>])[^>]*>.*?</{tag}\s*>', html, re.S):
             if m.start() <= pos < m.end():
                 return True
     return False
@@ -45,7 +48,7 @@ def blocks(slug, untranslated_only=True):
     for m in BLOCK.finditer(html, lo, hi):
         inner = m.group(3)
         text = re.sub(r'<[^>]+>', '', inner).strip()
-        if len(text) < 3 or skip(html, m.start()):
+        if len(text) < 12 or skip(html, m.start()):
             continue
         done = 'data-es' in m.group(2) or 'data-es' in inner
         if untranslated_only and done:
