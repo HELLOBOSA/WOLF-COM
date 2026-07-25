@@ -103,18 +103,33 @@ affects everything, so check breadth first.
 ## State as of 2026-07-25
 
 Done: all page templates, 20 case studies, 9 location pages with market data, 34 journal
-articles, bilingual coverage on journal hub and articles, OG and Twitter meta on all 96
-curated content pages, studio cross-linking, client portal demo, redirect stubs.
+articles, OG and Twitter meta on all 96 curated content pages, studio cross-linking,
+client portal demo, redirect stubs.
+
+Also complete as of this date:
+
+- **No em dashes.** 687 removed sitewide. Keep it that way; check before every commit.
+- **Spanish coverage** on every page except journal article bodies. Studio, services,
+  locations, clients and the homepage are fully bilingual. The 14 remaining unmatched
+  blocks are phone numbers, numerals and proper names.
+- **Spanish accents** corrected in 72 attribute values. If you add Spanish, write the
+  accents: `Años` not `Anos`, `Países` not `Paises`, `-ción` not `-cion`.
+- **Studio imagery.** Each studio page interleaves project images via `.sec-img`,
+  linked to the project with a bilingual caption.
+- **Studio hub credibility.** Names the Nordic developers, carries the full
+  registration numbers, states they are publicly verifiable.
 
 Open, highest value first:
 
-1. Studio pages are visually starved. One body image each. See
-   `dna/websites/projects/WOLF-COM-studio-audit.md`.
-2. `/studio/why-wolfblanc/` and `/studio/project-monitoring/` are 70% untranslated.
-   Hero, all headings, all paragraphs lack `data-es`. Worth a repo-wide sweep.
-3. Nordic developer names (Skanska, JM, Einar Mattsson, Bonava, Serneke) and the full
-   license numbers are missing from the studio hub.
-4. Article curation. Owner picks which articles stay. Deferred.
-5. Client and guest area beyond the demo. Deferred.
+1. **Journal article bodies are English-only** (1,130 blocks across 34 articles). This
+   is a content decision, not a bug: leave English, translate all, or translate a
+   Spain-focused subset. Do not machine-translate without the owner deciding, it would
+   breach `dna/studio/voice.md`.
+2. **Article curation.** Owner picks which articles stay. Deferred.
+3. **Client and guest area** beyond the demo. WordPress has a `client` CPT (one live
+   entry) and a `guest` CPT. Deferred.
+4. **Cookie banner is decorative.** GA4 fires regardless of consent. Decide before
+   launch whether that is acceptable.
 
-Pre-launch checklist lives in `dna/websites/projects/WOLF-COM-build-plan.md`.
+Full audit and reasoning: `dna/websites/projects/WOLF-COM-studio-audit.md`.
+Pre-launch checklist: `dna/websites/projects/WOLF-COM-build-plan.md`.
