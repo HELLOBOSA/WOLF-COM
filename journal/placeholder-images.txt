@@ -1,0 +1,3 @@
+# Articles using a project-gallery placeholder instead of the
+# original WordPress header. Replace when the real images are available.
+spanish-horizontal-property-law-comunidad-foreign-owners  ->  images/Edificio Salamanca 01.webp

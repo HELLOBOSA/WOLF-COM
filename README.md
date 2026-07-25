@@ -31,7 +31,7 @@ Planning and rules live in the `hellobosa/dna` repo. Read `dna/README.md` and
 /services/               14 service pages
 /projects/               20 case studies plus hub and filter pages
 /locations/              9 city pages plus hub, each with market data
-/journal/                33 articles plus hub
+/journal/                34 articles plus hub
 /clients/                client portal, /clients/demo/ is password gated
 /careers/ /contact/ /faq/ /legal/
 /images/                 all imagery, flat directory
@@ -95,6 +95,15 @@ affects everything, so check breadth first.
   `site-core.js`. Consent does not gate it. Fix before launch if that matters legally.
 - **`wolfblanc.com` is unreachable from the agent sandbox.** Port 443 is proxy blocked.
   Use the `WOLFBLANC_ROYAL_MCP_C` MCP connector to read the live WordPress site.
+- **Journal header images: some are placeholders.** The sandbox proxy blocks
+  `wolfblanc.com` (`CONNECT tunnel failed, 403`), so WordPress header images for newly
+  migrated articles cannot be downloaded. Those articles use an existing project
+  photograph from `/images/` instead. Every one is listed in
+  `journal/placeholder-images.txt` with the original WordPress URL recorded in the
+  manifest under `sourceImage`. Replacing a placeholder is a one-line change: drop the
+  real file into `images/journal/<slug>.webp` and update the `src` in the article's
+  `.hero-img`, plus `og:image` and `twitter:image` in the head. The owner prefers the
+  original WordPress photography, so treat this as pending work rather than a choice.
 - **Bulk edits are the norm.** Sitewide changes touch 100+ files. Write a Python script
   into the scratchpad, run it, then diff before committing. Do not hand-edit 98 footers.
 - **Relative path depth.** Root pages use `../`, studio subpages use `../../`. Moving a
@@ -138,11 +147,14 @@ Spanish back, `status` reports progress.
 
 Open, highest value first:
 
-1. **Article bodies.** 4 of 33 translated. Outstanding: about 1,047 blocks and
+1. **Article bodies.** 5 of 34 translated. Outstanding: about 1,047 blocks and
    31,700 words. Work in batches of four, push after each.
-2. **Migrate the 10 additions.** Blocked on images only: the sandbox proxy blocks
-   wolfblanc.com so WordPress headers cannot be downloaded. Either use an existing
-   local project photo per article and swap later, or have the owner upload the ten.
+2. **Migrate the remaining 9 additions.** 1 of 10 done
+   (spanish-horizontal-property-law-comunidad-foreign-owners). Use
+   `scripts/migrate-article.py <payload.json>`; the payload format is documented in
+   the script docstring and one worked example is in the session scratchpad. Each
+   needs its WordPress body pulled through the MCP connector, English and Spanish
+   written per block, then hub card and sitemap entry added by hand.
 3. **Client and guest area** beyond the demo. Deferred by owner.
 4. **Cookie banner is decorative.** GA4 fires regardless of consent. Owner has
    decided to leave it as is for now.
