@@ -87,7 +87,7 @@ old_path,new_path,category,status
 /location/valencia/,/locations/valencia/,location,CREATED
 /location/,/locations/,location-hub,CREATED
 /projects/why-wolfblanc/,/studio/why-wolfblanc/,portfolio-page,CREATED
-/projects/project-monitoring/,/studio/project-monitoring/,portfolio-page,CREATED
+/projects/project-monitoring/,/services/project-monitoring/,portfolio-page,CREATED
 /projects/for-investors/,/services/for-investors/,portfolio-page,CREATED
 /projects/for-homeowners/,/services/for-homeowners/,portfolio-page,CREATED
 /projects/commercial-retail/,/services/commercial-interiors-hospitality/,portfolio-page,CREATED
@@ -206,7 +206,7 @@ old_path,new_path,category,status
 /en/projects/urban-landscape-athens/,/projects/urban-landscape-athens/,lang-en-portfolio,CREATED
 /en/projects/selva-boutique-luxury-design/,/projects/selva-boutique-luxury-design/,lang-en-portfolio,CREATED
 /en/projects/why-wolfblanc/,/studio/why-wolfblanc/,lang-en-portfolio-page,CREATED
-/en/projects/project-monitoring/,/studio/project-monitoring/,lang-en-portfolio-page,CREATED
+/en/projects/project-monitoring/,/services/project-monitoring/,lang-en-portfolio-page,CREATED
 /en/projects/for-investors/,/services/for-investors/,lang-en-portfolio-page,CREATED
 /en/projects/for-homeowners/,/services/for-homeowners/,lang-en-portfolio-page,CREATED
 /en/projects/commercial-retail/,/services/commercial-interiors-hospitality/,lang-en-portfolio-page,CREATED
@@ -340,7 +340,7 @@ old_path,new_path,category,status
 /es/projects/urban-landscape-athens/,/projects/urban-landscape-athens/,lang-es-portfolio,CREATED
 /es/projects/selva-boutique-luxury-design/,/projects/selva-boutique-luxury-design/,lang-es-portfolio,CREATED
 /es/projects/why-wolfblanc/,/studio/why-wolfblanc/,lang-es-portfolio-page,CREATED
-/es/projects/project-monitoring/,/studio/project-monitoring/,lang-es-portfolio-page,CREATED
+/es/projects/project-monitoring/,/services/project-monitoring/,lang-es-portfolio-page,CREATED
 /es/projects/for-investors/,/services/for-investors/,lang-es-portfolio-page,CREATED
 /es/projects/for-homeowners/,/services/for-homeowners/,lang-es-portfolio-page,CREATED
 /es/projects/commercial-retail/,/services/commercial-interiors-hospitality/,lang-es-portfolio-page,CREATED
@@ -474,7 +474,7 @@ old_path,new_path,category,status
 /sv/projects/urban-landscape-athens/,/projects/urban-landscape-athens/,lang-sv-portfolio,CREATED
 /sv/projects/selva-boutique-luxury-design/,/projects/selva-boutique-luxury-design/,lang-sv-portfolio,CREATED
 /sv/projects/why-wolfblanc/,/studio/why-wolfblanc/,lang-sv-portfolio-page,CREATED
-/sv/projects/project-monitoring/,/studio/project-monitoring/,lang-sv-portfolio-page,CREATED
+/sv/projects/project-monitoring/,/services/project-monitoring/,lang-sv-portfolio-page,CREATED
 /sv/projects/for-investors/,/services/for-investors/,lang-sv-portfolio-page,CREATED
 /sv/projects/for-homeowners/,/services/for-homeowners/,lang-sv-portfolio-page,CREATED
 /sv/projects/commercial-retail/,/services/commercial-interiors-hospitality/,lang-sv-portfolio-page,CREATED
@@ -608,7 +608,7 @@ old_path,new_path,category,status
 /el/projects/urban-landscape-athens/,/projects/urban-landscape-athens/,lang-el-portfolio,CREATED
 /el/projects/selva-boutique-luxury-design/,/projects/selva-boutique-luxury-design/,lang-el-portfolio,CREATED
 /el/projects/why-wolfblanc/,/studio/why-wolfblanc/,lang-el-portfolio-page,CREATED
-/el/projects/project-monitoring/,/studio/project-monitoring/,lang-el-portfolio-page,CREATED
+/el/projects/project-monitoring/,/services/project-monitoring/,lang-el-portfolio-page,CREATED
 /el/projects/for-investors/,/services/for-investors/,lang-el-portfolio-page,CREATED
 /el/projects/for-homeowners/,/services/for-homeowners/,lang-el-portfolio-page,CREATED
 /el/projects/commercial-retail/,/services/commercial-interiors-hospitality/,lang-el-portfolio-page,CREATED
@@ -742,7 +742,7 @@ old_path,new_path,category,status
 /de/projects/k38/,/projects/k38/,lang-de-portfolio,CREATED
 /de/projects/plato/,/projects/plato/,lang-de-portfolio,CREATED
 /de/projects/why-wolfblanc/,/studio/why-wolfblanc/,lang-de-portfolio-page,CREATED
-/de/projects/project-monitoring/,/studio/project-monitoring/,lang-de-portfolio-page,CREATED
+/de/projects/project-monitoring/,/services/project-monitoring/,lang-de-portfolio-page,CREATED
 /de/projects/for-investors/,/services/for-investors/,lang-de-portfolio-page,CREATED
 /de/projects/for-homeowners/,/services/for-homeowners/,lang-de-portfolio-page,CREATED
 /de/projects/commercial-retail/,/services/commercial-interiors-hospitality/,lang-de-portfolio-page,CREATED
@@ -873,7 +873,7 @@ old_path,new_path,category,status
 /nl/projects/k38/,/projects/k38/,lang-nl-portfolio,CREATED
 /nl/projects/plato/,/projects/plato/,lang-nl-portfolio,CREATED
 /nl/projects/why-wolfblanc/,/studio/why-wolfblanc/,lang-nl-portfolio-page,CREATED
-/nl/projects/project-monitoring/,/studio/project-monitoring/,lang-nl-portfolio-page,CREATED
+/nl/projects/project-monitoring/,/services/project-monitoring/,lang-nl-portfolio-page,CREATED
 /nl/projects/for-investors/,/services/for-investors/,lang-nl-portfolio-page,CREATED
 /nl/projects/for-homeowners/,/services/for-homeowners/,lang-nl-portfolio-page,CREATED
 /nl/projects/commercial-retail/,/services/commercial-interiors-hospitality/,lang-nl-portfolio-page,CREATED
@@ -1004,7 +1004,7 @@ old_path,new_path,category,status
 /fr/projects/k38/,/projects/k38/,lang-fr-portfolio,CREATED
 /fr/projects/plato/,/projects/plato/,lang-fr-portfolio,CREATED
 /fr/projects/why-wolfblanc/,/studio/why-wolfblanc/,lang-fr-portfolio-page,CREATED
-/fr/projects/project-monitoring/,/studio/project-monitoring/,lang-fr-portfolio-page,CREATED
+/fr/projects/project-monitoring/,/services/project-monitoring/,lang-fr-portfolio-page,CREATED
 /fr/projects/for-investors/,/services/for-investors/,lang-fr-portfolio-page,CREATED
 /fr/projects/for-homeowners/,/services/for-homeowners/,lang-fr-portfolio-page,CREATED
 /fr/projects/commercial-retail/,/services/commercial-interiors-hospitality/,lang-fr-portfolio-page,CREATED
