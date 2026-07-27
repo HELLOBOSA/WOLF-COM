@@ -166,13 +166,13 @@
     .related-inner{max-width:1100px;margin:0 auto;padding:72px 32px}
     .rel-ey{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:36px}
     .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-    .rel-card{background:var(--bg)}
+    .rel-card{display:flex;flex-direction:column;background:var(--bg)}
     .rel-img-wrap{aspect-ratio:4/3;overflow:hidden}
     .rel-img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
     .rel-card:hover .rel-img{transform:scale(1.035)}
-    .rel-body{padding:22px 22px 26px}
-    .rel-cat{font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-    .rel-title{font-size:.62rem;font-weight:300;text-transform:uppercase;letter-spacing:.1em;line-height:1.5}
+    .rel-body{flex:1;padding:20px 20px 22px}
+    .rel-cat{font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+    .rel-title{font-size:.66rem;font-weight:300;text-transform:uppercase;letter-spacing:.08em;line-height:1.45}
     @media(max-width:860px){.rel-grid{grid-template-columns:1fr}}
     @media(min-width:561px) and (max-width:860px){.rel-grid{grid-template-columns:1fr 1fr}}
     .cookie-banner{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1200;width:max-content;max-width:calc(100vw - 32px);display:flex;align-items:center;justify-content:center;gap:14px;padding:8px 10px 8px 16px;border:1px solid rgba(148,133,106,.18);background:rgba(148,133,106,.18);backdrop-filter:blur(16px);border-radius:999px;color:#0d0b0a;box-shadow:0 18px 45px rgba(13,11,10,.08)}
@@ -342,15 +342,15 @@
   <section class="related"><div class="related-inner"><span class="rel-ey" data-en="MORE FROM THE STUDIO" data-es="MÁS DEL ESTUDIO">MORE FROM THE STUDIO</span><div class="rel-grid">
     <a href="../architects/" class="rel-card">
       <div class="rel-img-wrap"><img class="rel-img" src="../../images/wolfblanc-team.webp" alt="Architects, The registered architects behind Wolfblanc" loading="lazy" decoding="async"></div>
-      <div class="rel-body"><p class="rel-cat" data-en="Architects" data-es="Arquitectos">Architects</p><p class="rel-title" data-en="Registered architects across Spain, Sweden and Greece. Meet the team behind every project." data-es="Arquitectos colegiados en España, Suecia y Grecia. Conoce al equipo detras de cada proyecto.">Registered architects across Spain, Sweden and Greece. Meet the team behind every project.</p></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Architects" data-es="Arquitectos">Architects</p><p class="rel-title" data-en="Meet the founders behind Wolfblanc." data-es="Conozca a los fundadores de Wolfblanc.">Meet the founders behind Wolfblanc.</p></div>
     </a>
     <a href="../culture/" class="rel-card">
       <div class="rel-img-wrap"><img class="rel-img" src="../../images/Horizon House 01.webp" alt="Culture and Values, How we work and what we stand for" loading="lazy" decoding="async"></div>
-      <div class="rel-body"><p class="rel-cat" data-en="Culture and Values" data-es="Cultura y Valores">Culture and Values</p><p class="rel-title" data-en="How we work, what we stand for, and why it matters for your project." data-es="Como trabajamos, que defendemos y por que importa para tu proyecto.">How we work, what we stand for, and why it matters for your project.</p></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Culture and Values" data-es="Cultura y valores">Culture and Values</p><p class="rel-title" data-en="How we work and what we stand for." data-es="Cómo trabajamos y qué defendemos.">How we work and what we stand for.</p></div>
     </a>
     <a href="../../services/" class="rel-card">
-      <div class="rel-img-wrap"><img class="rel-img" src="../../images/Norrsken Office 01.webp" alt="Wolfblanc architecture and design services" loading="lazy" decoding="async"></div>
-      <div class="rel-body"><p class="rel-cat" data-en="Services" data-es="Servicios">Services</p><p class="rel-title" data-en="Architecture, interiors and specialist expertise shaped around each commission." data-es="Arquitectura, interiores y experiencia especializada adaptadas a cada encargo.">Architecture, interiors and specialist expertise shaped around each commission.</p></div>
+      <div class="rel-img-wrap"><img class="rel-img" src="../../images/Market Regeneration 01.webp" alt="Wolfblanc architecture and design services" loading="lazy" decoding="async"></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Services" data-es="Servicios">Services</p><p class="rel-title" data-en="Architecture, interiors and specialist consultancy." data-es="Arquitectura, interiores y consultoría especializada.">Architecture, interiors and specialist consultancy.</p></div>
     </a>
   </div></div></section>
 </main>
