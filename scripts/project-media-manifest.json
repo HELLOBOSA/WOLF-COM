@@ -1,6 +1,6 @@
 {
   "source": "Live wolfblanc.com WordPress portfolio",
-  "generatedAt": "2026-07-22T09:51:53.930Z",
+  "generatedAt": "2026-07-27T14:55:27.000Z",
   "projects": {
     "market-regeneration": {
       "title": "Market Regeneration",
@@ -217,22 +217,6 @@
           "local": "images/projects/a75/01.webp"
         },
         {
-          "source": "https://wolfblanc.com/wp-content/uploads/2024/12/A75_01.webp",
-          "local": "images/projects/a75/02.webp"
-        },
-        {
-          "source": "https://wolfblanc.com/wp-content/uploads/2024/12/A75_02-1920x1434.webp",
-          "local": "images/projects/a75/03.webp"
-        },
-        {
-          "source": "https://wolfblanc.com/wp-content/uploads/2024/12/A75_04.webp",
-          "local": "images/projects/a75/04.webp"
-        },
-        {
-          "source": "https://wolfblanc.com/wp-content/uploads/2024/12/A75_03.webp",
-          "local": "images/projects/a75/05.webp"
-        },
-        {
           "source": "https://wolfblanc.com/wp-content/uploads/2024/12/A75_05.webp",
           "local": "images/projects/a75/06.webp"
         },
@@ -273,10 +257,6 @@
         {
           "source": "https://wolfblanc.com/wp-content/uploads/2024/12/K12_4-1920x851.webp",
           "local": "images/projects/k12/01.webp"
-        },
-        {
-          "source": "https://wolfblanc.com/wp-content/uploads/2024/12/K12_001-scaled.jpg",
-          "local": "images/projects/k12/02.jpg"
         },
         {
           "source": "https://wolfblanc.com/wp-content/uploads/2024/12/K12_02-1920x1071.webp",
@@ -601,14 +581,6 @@
         {
           "source": "https://wolfblanc.com/wp-content/uploads/2024/12/WolfblancArchitects_P15_21-1920x1432.webp",
           "local": "images/projects/lavapies-intervention/10.webp"
-        },
-        {
-          "source": "https://wolfblanc.com/wp-content/uploads/2024/12/WolfblancArchitects_P15_22-1920x1992.webp",
-          "local": "images/projects/lavapies-intervention/11.webp"
-        },
-        {
-          "source": "https://wolfblanc.com/wp-content/uploads/2024/12/WolfblancArchitects_P15_23-1920x2537.webp",
-          "local": "images/projects/lavapies-intervention/12.webp"
         }
       ]
     },

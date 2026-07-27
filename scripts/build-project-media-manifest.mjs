@@ -20,6 +20,15 @@ const unavailableSources=new Set([
   'https://wolfblanc.com/wp-content/uploads/2024/12/WolfblancArchitects_P09_12-scaled.jpeg',
   'https://wolfblanc.com/wp-content/uploads/2024/12/WolfblancArchitects_P09_07-scaled.png'
 ]);
+const excludedSources=new Set([
+  'https://wolfblanc.com/wp-content/uploads/2024/12/A75_01.webp',
+  'https://wolfblanc.com/wp-content/uploads/2024/12/A75_02-1920x1434.webp',
+  'https://wolfblanc.com/wp-content/uploads/2024/12/A75_04.webp',
+  'https://wolfblanc.com/wp-content/uploads/2024/12/A75_03.webp',
+  'https://wolfblanc.com/wp-content/uploads/2024/12/K12_001-scaled.jpg',
+  'https://wolfblanc.com/wp-content/uploads/2024/12/WolfblancArchitects_P15_22-1920x1992.webp',
+  'https://wolfblanc.com/wp-content/uploads/2024/12/WolfblancArchitects_P15_23-1920x2537.webp'
+]);
 
 function decode(value=''){
   return value.replace(/&#038;|&amp;/g,'&').replace(/&#8217;/g,'’').replace(/<[^>]+>/g,'').trim();
@@ -53,7 +62,7 @@ for(const slug of caseStudies){
     if(!identity||!/^https:\/\/wolfblanc\.com\/wp-content\/uploads\//i.test(identity)||seen.has(identity))continue;
     seen.add(identity);
     sequence++;
-    if(unavailableSources.has(identity))continue;
+    if(unavailableSources.has(identity)||excludedSources.has(identity))continue;
     const source=selectSource(tag);
     const extension=(new URL(source).pathname.match(/\.(webp|jpe?g|png)$/i)?.[1]||'webp').toLowerCase().replace('jpeg','jpg');
     images.push({
