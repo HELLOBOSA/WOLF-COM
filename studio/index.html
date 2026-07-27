@@ -12,7 +12,7 @@
   <meta name="robots" content="noindex, nofollow">
 
   <title>Studio - WOLFBLANC ARCHITECTS</title>
-  <meta name="description" content="Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece. Registered architects (COAM, SAR/MSA, TEE-TCG), WELL AP. Residential, investment, hospitality and commercial projects.">
+  <meta name="description" content="Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece, with COAM and TEE-TCG registration, architect SAR/MSA and WELL AP expertise.">
 
   <link rel="canonical" href="https://wolfblanc.com/studio/">
   <link rel="alternate" hreflang="en" href="https://wolfblanc.com/studio/">
@@ -21,7 +21,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_GB">
   <meta property="og:title" content="Studio - WOLFBLANC ARCHITECTS">
-  <meta property="og:description" content="Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece. Registered architects (COAM, SAR/MSA, TEE-TCG), WELL AP. Residential, investment, hospitality and commercial projects.">
+  <meta property="og:description" content="Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece, with COAM and TEE-TCG registration, architect SAR/MSA and WELL AP expertise.">
   <meta property="og:url" content="https://wolfblanc.com/studio/">
   <meta property="og:site_name" content="Wolfblanc Architects">
   <meta property="og:image" content="https://wolfblanc.com/images/Horizon House 01.webp">
@@ -30,7 +30,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Studio - WOLFBLANC ARCHITECTS">
-  <meta name="twitter:description" content="Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece. Registered architects (COAM, SAR/MSA, TEE-TCG), WELL AP. Residential, investment, hospitality and commercial projects.">
+  <meta name="twitter:description" content="Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece, with COAM and TEE-TCG registration, architect SAR/MSA and WELL AP expertise.">
   <meta name="twitter:image" content="https://wolfblanc.com/images/Horizon House 01.webp">
 
   <script type="application/ld+json">
@@ -54,7 +54,7 @@
         "url": "https://wolfblanc.com/",
         "logo": "https://wolfblanc.com/images/210-sq-white-02.webp",
         "image": "https://wolfblanc.com/images/Horizon House 01.webp",
-        "description": "International architecture studio for residential, hospitality and investment projects across Spain, Sweden and Greece. COAM N.25160, SAR/MSA, TEE-TCG and WELL AP.",
+        "description": "International architecture studio for residential, hospitality and investment projects across Spain, Sweden and Greece. COAM N.25160 and TEE-TCG N.168011 registration, architect SAR/MSA and WELL AP expertise.",
         "email": "info@wolfblanc.com",
         "telephone": "+34662411064",
         "knowsLanguage": ["es", "en", "sv", "el"],
@@ -124,9 +124,18 @@
     blockquote{margin:48px 0;padding:0 0 0 28px;border-left:2px solid var(--accent)}
     blockquote p{font-size:1.3rem;font-weight:300;line-height:1.5;color:var(--text);margin:0}
     .aud-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin:28px 0 8px}
-    .aud-cell{background:var(--bg);padding:24px 22px}
+    .aud-cell{display:block;background:var(--bg);padding:24px 22px;transition:background .3s}
+    .aud-cell:hover{background:rgba(148,133,106,.06)}
+    .aud-cell:focus-visible{outline:1px solid var(--accent);outline-offset:-3px}
+    .aud-cell::after{content:'→';display:block;margin-top:16px;font-size:.72rem;color:var(--accent)}
     .aud-cell h3{font-size:.82rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin:0 0 10px}
     .aud-cell p{font-size:.95rem;line-height:1.7;color:var(--text2);margin:0}
+    .studio-links{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:32px 0 8px}
+    .studio-link{display:block;background:var(--bg);padding:18px 16px;transition:background .3s}
+    .studio-link:hover{background:rgba(148,133,106,.06)}
+    .studio-link:focus-visible{outline:1px solid var(--accent);outline-offset:-3px}
+    .studio-link strong{display:block;font-size:.68rem;font-weight:400;letter-spacing:.11em;text-transform:uppercase;color:var(--text);margin-bottom:4px}
+    .studio-link span{display:block;font-size:.76rem;line-height:1.55;color:var(--text2)}
     .svc-table{width:100%;border-collapse:collapse;margin:28px 0 8px;font-size:.9rem}
     .svc-table th{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);font-weight:400}
     .svc-table td{padding:14px 14px;border-bottom:1px solid var(--line);color:var(--text2);vertical-align:top;line-height:1.6}
@@ -169,6 +178,7 @@
       .hero-inner,.wb-body,.cta-inner,.hero-img{padding-left:24px;padding-right:24px}
       .hero-inner{padding-top:96px;padding-bottom:56px}
       .aud-grid{grid-template-columns:1fr}
+      .studio-links{grid-template-columns:1fr}
       .cred-list{grid-template-columns:1fr}
       footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
       footer>span:nth-child(1),footer>span:nth-child(2),footer>span:nth-child(3){text-align:center}
@@ -232,6 +242,7 @@
     .stat-cell+.stat-cell{border-left:1px solid var(--line)}
     .stat-num{font-size:clamp(2.2rem,4.5vw,3.2rem);font-weight:100;letter-spacing:.02em;color:var(--text);line-height:1}
     .stat-label{font-size:.56rem;letter-spacing:.22em;text-transform:uppercase;color:var(--text2);margin-top:14px}
+    .stat-note{font-size:.72rem;line-height:1.65;color:var(--text2);margin:12px 0 0;text-align:center}
     .voice-item{padding:36px 0;border-bottom:1px solid var(--line)}
     .voice-item:first-child{border-top:1px solid var(--line)}
     .voice-quote{font-size:1.12rem;font-weight:300;line-height:1.72;color:var(--text);font-style:italic;margin:0 0 16px;max-width:56ch}
@@ -284,7 +295,7 @@
     <a href="../" class="back-link" data-es="← Inicio" data-en="← Home">← Home</a>
     <span class="eyebrow" data-es="ESTUDIO DE ARQUITECTURA · ESPAÑA · SUECIA · GRECIA" data-en="ARCHITECTURE STUDIO · SPAIN · SWEDEN · GREECE">ARCHITECTURE STUDIO · SPAIN · SWEDEN · GREECE</span>
     <h1 data-es="Estudio de arquitectura" data-en="Architecture studio">Architecture studio</h1>
-    <p class="lead" data-es="Wolfblanc es un estudio de arquitectura y diseño en España, Suecia y Grecia. Acompañamos a propietarios, compradores de segunda residencia, inversores y negocios con un servicio completo y un método de entrega riguroso." data-en="Wolfblanc is an architecture and design studio in Spain, Sweden and Greece. We support homeowners, second-home buyers, investors and businesses with a full-service approach and a rigorous delivery method.">Wolfblanc is an architecture and design studio in Spain, Sweden and Greece. We support homeowners, second-home buyers, investors and businesses with a full-service approach and a rigorous delivery method.</p>
+    <p class="lead" data-es="Wolfblanc es un estudio internacional de arquitectura y diseño que trabaja en España, Suecia y Grecia. Más de veinte años de experiencia combinada y casi una década dentro de grandes estudios nórdicos sustentan un enfoque riguroso y arraigado en cada lugar para propietarios, inversores y negocios." data-en="Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece. More than twenty years of combined experience and nearly a decade inside major Nordic practices inform a rigorous, locally grounded approach for homeowners, investors and businesses.">Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece. More than twenty years of combined experience and nearly a decade inside major Nordic practices inform a rigorous, locally grounded approach for homeowners, investors and businesses.</p>
   </div>
 </header>
 
@@ -300,27 +311,42 @@
     <p class="opening" data-es="Wolfblanc reúne diseño mediterráneo y una forma de trabajar ordenada, con documentación técnica detallada, coordinación BIM y criterios de bienestar. Trabajamos en arquitectura, paisaje, urbanismo, interiores, hostelería e inversión inmobiliaria, desde el concepto hasta la entrega o como apoyo experto en una fase concreta." data-en="Wolfblanc brings together Mediterranean design and an orderly way of working, with detailed technical documentation, BIM coordination and well-being criteria. We work across architecture, landscape, urban design, interiors, hospitality and real estate investment, from concept to completion or as expert support at a specific stage.">Wolfblanc brings together Mediterranean design and an orderly way of working, with detailed technical documentation, BIM coordination and well-being criteria. We work across architecture, landscape, urban design, interiors, hospitality and real estate investment, from concept to completion or as expert support at a specific stage.</p>
 
     <h2 class="section-h" data-es="Qué es Wolfblanc" data-en="What Wolfblanc is">What Wolfblanc is</h2>
-    <p data-es="Somos un estudio de arquitectura colegiado, con estudios en España, Suecia y Grecia. Nuestro trabajo va del proyecto residencial a la inversión inmobiliaria, pasando por la hostelería y los espacios comerciales. Cerca de una década en grandes estudios nórdicos supuso la entrega de más de 3.500 viviendas para Skanska, JM, Einar Mattsson, Bonava y Serneke. Cada proyecto se apoya en registro profesional, experiencia contrastada y comunicación clara en varios idiomas." data-en="We are a registered architecture studio, with studios in Spain, Sweden and Greece. Our work ranges from residential projects to real estate investment, including hospitality and commercial spaces. Nearly a decade inside major Nordic practices delivered over 3,500 residential units for Skanska, JM, Einar Mattsson, Bonava and Serneke. Every project is backed by professional registration, proven experience and clear communication in several languages.">We are a registered architecture studio, with studios in Spain, Sweden and Greece. Our work ranges from residential projects to real estate investment, including hospitality and commercial spaces. Nearly a decade inside major Nordic practices delivered over 3,500 residential units for Skanska, JM, Einar Mattsson, Bonava and Serneke. Every project is backed by professional registration, proven experience and clear communication in several languages.</p>
+    <p data-es="Somos un estudio dirigido por arquitectos con credenciales profesionales en nuestros tres mercados. Nuestro trabajo abarca viviendas privadas y segundas residencias, inversión inmobiliaria, hostelería y espacios comerciales. La experiencia dentro de grandes estudios nórdicos incluye más de 3.500 viviendas para Skanska, JM, Einar Mattsson, Bonava y Serneke. Cada encargo se apoya en un alcance claro, continuidad senior y comunicación multilingüe." data-en="We are an architect-led studio with professional credentials across our three markets. Our work ranges from private homes and second residences to real estate investment, hospitality and commercial spaces. Experience inside major Nordic practices includes more than 3,500 residential units for Skanska, JM, Einar Mattsson, Bonava and Serneke. Every commission is supported by clear scope, senior continuity and multilingual communication.">We are an architect-led studio with professional credentials across our three markets. Our work ranges from private homes and second residences to real estate investment, hospitality and commercial spaces. Experience inside major Nordic practices includes more than 3,500 residential units for Skanska, JM, Einar Mattsson, Bonava and Serneke. Every commission is supported by clear scope, senior continuity and multilingual communication.</p>
+
+    <div class="studio-links" role="navigation" aria-label="Explore the studio" data-es-aria="Explorar el estudio" data-en-aria="Explore the studio">
+      <a class="studio-link" href="why-wolfblanc/">
+        <strong data-es="Por qué Wolfblanc" data-en="Why Wolfblanc">Why Wolfblanc</strong>
+        <span data-es="Nuestra diferencia, nuestro enfoque y el valor que aportamos." data-en="Our difference, our approach and the value we bring.">Our difference, our approach and the value we bring.</span>
+      </a>
+      <a class="studio-link" href="architects/">
+        <strong data-es="Arquitectos" data-en="Architects">Architects</strong>
+        <span data-es="Conozca a los fundadores que dirigen cada proyecto." data-en="Meet the founders who lead every project.">Meet the founders who lead every project.</span>
+      </a>
+      <a class="studio-link" href="culture/">
+        <strong data-es="Cultura y valores" data-en="Culture and values">Culture and values</strong>
+        <span data-es="Cómo trabajamos y los principios que guían el estudio." data-en="How we work and the principles that guide the studio.">How we work and the principles that guide the studio.</span>
+      </a>
+    </div>
 
     <h2 class="section-h" data-es="A quién acompañamos" data-en="Who we work with">Who we work with</h2>
     <p data-es="Trabajamos con cuatro tipos de cliente, cada uno con necesidades distintas y el mismo nivel de atención." data-en="We work with four types of client, each with different needs and the same level of attention.">We work with four types of client, each with different needs and the same level of attention.</p>
     <div class="aud-grid">
-      <div class="aud-cell">
+      <a class="aud-cell" href="../services/for-homeowners/">
         <h3 data-es="Propietarios" data-en="Homeowners">Homeowners</h3>
         <p data-es="Vivienda, reforma integral e interiorismo con un proceso claro y un único interlocutor de principio a fin." data-en="Housing, full renovation and interior design with a clear process and a single point of contact from start to finish.">Housing, full renovation and interior design with a clear process and a single point of contact from start to finish.</p>
-      </div>
-      <div class="aud-cell">
+      </a>
+      <a class="aud-cell" href="../services/villas-and-second-homes/">
         <h3 data-es="Segunda residencia" data-en="Second homes">Second homes</h3>
         <p data-es="Villas y segundas residencias pensadas en torno al paisaje, los materiales y la durabilidad, también para clientes que gestionan el proyecto desde el extranjero." data-en="Villas and second homes designed around landscape, materials and durability, including for clients managing the project from abroad.">Villas and second homes designed around landscape, materials and durability, including for clients managing the project from abroad.</p>
-      </div>
-      <div class="aud-cell">
+      </a>
+      <a class="aud-cell" href="../services/for-investors/">
         <h3 data-es="Inversores y promotores" data-en="Investors and developers">Investors and developers</h3>
         <p data-es="Arquitectura que mejora el rendimiento del activo, con due diligence técnica, eficiencia de planta y retorno medible." data-en="Architecture that improves asset performance, with technical due diligence, floor plan efficiency and measurable return.">Architecture that improves asset performance, with technical due diligence, floor plan efficiency and measurable return.</p>
-      </div>
-      <div class="aud-cell">
+      </a>
+      <a class="aud-cell" href="../services/commercial-interiors-hospitality/">
         <h3 data-es="Negocios y hostelería" data-en="Business and hospitality">Business and hospitality</h3>
         <p data-es="Restaurantes, hoteles, retail y oficinas donde el espacio comunica identidad, mejora la operación y aumenta el valor." data-en="Restaurants, hotels, retail and offices where the space communicates identity, improves operations and increases value.">Restaurants, hotels, retail and offices where the space communicates identity, improves operations and increases value.</p>
-      </div>
+      </a>
     </div>
 
     <div class="sec-img">
@@ -342,7 +368,7 @@
       <tbody>
         <tr>
           <td data-es="Arquitectura" data-en="Architecture">Architecture</td>
-          <td data-es="Obra nueva, rehabilitación y transformación de edificios, del análisis inicial a la documentación técnica, la obra y la entrega. La reforma integral y la gestión de proyectos se integran dentro de esta disciplina." data-en="New buildings, rehabilitation and transformation, from early analysis through technical design, construction and handover. Total renovation and project management are integrated within this discipline.">New buildings, rehabilitation and transformation, from early analysis through technical design, construction and handover. Total renovation and project management are integrated within this discipline.</td>
+          <td data-es="Obra nueva, rehabilitación y transformación de edificios, del análisis inicial a la documentación técnica, la obra y la entrega. La reforma integral y la Gestión de Proyecto pueden integrarse cuando formen parte del encargo acordado." data-en="New buildings, rehabilitation and transformation, from early analysis through technical design, construction and handover. Total renovation and Project Management can be integrated when included in the agreed appointment.">New buildings, rehabilitation and transformation, from early analysis through technical design, construction and handover. Total renovation and Project Management can be integrated when included in the agreed appointment.</td>
         </tr>
         <tr>
           <td data-es="Arquitectura del paisaje" data-en="Landscape architecture">Landscape architecture</td>
@@ -388,16 +414,16 @@
       <li><span><strong data-es="Escuchamos" data-en="We listen">We listen</strong><span data-es="Entendemos el proyecto, las necesidades, el presupuesto y las oportunidades del emplazamiento." data-en="We understand the project, the needs, the budget and the opportunities of the site.">We understand the project, the needs, the budget and the opportunities of the site.</span></span></li>
       <li><span><strong data-es="Diseñamos" data-en="We design">We design</strong><span data-es="Desarrollamos y visualizamos el concepto arquitectónico y las decisiones de material y atmósfera." data-en="We develop and visualize the architectural concept and the decisions on material and atmosphere.">We develop and visualize the architectural concept and the decisions on material and atmosphere.</span></span></li>
       <li><span><strong data-es="Planificamos en detalle" data-en="We plan in detail">We plan in detail</strong><span data-es="Preparamos planos, detalles, documentación técnica y la estrategia de licencias." data-en="We prepare drawings, details, technical documentation and the permit strategy.">We prepare drawings, details, technical documentation and the permit strategy.</span></span></li>
-      <li><span><strong data-es="Entregamos" data-en="We deliver">We deliver</strong><span data-es="Acompañamos la obra con control de plazos y presupuesto hasta la recepción del proyecto." data-en="We accompany the construction with control of timelines and budget through to project handover.">We accompany the construction with control of timelines and budget through to project handover.</span></span></li>
+      <li><span><strong data-es="Entregamos" data-en="We deliver">We deliver</strong><span data-es="Cuando forma parte del encargo, acompañamos la obra y el seguimiento de plazos y presupuesto hasta la entrega del proyecto." data-en="Where included in the appointment, we support construction, programme and budget reporting through to project handover.">Where included in the appointment, we support construction, programme and budget reporting through to project handover.</span></span></li>
     </ol>
 
     <h2 class="section-h" data-es="Por qué elegir Wolfblanc" data-en="Why choose Wolfblanc">Why choose Wolfblanc</h2>
     <p data-es="La confianza se construye con datos verificables. Estas son las credenciales y capacidades que respaldan cada proyecto." data-en="Trust is built on verifiable facts. These are the credentials and capabilities that back every project.">Trust is built on verifiable facts. These are the credentials and capabilities that back every project.</p>
     <ul class="cred-list">
-      <li><strong>COAM N.25160 &middot; SAR/MSA &middot; TEE-TCG N.168011</strong><br><span data-es="Colegiados en el Colegio Oficial de Arquitectos de Madrid, Sveriges Arkitekter y la Cámara Técnica de Grecia. Los tres números de registro son verificables públicamente." data-en="Registered with the Colegio Oficial de Arquitectos de Madrid, Sveriges Arkitekter and the Technical Chamber of Greece. All three registration numbers are publicly verifiable.">Registered with the Colegio Oficial de Arquitectos de Madrid, Sveriges Arkitekter and the Technical Chamber of Greece. All three registration numbers are publicly verifiable.</span></li>
-      <li><strong data-es="Habilitación nacional" data-en="National scope">National scope</strong><br><span data-es="La colegiación permite firmar y dirigir obra internacionalmente." data-en="Professional registration allows us to sign and supervise works anywhere.">Professional registration allows us to sign and supervise works anywhere.</span></li>
-      <li><strong>WELL AP</strong><br><span data-es="Diseño acreditado para la salud y el bienestar." data-en="Accredited design for health and well-being.">Accredited design for health and well-being.</span></li>
-      <li><strong data-es="Metodología BIM" data-en="BIM methodology">BIM methodology</strong><br><span data-es="Coordinación digital y control de mediciones y presupuesto." data-en="Digital coordination and control of quantities and budget.">Digital coordination and control of quantities and budget.</span></li>
+      <li><strong data-es="Credenciales profesionales" data-en="Professional credentials">Professional credentials</strong><br><span data-es="Colegiación COAM en España (N.25160), título profesional de arquitecto SAR/MSA en Suecia y habilitación TEE-TCG en Grecia (N.168011)." data-en="COAM-registered in Spain (N.25160), architect SAR/MSA in Sweden, and TEE-TCG licensed in Greece (N.168011).">COAM-registered in Spain (N.25160), architect SAR/MSA in Sweden, and TEE-TCG licensed in Greece (N.168011).</span></li>
+      <li><strong data-es="Funciones legales locales" data-en="Local statutory roles">Local statutory roles</strong><br><span data-es="Las funciones legales y responsabilidades de firma siguen los requisitos de cada país y de cada encargo." data-en="Statutory roles and signing responsibilities follow the requirements of each country and appointment.">Statutory roles and signing responsibilities follow the requirements of each country and appointment.</span></li>
+      <li><strong>WELL AP</strong><br><span data-es="Experiencia WELL Accredited Professional aplicada a la luz, la calidad del aire, la acústica, los materiales y el bienestar." data-en="WELL Accredited Professional expertise applied to light, air quality, acoustics, materials and well-being.">WELL Accredited Professional expertise applied to light, air quality, acoustics, materials and well-being.</span></li>
+      <li><strong data-es="Metodología BIM" data-en="BIM methodology">BIM methodology</strong><br><span data-es="Coordinación digital que apoya las mediciones, la reducción de riesgos y las decisiones informadas sobre costes." data-en="Digital coordination supporting quantities, risk reduction and cost-informed decisions.">Digital coordination supporting quantities, risk reduction and cost-informed decisions.</span></li>
       <li><strong data-es="20+ años de experiencia" data-en="20+ years of experience">20+ years of experience</strong><br><span data-es="Experiencia combinada en proyectos residenciales, comerciales y de inversión." data-en="Combined experience across residential, commercial and investment projects.">Combined experience across residential, commercial and investment projects.</span></li>
       <li><strong data-es="Atención multilingüe" data-en="Multilingual service">Multilingual service</strong><br><span data-es="Español, inglés, sueco y griego para clientes locales e internacionales." data-en="Spanish, English, Swedish and Greek for local and international clients.">Spanish, English, Swedish and Greek for local and international clients.</span></li>
     </ul>
@@ -410,27 +436,28 @@
     </div>
 
     <h2 class="section-h" data-es="Dónde trabajamos" data-en="Where we work">Where we work</h2>
-    <p data-es="Desarrollamos proyectos en España, Suecia y Grecia. Nuestras oficinas están en Madrid, Estocolmo y Atenas, y trabajamos con clientes en todo el sur de Europa y Escandinavia." data-en="We develop projects in Spain, Sweden and Greece. Our offices are in Madrid, Stockholm and Athens, and we work with clients across southern Europe and Scandinavia.">We develop projects in Spain, Sweden and Greece. Our offices are in Madrid, Stockholm and Athens, and we work with clients across southern Europe and Scandinavia.</p>
+    <p data-es="Desarrollamos proyectos en España, Suecia y Grecia. Mantenemos presencia profesional en Madrid, Estocolmo y Atenas, y trabajamos con clientes en todo el sur de Europa y Escandinavia." data-en="We develop projects in Spain, Sweden and Greece. We maintain a professional presence in Madrid, Stockholm and Athens, and work with clients across southern Europe and Scandinavia.">We develop projects in Spain, Sweden and Greece. We maintain a professional presence in Madrid, Stockholm and Athens, and work with clients across southern Europe and Scandinavia.</p>
     <p data-es="Si quiere resolver dudas concretas antes de empezar, puede consultar nuestras preguntas frecuentes." data-en="If you want to resolve specific questions before starting, you can read our frequently asked questions."><a href="../faq/" style="color:var(--accent)" data-es="Ver preguntas frecuentes →" data-en="See frequently asked questions →">See frequently asked questions →</a></p>
 
     <div class="stat-row">
       <div class="stat-cell">
         <p class="stat-num">3,500+</p>
-        <p class="stat-label" data-es="Viviendas entregadas" data-en="Residential units delivered">Residential units delivered</p>
+        <p class="stat-label" data-es="Viviendas en experiencia nórdica" data-en="Homes in Nordic practice experience">Homes in Nordic practice experience</p>
       </div>
       <div class="stat-cell">
         <p class="stat-num">25+</p>
-        <p class="stat-label" data-es="Grandes proyectos finalizados" data-en="Major projects completed">Major projects completed</p>
+        <p class="stat-label" data-es="Grandes proyectos en experiencia combinada" data-en="Major projects in combined experience">Major projects in combined experience</p>
       </div>
       <div class="stat-cell">
         <p class="stat-num">8</p>
-        <p class="stat-label" data-es="Grandes promotoras nórdicas" data-en="Major Nordic developers">Major Nordic developers</p>
+        <p class="stat-label" data-es="Promotoras nórdicas en puestos anteriores" data-en="Nordic developers in prior roles">Nordic developers in prior roles</p>
       </div>
       <div class="stat-cell">
         <p class="stat-num">20+</p>
         <p class="stat-label" data-es="Años de experiencia combinada" data-en="Years combined experience">Years combined experience</p>
       </div>
     </div>
+    <p class="stat-note" data-es="Las cifras incluyen trabajos desarrollados por los fundadores de Wolfblanc en puestos senior anteriores dentro de grandes estudios nórdicos, además de encargos de Wolfblanc." data-en="These figures include work delivered by Wolfblanc's founders in prior senior roles within major Nordic architectural practices, as well as Wolfblanc commissions.">These figures include work delivered by Wolfblanc's founders in prior senior roles within major Nordic architectural practices, as well as Wolfblanc commissions.</p>
 
     <h2 class="section-h" data-es="Lo que dicen nuestros clientes" data-en="What our clients say">What our clients say</h2>
     <div class="voice-item">
@@ -465,8 +492,8 @@
       <div class="rel-body"><p class="rel-cat" data-en="Why Wolfblanc" data-es="Por Que Wolfblanc">Why Wolfblanc</p><p class="rel-title" data-en="Nordic precision meets Mediterranean sensibility. One architect from brief to handover." data-es="Precisión nordica con sensibilidad mediterranea. Un arquitecto desde el encargo hasta la entrega.">Nordic precision meets Mediterranean sensibility. One architect from brief to handover.</p></div>
     </a>
     <a href="architects/" class="rel-card">
-      <div class="rel-img-wrap"><img class="rel-img" src="../images/wolfblanc-team.webp" alt="Architects, The registered architects behind Wolfblanc" loading="lazy" decoding="async"></div>
-      <div class="rel-body"><p class="rel-cat" data-en="Architects" data-es="Arquitectos">Architects</p><p class="rel-title" data-en="Registered architects across Spain, Sweden and Greece. Meet the team behind every project." data-es="Arquitectos colegiados en España, Suecia y Grecia. Conoce al equipo detras de cada proyecto.">Registered architects across Spain, Sweden and Greece. Meet the team behind every project.</p></div>
+      <div class="rel-img-wrap"><img class="rel-img" src="../images/wolfblanc-team.webp" alt="Architects, the team behind Wolfblanc" loading="lazy" decoding="async"></div>
+      <div class="rel-body"><p class="rel-cat" data-en="Architects" data-es="Arquitectos">Architects</p><p class="rel-title" data-en="Professionally credentialed across Spain, Sweden and Greece. Meet the team behind every project." data-es="Con credenciales profesionales en España, Suecia y Grecia. Conoce al equipo detrás de cada proyecto.">Professionally credentialed across Spain, Sweden and Greece. Meet the team behind every project.</p></div>
     </a>
     <a href="culture/" class="rel-card">
       <div class="rel-img-wrap"><img class="rel-img" src="../images/Horizon House 01.webp" alt="Culture and Values, How we work and what we stand for" loading="lazy" decoding="async"></div>
@@ -512,6 +539,10 @@
     document.querySelectorAll('[data-es],[data-en]').forEach(function(el){
       var val=lang==='en'?el.getAttribute('data-en'):el.getAttribute('data-es');
       if(val!==null)el.innerHTML=val;
+    });
+    document.querySelectorAll('[data-es-aria],[data-en-aria]').forEach(function(el){
+      var val=lang==='en'?el.getAttribute('data-en-aria'):el.getAttribute('data-es-aria');
+      if(val!==null)el.setAttribute('aria-label',val);
     });
     lbs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);});
     root.setAttribute('lang',lang==='en'?'en':'es');
