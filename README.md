@@ -27,11 +27,11 @@ Planning and rules live in the `hellobosa/dna` repo. Read `dna/README.md` and
   architects/            founder bios, team structure, registrations
   culture/               values, expectations per client type
   why-wolfblanc/         positioning
-  project-monitoring/    remote client reporting service
 /services/               14 service pages
-/projects/               20 case studies plus hub and filter pages
+  project-monitoring/    project reporting used within relevant commissions
+/projects/               21 case studies plus hub and filter pages
 /locations/              9 city pages plus hub, each with market data
-/journal/                34 articles plus hub
+/journal/                43 bilingual articles plus hub
 /careers/ /contact/ /faq/ /legal/
 /images/                 all imagery, flat directory
 /images/journal/         article header images
@@ -88,41 +88,34 @@ affects everything, so check breadth first.
 
 - **Image filenames contain spaces.** `images/Horizon House 01.webp`,
   `images/Casa Boadilla 01.webp`. Browsers encode these fine. Quote every shell path.
-- **Every page is `noindex` until DNS cutover.** All 193 curated pages. Do not remove it
-  page by page. It comes off in one sweep at launch.
+- **Indexing is selective.** The 105 canonical URLs listed in `sitemap.xml` are
+  `index, follow`. Historical redirect stubs, helper pages and the 404 remain `noindex`.
+  Never replace robots metadata across every HTML file indiscriminately.
 - **The cookie banner is decorative.** GA4 (`G-WKLWDZFNKC`) loads unconditionally from
   `site-core.js`. Consent does not gate it. Fix before launch if that matters legally.
-- **`wolfblanc.com` is unreachable from the agent sandbox.** Port 443 is proxy blocked.
-  Use the `WOLFBLANC_ROYAL_MCP_C` MCP connector to read the live WordPress site.
-- **Journal header images: some are placeholders.** The sandbox proxy blocks
-  `wolfblanc.com` (`CONNECT tunnel failed, 403`), so WordPress header images for newly
-  migrated articles cannot be downloaded. Those articles use an existing project
-  photograph from `/images/` instead. Every one is listed in
-  `journal/placeholder-images.txt` with the original WordPress URL recorded in the
-  manifest under `sourceImage`. Replacing a placeholder is a one-line change: drop the
-  real file into `images/journal/<slug>.webp` and update the `src` in the article's
-  `.hero-img`, plus `og:image` and `twitter:image` in the head. The owner prefers the
-  original WordPress photography, so treat this as pending work rather than a choice.
+- **Journal header images are local.** All migrated WordPress header images are stored
+  under `/images/journal/`. `journal/placeholder-images.txt` confirms there are no
+  current placeholders.
 - **Bulk edits are the norm.** Sitewide changes touch 100+ files. Write a Python script
   into the scratchpad, run it, then diff before committing. Do not hand-edit 98 footers.
 - **Relative path depth.** Root pages use `../`, studio subpages use `../../`. Moving a
   page means rewriting every relative path, canonical, OG URL and JSON-LD breadcrumb in it.
 
-## State as of 2026-07-25
+## State as of 2026-07-28
 
-Done: all page templates, 20 case studies, 9 location pages with market data, OG and
-Twitter meta on all curated content pages, studio cross-linking and redirect stubs.
+Done: all page templates, 21 case studies, 9 location pages with market data, 43
+bilingual journal articles, complete social metadata on all canonical content pages,
+studio cross-linking, redirect stubs, custom-domain wiring and selective indexation.
 
 - **No em dashes.** 687 removed sitewide. Keep it that way; check before every commit.
-- **Spanish coverage** is complete on every page except journal article bodies. That
-  includes all page heroes, which were missed until the scanner bug below was found.
+- **Spanish coverage** is complete across all 43 journal articles and the bilingual
+  interface. `python3 scripts/article-i18n.py status` reports zero outstanding blocks.
 - **Spanish accents** matter: `Años` not `Anos`, `Países` not `Paises`, `-ción` not
   `-cion`. 72 values were corrected.
 - **Studio imagery.** Each studio page interleaves project images via `.sec-img`.
 - **Studio hub credibility.** Names the Nordic developers, carries the full
   registration numbers, states they are publicly verifiable.
-- **Journal curation decided.** Keep 33, add 10, drop 19. See
-  `dna/websites/projects/WOLF-COM-journal-curation.md`.
+- **Journal curation delivered.** The final publication contains 43 articles.
 
 ### Verify translations in a browser, not with a regex
 
@@ -143,18 +136,9 @@ python3 -m http.server 8765          # serve the repo
 `extract <slug>` dumps untranslated blocks as TSV, `apply <slug> <tsv>` writes the
 Spanish back, `status` reports progress.
 
-Open, highest value first:
+Current operational note:
 
-1. **Article bodies.** 5 of 34 translated. Outstanding: about 1,047 blocks and
-   31,700 words. Work in batches of four, push after each.
-2. **Migrate the remaining 9 additions.** 1 of 10 done
-   (spanish-horizontal-property-law-comunidad-foreign-owners). Use
-   `scripts/migrate-article.py <payload.json>`; the payload format is documented in
-   the script docstring and one worked example is in the session scratchpad. Each
-   needs its WordPress body pulled through the MCP connector, English and Spanish
-   written per block, then hub card and sitemap entry added by hand.
-3. **Client and guest area** beyond the demo. Deferred by owner.
-4. **Cookie banner is decorative.** GA4 fires regardless of consent. Owner has
+1. **Cookie banner is decorative.** GA4 fires regardless of consent. Owner has
    decided to leave it as is for now.
 
 Full audit: `dna/websites/projects/WOLF-COM-studio-audit.md`.

@@ -1,53 +1,67 @@
-# Wolfblanc Architects — International
+# Wolfblanc Architects - International
 
-> Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece. The practice combines local professional authority with Nordic rigour, Mediterranean sensitivity and direct senior involvement.
-
-## Staging status
-
-This static replacement is in preparation. Every HTML page is noindex and robots.txt blocks crawling until the owner explicitly approves launch. The existing WordPress website remains the public record until then.
+> Wolfblanc is a Madrid-based international architecture and design studio working across Spain, Sweden and Greece. The practice combines Nordic precision, Mediterranean sensibility, local professional authority and direct senior involvement.
 
 ## Canonical website and language
 
-- Canonical origin: https://wolfblanc.com/
-- Default language and URL space: English at root URLs; there is no `/en/` prefix.
-- Spanish is currently available as an on-page interface only where a complete translation exists. A separate indexable `/es/` tree should be introduced only when it is complete enough to maintain as a real publication.
-- Historic `/en/`, `/es/`, `/sv/`, `/de/`, `/nl/` and `/fr/` URLs must be mapped contextually during the final redirect phase.
+- Canonical website: https://wolfblanc.com/
+- Default language: English at root URLs; there is no `/en/` prefix.
+- Spanish translations are available through the on-page EN/ES interface where complete.
+- Local market websites: https://wolfblanc.es/, https://wolfblanc.se/ and https://wolfblanc.gr/
 
 ## Main sections
 
 - Studio: https://wolfblanc.com/studio/
+- Architects: https://wolfblanc.com/studio/architects/
+- Culture and values: https://wolfblanc.com/studio/culture/
 - Services: https://wolfblanc.com/services/
-- Projects: https://wolfblanc.com/portfolio/
+- Projects: https://wolfblanc.com/projects/
 - Locations: https://wolfblanc.com/locations/
-- Journal: https://wolfblanc.com/news/
+- Journal: https://wolfblanc.com/journal/
 - Careers: https://wolfblanc.com/careers/
 - FAQ: https://wolfblanc.com/faq/
 - Contact and booking: https://wolfblanc.com/contact/
-- Newsletter: https://wolfblanc.com/newsletter/
 - Legal, privacy and cookies: https://wolfblanc.com/legal/
 
-## Services
+## Core services
 
-1. Architecture
-2. Landscape architecture
-3. Urban design and masterplanning
-4. Residential interiors
-5. Commercial interiors and hospitality
-6. Architectural visualization
-7. Technical due diligence
-8. BIM consultancy
-9. Well-being architecture and WELL AP consulting
-10. Project management
+- Architecture: https://wolfblanc.com/services/architecture/
+- Landscape architecture: https://wolfblanc.com/services/landscape-architecture/
+- Urban design and masterplanning: https://wolfblanc.com/services/urban-design/
+- Residential interiors: https://wolfblanc.com/services/residential-interiors/
+- Commercial interiors and hospitality: https://wolfblanc.com/services/commercial-interiors-hospitality/
+- Architectural visualization: https://wolfblanc.com/services/visualization/
+- Technical due diligence: https://wolfblanc.com/services/due-diligence/
+- BIM consultancy: https://wolfblanc.com/services/bim/
+- Well-being architecture and WELL AP consulting: https://wolfblanc.com/services/wellbeing/
+
+## Project pathways
+
+- For investors: https://wolfblanc.com/services/for-investors/
+- For homeowners: https://wolfblanc.com/services/for-homeowners/
+- Villas and second homes: https://wolfblanc.com/services/villas-and-second-homes/
+- Project management: https://wolfblanc.com/services/project-management/
+- Project monitoring: https://wolfblanc.com/services/project-monitoring/
 
 ## Locations
 
-Madrid, Barcelona, Valencia, Mallorca, Marbella and Galicia in Spain; Stockholm in Sweden; Athens and Thessaloniki in Greece.
+- Madrid: https://wolfblanc.com/locations/madrid/
+- Barcelona: https://wolfblanc.com/locations/barcelona/
+- Valencia: https://wolfblanc.com/locations/valencia/
+- Mallorca: https://wolfblanc.com/locations/mallorca/
+- Marbella: https://wolfblanc.com/locations/marbella/
+- Galicia: https://wolfblanc.com/locations/galicia/
+- Stockholm: https://wolfblanc.com/locations/stockholm/
+- Athens: https://wolfblanc.com/locations/athens/
+- Thessaloniki: https://wolfblanc.com/locations/thessaloniki/
 
-## Content library
+These locations are starting points, not limits. Wolfblanc works where the project, client and market fit the studio's expertise.
 
-- 20 selected built-project and concept case studies, plus six clearly separated audience/service landing pages.
-- 34 curated English journal articles selected from the former WordPress library for durable international relevance.
-- Local WebP media is stored in the repository; published pages do not depend on WordPress uploads.
+## Published work
+
+- 21 selected architecture, interior, hospitality, landscape and urban project pages: https://wolfblanc.com/projects/
+- 43 English journal articles with Spanish translations: https://wolfblanc.com/journal/
+- Project images and journal media are stored locally on wolfblanc.com and do not depend on the former WordPress website.
 
 ## Professional credentials
 
@@ -58,7 +72,8 @@ Madrid, Barcelona, Valencia, Mallorca, Marbella and Galicia in Spain; Stockholm 
 
 ## Contact
 
-- General: info@wolfblanc.com
+- General and projects: info@wolfblanc.com
+- Careers: jobs@wolfblanc.com
 - Press: press@wolfblanc.com
 - Spain: +34 662 411 064
 - Sweden: +46 73 656 64 89
