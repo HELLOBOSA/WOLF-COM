@@ -3,6 +3,7 @@
 .nav-links{gap:clamp(11px,1.35vw,22px)}
 .nav-link{white-space:nowrap}
 .language-switch[hidden]{display:none!important}
+button.wb-cal-trigger{font-family:inherit;border:0;cursor:pointer}
 
 footer>span{flex:1 1 0}
 footer>span:nth-child(2){text-align:center}

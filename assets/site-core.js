@@ -122,9 +122,100 @@
     });
   }
 
+  function configureCalEmbeds(){
+    var triggers=document.querySelectorAll('[data-wb-cal-trigger]');
+    if(!triggers.length)return;
+
+    (function(C,A,L){
+      var p=function(a,ar){a.q.push(ar);};
+      var d=C.document;
+      C.Cal=C.Cal||function(){
+        var cal=C.Cal;
+        var ar=arguments;
+        if(!cal.loaded){
+          cal.ns={};
+          cal.q=cal.q||[];
+          d.head.appendChild(d.createElement('script')).src=A;
+          cal.loaded=true;
+        }
+        if(ar[0]===L){
+          var api=function(){p(api,arguments);};
+          var namespace=ar[1];
+          api.q=api.q||[];
+          if(typeof namespace==='string'){
+            cal.ns[namespace]=cal.ns[namespace]||api;
+            p(cal.ns[namespace],ar);
+            p(cal,['initNamespace',namespace]);
+          }else p(cal,ar);
+          return;
+        }
+        p(cal,ar);
+      };
+    })(window,'https://app.cal.com/embed/embed.js','init');
+
+    window.Cal('init','30min',{origin:'https://app.cal.com'});
+    window.Cal.config=window.Cal.config||{};
+    window.Cal.config.forwardQueryParams=true;
+
+    var cssVarsPerTheme={
+      light:{
+        'cal-brand':'#0d0b0a','cal-brand-emphasis':'#94856a','cal-brand-text':'#f4f1ea',
+        'cal-brand-subtle':'#c3b087','cal-brand-accent':'#f4f1ea','cal-text':'#6a655b',
+        'cal-text-emphasis':'#0d0b0a','cal-text-subtle':'#6a655b','cal-text-muted':'#aaa397',
+        'cal-text-inverted':'#f4f1ea','cal-bg':'#f4f1ea','cal-bg-emphasis':'#e7e1d6',
+        'cal-bg-subtle':'#eee9e0','cal-bg-muted':'#f8f5ef','cal-bg-inverted':'#0d0b0a',
+        'cal-border':'#d8d0c1','cal-border-emphasis':'#94856a','cal-border-subtle':'#e1d9cc',
+        'radius-xl':'0px','radius-2xl':'0px','radius-3xl':'0px'
+      },
+      dark:{
+        'cal-brand':'#c3b087','cal-brand-emphasis':'#f0ede7','cal-brand-text':'#0d0b0a',
+        'cal-brand-subtle':'#94856a','cal-brand-accent':'#0d0b0a','cal-text':'#8f887c',
+        'cal-text-emphasis':'#f0ede7','cal-text-subtle':'#a39b8e','cal-text-muted':'#655f56',
+        'cal-text-inverted':'#0d0b0a','cal-bg':'#0d0b0a','cal-bg-emphasis':'#29241e',
+        'cal-bg-subtle':'#191612','cal-bg-muted':'#100e0c','cal-bg-inverted':'#f0ede7',
+        'cal-border':'#3a342c','cal-border-emphasis':'#c3b087','cal-border-subtle':'#2b2721',
+        'radius-xl':'0px','radius-2xl':'0px','radius-3xl':'0px'
+      }
+    };
+
+    function currentTheme(){
+      var root=document.documentElement;
+      return root.classList.contains('dark')||root.classList.contains('wb-dark')?'dark':'light';
+    }
+    function applyCalTheme(){
+      var theme=currentTheme();
+      triggers.forEach(function(trigger){
+        trigger.setAttribute('data-cal-link','wolfblanc/30min');
+        trigger.setAttribute('data-cal-namespace','30min');
+        trigger.setAttribute('aria-haspopup','dialog');
+        trigger.setAttribute('data-cal-config',JSON.stringify({
+          layout:'month_view',
+          useSlotsViewOnSmallScreen:'true',
+          theme:theme,
+          utm_source:'wolfblanc.com',
+          utm_medium:'website',
+          utm_campaign:'introductory_call',
+          utm_content:window.location.pathname
+        }));
+      });
+      window.Cal.ns['30min']('ui',{
+        theme:theme,
+        hideEventTypeDetails:false,
+        layout:'month_view',
+        cssVarsPerTheme:cssVarsPerTheme
+      });
+    }
+
+    applyCalTheme();
+    triggers.forEach(function(trigger){trigger.addEventListener('click',applyCalTheme,true);});
+    var themeButton=document.getElementById('theme-btn');
+    if(themeButton)themeButton.addEventListener('click',function(){window.setTimeout(applyCalTheme,0);});
+  }
+
   function configureSite(){
     configureLanguageSwitch();
     configureBasinForms();
+    configureCalEmbeds();
   }
 
   document.addEventListener('click',function(event){
