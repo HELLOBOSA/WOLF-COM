@@ -32,7 +32,6 @@ Planning and rules live in the `hellobosa/dna` repo. Read `dna/README.md` and
 /projects/               20 case studies plus hub and filter pages
 /locations/              9 city pages plus hub, each with market data
 /journal/                34 articles plus hub
-/clients/                client portal, /clients/demo/ is password gated
 /careers/ /contact/ /faq/ /legal/
 /images/                 all imagery, flat directory
 /images/journal/         article header images
@@ -45,7 +44,7 @@ Root also holds about 80 legacy WordPress slugs and seven language directories
 (`de/ el/ en/ es/ fr/ nl/ sv/`). These are redirect stubs, roughly 1,000 files. They are
 not content. Ignore them unless working on redirects specifically.
 
-Count check: 193 curated content pages, about 1,110 HTML files in total.
+Count check: curated content pages plus about 1,000 redirect HTML files.
 
 ## Conventions
 
@@ -112,8 +111,7 @@ affects everything, so check breadth first.
 ## State as of 2026-07-25
 
 Done: all page templates, 20 case studies, 9 location pages with market data, OG and
-Twitter meta on all curated content pages, studio cross-linking, client portal demo,
-redirect stubs.
+Twitter meta on all curated content pages, studio cross-linking and redirect stubs.
 
 - **No em dashes.** 687 removed sitewide. Keep it that way; check before every commit.
 - **Spanish coverage** is complete on every page except journal article bodies. That

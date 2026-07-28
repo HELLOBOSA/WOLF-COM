@@ -15,7 +15,6 @@ Redirect files are lightweight stubs (canonical tag + meta refresh + JS redirect
 - `/contact/` -- contact and inquiry form
 - `/careers/` -- careers hub
 - `/legal/` -- legal, privacy, cookies
-- `/clients/` -- password-gated project dashboards
 
 ## How to tell them apart
 
