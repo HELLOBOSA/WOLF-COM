@@ -70,7 +70,7 @@
       'unknown';
   }
 
-  function populate(form,isSubmission){
+  function populate(form){
     var journey=captureJourney();
     var values={
       website:form.getAttribute('data-lead-site')||window.location.hostname,
@@ -86,14 +86,6 @@
       values[key]=journey[key]||'';
     });
 
-    if(isSubmission){
-      var checkbox=form.querySelector('[name="privacy_consent"]');
-      values.consent_timestamp=new Date().toISOString();
-      values.consent_method=checkbox
-        ? 'required_privacy_checkbox'
-        : 'form_submission_with_privacy_notice';
-    }
-
     Object.keys(values).forEach(function(name){
       hiddenField(form,name).value=values[name];
     });
@@ -102,9 +94,9 @@
   captureJourney();
 
   forms.forEach(function(form){
-    populate(form,false);
+    populate(form);
     form.addEventListener('submit',function(){
-      populate(form,true);
+      populate(form);
     },true);
   });
 })();
