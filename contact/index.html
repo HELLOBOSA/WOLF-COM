@@ -202,6 +202,7 @@
     #my-cal-inline-30min{width:100%;min-height:620px;overflow:auto;border:1px solid var(--line)}
     #my-cal-inline-30min[hidden]{display:none}
     .cal-placeholder{min-height:280px;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 24px}
+    .cal-placeholder[hidden]{display:none}
     .cal-placeholder p{max-width:52ch;color:var(--text2);margin:0 0 24px}
     .cal-placeholder .cal-direct{font-size:.68rem;margin:18px 0 0}
     .cal-placeholder a{color:var(--accent)}
@@ -551,8 +552,75 @@
     Cal('init','30min',{origin:'https://app.cal.com'});
     Cal.config=Cal.config||{};
     Cal.config.forwardQueryParams=true;
-    Cal.ns['30min']('inline',{elementOrSelector:'#my-cal-inline-30min',config:{layout:'month_view',useSlotsViewOnSmallScreen:'true'},calLink:'wolfblanc/30min'});
-    Cal.ns['30min']('ui',{hideEventTypeDetails:false,layout:'month_view'});
+    var initialCalTheme=document.documentElement.classList.contains('wb-dark')?'dark':'light';
+    Cal.ns['30min']('inline',{elementOrSelector:'#my-cal-inline-30min',config:{layout:'month_view',useSlotsViewOnSmallScreen:'true',theme:initialCalTheme},calLink:'wolfblanc/30min'});
+    function applyCalTheme(){
+      var calTheme=document.documentElement.classList.contains('wb-dark')?'dark':'light';
+      Cal.ns['30min']('ui',{
+        theme:calTheme,
+        hideEventTypeDetails:false,
+        layout:'month_view',
+        cssVarsPerTheme:{
+          light:{
+            'cal-brand':'#0d0b0a',
+            'cal-brand-emphasis':'#94856a',
+            'cal-brand-text':'#f4f1ea',
+            'cal-brand-subtle':'#c3b087',
+            'cal-brand-accent':'#f4f1ea',
+            'cal-text':'#6a655b',
+            'cal-text-emphasis':'#0d0b0a',
+            'cal-text-subtle':'#6a655b',
+            'cal-text-muted':'#aaa397',
+            'cal-text-inverted':'#f4f1ea',
+            'cal-bg':'#f4f1ea',
+            'cal-bg-emphasis':'#e7e1d6',
+            'cal-bg-subtle':'#eee9e0',
+            'cal-bg-muted':'#f8f5ef',
+            'cal-bg-inverted':'#0d0b0a',
+            'cal-border':'#d8d0c1',
+            'cal-border-emphasis':'#94856a',
+            'cal-border-subtle':'#e1d9cc',
+            'radius-xl':'0px',
+            'radius-2xl':'0px',
+            'radius-3xl':'0px'
+          },
+          dark:{
+            'cal-brand':'#c3b087',
+            'cal-brand-emphasis':'#f0ede7',
+            'cal-brand-text':'#0d0b0a',
+            'cal-brand-subtle':'#94856a',
+            'cal-brand-accent':'#0d0b0a',
+            'cal-text':'#8f887c',
+            'cal-text-emphasis':'#f0ede7',
+            'cal-text-subtle':'#a39b8e',
+            'cal-text-muted':'#655f56',
+            'cal-text-inverted':'#0d0b0a',
+            'cal-bg':'#0d0b0a',
+            'cal-bg-emphasis':'#29241e',
+            'cal-bg-subtle':'#191612',
+            'cal-bg-muted':'#100e0c',
+            'cal-bg-inverted':'#f0ede7',
+            'cal-border':'#3a342c',
+            'cal-border-emphasis':'#c3b087',
+            'cal-border-subtle':'#2b2721',
+            'radius-xl':'0px',
+            'radius-2xl':'0px',
+            'radius-3xl':'0px'
+          }
+        }
+      });
+      var frame=calendar.querySelector('iframe');
+      if(frame){
+        var frameUrl=new URL(frame.src);
+        if(frameUrl.searchParams.get('theme')!==calTheme){
+          frameUrl.searchParams.set('theme',calTheme);
+          frame.src=frameUrl.toString();
+        }
+      }
+    }
+    applyCalTheme();
+    var themeButton=document.getElementById('theme-btn');
+    if(themeButton)themeButton.addEventListener('click',applyCalTheme);
   },{once:true});
 })();
 </script>
