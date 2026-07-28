@@ -547,12 +547,12 @@
     loadButton.disabled=true;
     placeholder.hidden=true;
     calendar.hidden=false;
-    (function(C,A,L){var p=function(a,ar){a.q.push(ar);};var d=C.document;C.Cal=C.Cal||function(){var cal=C.Cal;var ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement('script')).src=A;cal.loaded=true;}if(ar[0]===L){var api=function(){p(api,arguments);};var namespace=ar[1];api.q=api.q||[];if(typeof namespace==='string'){cal.ns[namespace]=cal.ns[namespace]||api;p(cal.ns[namespace],ar);p(cal,['initNamespace',namespace]);}else p(cal,ar);return;}p(cal,ar);};})(window,'https://app.cal.eu/embed/embed.js','init');
-    Cal('init','30min',{origin:'https://app.cal.eu'});
+    (function(C,A,L){var p=function(a,ar){a.q.push(ar);};var d=C.document;C.Cal=C.Cal||function(){var cal=C.Cal;var ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement('script')).src=A;cal.loaded=true;}if(ar[0]===L){var api=function(){p(api,arguments);};var namespace=ar[1];api.q=api.q||[];if(typeof namespace==='string'){cal.ns[namespace]=cal.ns[namespace]||api;p(cal.ns[namespace],ar);p(cal,['initNamespace',namespace]);}else p(cal,ar);return;}p(cal,ar);};})(window,'https://app.cal.com/embed/embed.js','init');
+    Cal('init','30min',{origin:'https://app.cal.com'});
     Cal.config=Cal.config||{};
     Cal.config.forwardQueryParams=true;
-    Cal.ns['30min']('inline',{elementOrSelector:'#my-cal-inline-30min',config:{layout:'month_view',useSlotsViewOnSmallScreen:'true',theme:'auto'},calLink:'wolfblanc/30min'});
-    Cal.ns['30min']('ui',{cssVarsPerTheme:{light:{'cal-brand':'#292929'}},hideEventTypeDetails:false,layout:'month_view'});
+    Cal.ns['30min']('inline',{elementOrSelector:'#my-cal-inline-30min',config:{layout:'month_view',useSlotsViewOnSmallScreen:'true'},calLink:'wolfblanc/30min'});
+    Cal.ns['30min']('ui',{hideEventTypeDetails:false,layout:'month_view'});
   },{once:true});
 })();
 </script>
