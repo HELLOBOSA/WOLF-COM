@@ -865,11 +865,13 @@
   const H = document.documentElement;
   let light = localStorage.getItem('wb-theme') !== 'dark';
   if (!light) setDark();
-  function setDark(){H.classList.add('dark');show('is');hide('im')}
-  function setLight(){H.classList.remove('dark');hide('is');show('im')}
+  function setDark(){H.classList.add('dark');show('wb-sun');hide('wb-moon')}
+  function setLight(){H.classList.remove('dark');hide('wb-sun');show('wb-moon')}
   function show(id){const e=document.getElementById(id);if(e)e.style.display=''}
   function hide(id){const e=document.getElementById(id);if(e)e.style.display='none'}
   function toggleTheme(){light=!light;light?setLight():setDark();localStorage.setItem('wb-theme',light?'light':'dark')}
+  const themeButton = document.getElementById('theme-btn');
+  if (themeButton) themeButton.addEventListener('click', toggleTheme);
 
   const langButtons = document.querySelectorAll('[data-lang-switch]');
   function setLanguage(lang){
