@@ -233,6 +233,7 @@
     .intake-form .chip[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
     .form-actions{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;padding-top:24px;gap:16px;flex-wrap:wrap}
     .form-actions .legal{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2);max-width:46ch}
+    .form-actions .legal a{color:inherit;text-decoration:underline;text-underline-offset:3px}
     .form-actions .submit{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;background:var(--text);color:var(--bg);border-radius:999px;border:none;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;font-family:inherit;font-weight:400;cursor:pointer;transition:background .2s,color .2s}
     .form-actions .submit:hover{background:var(--accent);color:var(--bg)}
     .form-actions .submit:disabled{opacity:.4;cursor:not-allowed}
@@ -241,10 +242,6 @@
     .intake-confirmed{display:none;padding:48px 0}
     .intake-confirmed h3{font-size:1.3rem;font-weight:300;margin-bottom:12px}
     .intake-confirmed p{color:var(--text2);font-size:.85rem}
-    .consent-field{padding-top:22px!important;padding-bottom:22px!important}
-    .consent-label{display:flex!important;justify-content:flex-start!important;align-items:flex-start!important;gap:12px;text-transform:none!important;letter-spacing:.02em!important;font-size:.78rem!important;line-height:1.55;color:var(--text2)!important;cursor:pointer}
-    .consent-label input{width:16px!important;height:16px;margin-top:3px;accent-color:var(--accent);flex:0 0 auto}
-    .consent-label a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
   </style>
   <link rel="stylesheet" href="../assets/site-shell.css">
 </head>
@@ -341,9 +338,8 @@
         <div class="field right"><label><span data-es="Ubicación" data-en="Location">Location</span><span class="ix">04</span></label><input type="text" name="location" placeholder="City, country" required></div>
         <div class="field full"><label><span data-es="Tipo de proyecto" data-en="Project type">Project type</span><span class="ix">05</span></label><div class="chip-row"><button type="button" class="chip" aria-pressed="false" data-es="Vivienda" data-en="Residential">Residential</button><button type="button" class="chip" aria-pressed="false" data-es="Comercial" data-en="Commercial">Commercial</button><button type="button" class="chip" aria-pressed="false" data-es="Hostelería" data-en="Hospitality">Hospitality</button><button type="button" class="chip" aria-pressed="false" data-es="Oficina" data-en="Office">Office</button><button type="button" class="chip" aria-pressed="false" data-es="Retail" data-en="Retail">Retail</button><button type="button" class="chip" aria-pressed="false" data-es="Reforma" data-en="Renovation">Renovation</button><button type="button" class="chip" aria-pressed="false" data-es="No lo sé aún" data-en="Not sure yet">Not sure yet</button></div></div>
         <div class="field full"><label><span data-es="Describe el proyecto" data-en="Tell us more">Tell us more</span><span class="ix">06</span></label><textarea name="brief" rows="3" placeholder="" required data-es-placeholder="¿De qué trata el proyecto y en qué punto del proceso estáis?" data-en-placeholder="What's the project about and where are you in the process?"></textarea></div>
-        <div class="field full consent-field"><label class="consent-label"><input type="checkbox" name="privacy_consent" value="agreed" required><span><span data-es="He leído y acepto la" data-en="I have read and accept the">I have read and accept the</span> <a href="../legal/#datos" data-es="política de privacidad" data-en="privacy policy">privacy policy</a>. <span data-es="Entiendo que Wolfblanc usará estos datos únicamente para responder a mi consulta." data-en="I understand Wolfblanc will use these details only to respond to my enquiry.">I understand Wolfblanc will use these details only to respond to my enquiry.</span></span></label></div>
         <div class="form-actions">
-          <p class="legal" data-es="Usamos esto únicamente para responder sobre tu proyecto." data-en="We use this only to respond about your project.">We use this only to respond about your project.</p>
+          <p class="legal" data-es='Tu consulta se trata de forma confidencial. Usamos tus datos únicamente para valorarla y responderte. <a href="../legal/#datos">Información sobre privacidad →</a>' data-en='Your enquiry is treated confidentially. We use your details only to assess and respond to it. <a href="../legal/#datos">Privacy information →</a>'>Your enquiry is treated confidentially. We use your details only to assess and respond to it. <a href="../legal/#datos">Privacy information →</a></p>
           <button type="submit" class="submit" id="intake-submit"><span data-submit-label data-es="Enviar" data-en="Submit">Submit</span><span class="arrow">→</span></button>
         </div>
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
