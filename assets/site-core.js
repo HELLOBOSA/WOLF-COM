@@ -207,7 +207,26 @@
     }
 
     applyCalTheme();
-    triggers.forEach(function(trigger){trigger.addEventListener('click',applyCalTheme,true);});
+    triggers.forEach(function(trigger){
+      trigger.addEventListener('click',function(event){
+        var theme=currentTheme();
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        applyCalTheme();
+        window.Cal.ns['30min']('modal',{
+          calLink:'wolfblanc/30min',
+          config:{
+            layout:'month_view',
+            useSlotsViewOnSmallScreen:'true',
+            theme:theme,
+            utm_source:'wolfblanc.com',
+            utm_medium:'website',
+            utm_campaign:'introductory_call',
+            utm_content:window.location.pathname
+          }
+        });
+      },true);
+    });
     var themeButton=document.getElementById('theme-btn');
     if(themeButton)themeButton.addEventListener('click',function(){window.setTimeout(applyCalTheme,0);});
   }

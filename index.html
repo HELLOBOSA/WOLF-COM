@@ -825,7 +825,7 @@
       <h3 data-es="Cuéntanos tu proyecto" data-en="Tell us about your project">Tell us about your project</h3>
       <p style="margin-top:0;margin-bottom:32px" data-es='O escríbenos directamente a <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>' data-en='Or write directly to <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>'>O escríbenos directamente a <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
 
-      <form class="intake-form" id="intake-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST" data-basin-form data-success-target="#intake-confirmed" data-ga-event="generate_lead" data-ga-category="contact" data-ga-label="homepage_project_enquiry" data-lead-site="wolfblanc.com" data-lead-market="international" data-lead-context="homepage_general_enquiry">
+      <form class="intake-form" id="intake-form" action="https://usebasin.com/f/ce6160f80c8b" method="POST" accept-charset="UTF-8" data-basin-form data-success-target="#intake-confirmed" data-ga-event="generate_lead" data-ga-category="contact" data-ga-label="homepage_project_enquiry" data-lead-site="wolfblanc.com" data-lead-market="international" data-lead-context="homepage_general_enquiry">
         <input type="hidden" name="_subject" value="New project, wolfblanc.com">
         <input type="hidden" name="services" id="selected-services" value="">
         <div class="field"><label><span data-es="Nombre" data-en="Name">Name</span><span class="ix">01</span></label><input type="text" name="name" placeholder="Jane Doe" required></div>
@@ -838,6 +838,7 @@
           <p class="legal" data-es="Usamos esto únicamente para responder sobre tu proyecto." data-en="We use this only to respond about your project.">We use this only to respond about your project.</p>
           <button type="submit" class="submit" id="intake-submit"><span data-submit-label data-es="Enviar" data-en="Submit">Submit</span><span class="arrow">→</span></button>
         </div>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
       </form>
 
       <div class="intake-confirmed" id="intake-confirmed" role="status" aria-live="polite">
@@ -1206,6 +1207,6 @@
 })();
 </script>
 
-<script src="assets/site-core.js?v=20260728-cal" defer></script>
+<script src="assets/site-core.js?v=20260729-mobile" defer></script>
 </body>
 </html>
