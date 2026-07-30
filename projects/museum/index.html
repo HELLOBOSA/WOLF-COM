@@ -424,7 +424,7 @@
   function currentLang(){return localStorage.getItem('wb-es-lang')||'en';}
   function setCookieLang(lang){
     lang=(lang||'en').slice(0,2)==='en'?'en':'es';
-    banner.querySelectorAll('[data-es][data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+    banner.querySelectorAll('[data-es],[data-en]').forEach(function(el){var v=el.getAttribute('data-'+lang);if(v!==null)el.innerHTML=v;});
   }
   function closeBanner(choice){
     localStorage.setItem(storageKey,JSON.stringify({choice:choice,expires:expiryTime()}));

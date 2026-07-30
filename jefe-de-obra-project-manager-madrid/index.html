@@ -317,7 +317,7 @@
   setTheme(saved?saved==='dark':window.matchMedia('(prefers-color-scheme:dark)').matches);
   if(btn)btn.addEventListener('click',function(){setTheme(!root.classList.contains('wb-dark'));});
   function applyLang(lang){
-    document.querySelectorAll('[data-es][data-en]').forEach(function(el){
+    document.querySelectorAll('[data-es],[data-en]').forEach(function(el){
       var text=el.getAttribute('data-'+lang);
       if(text!==null)el.innerHTML=text;
     });

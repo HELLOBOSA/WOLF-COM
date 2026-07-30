@@ -381,7 +381,7 @@
 
   var lang=localStorage.getItem(LS_LANG)||'en';
   function applyLang(){
-    document.querySelectorAll('[data-es][data-en]').forEach(function(el){
+    document.querySelectorAll('[data-es],[data-en]').forEach(function(el){
       var t=el.getAttribute('data-'+lang);
       if(t!==null)el.innerHTML=t;
     });
@@ -476,7 +476,7 @@
   function currentLang(){return localStorage.getItem('wb-es-lang')||localStorage.getItem('wb-lang')||document.documentElement.lang||'en';}
   function setCookieLang(lang){
     lang=(lang||'es').slice(0,2)==='en'?'en':'es';
-    banner.querySelectorAll('[data-es][data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang);});
+    banner.querySelectorAll('[data-es],[data-en]').forEach(function(el){var v=el.getAttribute('data-'+lang);if(v!==null)el.innerHTML=v;});
     banner.querySelectorAll('[data-es-aria][data-en-aria]').forEach(function(el){el.setAttribute('aria-label',el.getAttribute('data-'+lang+'-aria'));});
   }
   function closeBanner(choice){
