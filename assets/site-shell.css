@@ -64,3 +64,15 @@ footer>span:nth-child(4){text-align:right}
 /* Consent controls are readable at every width, not only on mobile. A choice
    offered at 8px is not an informed one. */
 .cookie-btn,.cookie-link{font-size:11px}
+
+/* Service page FAQ. Same visual treatment as /faq/, which carries its own inline
+   copy of these rules. Width matches .faq-wrap there. */
+.svc-faq{max-width:760px;margin:0 auto;padding:8px 32px 72px}
+.svc-faq h2{font-size:clamp(1.1rem,2vw,1.5rem);font-weight:300;text-transform:uppercase;letter-spacing:.08em;margin:0 0 28px;color:var(--text)}
+.faq-item{border-top:1px solid var(--line)}
+.faq-item:last-child{border-bottom:1px solid var(--line)}
+.faq-item summary{position:relative;cursor:pointer;list-style:none;padding:18px 40px 18px 0;color:var(--text);font-size:.96rem;letter-spacing:.005em;line-height:1.5}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';position:absolute;right:4px;top:16px;color:var(--accent);font-size:1.1rem}
+.faq-item[open] summary::after{content:'\2212'}
+.faq-item p{padding:0 36px 20px 0;margin:0;font-size:.96rem;line-height:1.8;letter-spacing:.005em;color:var(--text2)}
