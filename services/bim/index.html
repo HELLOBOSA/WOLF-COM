@@ -40,47 +40,112 @@
 
   <meta name="twitter:image:alt" content="BIM Consultancy | Wolfblanc Architects">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "AboutPage",
-        "@id": "https://wolfblanc.com/services/bim/#webpage",
-        "url": "https://wolfblanc.com/services/bim/",
-        "name": "Wolfblanc Architects | International Architecture Studio",
-        "inLanguage": "en",
-        "description": "Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece.",
-        "isPartOf": {"@type": "WebSite", "name": "Wolfblanc Architects", "url": "https://wolfblanc.com/"},
-        "about": {"@id": "https://wolfblanc.com/#business"}
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://wolfblanc.com/#business",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://wolfblanc.com/services/bim/#webpage",
+      "url": "https://wolfblanc.com/services/bim/",
+      "name": "Wolfblanc Architects | International Architecture Studio",
+      "inLanguage": "en",
+      "description": "Wolfblanc is an international architecture and design studio working across Spain, Sweden and Greece.",
+      "isPartOf": {
+        "@type": "WebSite",
         "name": "Wolfblanc Architects",
-        "url": "https://wolfblanc.com/",
-        "logo": "https://wolfblanc.com/images/210-sq-white-02.webp",
-        "image": "https://wolfblanc.com/images/Horizon%20House%2001.webp",
-        "description": "International architecture studio for residential, hospitality and investment projects across Spain, Sweden and Greece. COAM N.25160, SAR/MSA, TEE-TCG and WELL AP.",
-        "email": "info@wolfblanc.com",
-        "telephone": "+34662411064",
-        "knowsLanguage": ["es", "en", "sv", "el"],
-        "hasCredential": ["COAM N.25160", "SAR/MSA", "TEE-TCG N.168011", "WELL AP"],
-        "areaServed": [
-          {"@type": "Country", "name": "Spain"},
-          {"@type": "Country", "name": "Sweden"},
-          {"@type": "Country", "name": "Greece"}
-        ],
-        "sameAs": ["https://wolfblanc.com"]
+        "url": "https://wolfblanc.com/"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://wolfblanc.com/"},
-          {"@type": "ListItem", "position": 2, "name": "Architecture studio", "item": "https://wolfblanc.com/services/bim/"}
-        ]
+      "about": {
+        "@id": "https://wolfblanc.com/#business"
       }
-    ]
-  }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://wolfblanc.com/#business",
+      "name": "Wolfblanc Architects",
+      "url": "https://wolfblanc.com/",
+      "logo": "https://wolfblanc.com/images/210-sq-white-02.webp",
+      "image": "https://wolfblanc.com/images/Horizon%20House%2001.webp",
+      "description": "International architecture studio for residential, hospitality and investment projects across Spain, Sweden and Greece. COAM N.25160, SAR/MSA, TEE-TCG and WELL AP.",
+      "email": "info@wolfblanc.com",
+      "telephone": "+34662411064",
+      "knowsLanguage": [
+        "es",
+        "en",
+        "sv",
+        "el"
+      ],
+      "hasCredential": [
+        "COAM N.25160",
+        "SAR/MSA",
+        "TEE-TCG N.168011",
+        "WELL AP"
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        {
+          "@type": "Country",
+          "name": "Sweden"
+        },
+        {
+          "@type": "Country",
+          "name": "Greece"
+        }
+      ],
+      "sameAs": [
+        "https://wolfblanc.com"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://wolfblanc.com/services/bim/#service",
+      "name": "BIM Consultancy",
+      "serviceType": "BIM Consultancy",
+      "description": "BIM consultancy and digital coordination for architecture projects in Spain, Sweden and Greece. Federated models, clash detection and construction-ready.",
+      "url": "https://wolfblanc.com/services/bim/",
+      "provider": {
+        "@id": "https://wolfblanc.com/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Spain"
+        },
+        {
+          "@type": "Country",
+          "name": "Sweden"
+        },
+        {
+          "@type": "Country",
+          "name": "Greece"
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://wolfblanc.com/services/#services"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://wolfblanc.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Architecture studio",
+          "item": "https://wolfblanc.com/services/bim/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <style>
