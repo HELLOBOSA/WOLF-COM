@@ -344,10 +344,23 @@
   var footer=document.querySelector('footer');
   var btt=document.getElementById('btt');
   if(btt){
-    function placeButton(){btt.classList.toggle('visible',window.scrollY>400);if(footer){var rect=footer.getBoundingClientRect();btt.style.bottom=rect.top<window.innerHeight?(window.innerHeight-rect.top+16)+'px':'';}};
+    function placeButton(){
+      btt.classList.toggle('visible',window.scrollY>400);
+      var banner=document.getElementById('cookie-banner');
+      var bannerVisible=banner&&!banner.hidden&&window.getComputedStyle(banner).display!=='none';
+      var base=bannerVisible?banner.offsetHeight+40:32;
+      if(footer){
+        var rect=footer.getBoundingClientRect();
+        if(rect.top<window.innerHeight){btt.style.bottom=Math.max(base,window.innerHeight-rect.top+16)+'px';return;}
+      }
+      btt.style.bottom=bannerVisible?base+'px':'';
+    }
     window.addEventListener('scroll',placeButton,{passive:true});
     window.addEventListener('resize',placeButton,{passive:true});
     placeButton();
+    (function(){var cb=document.getElementById('cookie-banner');if(!cb)return;
+      new MutationObserver(placeButton).observe(cb,{attributes:true,attributeFilter:['hidden','style','class']});
+      cb.addEventListener('click',function(){setTimeout(placeButton,0);});})();
     btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
   }
   window.addEventListener('scroll',function(){var n=document.getElementById('nav');if(n)n.classList.toggle('scrolled',window.scrollY>20);},{passive:true});
