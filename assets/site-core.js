@@ -30,7 +30,7 @@
   }
 
   function clearAnalyticsCookies(){
-    ['_ga','_gid','_gat'].forEach(function(name){
+    ['_ga','_gid','_gat','_ga_'+measurementId.slice(2)].forEach(function(name){
       document.cookie=name+'=; Max-Age=0; path=/; SameSite=Lax';
       document.cookie=name+'=; Max-Age=0; path=/; domain=.'+location.hostname+'; SameSite=Lax';
     });
@@ -240,6 +240,9 @@
   document.addEventListener('click',function(event){
     var button=event.target.closest&&event.target.closest('[data-cookie-choice]');
     if(!button)return;
+    var choice=button.getAttribute('data-cookie-choice');
+    if(choice==='accept')loadAnalytics();
+    else clearAnalyticsCookies();
   },true);
 
   document.addEventListener('submit',function(event){
@@ -247,7 +250,7 @@
     if(form)submitBasinForm(form,event);
   },true);
 
-  loadAnalytics();
+  if(readConsent()==='accept')loadAnalytics();
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',configureSite);
   else configureSite();
 })();
