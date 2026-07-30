@@ -56,8 +56,11 @@ footer>span:nth-child(4){text-align:right}
    Desktop is unchanged, and the uppercase + letter-spacing treatment is untouched. */
 @media (max-width:700px){
   .nav-link,.wb-go,.card-link,.fbtn,.pg-fbtn,.chip,.lang-btn,.pg-more-btn,.btn-ct,.btn-em{font-size:11px}
-  .cookie-btn,.cookie-link{font-size:11px}
   /* Close the open mobile menu with an edge. It has a border-top but none at the
      bottom, and the panel is only 94% opaque, so it bled into the page behind it. */
   .mob-menu{border-bottom:1px solid var(--line)}
 }
+
+/* Consent controls are readable at every width, not only on mobile. A choice
+   offered at 8px is not an informed one. */
+.cookie-btn,.cookie-link{font-size:11px}
