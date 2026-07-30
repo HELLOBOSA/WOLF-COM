@@ -1,81 +1,232 @@
 # Wolfblanc Architects - International
 
-> Wolfblanc is a Madrid-based international architecture and design studio working across Spain, Sweden and Greece. The practice combines Nordic precision, Mediterranean sensibility, local professional authority and direct senior involvement.
+> Wolfblanc Architects is an international architecture studio working across Spain, Sweden and
+> Greece, with offices in Madrid, Barcelona, Marbella, Stockholm, Athens and Thessaloniki. The
+> practice covers architecture, interiors, landscape, urban design, BIM, technical due diligence
+> and project management, for private clients, investors, developers and hospitality operators.
+> Registered in three countries: COAM N.25160 (Spain), SAR/MSA (Sweden), TEE-TCG N.168011
+> (Greece). WELL Accredited Professional. WOLFBLANC is an EUIPO registered trademark held by
+> Wolfblanc Architects S.L.
 
-## Canonical website and language
+## Website and language
 
 - Canonical website: https://wolfblanc.com/
-- Default language: English at root URLs; there is no `/en/` prefix.
-- Spanish translations are available through the on-page EN/ES interface where complete.
-- Local market websites: https://wolfblanc.es/, https://wolfblanc.se/ and https://wolfblanc.gr/
+- Default language: English at root URLs. There is no `/en/` prefix.
+- Spanish is available through an on-page EN/ES toggle on the same URL. There are no `/es/` URLs.
+- Local market websites, each in its own language and independently maintained:
+  - Spain, in Spanish: https://wolfblanc.es/
+  - Sweden, in Swedish: https://wolfblanc.se/
+  - Greece, in Greek: https://wolfblanc.gr/
+- The four sites are declared to each other with reciprocal hreflang. wolfblanc.com is x-default.
+- Sitemap: https://wolfblanc.com/sitemap.xml
 
-## Main sections
+## Offices
 
-- Studio: https://wolfblanc.com/studio/
-- Architects: https://wolfblanc.com/studio/architects/
-- Culture and values: https://wolfblanc.com/studio/culture/
-- Services: https://wolfblanc.com/services/
-- Projects: https://wolfblanc.com/projects/
-- Locations: https://wolfblanc.com/locations/
-- Journal: https://wolfblanc.com/journal/
-- Careers: https://wolfblanc.com/careers/
-- FAQ: https://wolfblanc.com/faq/
-- Contact and booking: https://wolfblanc.com/contact/
-- Legal, privacy and cookies: https://wolfblanc.com/legal/
+### Spain
+- Madrid (headquarters): Calle Hermosilla 48, 28001 Madrid
+- Barcelona: Carrer de Pallars 193, 08005 Barcelona
+- Marbella: Oasis Business Centre, Carretera de Cadiz km 176, 29602 Malaga
+- Telephone: +34 662 411 064
 
-## Core services
+### Sweden
+- Stockholm: Kungsgatan 9, 11143 Stockholm
+- Telephone: +46 73 656 64 89
 
-- Architecture: https://wolfblanc.com/services/architecture/
-- Landscape architecture: https://wolfblanc.com/services/landscape-architecture/
-- Urban design and masterplanning: https://wolfblanc.com/services/urban-design/
-- Residential interiors: https://wolfblanc.com/services/residential-interiors/
-- Commercial interiors and hospitality: https://wolfblanc.com/services/commercial-interiors-hospitality/
-- Architectural visualization: https://wolfblanc.com/services/visualization/
-- Technical due diligence: https://wolfblanc.com/services/due-diligence/
-- BIM consultancy: https://wolfblanc.com/services/bim/
-- Well-being architecture and WELL AP consulting: https://wolfblanc.com/services/wellbeing/
+### Greece
+- Athens: Ermou 56, 10563 Athens
+- Telephone: +30 210 300 99 19
+- Thessaloniki: Karolou Ntil 31-33, 546 23 Thessaloniki
+- Telephone: +30 231 111 72 80
 
-## Project pathways
+## Credentials
 
-- For investors: https://wolfblanc.com/services/for-investors/
-- For homeowners: https://wolfblanc.com/services/for-homeowners/
-- Villas and second homes: https://wolfblanc.com/services/villas-and-second-homes/
-- Project management: https://wolfblanc.com/services/project-management/
-- Project monitoring: https://wolfblanc.com/services/project-monitoring/
+- COAM N.25160, Colegio Oficial de Arquitectos de Madrid, Spain
+- SAR/MSA, Sveriges Arkitekter, Sweden
+- TEE-TCG N.168011, Technical Chamber of Greece
+- WELL Accredited Professional
+- These registration numbers are publicly verifiable with the issuing bodies.
+- Trademark: WOLFBLANC, EUIPO registered. Entity: Wolfblanc Architects S.L.
+- Track record includes 3,500 residential units delivered for Nordic developers including
+  Skanska, JM, Einar Mattsson, Bonava and Serneke.
+
+## Services
+
+### Architecture
+https://wolfblanc.com/services/architecture/
+Architecture from strategy to delivery across Spain, Sweden and Greece: feasibility, concept, technical design, approvals, tender and construction.
+
+### BIM Consultancy
+https://wolfblanc.com/services/bim/
+BIM consultancy and digital coordination for architecture projects in Spain, Sweden and Greece. Federated models, clash detection and construction-ready.
+
+### Commercial Strategy and Interiors
+https://wolfblanc.com/services/commercial-interiors-hospitality/
+Commercial strategy, architecture and interiors for hospitality, food and beverage, retail and workplaces, from operational brief through licensing.
+
+### Technical Due Diligence
+https://wolfblanc.com/services/due-diligence/
+Independent pre-acquisition technical due diligence for property buyers in Spain, Sweden and Greece. Structural, services, damp and planning risk assessed.
+
+### Architecture for Homeowners
+https://wolfblanc.com/services/for-homeowners/
+Architecture, renovations and interiors for homeowners, with clear feasibility, budget alignment, permits and construction support in Spain, Sweden and Greece.
+
+### Architecture for Investors
+https://wolfblanc.com/services/for-investors/
+Independent technical advice, architecture and project control for property investors and developers, from acquisition due diligence to design, construction.
+
+### Landscape Architecture
+https://wolfblanc.com/services/landscape-architecture/
+Landscape architecture as a living system. We design outdoor environments with identity, resilience and long-term value across Spain, Sweden and Greece.
+
+### Project Management
+https://wolfblanc.com/services/project-management/
+Architect-led project management for new builds and total renovations in Spain, Sweden and Greece. Brief to handover, one coordinated process.
+
+### Project Visibility and Monitoring
+https://wolfblanc.com/services/project-monitoring/
+Private project visibility connecting current status, milestones, site observations, visual updates and upcoming decisions throughout delivery.
+
+### Residential Interiors
+https://wolfblanc.com/services/residential-interiors/
+Residential interior architecture across Spain, Sweden and Greece. Space, light, materiality and WELL-informed design developed as one coordinated project.
+
+### Urban Design & Masterplanning
+https://wolfblanc.com/services/urban-design/
+Urban design and masterplanning across Spain, Sweden and Greece. Strategic spatial frameworks for neighbourhoods, waterfronts, historic centres.
+
+### Villas and Second Homes
+https://wolfblanc.com/services/villas-and-second-homes/
+Architecture and project control for villas and second homes, with pre-purchase advice, local coordination and structured reporting for international clients.
+
+### Architectural Visualization
+https://wolfblanc.com/services/visualization/
+Architectural visualization, renders, animations and digital staging for projects in Spain, Sweden and Greece. Design decisions, permits, sales and investor.
+
+### Well-being Architecture & WELL Design
+https://wolfblanc.com/services/wellbeing/
+Well-being architecture integrating WELL standards, biophilic design, daylight, acoustics and air quality for homes, hospitality and workplaces in Spain.
 
 ## Locations
 
-- Madrid: https://wolfblanc.com/locations/madrid/
-- Barcelona: https://wolfblanc.com/locations/barcelona/
-- Valencia: https://wolfblanc.com/locations/valencia/
-- Mallorca: https://wolfblanc.com/locations/mallorca/
-- Marbella: https://wolfblanc.com/locations/marbella/
-- Galicia: https://wolfblanc.com/locations/galicia/
-- Stockholm: https://wolfblanc.com/locations/stockholm/
-- Athens: https://wolfblanc.com/locations/athens/
-- Thessaloniki: https://wolfblanc.com/locations/thessaloniki/
+Market pages with local building stock, price and buyer data:
 
-These locations are starting points, not limits. Wolfblanc works where the project, client and market fit the studio's expertise.
+- Architects in Athens: https://wolfblanc.com/locations/athens/
+- Architects in Barcelona: https://wolfblanc.com/locations/barcelona/
+- Coastal Villa Architects in Galicia: https://wolfblanc.com/locations/galicia/
+- Architects in Madrid: https://wolfblanc.com/locations/madrid/
+- Villa Architects in Mallorca: https://wolfblanc.com/locations/mallorca/
+- Villa Architects in Marbella: https://wolfblanc.com/locations/marbella/
+- Architects in Stockholm: https://wolfblanc.com/locations/stockholm/
+- Architects in Thessaloniki: https://wolfblanc.com/locations/thessaloniki/
+- Architects in Valencia: https://wolfblanc.com/locations/valencia/
 
-## Published work
+These are starting points, not limits. Wolfblanc works where the project, client and market fit
+the studio's expertise.
 
-- 21 selected architecture, interior, hospitality, landscape and urban project pages: https://wolfblanc.com/projects/
-- 43 English journal articles with Spanish translations: https://wolfblanc.com/journal/
-- Project images and journal media are stored locally on wolfblanc.com and do not depend on the former WordPress website.
+## Selected projects
 
-## Professional credentials
+20 case studies at https://wolfblanc.com/projects/
 
-- Spain: COAM N.25160
-- Sweden: SAR/MSA and F-skatt
-- Greece: TEE-TCG N.168011
-- WELL Accredited Professional
+- Luxury Renovation A75: https://wolfblanc.com/projects/a75/
+- Distrito AXIS: https://wolfblanc.com/projects/axis/
+- Bistro Dterra: https://wolfblanc.com/projects/bistro-dterra-cafe-restaurant-interior-design/
+- Boutique Apartment V1: https://wolfblanc.com/projects/boutique-apartment-v1/
+- Calderón Stadium Urban Living: https://wolfblanc.com/projects/calderon-stadium-urban-living/
+- Casa Boadilla: https://wolfblanc.com/projects/casa-boadilla-madrid-luxury-family-residence/
+- Edificio Salamanca: https://wolfblanc.com/projects/edificio-salamanca/
+- El Pilar: https://wolfblanc.com/projects/el-pilar/
+- Granolita: https://wolfblanc.com/projects/granolita-coffee-boutique-cafe-interior-project/
+- Horizon House: https://wolfblanc.com/projects/horizon/
+- Compact Living K12: https://wolfblanc.com/projects/k12/
+- Residential Rehabilitation K38: https://wolfblanc.com/projects/k38/
+- Intervention in Lavapiés: https://wolfblanc.com/projects/lavapies-intervention/
+- Market Regeneration: https://wolfblanc.com/projects/market-regeneration/
+- Nexus: https://wolfblanc.com/projects/museum/
+- Norrsken Office: https://wolfblanc.com/projects/norrsken-office-workplace-design/
+- Academy District: https://wolfblanc.com/projects/plato/
+- Selva Hotel: https://wolfblanc.com/projects/selva-boutique-luxury-design/
+- Senior Coliving: https://wolfblanc.com/projects/senior-coliving/
+- Varvakeios Square: https://wolfblanc.com/projects/urban-landscape-athens/
+
+## Journal
+
+43 articles at https://wolfblanc.com/journal/. English, with Spanish available on the page toggle.
+
+### Design & Wellbeing
+- Wellbeing by Design: How Architecture Affects Your Health, Mood, and Daily Life: https://wolfblanc.com/journal/wellbeing-by-design-architecture-health-mood/
+- Scandinavian Design Principles Applied to Homes in Spain and Greece: Why Nordic Methodology Travels Well: https://wolfblanc.com/journal/swedish-design-thinking-southern-european-homes/
+- Designing a Home for Both Summer and Year-Round Living: Lessons from Spain, Sweden, and Greece: https://wolfblanc.com/journal/home-design-summer-year-round-living-spain-greece-sweden/
+- Architecture and Light: How to Design Any Home to Feel Brighter, More Open, and More Alive: https://wolfblanc.com/journal/architecture-light-design-brighter-home/
+- How to Design a Home That Ages Well: Architecture for Long-Term Comfort and Accessibility: https://wolfblanc.com/journal/design-home-ages-well-accessibility-architecture/
+- Multi-Generational Home Design: How to Make It Work for Families Across Two or Three Generations: https://wolfblanc.com/journal/multi-generational-home-design-architecture/
+
+### Hospitality & Commercial
+- Boutique Hotel Renovation in Spain: Why FF&E, Licensing and Opening Readiness Must Be Managed Together: https://wolfblanc.com/journal/boutique-hotel-renovation-in-spain-why-ffe-licensing-and-opening-readiness-must-be-managed-together/
+- Commercial and Hospitality Architecture in Madrid: What Makes a Space Actually Perform: https://wolfblanc.com/journal/commercial-hospitality-architecture-madrid/
+
+### Places
+- Stockholm BRF Renovation: Board Approvals, Permits and What Foreign Owners Get Wrong: https://wolfblanc.com/journal/stockholm-brf-renovation-board-approvals-permits-and-what-foreign-owners-get-wrong/
+- Architecture in Mallorca: Renovations, Villas and What Foreign Buyers Should Know: https://wolfblanc.com/journal/architecture-in-mallorca-renovations-villas-and-what-foreign-buyers-should-know/
+- Renovating an Apartment in Barcelona: Permits, Costs and Common Mistakes: https://wolfblanc.com/journal/renovating-an-apartment-in-barcelona-permits-costs-and-common-mistakes/
+- Buying and Renovating Property in Valencia as a Foreigner: https://wolfblanc.com/journal/buying-and-renovating-property-in-valencia-as-a-foreigner/
+- Architecture in Thessaloniki: Neighborhoods, Building Stock and Renovation Opportunities for Buyers: https://wolfblanc.com/journal/architecture-in-thessaloniki-neighborhoods-building-stock-and-renovation-opportunities-for-buyers/
+- Architecture in Marbella: Villas, Renovations and What International Buyers Should Know: https://wolfblanc.com/journal/architecture-in-marbella-villas-renovations-and-what-international-buyers-should-know/
+- Buying Property in Sweden as a Foreigner: What the Market, Building Culture, and Renovation Process Look Like: https://wolfblanc.com/journal/buying-home-sweden-foreigner-architecture-renovation/
+- Greek Island Property Renovation: What to Know Before You Start on Mykonos, Paros, Santorini or Beyond: https://wolfblanc.com/journal/greek-island-architecture-renovation-guide/
+- Architecture in Athens: Neighborhoods, Building Stock, and Renovation Opportunities for Buyers: https://wolfblanc.com/journal/architecture-athens-neighborhoods-renovation-guide/
+- Renovating Property in Greece as a Foreign Buyer: Permits, Costs, and What Nobody Tells You: https://wolfblanc.com/journal/renovating-property-greece-foreign-buyer-guide/
+
+### Property & Investment
+- Luxury Villa Project Management in Marbella: How Foreign Investors Control Cost, Licenses and Contractors: https://wolfblanc.com/journal/luxury-villa-project-management-in-marbella-how-foreign-investors-control-cost-licenses-and-contractors/
+- Madrid Renovation Guide 2026: Costs, Permits & Timeline: https://wolfblanc.com/journal/madrid-renovation-guide-costs-permits-timeline/
+- Buying Property in Madrid as a Foreigner: What Your Architect Wants You to Know Before You Sign: https://wolfblanc.com/journal/buying-property-madrid-foreigner-renovation-guide/
+- Hiring an Architect in Spain or Greece When You Don't Live There: https://wolfblanc.com/journal/hiring-architect-spain-greece-foreign-buyer/
+- Buying and Renovating a Second Home in Spain: What International Buyers Need to Know: https://wolfblanc.com/journal/second-home-spain-architecture-renovation-guide/
+- The Spanish Horizontal Property Law: What Foreign Apartment Owners Need to Know About Their Comunidad: https://wolfblanc.com/journal/spanish-horizontal-property-law-comunidad-foreign-owners/
+- NIE, NIF, and Getting Set Up to Buy Property in Spain: A Practical Checklist for Non-Spanish Buyers: https://wolfblanc.com/journal/nie-nif-buy-property-spain-checklist-foreigners/
+- Madrid Building Permits Explained: Licencia de Obras, Obra Mayor, Obra Menor and How the Process Works: https://wolfblanc.com/journal/building-permits-madrid-licencia-obras-guide/
+- The True Cost of Building a House in Spain: An Honest Guide for 2026: https://wolfblanc.com/journal/cost-building-house-spain-honest-guide-2026/
+- How to Find and Manage a Contractor in Spain When You Do Not Speak Spanish: https://wolfblanc.com/journal/find-manage-contractor-spain-no-spanish/
+- Architect vs. Interior Designer vs. Project Manager in Spain: Who Do You Actually Need?: https://wolfblanc.com/journal/architect-interior-designer-project-manager-spain-difference/
+- What to Expect When Working with an Architect in Spain: The Process from First Contact to Handover: https://wolfblanc.com/journal/working-with-architect-spain-process-guide/
+- Madrid Real Estate Investment and Architecture: How Design Decisions Directly Affect Rental Yield and Resale Value: https://wolfblanc.com/journal/madrid-real-estate-investment-architecture-roi/
+- Buying a Rural Property in Spain: What You Need to Know About Land Classification, Building Rights, and Renovation: https://wolfblanc.com/journal/buying-rural-property-spain-land-classification-building-rights/
+- The Golden Visa in Greece: What Architects Want Property Investors to Know: https://wolfblanc.com/journal/golden-visa-greece-property-renovation-architect/
+
+### Studio
+- What Nobody Tells You Before Hiring an Architecture Studio: https://wolfblanc.com/journal/what-nobody-tells-you-before-hiring-architecture-studio/
+- The Story Behind Wolfblanc: Where Instinct Meets Precision: https://wolfblanc.com/journal/story-behind-wolfblanc-instinct-precision/
+- How Wolfblanc Works Across Spain, Sweden, and Greece: One Practice, Three Countries: https://wolfblanc.com/journal/architecture-spain-sweden-greece-wolfblanc-practice/
+- Designing with Purpose: Wolfblanc's Approach to Sustainability: https://wolfblanc.com/journal/wolfblancs-approach-to-sustainability/
+
+### Technology & Climate
+- Architecture and BIM as an Information System: https://wolfblanc.com/journal/architecture-bim-information-system/
+- Renovation Mistakes That Cost More to Fix Than the Original Work: What to Avoid in Any Country: https://wolfblanc.com/journal/renovation-mistakes-cost-most-to-fix/
+- Climate-Responsive Architecture: What Spain, Sweden, and Greece Have to Teach Each Other: https://wolfblanc.com/journal/climate-responsive-architecture-spain-greece-sweden/
+- Energy-Efficient Homes in Sweden: What the Nordic Building Standard Looks Like and What It Means for Southern Europe: https://wolfblanc.com/journal/energy-efficient-homes-sweden-nordic-standard/
+- How to Add a Terrace, Extension, or Garden Room to Your Home: Permits, Costs, and What Actually Works: https://wolfblanc.com/journal/add-terrace-extension-garden-room-europe-permits/
+- Building a Pool in Spain, Sweden, or Greece: Permits, Costs, and Design Considerations: https://wolfblanc.com/journal/building-pool-spain-greece-sweden-architecture/
+
+## Studio
+
+- Studio: https://wolfblanc.com/studio/
+- Architects, team and registrations: https://wolfblanc.com/studio/architects/
+- Culture and values: https://wolfblanc.com/studio/culture/
+- Why Wolfblanc: https://wolfblanc.com/studio/why-wolfblanc/
+- Project monitoring: https://wolfblanc.com/services/project-monitoring/
+- Careers: https://wolfblanc.com/careers/
+- FAQ: https://wolfblanc.com/faq/
+- Legal, privacy and cookies: https://wolfblanc.com/legal/
+
+## Languages
+
+The studio works in English, Spanish, Swedish and Greek.
 
 ## Contact
 
-- General and projects: info@wolfblanc.com
+- Projects and general enquiries: info@wolfblanc.com
 - Careers: jobs@wolfblanc.com
 - Press: press@wolfblanc.com
-- Spain: +34 662 411 064
-- Sweden: +46 73 656 64 89
-- Athens: +30 210 300 99 19
-- Thessaloniki: +30 231 111 72 80
+- Contact and call booking: https://wolfblanc.com/contact/
+- A senior partner reads every enquiry and replies within two business days.
