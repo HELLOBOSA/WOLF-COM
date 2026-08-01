@@ -397,9 +397,10 @@
     #lb-close:hover,#lb-prev:hover,#lb-next:hover{background:rgba(240,242,245,.12);border-color:rgba(240,242,245,.5)}
     .project{cursor:pointer}
     @media(max-width:640px){
-      #lb{padding:64px 14px 82px;align-items:center}
-      #lb-inner{max-width:100%;max-height:calc(100vh - 146px)}
-      #lb-inner img{max-height:calc(100vh - 196px)}
+      #lb{padding:64px 14px 132px;align-items:center}
+      #lb-cap{position:fixed;left:14px;right:14px;bottom:76px;margin:0;text-align:center}
+      #lb-inner{max-width:100%;max-height:calc(100vh - 196px);max-height:calc(100dvh - 196px)}
+      #lb-inner img{max-height:calc(100vh - 246px);max-height:calc(100dvh - 246px)}
       #lb-close{top:12px;right:12px}
       #lb-prev,#lb-next{top:auto;bottom:18px;transform:none;width:46px;height:46px;background:rgba(9,9,11,.82)}
       #lb-prev{left:calc(50% - 54px)}
