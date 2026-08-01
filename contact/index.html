@@ -192,7 +192,7 @@
     @media(max-width:860px){.contact-wrap{padding:56px 24px 0}}
     .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:8px;max-width:1100px}
     @media(max-width:640px){.contact-grid{grid-template-columns:1fr;gap:40px}}
-    .contact-col h3{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:20px;color:var(--accent)}
+    .contact-heading{font-size:clamp(1.2rem,2.5vw,1.875rem);font-weight:300;line-height:1.25;letter-spacing:.12em;text-transform:uppercase;margin:0 0 64px}.contact-col h3{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:20px;color:var(--accent)}
     .office-block{border-top:1px solid var(--line);padding-top:14px;margin-top:14px}
     .office-block:first-of-type{margin-top:0}
     .lang{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text2);margin-top:12px;line-height:1.8}.office-label{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text);margin:0 0 4px}
@@ -293,6 +293,8 @@
 
 <main>
   <div class="contact-wrap">
+    <span class="eyebrow" data-es="CONTACTO" data-en="CONTACT">CONTACT</span>
+    <h2 class="contact-heading" data-es="Un equipo, tres países" data-en="One team, three countries">One team, three countries</h2>
   <div class="contact-grid">
       <div class="contact-col">
         <h3 data-es="GENERAL" data-en="GENERAL">GENERAL</h3>
