@@ -151,7 +151,7 @@ the studio's expertise.
 
 ## Journal
 
-43 articles at https://wolfblanc.com/journal/. English, with Spanish available on the page toggle.
+44 articles at https://wolfblanc.com/journal/. English, with Spanish available on the page toggle.
 
 ### Design & Wellbeing
 - Wellbeing by Design: How Architecture Affects Your Health, Mood, and Daily Life: https://wolfblanc.com/journal/wellbeing-by-design-architecture-health-mood/
@@ -202,6 +202,7 @@ the studio's expertise.
 
 ### Technology & Climate
 - Architecture and BIM as an Information System: https://wolfblanc.com/journal/architecture-bim-information-system/
+- Cross-Border BIM Coordination: https://wolfblanc.com/journal/cross-border-bim-coordination/
 - Renovation Mistakes That Cost More to Fix Than the Original Work: What to Avoid in Any Country: https://wolfblanc.com/journal/renovation-mistakes-cost-most-to-fix/
 - Climate-Responsive Architecture: What Spain, Sweden, and Greece Have to Teach Each Other: https://wolfblanc.com/journal/climate-responsive-architecture-spain-greece-sweden/
 - Energy-Efficient Homes in Sweden: What the Nordic Building Standard Looks Like and What It Means for Southern Europe: https://wolfblanc.com/journal/energy-efficient-homes-sweden-nordic-standard/
@@ -216,6 +217,7 @@ the studio's expertise.
 - Why Wolfblanc: https://wolfblanc.com/studio/why-wolfblanc/
 - Project monitoring: https://wolfblanc.com/services/project-monitoring/
 - Careers: https://wolfblanc.com/careers/
+- BIM Coordinator, international projects: https://wolfblanc.com/bim-coordinator-international/
 - FAQ: https://wolfblanc.com/faq/
 - Legal, privacy and cookies: https://wolfblanc.com/legal/
 
