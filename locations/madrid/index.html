@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+  <script>/* The cookie banner is switched off. Set this to true to require a choice again. */
+window.WB_CONSENT_ENABLED=false;</script>
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
   <link rel="icon" type="image/png" sizes="192x192" href="../../apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
 
@@ -411,7 +413,7 @@
     localStorage.setItem(storageKey,JSON.stringify({choice:choice,expires:expiryTime()}));
     banner.hidden=true;
   }
-  if(!readChoice()){banner.hidden=false;}
+  if(!readChoice()){banner.hidden=(window.WB_CONSENT_ENABLED===false);}
   banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){
     btn.addEventListener('click',function(){closeBanner(btn.getAttribute('data-cookie-choice'));});
   });
