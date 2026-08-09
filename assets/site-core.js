@@ -2,11 +2,13 @@
   'use strict';
   var measurementId='G-WKLWDZFNKC';
   var storageKey='wb-cookie-choice';
-  // The cookie banner is switched off. Set WB_CONSENT_ENABLED to true to require
-  // a choice again; the consent plumbing below stays wired for that.
-  if(window.WB_CONSENT_ENABLED===undefined)window.WB_CONSENT_ENABLED=false;
+  // Two independent switches: WB_BANNER_ENABLED renders the banner,
+  // WB_CONSENT_ENFORCED makes tracking wait for and obey the choice.
+  if(window.WB_BANNER_ENABLED===undefined)window.WB_BANNER_ENABLED=true;
+  if(window.WB_CONSENT_ENFORCED===undefined)window.WB_CONSENT_ENFORCED=false;
 
   function pushConsent(choice){
+    if(window.WB_CONSENT_ENFORCED===false)return;
     var g=choice==='accept'?'granted':'denied';
     if(window.gtag)window.gtag('consent','update',{ad_storage:g,ad_user_data:g,ad_personalization:g,analytics_storage:g});
   }
@@ -29,10 +31,10 @@
     window.__wbAnalyticsLoaded=true;
     window.dataLayer=window.dataLayer||[];
     window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
-    var granted=!window.WB_CONSENT_ENABLED||readConsent()==='accept';
+    var granted=!window.WB_CONSENT_ENFORCED||readConsent()==='accept';
     var cg=granted?'granted':'denied';
     var cd={ad_storage:cg,ad_user_data:cg,ad_personalization:cg,analytics_storage:cg,functionality_storage:'granted',security_storage:'granted'};
-    if(window.WB_CONSENT_ENABLED)cd.wait_for_update=500;
+    if(window.WB_CONSENT_ENFORCED)cd.wait_for_update=500;
     window.gtag('consent','default',cd);
     window.gtag('js',new Date());
     window.gtag('config',measurementId,{

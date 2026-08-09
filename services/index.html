@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <script>/* The cookie banner is switched off. Set this to true to require a choice again. */
-window.WB_CONSENT_ENABLED=false;</script>
+  <script>/* WB_BANNER_ENABLED: the cookie banner renders until a choice is stored.
+   WB_CONSENT_ENFORCED: tracking waits for that choice and obeys it. */
+window.WB_BANNER_ENABLED=true;window.WB_CONSENT_ENFORCED=false;</script>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -481,7 +482,7 @@ window.WB_CONSENT_ENABLED=false;</script>
     document.body.classList.remove('cookie-banner-visible');
   }
   setCookieLang(currentLang());
-  if(!readChoice()){banner.hidden=(window.WB_CONSENT_ENABLED===false);document.body.classList.add('cookie-banner-visible');}
+  if(!readChoice()){banner.hidden=(window.WB_BANNER_ENABLED===false);document.body.classList.add('cookie-banner-visible');}
   banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){btn.addEventListener('click',function(){closeBanner(btn.getAttribute('data-cookie-choice'));});});
   document.querySelectorAll('[data-lang-switch]').forEach(function(btn){btn.addEventListener('click',function(){setCookieLang(btn.getAttribute('data-lang-switch'));});});
 })();

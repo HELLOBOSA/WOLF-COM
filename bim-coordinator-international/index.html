@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <script>/* The cookie banner is switched off. Set this to true to require a choice again. */
-window.WB_CONSENT_ENABLED=false;</script>
+  <script>/* WB_BANNER_ENABLED: the cookie banner renders until a choice is stored.
+   WB_CONSENT_ENFORCED: tracking waits for that choice and obeys it. */
+window.WB_BANNER_ENABLED=true;window.WB_CONSENT_ENFORCED=false;</script>
 <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="icon" type="image/png" sizes="192x192" href="../apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
@@ -302,7 +303,7 @@ window.WB_CONSENT_ENABLED=false;</script>
   function expiryTime(){return Date.now()+180*24*60*60*1000;}
   function readChoice(){var raw=localStorage.getItem(storageKey);if(!raw)return null;try{var s=JSON.parse(raw);if(s&&s.expires&&s.expires>Date.now())return s.choice;localStorage.removeItem(storageKey);return null;}catch(e){return raw;}}
   function closeBanner(c){localStorage.setItem(storageKey,JSON.stringify({choice:c,expires:expiryTime()}));banner.hidden=true;}
-  if(!readChoice()){banner.hidden=(window.WB_CONSENT_ENABLED===false);}
+  if(!readChoice()){banner.hidden=(window.WB_BANNER_ENABLED===false);}
   banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){btn.addEventListener('click',function(){closeBanner(btn.getAttribute('data-cookie-choice'));});});
 })();
 </script>
