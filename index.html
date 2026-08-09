@@ -457,7 +457,12 @@ window.WB_BANNER_ENABLED=true;window.WB_CONSENT_ENFORCED=false;</script>
 
   html{overflow-y:scroll}
   
-@media(max-width:560px){#cookie-banner{width:96vw;max-width:96vw;gap:1.7vw;padding:1.4vw 1.7vw 1.4vw 3.3vw;flex-wrap:wrap;row-gap:1.6vw;justify-content:space-between}#cookie-banner .cookie-copy,#cookie-banner .cookie-actions{gap:1.7vw;justify-content:center;min-width:0}#cookie-banner .cookie-title{font-size:clamp(8px,2.96vw,11px);letter-spacing:0;white-space:nowrap}#cookie-banner .cookie-link{font-size:clamp(8px,3.48vw,12px);letter-spacing:0;padding:1.6vw .5vw;white-space:nowrap}#cookie-banner .cookie-btn{font-size:clamp(8px,3.48vw,12px);letter-spacing:0;padding:2.2vw 2vw;white-space:nowrap}#cookie-banner .cookie-btn.accept{padding:2.2vw 2.8vw}}
+
+
+
+@media(max-width:560px){#cookie-banner{flex-wrap:wrap;row-gap:6px}#cookie-banner .cookie-copy,#cookie-banner .cookie-actions{justify-content:center}}
+
+@media(max-width:560px){#cookie-banner .cookie-title{font-size:11px}}
 </style>
   <link rel="stylesheet" href="assets/site-shell.css?v=20260728-cal-2">
 </head>
