@@ -509,14 +509,26 @@ window.WB_BANNER_ENABLED=true;window.WB_CONSENT_ENFORCED=false;</script>
 
 <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie notice" hidden>
   <div class="cookie-copy">
-    <span class="cookie-title">We use cookies</span>
-    <a class="cookie-link" href="../../legal/#cookies">Info</a>
+    <span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">We use cookies</span>
+    <a class="cookie-link" href="../../legal/#cookies" data-es="Info" data-en="Info">Info</a>
   </div>
   <div class="cookie-actions">
-    <button class="cookie-btn" type="button" data-cookie-choice="reject">Reject</button>
-    <button class="cookie-btn accept" type="button" data-cookie-choice="accept">Accept</button>
+    <button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Reject</button>
+    <button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Accept</button>
   </div>
 </div>
+<script>
+(function(){
+  var banner=document.getElementById('cookie-banner');
+  if(!banner)return;
+  var stored=localStorage.getItem('wb-es-lang')||localStorage.getItem('wb-lang')||document.documentElement.lang||'en';
+  var lang=stored.slice(0,2)==='en'?'en':'es';
+  banner.querySelectorAll('[data-es],[data-en]').forEach(function(el){
+    var v=el.getAttribute('data-'+lang);
+    if(v!==null)el.innerHTML=v;
+  });
+})();
+</script>
 <script>
 (function(){
   var banner=document.getElementById('cookie-banner');
