@@ -18,6 +18,10 @@
       var val=el.getAttribute('data-'+lang);
       if(val!==null)el.innerHTML=val;
     });
+    document.querySelectorAll('[data-es-aria],[data-en-aria]').forEach(function(el){
+      var label=el.getAttribute('data-'+lang+'-aria');
+      if(label!==null)el.setAttribute('aria-label',label);
+    });
     document.querySelectorAll('[data-lang-switch]').forEach(function(b){
       b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
     });

@@ -327,6 +327,10 @@ window.WB_BANNER_ENABLED=true;window.WB_CONSENT_ENFORCED=false;</script>
       var val=lang==='en'?el.getAttribute('data-en'):el.getAttribute('data-es');
       if(val!==null)el.innerHTML=val;
     });
+    document.querySelectorAll('[data-es-aria],[data-en-aria]').forEach(function(el){
+      var label=el.getAttribute('data-'+lang+'-aria');
+      if(label!==null)el.setAttribute('aria-label',label);
+    });
     lbs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);});
     root.setAttribute('lang',lang==='en'?'en':'es');
     localStorage.setItem(LS_LANG,lang);
